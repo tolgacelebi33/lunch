@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19 22:21",
+  "updated_at": "2026-08-19 22:54",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -89,29 +89,42 @@
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "status": "Aktuell rätt ej verifierad",
-          "message": "Den officiella sidan visar en äldre veckomeny. Ingen gammal rätt visas som dagens."
+          "verified": true,
+          "dishes": [
+            "Kålpudding på färs från Limmareds Säteri serveras med kokt potatis och lingon"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "monday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Pasta med kräftstjärtar i vittvinsås, dill och parmesan"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "tuesday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk serveras med raggmunk och lingon alternativt kokt potatis och löksås"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "thursday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Pankopanerad kyckling serveras med rostad potatis och mango-currydressing"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "friday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Fiskgryta serveras med aioli och nybakat bröd",
+            "Falafel serveras med tzaziki och klyftpotatis",
+            "Caesarsallad med sallad från Björnhyltan",
+            "Lunchmeny v. 34"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         }
       }
     },
@@ -185,5 +198,10 @@
         }
       }
     }
+  ],
+  "iso_week": 34,
+  "update_log": [
+    "glasets: no weekday headings",
+    "sangbergs: ok"
   ]
 }
