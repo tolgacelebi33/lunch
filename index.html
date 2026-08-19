@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f5f2">
+<title>Dagens lunch – Dalstorp med omnejd</title>
+<meta name="description" content="Lunch inom cirka 20 km från 514 60 Dalstorp.">
+<style>
+/*
+  Svedbergs-inspirerad palett baserad på de officiella NCS-koder
+  som Svedbergs själva publicerar:
+  Vit      S0500-N
+  Kalk     S1500-N
+  Sand     S2005-Y20R
+  Granit   S5500-N
+  Hav      S7010-R90B
+  Salvia   S6005-G50Y
+
+  Hex-värdena nedan är skärmanpassade approximationer av NCS-tonerna.
+*/
+:root{
+  --vit:#f7f7f5;          /* S0500-N, approx */
+  --kalk:#d7d7d3;         /* S1500-N, approx */
+  --sand:#c9c0ae;         /* S2005-Y20R, approx */
+  --granit:#737472;       /* S5500-N, approx */
+  --hav:#344852;          /* S7010-R90B, approx */
+  --salvia:#626f63;       /* S6005-G50Y, approx */
+  --black:#171918;
+  --white:#ffffff;
+  --line:#d9d8d2;
+  --muted:#6f716f;
+  --warm:#efede8;
+  --ok:#52665a;
+  --warn:#947d52;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--vit);
+  color:var(--black);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:16px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.shell{max-width:1240px;margin:0 auto;padding:0 30px}
+
+.topbar{
+  background:var(--white);
+  border-bottom:1px solid var(--line);
+}
+.topbar-inner{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.brand{
+  font-weight:700;
+  font-size:28px;
+  letter-spacing:-.045em;
+}
+.brand span{font-weight:400}
+.nav{
+  display:flex;
+  gap:24px;
+  font-size:14px;
+}
+.nav a{text-decoration:none}
+.nav a:hover{text-decoration:underline}
+
+.hero{
+  background:var(--sand);
+  padding:86px 0 78px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);
+  gap:60px;
+  align-items:end;
+}
+.eyebrow{
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:700;
+  margin-bottom:20px;
+}
+h1{
+  margin:0;
+  font-size:clamp(48px,7vw,94px);
+  line-height:.92;
+  letter-spacing:-.055em;
+  font-weight:500;
+  max-width:900px;
+}
+.hero-copy{
+  max-width:390px;
+  font-size:18px;
+}
+.hero-copy p{margin:0 0 24px}
+.hero-meta{
+  border-top:1px solid rgba(23,25,24,.35);
+  padding-top:18px;
+  font-size:14px;
+  display:grid;
+  gap:7px;
+}
+
+.section{
+  padding:66px 0;
+}
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:30px;
+  margin-bottom:30px;
+}
+.section-head h2{
+  margin:0;
+  font-size:40px;
+  line-height:1;
+  font-weight:500;
+  letter-spacing:-.04em;
+}
+.section-head p{
+  margin:0;
+  max-width:470px;
+  color:var(--muted);
+}
+
+.filters{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:24px;
+}
+.chip{
+  border:1px solid var(--black);
+  padding:9px 14px;
+  border-radius:999px;
+  font-size:13px;
+  background:transparent;
+  color:var(--black);
+  cursor:pointer;
+  font:inherit;
+}
+.chip:hover{background:rgba(23,25,24,.06)}
+.chip.active{background:var(--black);color:var(--white)}
+.card[hidden]{display:none!important}
+.no-results{
+  display:none;
+  padding:36px 0;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+}
+.no-results.show{display:block}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  border-top:1px solid var(--black);
+}
+.card{
+  padding:34px 30px 34px 0;
+  border-bottom:1px solid var(--line);
+  min-height:360px;
+  display:flex;
+  flex-direction:column;
+}
+.card:nth-child(even){
+  padding-left:30px;
+  padding-right:0;
+  border-left:1px solid var(--line);
+}
+.card-head{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:flex-start;
+}
+.name{
+  margin:0;
+  font-size:29px;
+  line-height:1.05;
+  font-weight:500;
+  letter-spacing:-.035em;
+}
+.place{
+  margin-top:7px;
+  color:var(--muted);
+  font-size:14px;
+}
+.price{
+  font-size:14px;
+  border:1px solid var(--black);
+  border-radius:999px;
+  padding:7px 10px;
+  white-space:nowrap;
+}
+.time{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  margin:24px 0 11px;
+  font-weight:700;
+}
+.menu{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.menu li{
+  margin:0;
+  padding:8px 0;
+  border-top:1px solid var(--line);
+}
+.menu li:first-child{border-top:0}
+.menu strong{font-weight:700}
+.extra{
+  margin-top:19px;
+  padding:14px 16px;
+  background:var(--warm);
+  font-size:14px;
+}
+.card-footer{
+  margin-top:auto;
+  padding-top:22px;
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  align-items:center;
+  font-size:13px;
+}
+.status{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  font-weight:700;
+}
+.status:before{
+  content:"";
+  display:block;
+  width:9px;height:9px;border-radius:50%;
+  background:currentColor;
+}
+.status.ok{color:var(--salvia)}
+.status.warn{color:var(--warn)}
+.source{text-decoration:underline;text-underline-offset:4px}
+
+.band{
+  background:var(--hav);
+  color:var(--white);
+  padding:64px 0;
+}
+.band-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+}
+.band h3{
+  margin:0;
+  font-size:44px;
+  font-weight:500;
+  line-height:1.02;
+  letter-spacing:-.04em;
+}
+.band p{
+  margin:0;
+  max-width:510px;
+  color:#e3e8e8;
+  font-size:18px;
+}
+.highlight{
+  margin-top:26px;
+  font-size:21px;
+  color:var(--white);
+}
+
+.info{
+  padding:48px 0;
+  background:var(--kalk);
+}
+.info-grid{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:60px;
+}
+.info h3{
+  margin:0;
+  font-size:25px;
+  font-weight:500;
+  letter-spacing:-.03em;
+}
+.info p{margin:0;color:#4e514f}
+
+footer{
+  background:var(--black);
+  color:var(--white);
+  padding:44px 0;
+}
+.footer-grid{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:30px;
+}
+.footer-brand{
+  font-size:27px;
+  font-weight:700;
+  letter-spacing:-.04em;
+}
+.footer-meta{
+  font-size:13px;
+  color:#c6c8c6;
+  text-align:right;
+}
+
+@media(max-width:800px){
+  .shell{padding:0 20px}
+  .nav{display:none}
+  .hero{padding:58px 0}
+  .hero-grid,.band-grid,.info-grid{grid-template-columns:1fr;gap:28px}
+  .grid{grid-template-columns:1fr}
+  .card,.card:nth-child(even){padding:28px 0;border-left:0}
+  .section-head{display:block}
+  .section-head p{margin-top:14px}
+  .footer-grid{display:block}
+  .footer-meta{text-align:left;margin-top:18px}
+}
+
+.weekdays{
+  background:var(--white);
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:20;
+}
+.weekdays-inner{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+}
+.day-tab{
+  appearance:none;
+  border:0;
+  border-right:1px solid var(--line);
+  background:transparent;
+  padding:17px 10px 15px;
+  cursor:pointer;
+  color:var(--muted);
+  font:inherit;
+  text-align:center;
+}
+.day-tab:first-child{border-left:1px solid var(--line)}
+.day-tab strong{display:block;font-size:14px;color:inherit}
+.day-tab small{display:block;margin-top:2px;font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.day-tab:hover{background:var(--warm);color:var(--black)}
+.day-tab.active{background:var(--black);color:var(--white)}
+@media(max-width:600px){
+  .day-tab{padding:13px 4px 12px}
+  .day-tab strong{font-size:12px}
+  .day-tab small{font-size:9px}
+}
+
+/* Inköpsradar */
+.commodity-bar{
+  background:var(--hav);
+  color:var(--white);
+  overflow:hidden;
+  border-bottom:1px solid rgba(255,255,255,.18);
+  min-height:46px;
+  display:flex;
+  align-items:center;
+}
+.commodity-track{
+  display:flex;
+  width:max-content;
+  align-items:center;
+  animation:commodity-scroll 70s linear infinite;
+  will-change:transform;
+}
+.commodity-bar:hover .commodity-track{animation-play-state:paused}
+.commodity-item{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  white-space:nowrap;
+  padding:12px 28px;
+  border-right:1px solid rgba(255,255,255,.2);
+  font-size:12px;
+}
+.commodity-item strong{
+  font-size:13px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+.commodity-item .metric{opacity:.9}
+.commodity-item .buy-good{color:#dce8df}
+.commodity-item .buy-bad{color:#f3d5cc}
+.commodity-source{opacity:.58;font-size:10px}
+@keyframes commodity-scroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+.story-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  border-top:1px solid rgba(23,25,24,.28);
+}
+.story-card{
+  padding:30px 30px 30px 0;
+  border-bottom:1px solid rgba(23,25,24,.18);
+  min-height:310px;
+  display:flex;
+  flex-direction:column;
+}
+.story-card:nth-child(even){
+  padding-left:30px;
+  padding-right:0;
+  border-left:1px solid rgba(23,25,24,.18);
+}
+.story-card .name{font-size:25px}
+.story-card p{color:#4f5451!important}
+.story-card .extra{
+  background:rgba(255,255,255,.38)!important;
+  color:var(--black)!important;
+}
+.linkedin-card{background:rgba(255,255,255,.16)}
+@media(max-width:800px){
+  .story-grid{grid-template-columns:1fr}
+  .story-card,.story-card:nth-child(even){padding:26px 0;border-left:0}
+  .commodity-track{animation-duration:55s}
+}
+
+</style>
+
+<style>
+/* Svedbergs-inspired bottom palette */
+.band{
+  background:var(--kalk)!important;
+  color:var(--black)!important;
+}
+.band .section-head h2,
+.band .section-head p,
+.band .eyebrow,
+.band .name,
+.band .card p,
+.band .card-footer,
+.band .source{
+  color:var(--black)!important;
+}
+.band .card{
+  background:transparent!important;
+  border-color:rgba(23,25,24,.22)!important;
+}
+.band .extra{
+  background:rgba(255,255,255,.38)!important;
+  color:var(--black)!important;
+}
+.info{
+  background:var(--sand)!important;
+}
+footer{
+  background:var(--salvia)!important;
+  color:var(--white)!important;
+}
+.footer-brand{color:var(--white)!important}
+.footer-meta{color:#eef0ec!important}
+</style>
+
+</head>
+<body>
+
+<div class="commodity-bar" aria-label="Inköpsradar">
+  <div id="commodityTrack" class="commodity-track">
+    <div class="commodity-item"><strong>Inköpsradar</strong><span>Hämtar marknadsdata…</span></div>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="shell topbar-inner">
+    <div class="brand">Lunch<span>radarn</span></div>
+    <nav class="nav">
+      <a href="#lunch">Lunch</a>
+      <a href="#samtal">Samtalsämnen</a>
+      <a href="#om">Om sidan</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="weekdays" aria-label="Veckodagar">
+  <div class="shell weekdays-inner" id="weekdayTabs"></div>
+</nav>
+
+<section class="hero">
+  <div class="shell hero-grid">
+    <div>
+      <h1>Lunch nära Svedbergs</h1>
+    </div>
+    <div class="hero-copy">
+      <div class="hero-meta">
+        <div><strong>Onsdag 19 augusti 2026</strong></div>
+        <div>≈ 20 km radie</div>
+        <div>Källor kontrollerade 19 augusti 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="lunch" class="section">
+  <div class="shell">
+    <div class="section-head">
+      <h2>Lunchalternativ</h2>
+      <p>Aktuella uppgifter visas bara när de går att verifiera mot en källa för rätt dag eller aktuell vecka. Gamla veckomenyer märks aldrig som dagens.</p>
+    </div>
+<section id="restaurantGrid" class="grid" aria-live="polite"></section>
+  </div>
+</main>
+
+<section id="samtal" class="band">
+  <div class="shell">
+    <div class="section-head" style="margin-bottom:34px">
+      <h2>Något att prata om över lunchen.</h2>
+      <p>Tre aktuella, positiva eller konstruktiva nyheter från SVT – plus senaste från Svedbergs.</p>
+    </div>
+    <div id="storyGrid" class="story-grid"></div>
+  </div>
+</section>
+
+<section id="om" class="info">
+  <div class="shell info-grid">
+    <h3>Lunch + något att prata om</h3>
+    <p>Dagens lunch samlar lunchmenyer runt Dalstorp och avslutar med några konstruktiva nyheter som passar runt lunchbordet. Nyheterna byts ut löpande och länkar alltid vidare till originalkällan.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="shell footer-grid">
+    <div class="footer-brand">Dagens lunch</div>
+    <div class="footer-meta">Dalstorp · Tranemo · Limmared<br>Byggd för celebi.io</div>
+  </div>
+</footer>
+
+<script>
+const DAY_KEYS=["monday","tuesday","wednesday","thursday","friday"];
+const DAY_SV=["Måndag","Tisdag","Onsdag","Torsdag","Fredag"];
+let lunchData=null;
+
+function esc(v=""){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function mondayOf(date){
+  const d=new Date(date); d.setHours(12,0,0,0);
+  const day=(d.getDay()+6)%7; d.setDate(d.getDate()-day); return d;
+}
+function isoDate(d){return d.toISOString().slice(0,10)}
+function currentIndex(){
+  const d=new Date().getDay();
+  return d>=1&&d<=5 ? d-1 : 4; // weekend opens Friday
+}
+function selectedIndex(){
+  const q=new URL(location.href).searchParams.get("dag");
+  const i=DAY_KEYS.indexOf(q);
+  return i>=0 ? i : currentIndex();
+}
+function renderTabs(active){
+  const wrap=document.getElementById("weekdayTabs");
+  const mon=mondayOf(new Date());
+  const today=new Date(); today.setHours(23,59,59,999);
+  wrap.innerHTML=DAY_KEYS.map((key,i)=>{
+    const d=new Date(mon); d.setDate(mon.getDate()+i);
+    return `<button class="day-tab ${i===active?"active":""}" data-day="${key}"
+      aria-pressed="${i===active}" aria-label="${DAY_SV[i]} ${d.getDate()}">
+      <strong>${DAY_SV[i].slice(0,3)}</strong><small>${d.getDate()}/${d.getMonth()+1}</small>
+    </button>`;
+  }).join("");
+  wrap.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+    const i=DAY_KEYS.indexOf(b.dataset.day);
+    const u=new URL(location.href);
+    u.searchParams.set("dag",b.dataset.day);
+    history.replaceState({},'',u);
+    renderDay(i);
+  }));
+}
+function renderRestaurant(r,key){
+  const day=(r.menu||{})[key];
+  const dishes=day?.dishes||[];
+  const status=day?.verified?"ok":"warn";
+  const statusText=day?.verified?"Verifierad":(day?.status||"Ej verifierad");
+  const source=day?.source_url||r.source_url||"";
+  const dishHtml=dishes.length?dishes.map(x=>`<li>${esc(x)}</li>`).join(""):`<li>${esc(day?.message||"Ingen verifierad lunchdata sparad för denna dag.")}</li>`;
+  return `<article class="card" data-town="${esc(r.town)}">
+    <div class="card-head"><div><h3 class="name">${esc(r.name)}</h3><div class="place">${esc(r.town)}</div></div><div class="price">${esc(r.price||"—")}</div></div>
+    <div class="time">${esc(r.lunch_time||"")}</div>
+    <ul class="menu">${dishHtml}</ul>
+    ${r.includes?`<div class="extra">${esc(r.includes)}</div>`:""}
+    <div class="card-footer"><span class="status ${status}">${esc(statusText)}</span>${source?`<a class="source" href="${esc(source)}" target="_blank" rel="noopener">Källa</a>`:""}</div>
+  </article>`;
+}
+function renderDay(i){
+  renderTabs(i);
+  const key=DAY_KEYS[i], grid=document.getElementById("restaurantGrid");
+  grid.innerHTML=lunchData.restaurants.map(r=>renderRestaurant(r,key)).join("");
+  const mon=mondayOf(new Date()), d=new Date(mon); d.setDate(mon.getDate()+i);
+  const isToday=d.toDateString()===new Date().toDateString();
+  const h1=document.querySelector("h1");
+  if(h1) h1.textContent="Lunch nära Svedbergs";
+  const meta=document.querySelector(".hero-meta");
+  if(meta) meta.innerHTML=`<div><strong>${DAY_SV[i]} ${new Intl.DateTimeFormat("sv-SE",{day:"numeric",month:"long",year:"numeric"}).format(d)}</strong></div><div>≈ 20 km radie</div><div>Data uppdaterad ${esc(lunchData.updated_at||"—")}</div>`;
+}
+async function loadLunch(){
+  const grid=document.getElementById("restaurantGrid");
+  try{
+    const res=await fetch(`data/lunch.json?v=${Date.now()}`,{cache:"no-store"});
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    lunchData=await res.json();
+    renderDay(selectedIndex());
+  }catch(err){
+    grid.innerHTML=`<article class="card"><h3 class="name">Kunde inte läsa lunchdata</h3><p>Kontrollera data/lunch.json.</p></article>`;
+  }
+}
+
+function pctClass(v){
+  const n=Number(v);
+  if(!Number.isFinite(n)||n===0) return "";
+  /* inköpsperspektiv: fallande råvarupriser = positivt */
+  return n<0 ? "buy-good" : "buy-bad";
+}
+function pct(v){
+  const n=Number(v);
+  if(!Number.isFinite(n)) return "—";
+  return `${n>0?"+":""}${n.toFixed(1).replace(".",",")}%`;
+}
+async function loadCommodities(){
+  const track=document.getElementById("commodityTrack");
+  if(!track) return;
+  try{
+    const res=await fetch(`data/commodities.json?v=${Date.now()}`,{cache:"no-store"});
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    const data=await res.json();
+    const items=(data.items||[]).filter(x=>x && x.name);
+    if(!items.length) throw new Error("empty");
+    const render=x=>`<div class="commodity-item">
+      <strong>${esc(x.name)}</strong>
+      ${x.price?`<span>${esc(x.price)} ${esc(x.unit||"")}</span>`:""}
+      <span class="metric ${pctClass(x.day)}">Dag ${pct(x.day)}</span>
+      <span class="metric ${pctClass(x.week)}">Vecka ${pct(x.week)}</span>
+      <span class="metric ${pctClass(x.month)}">Månad ${pct(x.month)}</span>
+      <span class="metric ${pctClass(x.ytd)}">YTD ${pct(x.ytd)}</span>
+      <span class="metric ${pctClass(x.yoy)}">YoY ${pct(x.yoy)}</span>
+      ${x.proxy?`<span class="commodity-source">${esc(x.proxy)}</span>`:""}
+    </div>`;
+    const once=items.map(render).join("");
+    track.innerHTML=once+once;
+  }catch(e){
+    track.innerHTML='<div class="commodity-item"><strong>Inköpsradar</strong><span>Marknadsdata tillfälligt otillgänglig</span></div>';
+  }
+}
+async function loadStories(){
+  const grid=document.getElementById("storyGrid");
+  if(!grid) return;
+  try{
+    const [nr,lr]=await Promise.all([
+      fetch(`data/news.json?v=${Date.now()}`,{cache:"no-store"}),
+      fetch(`data/linkedin.json?v=${Date.now()}`,{cache:"no-store"})
+    ]);
+    const news=nr.ok ? await nr.json() : {items:[]};
+    const linked=lr.ok ? await lr.json() : {};
+    const pool=[...(news.items||[])];
+    for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
+    const picks=pool.slice(0,3);
+    const newsCards=picks.map(n=>`<article class="story-card">
+      <div class="eyebrow">${esc(n.category||"SVT Nyheter")}</div>
+      <h3 class="name">${esc(n.title||"Aktuell nyhet")}</h3>
+      ${n.summary?`<p>${esc(n.summary)}</p>`:""}
+      ${n.talk_about?`<div class="extra"><strong>Prata om:</strong> ${esc(n.talk_about)}</div>`:""}
+      <div class="card-footer"><span>${esc(n.source||"SVT")}${n.date?` · ${esc(n.date)}`:""}</span>${n.url?`<a class="source" href="${esc(n.url)}" target="_blank" rel="noopener">Läs nyheten</a>`:""}</div>
+    </article>`).join("");
+    const linkedCard=`<article class="story-card linkedin-card">
+      <div class="eyebrow">Svedbergs · LinkedIn</div>
+      <h3 class="name">${esc(linked.title||"Senaste från Svedbergs")}</h3>
+      <p>${esc(linked.summary||"Senaste publika uppdateringen från Svedbergs LinkedIn.")}</p>
+      <div class="card-footer"><span>${esc(linked.relative_date||"Senaste inlägget")}</span><a class="source" href="${esc(linked.url||"https://se.linkedin.com/company/svedbergs")}" target="_blank" rel="noopener">Visa på LinkedIn</a></div>
+    </article>`;
+    grid.innerHTML=newsCards+linkedCard;
+  }catch(e){
+    grid.innerHTML='<p>Kunde inte läsa samtalsämnen just nu.</p>';
+  }
+}
+
+loadLunch();
+loadCommodities();
+loadStories();
+</script>
+
+</body>
+</html>
