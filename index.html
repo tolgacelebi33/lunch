@@ -367,6 +367,77 @@ footer{
   .day-tab strong{font-size:12px}
   .day-tab small{font-size:9px}
 }
+
+/* Inköpsradar */
+.commodity-bar{
+  background:var(--hav);
+  color:var(--white);
+  overflow:hidden;
+  border-bottom:1px solid rgba(255,255,255,.18);
+  min-height:46px;
+  display:flex;
+  align-items:center;
+}
+.commodity-track{
+  display:flex;
+  width:max-content;
+  align-items:center;
+  animation:commodity-scroll 70s linear infinite;
+  will-change:transform;
+}
+.commodity-bar:hover .commodity-track{animation-play-state:paused}
+.commodity-item{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  white-space:nowrap;
+  padding:12px 28px;
+  border-right:1px solid rgba(255,255,255,.2);
+  font-size:12px;
+}
+.commodity-item strong{
+  font-size:13px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+.commodity-item .metric{opacity:.9}
+.commodity-item .buy-good{color:#dce8df}
+.commodity-item .buy-bad{color:#f3d5cc}
+.commodity-source{opacity:.58;font-size:10px}
+@keyframes commodity-scroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+.story-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  border-top:1px solid rgba(23,25,24,.28);
+}
+.story-card{
+  padding:30px 30px 30px 0;
+  border-bottom:1px solid rgba(23,25,24,.18);
+  min-height:310px;
+  display:flex;
+  flex-direction:column;
+}
+.story-card:nth-child(even){
+  padding-left:30px;
+  padding-right:0;
+  border-left:1px solid rgba(23,25,24,.18);
+}
+.story-card .name{font-size:25px}
+.story-card p{color:#4f5451!important}
+.story-card .extra{
+  background:rgba(255,255,255,.38)!important;
+  color:var(--black)!important;
+}
+.linkedin-card{background:rgba(255,255,255,.16)}
+@media(max-width:800px){
+  .story-grid{grid-template-columns:1fr}
+  .story-card,.story-card:nth-child(even){padding:26px 0;border-left:0}
+  .commodity-track{animation-duration:55s}
+}
+
 </style>
 
 <style>
@@ -405,6 +476,12 @@ footer{
 
 </head>
 <body>
+
+<div class="commodity-bar" aria-label="Inköpsradar">
+  <div id="commodityTrack" class="commodity-track">
+    <div class="commodity-item"><strong>Inköpsradar</strong><span>Hämtar marknadsdata…</span></div>
+  </div>
+</div>
 
 <header class="topbar">
   <div class="shell topbar-inner">
@@ -449,35 +526,10 @@ footer{
 <section id="samtal" class="band">
   <div class="shell">
     <div class="section-head" style="margin-bottom:34px">
-      <h2 style="color:white">Något positivt att prata om över lunchen.</h2>
-      <p style="color:#e3e8e8">Tre aktuella, konstruktiva nyheter från SVT som kan bli enkla samtalsöppnare runt lunchbordet.</p>
+      <h2>Något att prata om över lunchen.</h2>
+      <p>Tre aktuella, positiva eller konstruktiva nyheter från SVT – plus senaste från Svedbergs.</p>
     </div>
-
-    <div class="grid" style="border-top:1px solid rgba(255,255,255,.45)">
-      <article class="card" style="background:transparent;color:white;border-color:rgba(255,255,255,.22)">
-        <div class="eyebrow" style="color:#dfe6e4">Medicin · Framsteg</div>
-        <h3 class="name" style="color:white">Operation redan före födseln</h3>
-        <p style="color:#e3e8e8">SVT berättar om ett barn som opererades medan det fortfarande låg i mammans mage – ett exempel på hur avancerad fosterdiagnostik och kirurgi fortsätter att utvecklas.</p>
-        <div class="extra" style="background:rgba(255,255,255,.09);color:white"><strong>Prata om:</strong> Vilket medicinskt framsteg under vår livstid har varit mest imponerande?</div>
-        <div class="card-footer"><span>SVT Framsteg · 8 aug</span><a class="source" href="https://www.svt.se/nyheter/om/framsteg" target="_blank" rel="noopener">Läs nyheten</a></div>
-      </article>
-
-      <article class="card" style="background:transparent;color:white;border-color:rgba(255,255,255,.22)">
-        <div class="eyebrow" style="color:#dfe6e4">Rymden · Vetenskap</div>
-        <h3 class="name" style="color:white">Jättekamera ska visa mer av universum</h3>
-        <p style="color:#e3e8e8">En ny jättelik kamera ska hjälpa forskare att se sådant i rymden som hittills varit svårt att upptäcka och ge nya möjligheter att förstå universum.</p>
-        <div class="extra" style="background:rgba(255,255,255,.09);color:white"><strong>Prata om:</strong> Om du fick veta svaret på en enda fråga om universum – vad skulle du fråga?</div>
-        <div class="card-footer"><span>SVT Framsteg · 1 aug</span><a class="source" href="https://www.svt.se/nyheter/om/framsteg" target="_blank" rel="noopener">Läs nyheten</a></div>
-      </article>
-
-      <article class="card" style="background:transparent;color:white;border-color:rgba(255,255,255,.22)">
-        <div class="eyebrow" style="color:#dfe6e4">Fritid · Samhälle</div>
-        <h3 class="name" style="color:white">Fler får låna utrustning gratis</h3>
-        <p style="color:#e3e8e8">En ny Fritidsbank har öppnat i Linköping, där människor kan låna sport- och fritidsutrustning gratis – ett enkelt sätt att göra ett aktivt liv mer tillgängligt.</p>
-        <div class="extra" style="background:rgba(255,255,255,.09);color:white"><strong>Prata om:</strong> Vad borde man kunna låna gratis i varje svensk kommun?</div>
-        <div class="card-footer"><span>SVT Nyheter · 13 aug</span><a class="source" href="https://www.svt.se/nyheter/lokalt/ost/nyheter-fran-dagen-13-augusti-8ebt7b" target="_blank" rel="noopener">Läs nyheten</a></div>
-      </article>
-    </div>
+    <div id="storyGrid" class="story-grid"></div>
   </div>
 </section>
 
@@ -571,7 +623,78 @@ async function loadLunch(){
     grid.innerHTML=`<article class="card"><h3 class="name">Kunde inte läsa lunchdata</h3><p>Kontrollera data/lunch.json.</p></article>`;
   }
 }
+
+function pctClass(v){
+  const n=Number(v);
+  if(!Number.isFinite(n)||n===0) return "";
+  /* inköpsperspektiv: fallande råvarupriser = positivt */
+  return n<0 ? "buy-good" : "buy-bad";
+}
+function pct(v){
+  const n=Number(v);
+  if(!Number.isFinite(n)) return "—";
+  return `${n>0?"+":""}${n.toFixed(1).replace(".",",")}%`;
+}
+async function loadCommodities(){
+  const track=document.getElementById("commodityTrack");
+  if(!track) return;
+  try{
+    const res=await fetch(`data/commodities.json?v=${Date.now()}`,{cache:"no-store"});
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    const data=await res.json();
+    const items=(data.items||[]).filter(x=>x && x.name);
+    if(!items.length) throw new Error("empty");
+    const render=x=>`<div class="commodity-item">
+      <strong>${esc(x.name)}</strong>
+      ${x.price?`<span>${esc(x.price)} ${esc(x.unit||"")}</span>`:""}
+      <span class="metric ${pctClass(x.day)}">Dag ${pct(x.day)}</span>
+      <span class="metric ${pctClass(x.week)}">Vecka ${pct(x.week)}</span>
+      <span class="metric ${pctClass(x.month)}">Månad ${pct(x.month)}</span>
+      <span class="metric ${pctClass(x.ytd)}">YTD ${pct(x.ytd)}</span>
+      <span class="metric ${pctClass(x.yoy)}">YoY ${pct(x.yoy)}</span>
+      ${x.proxy?`<span class="commodity-source">${esc(x.proxy)}</span>`:""}
+    </div>`;
+    const once=items.map(render).join("");
+    track.innerHTML=once+once;
+  }catch(e){
+    track.innerHTML='<div class="commodity-item"><strong>Inköpsradar</strong><span>Marknadsdata tillfälligt otillgänglig</span></div>';
+  }
+}
+async function loadStories(){
+  const grid=document.getElementById("storyGrid");
+  if(!grid) return;
+  try{
+    const [nr,lr]=await Promise.all([
+      fetch(`data/news.json?v=${Date.now()}`,{cache:"no-store"}),
+      fetch(`data/linkedin.json?v=${Date.now()}`,{cache:"no-store"})
+    ]);
+    const news=nr.ok ? await nr.json() : {items:[]};
+    const linked=lr.ok ? await lr.json() : {};
+    const pool=[...(news.items||[])];
+    for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
+    const picks=pool.slice(0,3);
+    const newsCards=picks.map(n=>`<article class="story-card">
+      <div class="eyebrow">${esc(n.category||"SVT Nyheter")}</div>
+      <h3 class="name">${esc(n.title||"Aktuell nyhet")}</h3>
+      ${n.summary?`<p>${esc(n.summary)}</p>`:""}
+      ${n.talk_about?`<div class="extra"><strong>Prata om:</strong> ${esc(n.talk_about)}</div>`:""}
+      <div class="card-footer"><span>${esc(n.source||"SVT")}${n.date?` · ${esc(n.date)}`:""}</span>${n.url?`<a class="source" href="${esc(n.url)}" target="_blank" rel="noopener">Läs nyheten</a>`:""}</div>
+    </article>`).join("");
+    const linkedCard=`<article class="story-card linkedin-card">
+      <div class="eyebrow">Svedbergs · LinkedIn</div>
+      <h3 class="name">${esc(linked.title||"Senaste från Svedbergs")}</h3>
+      <p>${esc(linked.summary||"Senaste publika uppdateringen från Svedbergs LinkedIn.")}</p>
+      <div class="card-footer"><span>${esc(linked.relative_date||"Senaste inlägget")}</span><a class="source" href="${esc(linked.url||"https://se.linkedin.com/company/svedbergs")}" target="_blank" rel="noopener">Visa på LinkedIn</a></div>
+    </article>`;
+    grid.innerHTML=newsCards+linkedCard;
+  }catch(e){
+    grid.innerHTML='<p>Kunde inte läsa samtalsämnen just nu.</p>';
+  }
+}
+
 loadLunch();
+loadCommodities();
+loadStories();
 </script>
 
 </body>
