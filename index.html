@@ -424,11 +424,9 @@ footer{
 <section class="hero">
   <div class="shell hero-grid">
     <div>
-      <div class="eyebrow">Dalstorp · Tranemo · Limmared</div>
-      <h1>Dagens lunch runt Dalstorp.</h1>
+      <h1>Lunch nära Svedbergs</h1>
     </div>
     <div class="hero-copy">
-      <p>En samlad översikt över lunchställen inom cirka 20 km från 514 60 Dalstorp.</p>
       <div class="hero-meta">
         <div><strong>Onsdag 19 augusti 2026</strong></div>
         <div>≈ 20 km radie</div>
@@ -558,7 +556,7 @@ function renderDay(i){
   const mon=mondayOf(new Date()), d=new Date(mon); d.setDate(mon.getDate()+i);
   const isToday=d.toDateString()===new Date().toDateString();
   const h1=document.querySelector("h1");
-  if(h1) h1.textContent=isToday?"Dagens lunch runt Dalstorp.":`${DAY_SV[i]}ens lunch runt Dalstorp.`;
+  if(h1) h1.textContent="Lunch nära Svedbergs";
   const meta=document.querySelector(".hero-meta");
   if(meta) meta.innerHTML=`<div><strong>${DAY_SV[i]} ${new Intl.DateTimeFormat("sv-SE",{day:"numeric",month:"long",year:"numeric"}).format(d)}</strong></div><div>≈ 20 km radie</div><div>Data uppdaterad ${esc(lunchData.updated_at||"—")}</div>`;
 }
