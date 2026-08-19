@@ -449,10 +449,35 @@ footer{
 <section id="samtal" class="band">
   <div class="shell">
     <div class="section-head" style="margin-bottom:34px">
-      <h2>Något positivt att prata om över lunchen.</h2>
-      <p>Tre aktuella nyheter väljs slumpmässigt för varje besök.</p>
+      <h2 style="color:white">Något positivt att prata om över lunchen.</h2>
+      <p style="color:#e3e8e8">Tre aktuella, konstruktiva nyheter från SVT som kan bli enkla samtalsöppnare runt lunchbordet.</p>
     </div>
-    <div id="newsGrid" class="grid"></div>
+
+    <div class="grid" style="border-top:1px solid rgba(255,255,255,.45)">
+      <article class="card" style="background:transparent;color:white;border-color:rgba(255,255,255,.22)">
+        <div class="eyebrow" style="color:#dfe6e4">Medicin · Framsteg</div>
+        <h3 class="name" style="color:white">Operation redan före födseln</h3>
+        <p style="color:#e3e8e8">SVT berättar om ett barn som opererades medan det fortfarande låg i mammans mage – ett exempel på hur avancerad fosterdiagnostik och kirurgi fortsätter att utvecklas.</p>
+        <div class="extra" style="background:rgba(255,255,255,.09);color:white"><strong>Prata om:</strong> Vilket medicinskt framsteg under vår livstid har varit mest imponerande?</div>
+        <div class="card-footer"><span>SVT Framsteg · 8 aug</span><a class="source" href="https://www.svt.se/nyheter/om/framsteg" target="_blank" rel="noopener">Läs nyheten</a></div>
+      </article>
+
+      <article class="card" style="background:transparent;color:white;border-color:rgba(255,255,255,.22)">
+        <div class="eyebrow" style="color:#dfe6e4">Rymden · Vetenskap</div>
+        <h3 class="name" style="color:white">Jättekamera ska visa mer av universum</h3>
+        <p style="color:#e3e8e8">En ny jättelik kamera ska hjälpa forskare att se sådant i rymden som hittills varit svårt att upptäcka och ge nya möjligheter att förstå universum.</p>
+        <div class="extra" style="background:rgba(255,255,255,.09);color:white"><strong>Prata om:</strong> Om du fick veta svaret på en enda fråga om universum – vad skulle du fråga?</div>
+        <div class="card-footer"><span>SVT Framsteg · 1 aug</span><a class="source" href="https://www.svt.se/nyheter/om/framsteg" target="_blank" rel="noopener">Läs nyheten</a></div>
+      </article>
+
+      <article class="card" style="background:transparent;color:white;border-color:rgba(255,255,255,.22)">
+        <div class="eyebrow" style="color:#dfe6e4">Fritid · Samhälle</div>
+        <h3 class="name" style="color:white">Fler får låna utrustning gratis</h3>
+        <p style="color:#e3e8e8">En ny Fritidsbank har öppnat i Linköping, där människor kan låna sport- och fritidsutrustning gratis – ett enkelt sätt att göra ett aktivt liv mer tillgängligt.</p>
+        <div class="extra" style="background:rgba(255,255,255,.09);color:white"><strong>Prata om:</strong> Vad borde man kunna låna gratis i varje svensk kommun?</div>
+        <div class="card-footer"><span>SVT Nyheter · 13 aug</span><a class="source" href="https://www.svt.se/nyheter/lokalt/ost/nyheter-fran-dagen-13-augusti-8ebt7b" target="_blank" rel="noopener">Läs nyheten</a></div>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -547,7 +572,6 @@ async function loadLunch(){
   }
 }
 loadLunch();
-loadNews();
 </script>
 
 </body>
