@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19 23:59",
+  "updated_at": "2026-08-19 21:55",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -10,34 +10,38 @@
       "includes": "Salladsbuffé och kaffe ingår.",
       "source_url": "https://kabyssen-dalstorp.se/rezepte",
       "menu": {
+        "monday": {
+          "verified": true,
+          "dishes": [
+            "Panerad falukorv med tomatsås och pasta"
+          ]
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk med raggmunk (potatis/ost), lingon och gräddsås",
+            "Köttbullar i kaprissås med kokt potatis"
+          ]
+        },
         "wednesday": {
           "verified": true,
           "dishes": [
             "Nötgryta med blåbär och ris",
-            "Köttfärssoppa med purjolök och färskost + pannkaka, sylt och grädde",
-            "Veckans pasta: köttfärssås",
-            "Veckans sallad: skinka, ägg och ost"
+            "Köttfärssoppa med purjolök och färskost + pannkaka, sylt och grädde"
           ]
         },
-        "monday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
-        },
-        "tuesday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
-        },
         "thursday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Kabyssens panerade schnitzel med stekt potatis, pommes, grönsaker och pepparsås",
+            "Kabyssens panerade kyckling med stekt potatis, pommes, grönsaker och pepparsås"
+          ]
         },
         "friday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Skagenröra med bakpotatis"
+          ]
         }
       }
     },
@@ -89,120 +93,80 @@
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
         "wednesday": {
-          "verified": true,
-          "dishes": [
-            "Kålpudding på färs från Limmareds Säteri serveras med kokt potatis och lingon"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "verified": false,
+          "status": "Aktuell rätt ej verifierad",
+          "message": "Den officiella sidan visar en äldre veckomeny. Ingen gammal rätt visas som dagens."
         },
         "monday": {
-          "verified": true,
-          "dishes": [
-            "Pasta med kräftstjärtar i vittvinsås, dill och parmesan"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "tuesday": {
-          "verified": true,
-          "dishes": [
-            "Stekt fläsk serveras med raggmunk och lingon alternativt kokt potatis och löksås"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "thursday": {
-          "verified": true,
-          "dishes": [
-            "Pankopanerad kyckling serveras med rostad potatis och mango-currydressing"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "friday": {
-          "verified": true,
-          "dishes": [
-            "Fiskgryta serveras med aioli och nybakat bröd",
-            "Falafel serveras med tzaziki och klyftpotatis",
-            "Caesarsallad med sallad från Björnhyltan",
-            "Närproducerad mat lagad från grunden",
-            "Allergier"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         }
       }
     },
     {
       "name": "Glasets Hus",
       "town": "Limmared",
-      "price": "Lunch + café",
-      "lunch_time": "09.00–16.00",
-      "source_url": "https://www.instagram.com/glasetshuslimmared",
+      "price": "120 kr",
+      "lunch_time": "11.30–14.30",
+      "source_url": "https://glasetshuslimmared.se/lunch/",
       "menu": {
-        "wednesday": {
-          "verified": false,
-          "status": "Väntar på veckomeny",
-          "message": "Aktuell dagsrätt publiceras när vecka och veckodag har verifierats från @glasetshuslimmared."
-        },
         "monday": {
           "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "status": "Stängt",
+          "message": "Dagens rätt serveras tisdag–fredag."
         },
         "tuesday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Nudel- & grönsakswok med kyckling",
+            "Veckans gröna val: kryddig sötpotatisgryta med bulgur"
+          ]
         },
-        "thursday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
-        },
-        "friday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
-        }
-      }
-    },
-    {
-      "name": "Orkidé Thai",
-      "town": "Tranemo",
-      "price": "Lunchbuffé",
-      "lunch_time": "11.30–14.00",
-      "source_url": "https://www.orkidethai.com/",
-      "menu": {
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Lunchbuffé med thailändska och kinesiska rätter",
-            "Exakta bufférätter publiceras inte på webbsidan"
+            "Husets lasagne",
+            "Veckans gröna val: kryddig sötpotatisgryta med bulgur"
           ]
         },
-        "monday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
-        },
-        "tuesday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
-        },
         "thursday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk med kokt potatis, löksås och lingonsylt",
+            "Veckans gröna val: kryddig sötpotatisgryta med bulgur"
+          ]
         },
         "friday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Biffar med fetaost serveras med bulgur och tzatziki",
+            "Veckans gröna val: kryddig sötpotatisgryta med bulgur"
+          ]
         }
-      }
+      },
+      "includes": "Salladsbord, kaffe och kaka ingår."
     }
   ],
   "iso_week": 34,
   "update_log": [
-    "glasets: menu found for current week but no weekdays could be parsed from HTML or menu images",
-    "sangbergs: ok (5 days)"
+    "Kabyssen: meny v.34 manuellt verifierad från uppladdad menybild",
+    "Glasets Hus: meny v.34 manuellt verifierad från uppladdad menybild",
+    "Orkidé Thai: borttagen"
   ]
 }
