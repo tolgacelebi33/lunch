@@ -1,0 +1,14 @@
+{
+  "updated_at": "2026-08-19",
+  "items": [
+    {
+      "title": "Nyhetspoolen uppdateras automatiskt",
+      "summary": "GitHub-jobbet hämtar aktuella nyheter varje morgon.",
+      "category": "Aktuellt",
+      "source": "Automatik",
+      "date": "19 aug",
+      "talk_about": "Vilken positiv nyhet skulle du vilja se mer av?",
+      "url": ""
+    }
+  ]
+}
