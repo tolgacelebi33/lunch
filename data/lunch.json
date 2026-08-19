@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20 00:24",
+  "updated_at": "2026-08-19 21:55",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -52,35 +52,55 @@
       "lunch_time": "11.30–14.30",
       "source_url": "https://limmaredsvardshus.se/",
       "menu": {
+        "monday": {
+          "verified": true,
+          "dishes": [
+            "Torsk på norskt vis & potatis",
+            "Lunchkorv med potatismos, stuvade morötter & gurkmajonnäs",
+            "Veckans vego: Äggnudlar",
+            "Veckans pasta: Pasta med ädelost & bacon",
+            "Veckans sallad: Tonfisksallad"
+          ]
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk med raggmunk & lingon",
+            "Stekt fläsk med potatis & löksås",
+            "Parmesangratinerad flundrafilé med potatismos",
+            "Veckans vego: Äggnudlar",
+            "Veckans pasta: Pasta med ädelost & bacon",
+            "Veckans sallad: Tonfisksallad"
+          ]
+        },
         "wednesday": {
           "verified": true,
           "dishes": [
             "Lasagne",
-            "Ugnsstekt falukorv med potatismos och stekt färsk vitkål",
-            "Veckans vego: äggnudlar",
-            "Pasta med ädelost och bacon",
-            "Tonfisksallad"
+            "Ugnsstekt falukorv, potatismos & stekt färsk vitkål",
+            "Veckans vego: Äggnudlar",
+            "Veckans pasta: Pasta med ädelost & bacon",
+            "Veckans sallad: Tonfisksallad"
           ]
         },
-        "monday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
-        },
-        "tuesday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
-        },
         "thursday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Levergryta med ris & lingonsylt",
+            "Fiskgryta med kokt potatis & aioli",
+            "Veckans vego: Äggnudlar",
+            "Veckans pasta: Pasta med ädelost & bacon",
+            "Veckans sallad: Tonfisksallad"
+          ]
         },
         "friday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Örtbakad karré med äppelchutney & potatis",
+            "Veckans vego: Äggnudlar",
+            "Veckans pasta: Pasta med ädelost & bacon",
+            "Veckans sallad: Tonfisksallad"
+          ]
         }
       }
     },
@@ -92,13 +112,6 @@
       "includes": "Salladsbuffé, måltidsdryck, kaffe och kaka ingår.",
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
-        "wednesday": {
-          "verified": true,
-          "dishes": [
-            "Kålpudding på färs från Limmareds Säteri serveras med kokt potatis och lingon"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
-        },
         "monday": {
           "verified": true,
           "dishes": [
@@ -113,6 +126,13 @@
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Kålpudding på färs från Limmareds Säteri serveras med kokt potatis och lingon"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
+        },
         "thursday": {
           "verified": true,
           "dishes": [
@@ -124,10 +144,8 @@
           "verified": true,
           "dishes": [
             "Fiskgryta serveras med aioli och nybakat bröd",
-            "Falafel serveras med tzaziki och klyftpotatis",
-            "Caesarsallad med sallad från Björnhyltan",
-            "Närproducerad mat lagad från grunden",
-            "Allergier"
+            "Veckans vegetariska: Falafel serveras med tzatziki och klyftpotatis",
+            "Veckans alternativ: Caesarsallad med sallad från Björnhyltan"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         }
@@ -179,7 +197,10 @@
   ],
   "iso_week": 34,
   "update_log": [
-    "glasets: menu found for current week but no weekdays could be parsed from HTML or menu images",
-    "sangbergs: ok (5 days)"
+    "Kabyssen: meny v.34 manuellt verifierad från uppladdad menybild",
+    "Glasets Hus: meny v.34 manuellt verifierad från uppladdad menybild",
+    "Orkidé Thai: borttagen",
+    "Limmareds Wärdshus: vecka 34 manuellt verifierad från uppladdad bild",
+    "Sångbergs: vecka 34 manuellt verifierad från uppladdad bild"
   ]
 }
