@@ -477,12 +477,6 @@ footer{
 </head>
 <body>
 
-<div class="commodity-bar" aria-label="Inköpsradar">
-  <div id="commodityTrack" class="commodity-track">
-    <div class="commodity-item"><strong>Inköpsradar</strong><span>Hämtar marknadsdata…</span></div>
-  </div>
-</div>
-
 <header class="topbar">
   <div class="shell topbar-inner">
     <div class="brand">Lunch<span>radarn</span></div>
@@ -527,7 +521,7 @@ footer{
   <div class="shell">
     <div class="section-head" style="margin-bottom:34px">
       <h2>Något att prata om över lunchen.</h2>
-      <p>Tre aktuella, positiva eller konstruktiva nyheter från SVT – plus senaste från Svedbergs.</p>
+      <p>Tre aktuella, positiva eller konstruktiva nyheter från SVT.</p>
     </div>
     <div id="storyGrid" class="story-grid"></div>
   </div>
@@ -664,12 +658,8 @@ async function loadStories(){
   const grid=document.getElementById("storyGrid");
   if(!grid) return;
   try{
-    const [nr,lr]=await Promise.all([
-      fetch(`data/news.json?v=${Date.now()}`,{cache:"no-store"}),
-      fetch(`data/linkedin.json?v=${Date.now()}`,{cache:"no-store"})
-    ]);
+    const nr=await fetch(`data/news.json?v=${Date.now()}`,{cache:"no-store"});
     const news=nr.ok ? await nr.json() : {items:[]};
-    const linked=lr.ok ? await lr.json() : {};
     const pool=[...(news.items||[])];
     for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
     const picks=pool.slice(0,3);
@@ -680,22 +670,21 @@ async function loadStories(){
       ${n.talk_about?`<div class="extra"><strong>Prata om:</strong> ${esc(n.talk_about)}</div>`:""}
       <div class="card-footer"><span>${esc(n.source||"SVT")}${n.date?` · ${esc(n.date)}`:""}</span>${n.url?`<a class="source" href="${esc(n.url)}" target="_blank" rel="noopener">Läs nyheten</a>`:""}</div>
     </article>`).join("");
-    const linkedCard=`<article class="story-card linkedin-card">
-      <div class="eyebrow">Svedbergs · LinkedIn</div>
-      <h3 class="name">${esc(linked.title||"Senaste från Svedbergs")}</h3>
-      <p>${esc(linked.summary||"Senaste publika uppdateringen från Svedbergs LinkedIn.")}</p>
-      <div class="card-footer"><span>${esc(linked.relative_date||"Senaste inlägget")}</span><a class="source" href="${esc(linked.url||"https://se.linkedin.com/company/svedbergs")}" target="_blank" rel="noopener">Visa på LinkedIn</a></div>
-    </article>`;
-    grid.innerHTML=newsCards+linkedCard;
+    grid.innerHTML=newsCards;
   }catch(e){
     grid.innerHTML='<p>Kunde inte läsa samtalsämnen just nu.</p>';
   }
 }
 
 loadLunch();
-loadCommodities();
 loadStories();
 </script>
 
 </body>
 </html>
+<style>
+#storyGrid.story-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+#storyGrid .story-card{padding:30px 24px;border-left:1px solid rgba(23,25,24,.18)}
+#storyGrid .story-card:first-child{border-left:0}
+@media(max-width:900px){#storyGrid.story-grid{grid-template-columns:1fr}#storyGrid .story-card{border-left:0;padding:26px 0}}
+</style>
