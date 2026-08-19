@@ -1,0 +1,65 @@
+{
+  "updated_at": "2026-08-19T23:30:00+02:00",
+  "items": [
+    {
+      "name": "Stål",
+      "price": "2995.00",
+      "unit": "CNY/t",
+      "day": -0.5,
+      "week": null,
+      "month": -1.84,
+      "ytd": null,
+      "yoy": -7.76,
+      "proxy": "Steel rebar",
+      "source_url": "https://tradingeconomics.com/commodity/steel"
+    },
+    {
+      "name": "Plåt / HRC",
+      "price": "1205.12",
+      "unit": "USD/t",
+      "day": 0.43,
+      "week": 1.59,
+      "month": 2.22,
+      "ytd": 34.29,
+      "yoy": 44.33,
+      "proxy": "HRC Steel",
+      "source_url": "https://tradingeconomics.com/commodity/hrc-steel"
+    },
+    {
+      "name": "Trä",
+      "price": "582.02",
+      "unit": "USD/1000 bf",
+      "day": 0.52,
+      "week": -4.87,
+      "month": -8.92,
+      "ytd": 15.83,
+      "yoy": -9.54,
+      "proxy": "Lumber",
+      "source_url": "https://tradingeconomics.com/commodity/lumber"
+    },
+    {
+      "name": "Skivmaterial",
+      "price": "4660.00",
+      "unit": "CNY/t",
+      "day": -0.26,
+      "week": null,
+      "month": -1.52,
+      "ytd": null,
+      "yoy": null,
+      "proxy": "Kraft pulp-proxy",
+      "source_url": "https://tradingeconomics.com/commodity/kraft-pulp"
+    },
+    {
+      "name": "Porslin",
+      "price": "1030.00",
+      "unit": "CNY/t",
+      "day": 0.0,
+      "week": null,
+      "month": -8.04,
+      "ytd": null,
+      "yoy": -18.9,
+      "proxy": "Soda ash-proxy",
+      "source_url": "https://tradingeconomics.com/commodity/soda-ash"
+    }
+  ]
+}
