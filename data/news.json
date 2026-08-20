@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T00:24:14.279607+02:00",
+  "updated_at": "2026-08-20T07:43:32.967655+02:00",
   "items": [
     {
       "title": "Se jättekameran som ska avslöja det okända om rymden",
@@ -83,6 +83,15 @@
       "url": "https://www.svt.se/nyheter/lokalt/vast/ai-ska-underlatta-upptackt-av-farligt-andningssyndrom-hos-trubbnosiga-hundar"
     },
     {
+      "title": "Unga tvingas bo hemma längre i Växjö – hör politikernas lösning",
+      "summary": "En rapport från Hyresgästföreningen tidigare i år visade att Växjö kommun stack ut från mängden på en punkt. Andelen unga vuxna som tvingades bo hemma hos föräldrar har ökat i Växjö, medan samma siffror sjunker i övriga Sverige.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/lokalt/smaland/unga-tvingas-bo-hemma-langre-i-vaxjo-hor-politikernas-losning"
+    },
+    {
       "title": "Statsvetaren Erik Wångmars framgångsrecept för nya partier",
       "summary": "Att starta ett nytt parti och lyckas hålla sig kvar länge är inte omöjligt, men mycket svårt. Statsvetaren Erik Wångmar har god koll på vad som krävs för att ett nytt parti ska lyckas ta sig in i kommunfullmäktige.",
       "category": "SVT Nyheter",
@@ -153,15 +162,6 @@
       "date": "",
       "talk_about": "Vad tycker du är mest intressant med det här?",
       "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-alkohol"
-    },
-    {
-      "title": "För dig som missade solförmörkelsen – här är fler rymdfenomen att spana på",
-      "summary": "Onsdagens solförmörkelse fick tiotusentals svenskar att vända blickarna mot himlen. De som hade rätt typ av ögonskydd kunde se solen skymmas av månen, andra blev kanske mest bländade. För dig som inte såg så bra, eller kanske fick intresse för astronomi, kommer fler chanser att s",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/vetenskap/for-dig-som-missade-solformorkelsen-har-ar-fler-rymdfenomen-att-spana-pa"
     }
   ]
 }

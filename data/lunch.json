@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19 21:55",
+  "updated_at": "2026-08-20 07:43",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -144,8 +144,10 @@
           "verified": true,
           "dishes": [
             "Fiskgryta serveras med aioli och nybakat bröd",
-            "Veckans vegetariska: Falafel serveras med tzatziki och klyftpotatis",
-            "Veckans alternativ: Caesarsallad med sallad från Björnhyltan"
+            "Falafel serveras med tzaziki och klyftpotatis",
+            "Caesarsallad med sallad från Björnhyltan",
+            "Närproducerad mat lagad från grunden",
+            "Allergier"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         }
@@ -197,10 +199,7 @@
   ],
   "iso_week": 34,
   "update_log": [
-    "Kabyssen: meny v.34 manuellt verifierad från uppladdad menybild",
-    "Glasets Hus: meny v.34 manuellt verifierad från uppladdad menybild",
-    "Orkidé Thai: borttagen",
-    "Limmareds Wärdshus: vecka 34 manuellt verifierad från uppladdad bild",
-    "Sångbergs: vecka 34 manuellt verifierad från uppladdad bild"
+    "glasets: menu found for current week but no weekdays could be parsed from HTML or menu images",
+    "sangbergs: ok (5 days)"
   ]
 }
