@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-08-20T09:54:47.811468+02:00",
+  "updated_at": "2026-08-21T00:43:40.530056+02:00",
   "items": [
+    {
+      "title": "Vad vill du veta om transplantationer?",
+      "summary": "Här kan du chatta med: • Per Fredrikson, handkirurgen bakom en av Sveriges mest kontroversiella transplantationer • Pia Löwhagen, donationsansvarig läkare, Västra regionen • Niklas Zachrisson, producent på SVT Chatten öppnar för frågor och kommentarer 20.00. Experterna börjar att",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/vad-vill-du-veta-om-transplantationer"
+    },
+    {
+      "title": "Forskning om handtransplantationer uteblev – Medicinetiker: ”skandal”",
+      "summary": "Att operera fast en avliden persons händer på någon som saknar händer är en kontroversiell transplantation. Flera forskare är nu kritiska till hur ingreppen införts i Sverige. – Det är en skandal att man inte har fullföljt sina forskningsambitioner, säger medicinetiker Torbjörn T",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/forskning-om-handtransplantationer-uteblev-medicinetiker-skandal"
+    },
     {
       "title": "Se jättekameran som ska avslöja det okända om rymden",
       "summary": "På en bergstopp i Chile ska en enorm kamera fotografera natthimlen under en tioårsperiod – något som kan ge oss svar på det okända om rymden. – Vi har byggt ett teleskop som är en upptäcktsmaskin, säger forskaren Leanne Guy.",
@@ -56,24 +74,6 @@
       "url": "https://www.svt.se/nyheter/vetenskap/har-aterskapas-2500-ar-gamla-lottningsmaskinen"
     },
     {
-      "title": "Ny 3D-karta över universum: ”Einstein kan ha haft fel”",
-      "summary": "En ny 3D-karta över universum visar över 47 miljoner galaxer. Kartan är den mest detaljerade som någonsin gjorts – och kan tvinga forskare att tänka om kring Einstens teorier. – Hans teori har testats extremt väl, men kanske händer något annat när vi ser på hela kosmos, säger for",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/vetenskap/ny-3d-karta-over-universum-einstein-kan-ha-haft-fel"
-    },
-    {
-      "title": "Dna ska avslöja förfalskningar i konstvärlden",
-      "summary": "Förfalskningar och fiffel är ett gigantiskt problem inom konstvärlden. Men nu har svenska forskare utvecklat en metod för att ta fram konstnärens dna ur färglager i en målning. – Konstmarknaden är så korrupt. Det här kommer bli ett reningsbad, säger konstexperten Claes Moser, äga",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/vetenskap/dna-ska-avsloja-forfalskningar-i-konstvarlden"
-    },
-    {
       "title": "AI ska underlätta upptäckt av farligt andningssyndrom hos trubbnosiga hundar",
       "summary": "Studenter på Chalmers i Göteborg har utvecklat en AI-baserad metod för att analysera andningen hos trubbnosiga hundar. Syftet är att smidigare avgöra om de lider av syndromet BOAS. Men tanken är också att vara en bromskloss för fortsatt skadlig avel.",
       "category": "SVT Nyheter",
@@ -101,15 +101,6 @@
       "url": "https://www.svt.se/nyheter/lokalt/smaland/statsvetaren-erik-wangmars-framgangsrecept-for-nya-partier"
     },
     {
-      "title": "Trippla rekord i sagoparken – nu jagar ALV årsrekordet",
-      "summary": "Det blev en stark huvudsäsong för Astrid Lindgrens Värld. Under juli slogs inte mindre än tre rekord. – En jättebra sommar, sammanfattar parkens vd Jocke Johansson.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/lokalt/smaland/trippla-rekord-i-sagoparken-nu-jagar-alv-arsrekordet"
-    },
-    {
       "title": "Professorn: Hela landet lever inte i dag – än mindre i framtiden",
       "summary": "Känslan av bortglömdhet som återkommer i SVT:s intervjuer från glesbygden i norra Värmland förvånar inte Charlotta Mellander, professor i nationalekonomi vid Internationella handelshögskolan i Jönköping. Från politiskt håll efterfrågar hon nytänkande lösningar och större tydlighe",
       "category": "SVT Nyheter",
@@ -135,6 +126,15 @@
       "date": "",
       "talk_about": "Vad tycker du är mest intressant med det här?",
       "url": "https://www.svt.se/nyheter/inrikes/endast-ett-under-ser-ut-att-kunna-radda-kristersson"
+    },
+    {
+      "title": "Christina först i Norden med nya händer från avliden",
+      "summary": "Christina tvingades amputera sina händer efter att ha drabbats av sepsis. I dag är hon dubbelt handtransplanterad, men ingreppet har samtidigt gjort att hon är beroende av livslång och riskfylld medicinering. – Jag kan känna mina barnbarn, det är jätteviktigt.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/christina-forst-i-norden-med-nya-hander-fran-avliden"
     },
     {
       "title": "Chatta om träning",
