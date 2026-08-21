@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T09:54:40.443467+02:00",
+  "updated_at": "2026-08-22T00:39:19.985166+02:00",
   "items": [
     {
       "title": "Vad vill du veta om transplantationer?",
@@ -83,6 +83,24 @@
       "url": "https://www.svt.se/nyheter/lokalt/vast/ai-ska-underlatta-upptackt-av-farligt-andningssyndrom-hos-trubbnosiga-hundar"
     },
     {
+      "title": "Efter omstridda förändringen – nu öppnar nya akutvården i Ljungby",
+      "summary": "Den nya akutvårdsavdelningen på Ljungby sjukhus invigdes under fredagen. Där ska patienter som behöver utredning, observation eller behandling under en kortare period kunna vårdas.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/lokalt/smaland/efter-omstridda-forandringen-nu-oppnar-nya-akutvarden-i-ljungby"
+    },
+    {
+      "title": "Ironmanplatserna till nästa år sålde slut på rekordtid",
+      "summary": "Ville man ha en startplats i triathlonloppet Ironman i Kalmar nästa år gällde det att hänga på låset. Biljetterna sålde slut på en timme, vilket var rekordtid.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/lokalt/smaland/ironmanplatserna-till-nasta-ar-salde-slut-pa-rekordtid"
+    },
+    {
       "title": "Unga tvingas bo hemma längre i Växjö – hör politikernas lösning",
       "summary": "En rapport från Hyresgästföreningen tidigare i år visade att Växjö kommun stack ut från mängden på en punkt. Andelen unga vuxna som tvingades bo hemma hos föräldrar har ökat i Växjö, medan samma siffror sjunker i övriga Sverige.",
       "category": "SVT Nyheter",
@@ -101,8 +119,8 @@
       "url": "https://www.svt.se/nyheter/lokalt/smaland/statsvetaren-erik-wangmars-framgangsrecept-for-nya-partier"
     },
     {
-      "title": "Skola i Järna drabbad av mässling",
-      "summary": "Antalet fall av mässling ökar efter festivalen Urkult i Sollefteå kommun. Nu har även en skola i Järna drabbats, skriver Länstidningen Södertälje.",
+      "title": "Ingen mässling på skola i Järna",
+      "summary": "Antalet fall av mässling ökar efter festivalen Urkult i Sollefteå kommun.",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
@@ -117,24 +135,6 @@
       "date": "",
       "talk_about": "Vad tycker du är mest intressant med det här?",
       "url": "https://www.svt.se/nyheter/inrikes/professorn-hela-landet-lever-inte-i-dag-an-mindre-i-framtiden"
-    },
-    {
-      "title": "SVT/Verian: Centerpartiet ökar rejält under sommaren",
-      "summary": "Stödet har inte varit så högt sedan under Annie Lööf. Centerpartiet ökar i SVT/Verians senaste mätning. – De tar väljare från flera håll. Framförallt från Socialdemokraterna men även från Liberalerna, Per Söderpalm, opinionsansvarig på Verian.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/inrikes/svtverian-centerpartiet-okar-rejalt-under-sommaren"
-    },
-    {
-      "title": "Endast ett under ser ut att kunna rädda Kristersson",
-      "summary": "Tidöpartierna visar inga tecken på återhämtning i opinionen. SVT/Verians väljarbarometer ger Ulf Kristersson ett mardrömsläge inför valspurten.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/inrikes/endast-ett-under-ser-ut-att-kunna-radda-kristersson"
     },
     {
       "title": "Christina först i Norden med nya händer från avliden",
