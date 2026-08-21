@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T07:46:03.691146+02:00",
+  "updated_at": "2026-08-21T09:54:40.443467+02:00",
   "items": [
     {
       "title": "Vad vill du veta om transplantationer?",
@@ -101,6 +101,15 @@
       "url": "https://www.svt.se/nyheter/lokalt/smaland/statsvetaren-erik-wangmars-framgangsrecept-for-nya-partier"
     },
     {
+      "title": "Skola i Järna drabbad av mässling",
+      "summary": "Antalet fall av mässling ökar efter festivalen Urkult i Sollefteå kommun. Nu har även en skola i Järna drabbats, skriver Länstidningen Södertälje.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/inrikes/skola-i-jarna-drabbad-av-massling"
+    },
+    {
       "title": "Professorn: Hela landet lever inte i dag – än mindre i framtiden",
       "summary": "Känslan av bortglömdhet som återkommer i SVT:s intervjuer från glesbygden i norra Värmland förvånar inte Charlotta Mellander, professor i nationalekonomi vid Internationella handelshögskolan i Jönköping. Från politiskt håll efterfrågar hon nytänkande lösningar och större tydlighe",
       "category": "SVT Nyheter",
@@ -153,15 +162,6 @@
       "date": "",
       "talk_about": "Vad tycker du är mest intressant med det här?",
       "url": "https://www.svt.se/nyheter/vetenskap/robothundar-ska-skydda-bostadsomraden-i-atlanta"
-    },
-    {
-      "title": "Läs chatten om alkohol",
-      "summary": "Fråga Doktorn är tillbaka! Se oss på måndagar i Sverige Live. Alkohol är höstens första tema. Många dricker mer under sommaren – men när går alkoholvanorna över i ett riskbruk? Hur påverkas kroppen och när behöver jag söka hjälp? Husdoktorn Jens Persson och föreläsaren Anna Pierr",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-alkohol"
     }
   ]
 }
