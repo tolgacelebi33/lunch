@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24 21:20",
+  "updated_at": "2026-08-25 00:37",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -125,9 +125,7 @@
             "Veckans Vego : Morotsbiff med potatisgratäng",
             "Veckans Pasta : Bolognese med parmesan",
             "Veckans Sallad : Ost, skinka, ägg & rhode islanddressing",
-            "Veckans Vego: Morotsbiff med potatisgratäng",
-            "Veckans Pasta: Bolognese med parmesan",
-            "Veckans Sallad: Ost, skinka, ägg & rhode islanddressing"
+            "Veckans Vego: Morotsbiff med potatisgratäng"
           ],
           "source_url": "https://limmaredsvardshus.se/"
         }
@@ -231,8 +229,10 @@
   "iso_week": 35,
   "update_log": [
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/08/M-v35.jpg)",
-    "kabyssen: ok (5 days, pdf-text)",
+    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
     "sangbergs: ok (5 days)",
-    "limmared: ok (5 days)"
+    "limmared: ok (5 days)",
+    "Centralen / Sångbergs friday: 10 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ]
 }
