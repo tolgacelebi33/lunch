@@ -1,14 +1,167 @@
 {
-  "updated_at": "2026-08-19",
+  "updated_at": "2026-08-24T20:23:11.236348+02:00",
   "items": [
     {
-      "title": "Nyhetspoolen uppdateras automatiskt",
-      "summary": "GitHub-jobbet hämtar aktuella nyheter varje morgon.",
-      "category": "Aktuellt",
-      "source": "Automatik",
-      "date": "19 aug",
-      "talk_about": "Vilken positiv nyhet skulle du vilja se mer av?",
-      "url": ""
+      "title": "Vad vill du veta om transplantationer?",
+      "summary": "Här kan du chatta med: • Per Fredrikson, handkirurgen bakom en av Sveriges mest kontroversiella transplantationer • Pia Löwhagen, donationsansvarig läkare, Västra regionen • Niklas Zachrisson, producent på SVT Chatten öppnar för frågor och kommentarer 20.00. Experterna börjar att",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/vad-vill-du-veta-om-transplantationer"
+    },
+    {
+      "title": "Forskning om handtransplantationer uteblev – Medicinetiker: ”skandal”",
+      "summary": "Att operera fast en avliden persons händer på någon som saknar händer är en kontroversiell transplantation. Flera forskare är nu kritiska till hur ingreppen införts i Sverige. – Det är en skandal att man inte har fullföljt sina forskningsambitioner, säger medicinetiker Torbjörn T",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/forskning-om-handtransplantationer-uteblev-medicinetiker-skandal"
+    },
+    {
+      "title": "Se jättekameran som ska avslöja det okända om rymden",
+      "summary": "På en bergstopp i Chile ska en enorm kamera fotografera natthimlen under en tioårsperiod – något som kan ge oss svar på det okända om rymden. – Vi har byggt ett teleskop som är en upptäcktsmaskin, säger forskaren Leanne Guy.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/se-jattekameran-som-ska-avsloja-det-okanda-om-rymden"
+    },
+    {
+      "title": "Här ska forskarna bo – 17 meter under ytan",
+      "summary": "I havet utanför kusten till amerikanska Florida Keys gömmer sig en ny forskningsanläggning. Här ska forskare kunna bo i en hel veckas tid, och studera havet – dygnet runt.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/har-ska-forskarna-bo-17-meter-under-ytan"
+    },
+    {
+      "title": "”Rekordhettan hade varit omöjlig för bara 50 år sen”",
+      "summary": "Rekordvärmeböljan i Europa just nu hade varit omöjlig för bara 50 år sen – och det är människan som ligger bakom den. Det slås fast i en ny rapport från forskarnätverket World Weather Attribution. WWA varnar också för att fler rekord i värmestress kan slås de närmaste dagarna – ä",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/rekordhettan-hade-varit-omojlig-for-bara-50-ar-sen"
+    },
+    {
+      "title": "Månen behöver egen tidszon",
+      "summary": "Kratrarna vid månens sydpol är några av solsystemets allra mörkaste och kallaste platser. Där vill forskare nu placera en laser som ser till att klockan går rätt på månen. – Tid är oerhört viktigt för ett modernt samhälle. Både för att vi ska kunna hålla reda på våra möten, och f",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/manen-behover-egen-tidszon"
+    },
+    {
+      "title": "Umeåforskarnas upptäckt – så kan AI hjälpa efter korsbandsskada",
+      "summary": "AI-teknik kan bidra till att tidigare hitta de idrottare som riskerar att drabbas av rädsla och osäkerhet efter en skada, visar forskning vid Umeå universitet. – Om vi kan identifiera dessa individer tidigare kan rehabiliteringen anpassas för att öka tryggheten, säger Charlotte H",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/umeaforskarnas-upptackt-sa-kan-ai-hjalpa-efter-korsbandsskada"
+    },
+    {
+      "title": "Här återskapas 2500 år gamla lottningsmaskinen",
+      "summary": "Med hjälp av en ”lottningsmaskin” slumpades vilka medborgare som fick politiska uppdrag i det antika Grekland. Nu har forskarna lyckats återskapa maskinen som man tror har använts, utifrån marmorstycken och gamla skrifter. – Styckena utgjorde en gåta i hundra år, säger arkeologen",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/har-aterskapas-2500-ar-gamla-lottningsmaskinen"
+    },
+    {
+      "title": "Efter omstridda förändringen – nu öppnar nya akutvården i Ljungby",
+      "summary": "Den nya akutvårdsavdelningen på Ljungby sjukhus invigdes under fredagen. Där ska patienter som behöver utredning, observation eller behandling under en kortare period kunna vårdas.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/lokalt/smaland/efter-omstridda-forandringen-nu-oppnar-nya-akutvarden-i-ljungby"
+    },
+    {
+      "title": "Ironmanplatserna till nästa år sålde slut på rekordtid",
+      "summary": "Ville man ha en startplats i triathlonloppet Ironman i Kalmar nästa år gällde det att hänga på låset. Biljetterna sålde slut på en timme, vilket var rekordtid.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/lokalt/smaland/ironmanplatserna-till-nasta-ar-salde-slut-pa-rekordtid"
+    },
+    {
+      "title": "Nytt hopp i kampen mot antibiotikaresistent gonorré",
+      "summary": "Antibiotikaresistent gonorré är ett växande problem – särskilt i Sverige. Men forskningen söker nu nya sätt att behandla bakterier – och det kan ge fler verktyg mot framtidens infektioner. – Det kommer aldrig att vara som man trodde på 80-talet. Att nu har vi tillräckligt många a",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/inrikes/nytt-hopp-i-kampen-mot-antibiotikaresistent-gonorre"
+    },
+    {
+      "title": "Stor klimatdemonstration i Stockholm: ”Rekord”",
+      "summary": "Omkring 50 000 personer och 280 olika organisationer deltar i eftermiddagens klimatdemonstration i Stockholm. – Jag är här för att se mina barn i ögonen, att jag försökte och att jag gjorde någonting, säger Alexandra Drotz Ruh.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/inrikes/stor-klimatdemonstration-i-stockholm-rekord"
+    },
+    {
+      "title": "Fouad Youcefi: Här är Sverigedemokraternas största problem",
+      "summary": "Sverigedemokraterna har ökat i varje val sedan de kom in i riksdagen 2010. Men inför valdagen står de inför ett problem – att lyckas växa i det område där de tidigare presterat som sämst. SVT:s valreporter Fouad Youcefi visar var i landet partiets akilleshäl finns.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/inrikes/fouad-youcefi-har-ar-sverigedemokraternas-storsta-problem"
+    },
+    {
+      "title": "Ingen mässling på skola i Järna",
+      "summary": "Antalet fall av mässling ökar efter festivalen Urkult i Sollefteå kommun.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/inrikes/skola-i-jarna-drabbad-av-massling"
+    },
+    {
+      "title": "Christina först i Norden med nya händer från avliden",
+      "summary": "Christina tvingades amputera sina händer efter att ha drabbats av sepsis. I dag är hon dubbelt handtransplanterad, men ingreppet har samtidigt gjort att hon är beroende av livslång och riskfylld medicinering. – Jag kan känna mina barnbarn, det är jätteviktigt.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/christina-forst-i-norden-med-nya-hander-fran-avliden"
+    },
+    {
+      "title": "Läs chatten om träning",
+      "summary": "Måndag den 24 augusti handlade Fråga Doktorn om hur man kommer igång med träningen igen efter sommaren. Och hur man ska ta hand om kroppen när man har ett stillasittande jobb. Gäst var fysioterapeuten Sara Königsson, som svarade på tittarfrågor i chatten.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-traning-vtydrl"
+    },
+    {
+      "title": "Robothundar ska skydda bostadsområden i Atlanta",
+      "summary": "Kan robothundar stoppa brottslighet? I den amerikanska storstaden Atlanta har den nya metoden testats.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/robothundar-ska-skydda-bostadsomraden-i-atlanta"
+    },
+    {
+      "title": "Läs chatten om alkohol",
+      "summary": "Fråga Doktorn är tillbaka! Se oss på måndagar i Sverige Live. Alkohol är höstens första tema. Många dricker mer under sommaren – men när går alkoholvanorna över i ett riskbruk? Hur påverkas kroppen och när behöver jag söka hjälp? Husdoktorn Jens Persson och föreläsaren Anna Pierr",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-alkohol"
     }
   ]
 }

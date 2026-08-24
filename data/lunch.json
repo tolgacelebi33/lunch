@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19 21:55",
+  "updated_at": "2026-08-24 20:23",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -51,32 +51,57 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Lasagne",
-            "Ugnsstekt falukorv med potatismos och stekt färsk vitkål",
-            "Veckans vego: äggnudlar",
-            "Pasta med ädelost och bacon",
-            "Tonfisksallad"
-          ]
+            "– 16.00",
+            "Veckans Vego: Morotsbiff med potatisgratäng",
+            "Veckans Pasta: Bolognese med parmesan",
+            "Veckans Sallad: Ost, skinka, ägg & rhode islanddressing"
+          ],
+          "source_url": "https://limmaredsvardshus.se/"
         },
         "monday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "–",
+            "Veckans Vego: Morotsbiff med potatisgratäng",
+            "Veckans Pasta: Bolognese med parmesan",
+            "Veckans Sallad: Ost, skinka, ägg & rhode islanddressing"
+          ],
+          "source_url": "https://limmaredsvardshus.se/"
         },
         "tuesday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Rotmos med rimmad bog",
+            "Havets Wallenbergare med potatismos, brynt smör & ärtor",
+            "Veckans Vego: Morotsbiff med potatisgratäng",
+            "Veckans Pasta: Bolognese med parmesan",
+            "Veckans Sallad: Ost, skinka, ägg & rhode islanddressing"
+          ],
+          "source_url": "https://limmaredsvardshus.se/"
         },
         "thursday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "–",
+            "Veckans Vego: Morotsbiff med potatisgratäng",
+            "Veckans Pasta: Bolognese med parmesan",
+            "Veckans Sallad: Ost, skinka, ägg & rhode islanddressing"
+          ],
+          "source_url": "https://limmaredsvardshus.se/"
         },
         "friday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "– 20.00",
+            "Lördag 12.00 – 20.00",
+            "Söndag 12.00 – 17.00",
+            "Varje år har vi stängt påskhelgen, midsommarhelgen och över jul & nyår.",
+            "Varmt Välkommen med din bordsbokning 0325-71450",
+            "0325 - 714 50.",
+            "Veckans Vego: Morotsbiff med potatisgratäng",
+            "Veckans Pasta: Bolognese med parmesan"
+          ],
+          "source_url": "https://limmaredsvardshus.se/"
         }
       }
     },
@@ -89,29 +114,43 @@
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "status": "Aktuell rätt ej verifierad",
-          "message": "Den officiella sidan visar en äldre veckomeny. Ingen gammal rätt visas som dagens."
+          "verified": true,
+          "dishes": [
+            "Stekt panerad sejfilé serveras med remouladsås och kokt potatis"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "monday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Isterband serveras med dillstuvad potatis"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "tuesday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Grekiska biffar serveras med klyftpotatis och tzaziki"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "thursday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Ugnsbakad kotlettrad serveras med rostade rotfrukter och chilibea"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "friday": {
-          "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "verified": true,
+          "dishes": [
+            "Flygande Jacob med ris toppas med jordnötter och bacon",
+            "Friterad blomkål serveras med blomkålspuré och grillad zucchini",
+            "Krämig pastasallad med kyckling",
+            "Närproducerad mat lagad från grunden",
+            "Allergier"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
         }
       }
     },
@@ -149,5 +188,12 @@
         }
       }
     }
+  ],
+  "iso_week": 35,
+  "update_log": [
+    "glasets: menu found for current week but no weekdays could be parsed from HTML or menu images",
+    "kabyssen: current week 35 not found",
+    "sangbergs: ok (5 days)",
+    "limmared: ok (5 days)"
   ]
 }
