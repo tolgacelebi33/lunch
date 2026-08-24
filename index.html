@@ -640,12 +640,14 @@ async function loadLunch(){
 }
 
 function pctClass(v){
+  if(v==null) return "";
   const n=Number(v);
   if(!Number.isFinite(n)||n===0) return "";
   /* inköpsperspektiv: fallande råvarupriser = positivt */
   return n<0 ? "buy-good" : "buy-bad";
 }
 function pct(v){
+  if(v==null) return "—";
   const n=Number(v);
   if(!Number.isFinite(n)) return "—";
   return `${n>0?"+":""}${n.toFixed(1).replace(".",",")}%`;
@@ -654,6 +656,11 @@ function sek(v){
   const n=Number(v);
   if(!Number.isFinite(n)) return "—";
   return n.toLocaleString("sv-SE",{maximumFractionDigits:0})+" kr";
+}
+function idx(v){
+  const n=Number(v);
+  if(!Number.isFinite(n)) return "—";
+  return n.toLocaleString("sv-SE",{minimumFractionDigits:1,maximumFractionDigits:1});
 }
 async function loadCommodities(){
   const track=document.getElementById("commodityTrack");
@@ -667,11 +674,17 @@ async function loadCommodities(){
     const render=x=>{
       const tag=x.source_url?"a":"div";
       const link=x.source_url?` href="${esc(x.source_url)}" target="_blank" rel="noopener"`:"";
+      const isIndex=x.kind==="index";
+      const priceHtml=x.price!=null
+        ?`<span class="c-price">${isIndex?`${idx(x.price)} ${esc(x.unit||"poäng")}`:`${sek(x.price)}${x.unit?`/${esc(x.unit.replace(/^kr\//,""))}`:""}`}</span>`
+        :"";
+      const metrics=isIndex
+        ?`<span class="metric ${pctClass(x.month)}">mån ${pct(x.month)}</span><span class="metric ${pctClass(x.yoy)}">år ${pct(x.yoy)}</span>`
+        :`<span class="metric ${pctClass(x.week)}">v ${pct(x.week)}</span><span class="metric ${pctClass(x.month)}">mån ${pct(x.month)}</span>`;
       return `<${tag} class="commodity-item"${link}>
       <strong>${esc(x.name)}</strong>
-      ${x.price!=null?`<span class="c-price">${sek(x.price)}${x.unit?`/${esc(x.unit.replace(/^kr\//,""))}`:""}</span>`:""}
-      <span class="metric ${pctClass(x.week)}">v ${pct(x.week)}</span>
-      <span class="metric ${pctClass(x.month)}">mån ${pct(x.month)}</span>
+      ${priceHtml}
+      ${metrics}
       ${x.proxy?`<span class="commodity-source">${esc(x.proxy)}</span>`:""}
     </${tag}>`;
     };

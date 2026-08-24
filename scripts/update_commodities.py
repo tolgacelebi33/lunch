@@ -8,6 +8,7 @@ import json, re
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"data/commodities.json"
+HIST=ROOT/"data/commodities_history.json"
 TZ=ZoneInfo("Europe/Stockholm")
 
 # (namn, url, källvaluta, enhet, proxy-beskrivning)
@@ -15,9 +16,15 @@ SOURCES=[
  ("Stål","https://tradingeconomics.com/commodity/steel","CNY","t","Steel rebar"),
  ("Plåt / HRC","https://tradingeconomics.com/commodity/hrc-steel","USD","t","HRC Steel"),
  ("Trä","https://tradingeconomics.com/commodity/lumber","USD","1000 bf","Lumber"),
- ("Skivmaterial","https://tradingeconomics.com/commodity/kraft-pulp","CNY","t","Kraft pulp-proxy"),
- ("Porslin","https://tradingeconomics.com/commodity/soda-ash","CNY","t","Soda ash-proxy"),
 ]
+
+# Skivmaterial och Porslin har inga handlade råvarupriser. Istället används Eurostats
+# producentprisindex för respektive varugrupp (poäng, bas beror på referensår), skrapat
+# från samma sajt som ovan. EU-27-aggregatet för träbaserade skivor visade sig vara
+# fruset sedan nov 2023 i Eurostats data, så Eurozon-raden används där istället eftersom
+# den faktiskt uppdateras månadsvis.
+PORSLIN_URL="https://tradingeconomics.com/european-union/producer-prices-in-industry-manufacture-of-other-porcelain-ceramic-products-eurostat-data.html"
+SKIVA_URL="https://tradingeconomics.com/european-union/producer-prices-in-industry-manufacture-of-veneer-sheets-wood-based-panels-eurostat-data.html"
 
 def fetch(url):
     req=Request(url,headers={"User-Agent":"Mozilla/5.0 Chrome/127 Safari/537.36","Accept-Language":"en-US,en;q=0.9"})
@@ -77,6 +84,60 @@ def fx_to_sek(currency):
     except Exception:
         return fallback.get(currency,1.0)
 
+def month_num(s):
+    for fmt in ("%B","%b"):
+        try:return datetime.strptime(s,fmt).month
+        except ValueError:pass
+    return None
+
+def parse_eu_index_page(h):
+    """EU-aggregatets egna 'Actual'-mening, t.ex. '...was 125.90 points in June of 2026'."""
+    t=textify(h)
+    m=re.search(r'was\s+(-?\d+(?:\.\d+)?)\s+points\s+in\s+([A-Za-z]+)\s+of\s+(\d{4})',t)
+    if not m:return None,None,None
+    return num(m.group(1)),int(m.group(3)),month_num(m.group(2))
+
+def parse_euroarea_row(h):
+    """Eurozon-raden i jämförelsetabellen: 'Euro Area 119.00 118.20 points Jun 2026' (Last, Previous)."""
+    t=textify(h)
+    m=re.search(r'Euro Area\s+(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)\s+points\s+([A-Za-z]+)\s+(\d{4})',t)
+    if not m:return None,None,None,None
+    return num(m.group(1)),num(m.group(2)),int(m.group(4)),month_num(m.group(3))
+
+def load_history():
+    if HIST.exists():
+        try:return json.loads(HIST.read_text(encoding="utf-8"))
+        except:return {}
+    return {}
+
+def index_change(hist,key,year,month,value):
+    """Sparar ny (år,månad,värde)-punkt om det är en ny period; returnerar (månadsförändring,årsförändring)."""
+    series=hist.setdefault(key,[])
+    if not series or (series[-1]["y"],series[-1]["m"])!=(year,month):
+        series.append({"y":year,"m":month,"v":value})
+        del series[:-15]
+    month_change=None
+    if len(series)>=2 and series[-2]["v"]:
+        month_change=round((series[-1]["v"]-series[-2]["v"])/series[-2]["v"]*100,2)
+    yoy_change=None
+    for e in series:
+        if (e["y"],e["m"])==(year-1,month) and e["v"]:
+            yoy_change=round((value-e["v"])/e["v"]*100,2)
+            break
+    return month_change,yoy_change
+
+def build_index_item(name,url,label,val,month_change,yoy_change,old):
+    prev=old.get(name,{})
+    if prev.get("kind")!="index":prev={}  # ignore stale data from the old (unrelated) proxy series
+    return {
+      "name":name,"kind":"index",
+      "price":val if val is not None else prev.get("price"),
+      "unit":"poäng",
+      "month":month_change if month_change is not None else prev.get("month"),
+      "yoy":yoy_change if yoy_change is not None else prev.get("yoy"),
+      "proxy":label,"source_url":url
+    }
+
 def main():
     old={}
     if OUT.exists():
@@ -106,6 +167,31 @@ def main():
         except Exception:
             if name in old:items.append(old[name])
             else:items.append({"name":name,"unit":f"kr/{unit_suffix}","proxy":proxy,"source_url":url})
+
+    hist=load_history()
+
+    try:
+        h=fetch(SKIVA_URL)
+        last,prevv,yr,mon=parse_euroarea_row(h)
+        month_change=round((last-prevv)/prevv*100,2) if last is not None and prevv else None
+        yoy_change=None
+        if last is not None:
+            _,yoy_change=index_change(hist,"Skivmaterial",yr,mon,last)
+        items.append(build_index_item("Skivmaterial",SKIVA_URL,"Eurostat PPI, Eurozonen",last,month_change,yoy_change,old))
+    except Exception:
+        items.append(old.get("Skivmaterial") or {"name":"Skivmaterial","kind":"index","unit":"poäng","proxy":"Eurostat PPI, Eurozonen","source_url":SKIVA_URL})
+
+    try:
+        h=fetch(PORSLIN_URL)
+        val,yr,mon=parse_eu_index_page(h)
+        month_change,yoy_change=(None,None)
+        if val is not None:
+            month_change,yoy_change=index_change(hist,"Porslin",yr,mon,val)
+        items.append(build_index_item("Porslin",PORSLIN_URL,"Eurostat PPI, EU",val,month_change,yoy_change,old))
+    except Exception:
+        items.append(old.get("Porslin") or {"name":"Porslin","kind":"index","unit":"poäng","proxy":"Eurostat PPI, EU","source_url":PORSLIN_URL})
+
+    HIST.write_text(json.dumps(hist,ensure_ascii=False,indent=2),encoding="utf-8")
     OUT.write_text(json.dumps({"updated_at":datetime.now(TZ).isoformat(),"items":items},ensure_ascii=False,indent=2),encoding="utf-8")
     print("commodities:",len(items))
 if __name__=="__main__":main()

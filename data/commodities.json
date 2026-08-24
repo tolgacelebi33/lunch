@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T21:21:04.395046+02:00",
+  "updated_at": "2026-08-24T21:50:17.342470+02:00",
   "items": [
     {
       "name": "Stål",
@@ -45,31 +45,23 @@
     },
     {
       "name": "Skivmaterial",
-      "price": 6902.0,
-      "unit": "kr/t",
-      "fx_rate": 1.4131,
-      "fx_from": "CNY",
-      "day": 36.0,
-      "week": null,
-      "month": 1.54,
-      "ytd": null,
-      "yoy": -3.93,
-      "proxy": "Kraft pulp-proxy",
-      "source_url": "https://tradingeconomics.com/commodity/kraft-pulp"
+      "kind": "index",
+      "price": 119.0,
+      "unit": "poäng",
+      "month": 0.68,
+      "yoy": null,
+      "proxy": "Eurostat PPI, Eurozonen",
+      "source_url": "https://tradingeconomics.com/european-union/producer-prices-in-industry-manufacture-of-veneer-sheets-wood-based-panels-eurostat-data.html"
     },
     {
       "name": "Porslin",
-      "price": 1455.0,
-      "unit": "kr/t",
-      "fx_rate": 1.4131,
-      "fx_from": "CNY",
-      "day": 0.0,
-      "week": null,
-      "month": -6.36,
-      "ytd": null,
-      "yoy": -15.85,
-      "proxy": "Soda ash-proxy",
-      "source_url": "https://tradingeconomics.com/commodity/soda-ash"
+      "kind": "index",
+      "price": 125.9,
+      "unit": "poäng",
+      "month": null,
+      "yoy": null,
+      "proxy": "Eurostat PPI, EU",
+      "source_url": "https://tradingeconomics.com/european-union/producer-prices-in-industry-manufacture-of-other-porcelain-ceramic-products-eurostat-data.html"
     }
   ]
 }
