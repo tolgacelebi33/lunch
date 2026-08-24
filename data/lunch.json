@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24 08:41",
+  "updated_at": "2026-08-24 10:03",
   "timezone": "Europe/Stockholm",
   "iso_week": 35,
   "restaurants": [
@@ -116,36 +116,28 @@
         "monday": {
           "verified": true,
           "dishes": [
-            "Isterband serveras med dillstuvad potatis",
-            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
-            "Veckans alternativ: Krämig pastasallad med kyckling"
+            "Isterband serveras med dillstuvad potatis"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Grekiska biffar serveras med klyftpotatis och tzatziki",
-            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
-            "Veckans alternativ: Krämig pastasallad med kyckling"
+            "Grekiska biffar serveras med klyftpotatis och tzaziki"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Stekt panerad sejfilé serveras med remouladsås och kokt potatis",
-            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
-            "Veckans alternativ: Krämig pastasallad med kyckling"
+            "Stekt panerad sejfilé serveras med remouladsås och kokt potatis"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Ugnsbakad kotlettrad serveras med rostade rotfrukter och chilibea",
-            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
-            "Veckans alternativ: Krämig pastasallad med kyckling"
+            "Ugnsbakad kotlettrad serveras med rostade rotfrukter och chilibea"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
@@ -153,8 +145,10 @@
           "verified": true,
           "dishes": [
             "Flygande Jacob med ris toppas med jordnötter och bacon",
-            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
-            "Veckans alternativ: Krämig pastasallad med kyckling"
+            "Friterad blomkål serveras med blomkålspuré och grillad zucchini",
+            "Krämig pastasallad med kyckling",
+            "Närproducerad mat lagad från grunden",
+            "Allergier"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         }
@@ -205,9 +199,7 @@
     }
   ],
   "update_log": [
-    "Kabyssen: vecka 35 verifierad från menybild",
-    "Limmareds Wärdshus: vecka 35 verifierad från webbsida/bild",
-    "Sångbergs: vecka 35 verifierad från webbsida/bild",
-    "Glasets Hus: vecka 35 verifierad från webbsida/bild"
+    "glasets: current week 35 not found",
+    "sangbergs: ok (5 days)"
   ]
 }
