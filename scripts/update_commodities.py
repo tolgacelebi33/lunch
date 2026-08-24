@@ -10,12 +10,13 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"data/commodities.json"
 TZ=ZoneInfo("Europe/Stockholm")
 
+# (namn, url, källvaluta, enhet, proxy-beskrivning)
 SOURCES=[
- ("Stål","https://tradingeconomics.com/commodity/steel","CNY/t","Steel rebar"),
- ("Plåt / HRC","https://tradingeconomics.com/commodity/hrc-steel","USD/t","HRC Steel"),
- ("Trä","https://tradingeconomics.com/commodity/lumber","USD/1000 bf","Lumber"),
- ("Skivmaterial","https://tradingeconomics.com/commodity/kraft-pulp","CNY/t","Kraft pulp-proxy"),
- ("Porslin","https://tradingeconomics.com/commodity/soda-ash","CNY/t","Soda ash-proxy"),
+ ("Stål","https://tradingeconomics.com/commodity/steel","CNY","t","Steel rebar"),
+ ("Plåt / HRC","https://tradingeconomics.com/commodity/hrc-steel","USD","t","HRC Steel"),
+ ("Trä","https://tradingeconomics.com/commodity/lumber","USD","1000 bf","Lumber"),
+ ("Skivmaterial","https://tradingeconomics.com/commodity/kraft-pulp","CNY","t","Kraft pulp-proxy"),
+ ("Porslin","https://tradingeconomics.com/commodity/soda-ash","CNY","t","Soda ash-proxy"),
 ]
 
 def fetch(url):
@@ -57,7 +58,24 @@ def parse_page(h):
     yoy=grab("Yearly")
     week=embedded(h,["WeeklyPercentualChange","weeklyPercentualChange","weeklyChangePercent"])
     ytd=embedded(h,["YTDPercentualChange","ytdPercentualChange","YtdPercentualChange"])
-    return actual,day,week,month,ytd,yoy
+    return num(actual),day,week,month,ytd,yoy
+
+_FX_CACHE={}
+def fx_to_sek(currency):
+    """Live SEK-kurs via Frankfurter (ECB-data, gratis, ingen nyckel). Faller tillbaka
+    på ett hårdkodat nödvärde om anropet misslyckas, så pipen aldrig kraschar helt."""
+    if currency=="SEK": return 1.0
+    if currency in _FX_CACHE: return _FX_CACHE[currency]
+    fallback={"USD":10.6,"CNY":1.48}
+    try:
+        url=f"https://api.frankfurter.dev/v1/latest?base={currency}&symbols=SEK"
+        raw=fetch(url)
+        data=json.loads(raw)
+        rate=data["rates"]["SEK"]
+        _FX_CACHE[currency]=rate
+        return rate
+    except Exception:
+        return fallback.get(currency,1.0)
 
 def main():
     old={}
@@ -65,13 +83,18 @@ def main():
         try:old={x["name"]:x for x in json.loads(OUT.read_text(encoding="utf-8")).get("items",[])}
         except:pass
     items=[]
-    for name,url,unit,proxy in SOURCES:
+    for name,url,ccy,unit_suffix,proxy in SOURCES:
         try:
             h=fetch(url)
             price,day,week,month,ytd,yoy=parse_page(h)
+            rate=fx_to_sek(ccy)
+            price_sek=round(price*rate,0) if price is not None else None
             prev=old.get(name,{})
             item={
-              "name":name,"price":price or prev.get("price"),"unit":unit,
+              "name":name,
+              "price":price_sek if price_sek is not None else prev.get("price"),
+              "unit":f"kr/{unit_suffix}",
+              "fx_rate":rate,"fx_from":ccy,
               "day":day if day is not None else prev.get("day"),
               "week":week if week is not None else prev.get("week"),
               "month":month if month is not None else prev.get("month"),
@@ -82,7 +105,7 @@ def main():
             items.append(item)
         except Exception:
             if name in old:items.append(old[name])
-            else:items.append({"name":name,"unit":unit,"proxy":proxy,"source_url":url})
+            else:items.append({"name":name,"unit":f"kr/{unit_suffix}","proxy":proxy,"source_url":url})
     OUT.write_text(json.dumps({"updated_at":datetime.now(TZ).isoformat(),"items":items},ensure_ascii=False,indent=2),encoding="utf-8")
     print("commodities:",len(items))
 if __name__=="__main__":main()

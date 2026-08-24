@@ -96,29 +96,52 @@ def ocr_image(url):
         im=im.resize((int(im.width*scale),int(im.height*scale)))
     return pytesseract.image_to_string(im,lang="swe+eng")
 
-def glasets(d, week):
-    url="https://glasetshuslimmared.se/lunch/"
-    html, final=fetch_text(url)
-    text=visible(html)
-    if not re.search(rf"(?i)\b(?:vecka|v\.?)\s*{week}\b",text):
+def text_or_ocr_menu(url, week):
+    """Delad logik: försök läsa dagar direkt ur sidans text, annars
+    leta upp en menybild och kör OCR på den. Används av restauranger
+    som publicerar veckomenyn som en bild snarare än text."""
+    html, final = fetch_text(url)
+    text = visible(html)
+    if not re.search(rf"(?i)\b(?:vecka|v\.?)\s*{week}\b", text):
         raise ValueError(f"current week {week} not found")
-    parsed=extract_days_from_text(text)
-    method="html"
-    if len(parsed)<3:
-        for score,img in image_candidates(html,final,week):
+    parsed = extract_days_from_text(text)
+    method = "html"
+    if len(parsed) < 3:
+        for score, img in image_candidates(html, final, week):
             try:
-                ocr=ocr_image(img)
-                candidate=extract_days_from_text(ocr)
-                week_ok=bool(re.search(rf"(?i)\b(?:vecka|v\.?)\s*{week}\b",ocr))
-                if len(candidate)>=4 or (week_ok and len(candidate)>=2):
-                    parsed=candidate
-                    method=f"ocr:{img}"
+                ocr = ocr_image(img)
+                candidate = extract_days_from_text(ocr)
+                week_ok = bool(re.search(rf"(?i)\b(?:vecka|v\.?)\s*{week}\b", ocr))
+                if len(candidate) >= 4 or (week_ok and len(candidate) >= 2):
+                    parsed = candidate
+                    method = f"ocr:{img}"
                     break
             except Exception:
                 continue
     if not parsed:
         raise ValueError("menu found for current week but no weekdays could be parsed from HTML or menu images")
+    return parsed, method
+
+def glasets(d, week):
+    url="https://glasetshuslimmared.se/lunch/"
+    parsed, method = text_or_ocr_menu(url, week)
     r=find_restaurant(d,"Glasets Hus")
+    if not r: raise ValueError("restaurant missing")
+    for key,ds in parsed.items():
+        r.setdefault("menu",{})[key]={"verified":True,"dishes":ds,"source_url":url}
+    r["source_url"]=url
+    return len(parsed),method
+
+def kabyssen(d, week):
+    # OBS: kabyssen-dalstorp.se/rezepte har inte gått att förhandsgranska
+    # (robots.txt blockerar automatiserade läsverktyg). Restaurangen har
+    # gett muntligt godkännande till hämtning, men den här funktionen är
+    # ANDVÄND UTAN att strukturen kunnat verifieras mot en levande sida -
+    # kör workflow_dispatch och läs "kabyssen: ..."-raden i loggen innan
+    # ni litar på resultatet.
+    url="https://kabyssen-dalstorp.se/rezepte"
+    parsed, method = text_or_ocr_menu(url, week)
+    r=find_restaurant(d,"Kabyssen")
     if not r: raise ValueError("restaurant missing")
     for key,ds in parsed.items():
         r.setdefault("menu",{})[key]={"verified":True,"dishes":ds,"source_url":url}
@@ -149,6 +172,33 @@ def sangbergs(d,week):
     r["source_url"]=url
     return parsed
 
+def limmared(d,week):
+    url="https://limmaredsvardshus.se/"
+    html,_=fetch_text(url); t=visible(html)
+    hits=list(re.finditer(r"(?i)\bvecka\s*(\d{1,2})\b",t))
+    week_hits=[m for m in hits if m.group(1)==str(week)]
+    if not week_hits:
+        raise ValueError(f"vecka {week} not found")
+    start=week_hits[0].end()
+    later=[m for m in hits if m.start()>start]
+    stop=later[0].start() if later else min(len(t),start+3500)
+    chunk=t[start:stop]
+    parsed=extract_days_from_text(chunk)
+    if not parsed: raise ValueError("no weekdays parsed for current week")
+    standing=[]
+    for m in re.finditer(r"(?i)veckans\s+(vego|pasta|sallad)\s*:?\s*([^\n]{1,120})",chunk):
+        line=f"Veckans {m.group(1).capitalize()}: {m.group(2).strip()}"
+        if line not in standing: standing.append(line)
+    r=find_restaurant(d,"Limmareds Wärdshus")
+    if not r: raise ValueError("restaurant missing")
+    for key,ds in parsed.items():
+        dishes=list(ds[:6])
+        for s in standing:
+            if s not in dishes: dishes.append(s)
+        r.setdefault("menu",{})[key]={"verified":True,"dishes":dishes[:8],"source_url":url}
+    r["source_url"]=url
+    return len(parsed)
+
 def main():
     d=json.loads(DATA.read_text(encoding="utf-8"))
     now=datetime.now(TZ); week=now.isocalendar().week; log=[]
@@ -158,10 +208,20 @@ def main():
     except Exception as e:
         log.append(f"glasets: {e}")
     try:
+        n,method=kabyssen(d,week)
+        log.append(f"kabyssen: ok ({n} days, {method})")
+    except Exception as e:
+        log.append(f"kabyssen: {e}")
+    try:
         n=sangbergs(d,week)
         log.append(f"sangbergs: ok ({n} days)")
     except Exception as e:
         log.append(f"sangbergs: {e}")
+    try:
+        n=limmared(d,week)
+        log.append(f"limmared: ok ({n} days)")
+    except Exception as e:
+        log.append(f"limmared: {e}")
     d["updated_at"]=now.strftime("%Y-%m-%d %H:%M")
     d["iso_week"]=week
     d["update_log"]=log

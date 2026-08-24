@@ -1,7 +1,6 @@
 {
-  "updated_at": "2026-08-24 10:03",
+  "updated_at": "2026-08-19 21:55",
   "timezone": "Europe/Stockholm",
-  "iso_week": 35,
   "restaurants": [
     {
       "name": "Kabyssen",
@@ -11,40 +10,34 @@
       "includes": "Salladsbuffé och kaffe ingår.",
       "source_url": "https://kabyssen-dalstorp.se/rezepte",
       "menu": {
-        "monday": {
-          "verified": true,
-          "dishes": [
-            "Korv stroganoff med ris"
-          ]
-        },
-        "tuesday": {
-          "verified": true,
-          "dishes": [
-            "Pannbiff med gräddsås, ärtor och potatismos",
-            "Långbakad högrev med tomat/vitlökssås samt ris"
-          ]
-        },
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Panerad fisk med remouladsås och kokt potatis",
-            "Gulaschsoppa + pannkaka, sylt och grädde"
+            "Nötgryta med blåbär och ris",
+            "Köttfärssoppa med purjolök och färskost + pannkaka, sylt och grädde",
+            "Veckans pasta: köttfärssås",
+            "Veckans sallad: skinka, ägg och ost"
           ]
+        },
+        "monday": {
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+        },
+        "tuesday": {
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "thursday": {
-          "verified": true,
-          "dishes": [
-            "Kabyssens panerade schnitzel med ugnsbakad potatis, pommes, grönsaker och bearnaisesås",
-            "Kabyssens panerade kyckling med ugnsbakad potatis, pommes, grönsaker och bearnaisesås"
-          ]
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "friday": {
-          "verified": true,
-          "dishes": [
-            "Ugnsbakad fisk med citron/röslöksås samt kokt potatis",
-            "Veckans pasta: Räkor i krämig dillsås",
-            "Veckans sallad: Sallad med BBQ kycklingvingar"
-          ]
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         }
       }
     },
@@ -53,55 +46,37 @@
       "town": "Limmared",
       "price": "120 kr",
       "lunch_time": "11.30–14.30",
-      "source_url": "https://limmaredsvardshus.se/lunchmeny/",
+      "source_url": "https://limmaredsvardshus.se/",
       "menu": {
-        "monday": {
-          "verified": true,
-          "dishes": [
-            "Stekt strömming med potatismos & lingon",
-            "Boeuf Bourguignon med ris",
-            "Veckans vego: Morotsbiff med potatisgratäng",
-            "Veckans pasta: Bolognese med parmesan",
-            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
-          ]
-        },
-        "tuesday": {
-          "verified": true,
-          "dishes": [
-            "Rotmos med rimmad bog",
-            "Havets Wallenbergare med potatismos, brynt smör & ärtor",
-            "Veckans vego: Morotsbiff med potatisgratäng",
-            "Veckans pasta: Bolognese med parmesan",
-            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
-          ]
-        },
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Baconlindad köttfärslimpa med potatis, brunsås, inlagd gurka & lingon",
-            "Veckans vego: Morotsbiff med potatisgratäng",
-            "Veckans pasta: Bolognese med parmesan",
-            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
+            "Lasagne",
+            "Ugnsstekt falukorv med potatismos och stekt färsk vitkål",
+            "Veckans vego: äggnudlar",
+            "Pasta med ädelost och bacon",
+            "Tonfisksallad"
           ]
+        },
+        "monday": {
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+        },
+        "tuesday": {
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "thursday": {
-          "verified": true,
-          "dishes": [
-            "Ärtsoppa med rabarberpaj & vaniljsås",
-            "Nötköttgryta med potatis",
-            "Veckans vego: Morotsbiff med potatisgratäng",
-            "Veckans pasta: Bolognese med parmesan",
-            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
-          ]
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "friday": {
-          "verified": true,
-          "dishes": [
-            "Flygande Jacob (banan, jordnötter, bacon & kyckling) med ris",
-            "Veckans vego: Morotsbiff med potatisgratäng",
-            "Veckans pasta: Bolognese med parmesan",
-            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
-          ]
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         }
       }
     },
@@ -113,93 +88,66 @@
       "includes": "Salladsbuffé, måltidsdryck, kaffe och kaka ingår.",
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
+        "wednesday": {
+          "verified": false,
+          "status": "Aktuell rätt ej verifierad",
+          "message": "Den officiella sidan visar en äldre veckomeny. Ingen gammal rätt visas som dagens."
+        },
         "monday": {
-          "verified": true,
-          "dishes": [
-            "Isterband serveras med dillstuvad potatis"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "tuesday": {
-          "verified": true,
-          "dishes": [
-            "Grekiska biffar serveras med klyftpotatis och tzaziki"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
-        },
-        "wednesday": {
-          "verified": true,
-          "dishes": [
-            "Stekt panerad sejfilé serveras med remouladsås och kokt potatis"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "thursday": {
-          "verified": true,
-          "dishes": [
-            "Ugnsbakad kotlettrad serveras med rostade rotfrukter och chilibea"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "friday": {
-          "verified": true,
-          "dishes": [
-            "Flygande Jacob med ris toppas med jordnötter och bacon",
-            "Friterad blomkål serveras med blomkålspuré och grillad zucchini",
-            "Krämig pastasallad med kyckling",
-            "Närproducerad mat lagad från grunden",
-            "Allergier"
-          ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         }
       }
     },
     {
       "name": "Glasets Hus",
       "town": "Limmared",
-      "price": "120 kr",
-      "lunch_time": "11.30–14.30",
-      "includes": "Salladsbord, kaffe och kaka ingår.",
-      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "price": "Lunch + café",
+      "lunch_time": "09.00–16.00",
+      "source_url": "https://www.instagram.com/glasetshuslimmared",
       "menu": {
+        "wednesday": {
+          "verified": false,
+          "status": "Väntar på veckomeny",
+          "message": "Aktuell dagsrätt publiceras när vecka och veckodag har verifierats från @glasetshuslimmared."
+        },
         "monday": {
           "verified": false,
-          "status": "Ingen lunchservering",
-          "message": "Dagens maträtt serveras tisdag–fredag."
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "tuesday": {
-          "verified": true,
-          "dishes": [
-            "Ugnsbakad lax i citronsås serveras med kokt potatis",
-            "Veckans gröna: Vegetarisk lasagne"
-          ]
-        },
-        "wednesday": {
-          "verified": true,
-          "dishes": [
-            "Krämig kycklinggryta serveras med ris",
-            "Veckans gröna: Vegetarisk lasagne"
-          ]
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "thursday": {
-          "verified": true,
-          "dishes": [
-            "Stekt fläsk serveras med hemmagjord raggmunk och lingonsylt",
-            "Veckans gröna: Vegetarisk lasagne"
-          ]
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         },
         "friday": {
-          "verified": true,
-          "dishes": [
-            "Panerad fisk serveras med kokt potatis & dansk remouladsås",
-            "Veckans gröna: Vegetarisk lasagne"
-          ]
+          "verified": false,
+          "status": "Ingen sparad meny",
+          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
         }
       }
     }
-  ],
-  "update_log": [
-    "glasets: current week 35 not found",
-    "sangbergs: ok (5 days)"
   ]
 }
