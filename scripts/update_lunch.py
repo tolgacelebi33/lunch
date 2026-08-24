@@ -12,6 +12,15 @@ DATA = ROOT / "data" / "lunch.json"
 TZ = ZoneInfo("Europe/Stockholm")
 DAY = {"måndag":"monday","tisdag":"tuesday","onsdag":"wednesday","torsdag":"thursday","fredag":"friday"}
 DAY_RE = r"(måndag|tisdag|onsdag|torsdag|fredag)"
+# lördag/söndag ingår bara som gräns-markörer (se extract_days_from_text), inte som sparade dagar.
+# "ö" läses ibland som "é" av tesseract i vissa typsnitt, båda varianterna accepteras.
+ALL_DAY_RE = r"(måndag|tisdag|onsdag|torsdag|fredag|l[öeé]rdag|s[öeé]ndag)"
+
+def _norm_day(name):
+    n=name.lower()
+    if n.startswith("l"): return "lördag"
+    if n.startswith("s"): return "söndag"
+    return n
 
 def fetch_bytes(url):
     req = Request(url, headers={
@@ -47,14 +56,23 @@ def clean_lines(chunk):
     return out
 
 def extract_days_from_text(text):
-    hits=list(re.finditer(r"(?i)\b"+DAY_RE+r"\b(?:\s+\d{1,2}\s*[/\.\-]\s*\d{1,2})?\s*:?", text))
+    # Kräver att dagnamnet står i radens början (tillåter ledande whitespace).
+    # Detta hindrar att ord som "tisdag" mitt i ett citat, eller en felläst
+    # rubrikrad, tolkas som en egen dagrubrik och skriver över rätt data.
+    # lördag/söndag räknas som gräns (så fredag inte svämmar över i helgen)
+    # men sparas inte som egna dagar. OCR läser ofta "ö" som "é" i vissa
+    # typsnitt, så båda varianterna accepteras för lördag/söndag.
+    pat = re.compile(r"(?im)^\s*"+ALL_DAY_RE+r"\b(?:\s+\d{1,2}\s*[/\.\-]\s*\d{1,2})?\s*:?")
+    hits=list(pat.finditer(text))
     out={}
     for i,m in enumerate(hits):
-        key=DAY[m.group(1).lower()]
+        name=_norm_day(m.group(1))
         stop=hits[i+1].start() if i+1<len(hits) else min(len(text),m.end()+1300)
+        if name not in DAY: continue
+        key=DAY[name]
         ds=clean_lines(text[m.end():stop])
-        ds=[x for x in ds if not re.fullmatch(r"(?i)"+DAY_RE+r".*",x)]
-        if ds:
+        ds=[x for x in ds if not re.fullmatch(r"(?i)"+ALL_DAY_RE+r".*",x)]
+        if ds and key not in out:   # första träffen vinner, ingen tyst överskrivning
             out[key]=ds[:8]
     return out
 
@@ -96,6 +114,29 @@ def ocr_image(url):
         im=im.resize((int(im.width*scale),int(im.height*scale)))
     return pytesseract.image_to_string(im,lang="swe+eng")
 
+def pdf_to_text(raw_bytes):
+    try:
+        import pymupdf as fitz
+    except ImportError:
+        import fitz  # äldre PyMuPDF-versioner
+    doc = fitz.open(stream=raw_bytes, filetype="pdf")
+    return "\n".join(page.get_text() for page in doc)
+
+def pdf_to_ocr_text(raw_bytes):
+    try:
+        import pymupdf as fitz
+    except ImportError:
+        import fitz
+    from PIL import Image
+    import pytesseract
+    doc = fitz.open(stream=raw_bytes, filetype="pdf")
+    out=[]
+    for page in doc:
+        pix = page.get_pixmap(matrix=fitz.Matrix(2.5, 2.5))
+        im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+        out.append(pytesseract.image_to_string(im, lang="swe+eng"))
+    return "\n".join(out)
+
 def text_or_ocr_menu(url, week):
     """Delad logik: försök läsa dagar direkt ur sidans text, annars
     leta upp en menybild och kör OCR på den. Används av restauranger
@@ -133,20 +174,44 @@ def glasets(d, week):
     return len(parsed),method
 
 def kabyssen(d, week):
-    # OBS: kabyssen-dalstorp.se/rezepte har inte gått att förhandsgranska
-    # (robots.txt blockerar automatiserade läsverktyg). Restaurangen har
-    # gett muntligt godkännande till hämtning, men den här funktionen är
-    # ANDVÄND UTAN att strukturen kunnat verifieras mot en levande sida -
-    # kör workflow_dispatch och läs "kabyssen: ..."-raden i loggen innan
-    # ni litar på resultatet.
-    url="https://kabyssen-dalstorp.se/rezepte"
-    parsed, method = text_or_ocr_menu(url, week)
+    # Menyn ligger som PDF (inbäddad via Google Docs-viewer), inte som text eller
+    # bild på själva sidan. Vi hittar PDF-URL:en dynamiskt i sidans HTML (istället
+    # för att hårdkoda filnamnet, ifall restaurangen döper om filen framöver),
+    # laddar ner PDF:en direkt och läser av text/OCR från den.
+    page_url = "https://kabyssen-dalstorp.se/rezepte"
+    html, _ = fetch_text(page_url)
+    pdf_urls = []
+    for m in re.finditer(r'docs\.google\.com/viewer\?url=([^&"\'<>]+)', html, re.I):
+        from urllib.parse import unquote
+        pdf_urls.append(unquote(m.group(1)))
+    if not pdf_urls:
+        # fallback: leta efter en direkt .pdf-lank pa sidan om Google Docs-viewern skulle bytas ut
+        pdf_urls = [urljoin(page_url, u) for u in re.findall(r'(?is)(?:src|href)=["\']([^"\']+\.pdf)["\']', html)]
+    if not pdf_urls:
+        raise ValueError("no menu PDF found on page")
+    # Prioritera en fil som inte ser ut som pizzamenyn, annars ta forsta traffen
+    pdf_url = next((u for u in pdf_urls if "pizza" not in u.lower()), pdf_urls[0])
+
+    raw, ctype, _ = fetch_bytes(pdf_url)
+    text = pdf_to_text(raw)
+    method = "pdf-text"
+    if not re.search(rf"(?i)\b(?:vecka|v\.?)\s*{week}\b", text) or len(extract_days_from_text(text)) < 3:
+        ocr_text = pdf_to_ocr_text(raw)
+        if re.search(rf"(?i)\b(?:vecka|v\.?)\s*{week}\b", ocr_text):
+            text = ocr_text
+            method = "pdf-ocr"
+
+    if not re.search(rf"(?i)\b(?:vecka|v\.?)\s*{week}\b", text):
+        raise ValueError(f"current week {week} not found in menu PDF")
+    parsed = extract_days_from_text(text)
+    if not parsed:
+        raise ValueError("menu PDF found for current week but no weekdays could be parsed")
     r=find_restaurant(d,"Kabyssen")
     if not r: raise ValueError("restaurant missing")
     for key,ds in parsed.items():
-        r.setdefault("menu",{})[key]={"verified":True,"dishes":ds,"source_url":url}
-    r["source_url"]=url
-    return len(parsed),method
+        r.setdefault("menu",{})[key]={"verified":True,"dishes":ds,"source_url":page_url}
+    r["source_url"]=page_url
+    return len(parsed), method
 
 def sangbergs(d,week):
     url="https://www.sangbergs.se/lunchmeny"

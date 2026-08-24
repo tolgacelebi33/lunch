@@ -33,7 +33,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y tesseract-ocr tesseract-ocr-swe
-          pip install --quiet pillow pytesseract
+          pip install --quiet pillow pytesseract pymupdf
 
       - name: Update lunch
         timeout-minutes: 2
