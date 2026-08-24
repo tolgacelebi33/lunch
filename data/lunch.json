@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25 00:37",
+  "updated_at": "2026-08-25 01:33",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -47,8 +47,7 @@
             "ugnsbakad potatis, pommes, grönsaker",
             "och bearnaisesås",
             "L2: Kabyssen´s panerade kyckling med",
-            "ugnsbakad potatis, pommes, grönsaker",
-            "och bearnaisesås"
+            "ugnsbakad potatis, pommes, grönsaker"
           ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte"
         },
@@ -59,10 +58,7 @@
             "samt kokt potatis",
             "Veckans pasta: Veckans sallad",
             "Räkor i krämig dillsås Sallad med BBQ",
-            "kycklingvingar",
-            "mf: mjölkfri; gf: glutenfri",
-            "Vid allergier eller om köttets ursprung, fråga",
-            "personalen om ingredienserna."
+            "kycklingvingar"
           ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte"
         }
@@ -229,9 +225,11 @@
   "iso_week": 35,
   "update_log": [
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/08/M-v35.jpg)",
-    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
+    "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Centralen / Sångbergs friday: 10 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ]
