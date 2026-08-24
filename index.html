@@ -371,7 +371,7 @@ footer{
 
 /* Inköpsradar */
 .commodity-bar{
-  background:var(--hav);
+  background:var(--black);
   color:var(--white);
   overflow:hidden;
   border-bottom:1px solid rgba(255,255,255,.18);
@@ -398,13 +398,14 @@ footer{
   padding:11px 26px;
   border-right:1px solid rgba(255,255,255,.16);
   font-size:12px;
+  font-weight:700;
 }
 .commodity-item strong{
   font-size:12.5px;
   letter-spacing:.05em;
   font-weight:700;
 }
-.commodity-item .c-price{opacity:.82;font-variant-numeric:tabular-nums}
+.commodity-item .c-price{opacity:.92;font-variant-numeric:tabular-nums;font-weight:700}
 .commodity-item .metric{
   opacity:.95;
   padding:2px 8px;
@@ -686,7 +687,6 @@ async function loadStories(){
       <div class="eyebrow">${esc(n.category||"SVT Nyheter")}</div>
       <h3 class="name">${esc(n.title||"Aktuell nyhet")}</h3>
       ${n.summary?`<p>${esc(n.summary)}</p>`:""}
-      ${n.talk_about?`<div class="extra"><strong>Prata om:</strong> ${esc(n.talk_about)}</div>`:""}
       <div class="card-footer"><span>${esc(n.source||"SVT")}${n.date?` · ${esc(n.date)}`:""}</span>${n.url?`<a class="source" href="${esc(n.url)}" target="_blank" rel="noopener">Läs nyheten</a>`:""}</div>
     </article>`).join("");
     grid.innerHTML=newsCards;

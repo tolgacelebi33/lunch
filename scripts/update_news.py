@@ -41,7 +41,7 @@ def main():
                 score=2 if GOOD.search(title+" "+desc) else 0
                 all_items.append((score,{
                   "title":title,"summary":desc[:280],"category":"SVT Nyheter",
-                  "source":"SVT","date":"","talk_about":"Vad tycker du är mest intressant med det här?","url":link
+                  "source":"SVT","date":"","url":link
                 }))
         except Exception:
             pass
