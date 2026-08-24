@@ -399,7 +399,10 @@ footer{
   border-right:1px solid rgba(255,255,255,.16);
   font-size:12px;
   font-weight:700;
+  color:inherit;
+  text-decoration:none;
 }
+a.commodity-item:hover{background:rgba(255,255,255,.08)}
 .commodity-item strong{
   font-size:12.5px;
   letter-spacing:.05em;
@@ -661,13 +664,17 @@ async function loadCommodities(){
     const data=await res.json();
     const items=(data.items||[]).filter(x=>x && x.name);
     if(!items.length) throw new Error("empty");
-    const render=x=>`<div class="commodity-item">
+    const render=x=>{
+      const tag=x.source_url?"a":"div";
+      const link=x.source_url?` href="${esc(x.source_url)}" target="_blank" rel="noopener"`:"";
+      return `<${tag} class="commodity-item"${link}>
       <strong>${esc(x.name)}</strong>
       ${x.price!=null?`<span class="c-price">${sek(x.price)}${x.unit?`/${esc(x.unit.replace(/^kr\//,""))}`:""}</span>`:""}
       <span class="metric ${pctClass(x.week)}">v ${pct(x.week)}</span>
       <span class="metric ${pctClass(x.month)}">mån ${pct(x.month)}</span>
       ${x.proxy?`<span class="commodity-source">${esc(x.proxy)}</span>`:""}
-    </div>`;
+    </${tag}>`;
+    };
     const once=items.map(render).join("");
     track.innerHTML=once+once;
   }catch(e){
