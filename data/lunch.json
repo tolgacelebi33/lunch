@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22 00:39",
+  "updated_at": "2026-08-24 07:50",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -115,37 +115,37 @@
         "monday": {
           "verified": true,
           "dishes": [
-            "Pasta med kräftstjärtar i vittvinsås, dill och parmesan"
+            "Isterband serveras med dillstuvad potatis"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Stekt fläsk serveras med raggmunk och lingon alternativt kokt potatis och löksås"
+            "Grekiska biffar serveras med klyftpotatis och tzaziki"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Kålpudding på färs från Limmareds Säteri serveras med kokt potatis och lingon"
+            "Stekt panerad sejfilé serveras med remouladsås och kokt potatis"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Pankopanerad kyckling serveras med rostad potatis och mango-currydressing"
+            "Ugnsbakad kotlettrad serveras med rostade rotfrukter och chilibea"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Fiskgryta serveras med aioli och nybakat bröd",
-            "Falafel serveras med tzaziki och klyftpotatis",
-            "Caesarsallad med sallad från Björnhyltan",
+            "Flygande Jacob med ris toppas med jordnötter och bacon",
+            "Friterad blomkål serveras med blomkålspuré och grillad zucchini",
+            "Krämig pastasallad med kyckling",
             "Närproducerad mat lagad från grunden",
             "Allergier"
           ],
@@ -197,9 +197,9 @@
       "includes": "Salladsbord, kaffe och kaka ingår."
     }
   ],
-  "iso_week": 34,
+  "iso_week": 35,
   "update_log": [
-    "glasets: menu found for current week but no weekdays could be parsed from HTML or menu images",
+    "glasets: current week 35 not found",
     "sangbergs: ok (5 days)"
   ]
 }

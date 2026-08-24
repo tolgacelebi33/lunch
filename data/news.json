@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T00:39:19.985166+02:00",
+  "updated_at": "2026-08-24T07:50:43.947985+02:00",
   "items": [
     {
       "title": "Vad vill du veta om transplantationer?",
@@ -74,15 +74,6 @@
       "url": "https://www.svt.se/nyheter/vetenskap/har-aterskapas-2500-ar-gamla-lottningsmaskinen"
     },
     {
-      "title": "AI ska underlätta upptäckt av farligt andningssyndrom hos trubbnosiga hundar",
-      "summary": "Studenter på Chalmers i Göteborg har utvecklat en AI-baserad metod för att analysera andningen hos trubbnosiga hundar. Syftet är att smidigare avgöra om de lider av syndromet BOAS. Men tanken är också att vara en bromskloss för fortsatt skadlig avel.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/ai-ska-underlatta-upptackt-av-farligt-andningssyndrom-hos-trubbnosiga-hundar"
-    },
-    {
       "title": "Efter omstridda förändringen – nu öppnar nya akutvården i Ljungby",
       "summary": "Den nya akutvårdsavdelningen på Ljungby sjukhus invigdes under fredagen. Där ska patienter som behöver utredning, observation eller behandling under en kortare period kunna vårdas.",
       "category": "SVT Nyheter",
@@ -110,13 +101,31 @@
       "url": "https://www.svt.se/nyheter/lokalt/smaland/unga-tvingas-bo-hemma-langre-i-vaxjo-hor-politikernas-losning"
     },
     {
-      "title": "Statsvetaren Erik Wångmars framgångsrecept för nya partier",
-      "summary": "Att starta ett nytt parti och lyckas hålla sig kvar länge är inte omöjligt, men mycket svårt. Statsvetaren Erik Wångmar har god koll på vad som krävs för att ett nytt parti ska lyckas ta sig in i kommunfullmäktige.",
+      "title": "Nytt hopp i kampen mot antibiotikaresistent gonorré",
+      "summary": "Antibiotikaresistent gonorré är ett växande problem – särskilt i Sverige. Men forskningen söker nu nya sätt att behandla bakterier – och det kan ge fler verktyg mot framtidens infektioner. – Det kommer aldrig att vara som man trodde på 80-talet. Att nu har vi tillräckligt många a",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
       "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/lokalt/smaland/statsvetaren-erik-wangmars-framgangsrecept-for-nya-partier"
+      "url": "https://www.svt.se/nyheter/inrikes/nytt-hopp-i-kampen-mot-antibiotikaresistent-gonorre"
+    },
+    {
+      "title": "Stor klimatdemonstration i Stockholm: ”Rekord”",
+      "summary": "Omkring 50 000 personer och 280 olika organisationer deltar i eftermiddagens klimatdemonstration i Stockholm. – Jag är här för att se mina barn i ögonen, att jag försökte och att jag gjorde någonting, säger Alexandra Drotz Ruh.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/inrikes/stor-klimatdemonstration-i-stockholm-rekord"
+    },
+    {
+      "title": "Fouad Youcefi: Här är Sverigedemokraternas största problem",
+      "summary": "Sverigedemokraterna har ökat i varje val sedan de kom in i riksdagen 2010. Men inför valdagen står de inför ett problem – att lyckas växa i det område där de tidigare presterat som sämst. SVT:s valreporter Fouad Youcefi visar var i landet partiets akilleshäl finns.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "talk_about": "Vad tycker du är mest intressant med det här?",
+      "url": "https://www.svt.se/nyheter/inrikes/fouad-youcefi-har-ar-sverigedemokraternas-storsta-problem"
     },
     {
       "title": "Ingen mässling på skola i Järna",
@@ -126,15 +135,6 @@
       "date": "",
       "talk_about": "Vad tycker du är mest intressant med det här?",
       "url": "https://www.svt.se/nyheter/inrikes/skola-i-jarna-drabbad-av-massling"
-    },
-    {
-      "title": "Professorn: Hela landet lever inte i dag – än mindre i framtiden",
-      "summary": "Känslan av bortglömdhet som återkommer i SVT:s intervjuer från glesbygden i norra Värmland förvånar inte Charlotta Mellander, professor i nationalekonomi vid Internationella handelshögskolan i Jönköping. Från politiskt håll efterfrågar hon nytänkande lösningar och större tydlighe",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "talk_about": "Vad tycker du är mest intressant med det här?",
-      "url": "https://www.svt.se/nyheter/inrikes/professorn-hela-landet-lever-inte-i-dag-an-mindre-i-framtiden"
     },
     {
       "title": "Christina först i Norden med nya händer från avliden",
