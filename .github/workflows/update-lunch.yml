@@ -16,6 +16,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: lunch-update
@@ -39,6 +40,7 @@ jobs:
           pip install --quiet pillow pytesseract pymupdf
 
       - name: Update lunch
+        id: lunch
         timeout-minutes: 2
         run: python scripts/update_lunch.py
 
@@ -58,3 +60,28 @@ jobs:
           git add data/lunch.json data/news.json data/commodities.json data/commodities_history.json
           git diff --cached --quiet || git commit -m "Update lunch, news and market data"
           git push
+
+      - name: Flagga om flera restauranger misslyckades
+        if: steps.lunch.outputs.failed_count >= 2
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const failed = "${{ steps.lunch.outputs.failed_count }}";
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const title = "Lunch-pipeline: flera restauranger misslyckades";
+            const body = `${failed} restauranger kunde inte uppdateras i senaste körningen (${new Date().toISOString().slice(0,10)}).\n\nSe fullständig logg: ${runUrl}`;
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "lunch-pipeline"
+            });
+            if (existing.data.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: existing.data[0].number, body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ["lunch-pipeline"]
+              });
+            }

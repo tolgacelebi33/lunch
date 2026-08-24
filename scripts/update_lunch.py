@@ -163,13 +163,22 @@ def text_or_ocr_menu(url, week):
         raise ValueError("menu found for current week but no weekdays could be parsed from HTML or menu images")
     return parsed, method
 
+MAX_DISHES = 5
+_WARNINGS = []
+
+def save_day(r, key, dishes, source_url):
+    if len(dishes) > MAX_DISHES:
+        _WARNINGS.append(f"{r['name']} {key}: {len(dishes)} rader hittade, klippt till {MAX_DISHES} (kontrollera källan manuellt)")
+        dishes = dishes[:MAX_DISHES]
+    r.setdefault("menu", {})[key] = {"verified": True, "dishes": dishes, "source_url": source_url}
+
 def glasets(d, week):
     url="https://glasetshuslimmared.se/lunch/"
     parsed, method = text_or_ocr_menu(url, week)
     r=find_restaurant(d,"Glasets Hus")
     if not r: raise ValueError("restaurant missing")
     for key,ds in parsed.items():
-        r.setdefault("menu",{})[key]={"verified":True,"dishes":ds,"source_url":url}
+        save_day(r, key, ds, url)
     r["source_url"]=url
     return len(parsed),method
 
@@ -209,7 +218,7 @@ def kabyssen(d, week):
     r=find_restaurant(d,"Kabyssen")
     if not r: raise ValueError("restaurant missing")
     for key,ds in parsed.items():
-        r.setdefault("menu",{})[key]={"verified":True,"dishes":ds,"source_url":page_url}
+        save_day(r, key, ds, page_url)
     r["source_url"]=page_url
     return len(parsed), method
 
@@ -231,7 +240,7 @@ def sangbergs(d,week):
         ds=clean_lines(tail)
         ds=[x for x in ds if not re.search(r"(?i)^veckans |lunchmeny|boka bord|lunch kostar",x)]
         if ds:
-            r.setdefault("menu",{})[key]={"verified":True,"dishes":ds[:5],"source_url":url}
+            save_day(r, key, ds, url)
             parsed+=1
     if not parsed: raise ValueError("no current-week menu parsed")
     r["source_url"]=url
@@ -257,10 +266,10 @@ def limmared(d,week):
     r=find_restaurant(d,"Limmareds Wärdshus")
     if not r: raise ValueError("restaurant missing")
     for key,ds in parsed.items():
-        dishes=list(ds[:6])
+        dishes=list(ds[:4])
         for s in standing:
             if s not in dishes: dishes.append(s)
-        r.setdefault("menu",{})[key]={"verified":True,"dishes":dishes[:8],"source_url":url}
+        save_day(r, key, dishes, url)
     r["source_url"]=url
     return len(parsed)
 
@@ -289,9 +298,20 @@ def main():
         log.append(f"limmared: {e}")
     d["updated_at"]=now.strftime("%Y-%m-%d %H:%M")
     d["iso_week"]=week
+    log.extend(_WARNINGS)
     d["update_log"]=log
     DATA.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding="utf-8")
     print("\n".join(log))
+
+    restaurant_lines = [l for l in log if l.split(":",1)[0] in ("glasets","kabyssen","sangbergs","limmared")]
+    failed = [l for l in restaurant_lines if ": ok" not in l]
+    import os
+    gh_out = os.environ.get("GITHUB_OUTPUT")
+    if gh_out:
+        with open(gh_out, "a", encoding="utf-8") as f:
+            f.write(f"failed_count={len(failed)}\n")
+    if failed:
+        print(f"\n{len(failed)} restaurang(er) misslyckades: {', '.join(l.split(':')[0] for l in failed)}")
 
 if __name__=="__main__":
     main()
