@@ -1,0 +1,213 @@
+{
+  "updated_at": "2026-08-24 08:41",
+  "timezone": "Europe/Stockholm",
+  "iso_week": 35,
+  "restaurants": [
+    {
+      "name": "Kabyssen",
+      "town": "Dalstorp",
+      "price": "120 kr",
+      "lunch_time": "11.30–14.30",
+      "includes": "Salladsbuffé och kaffe ingår.",
+      "source_url": "https://kabyssen-dalstorp.se/rezepte",
+      "menu": {
+        "monday": {
+          "verified": true,
+          "dishes": [
+            "Korv stroganoff med ris"
+          ]
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Pannbiff med gräddsås, ärtor och potatismos",
+            "Långbakad högrev med tomat/vitlökssås samt ris"
+          ]
+        },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Panerad fisk med remouladsås och kokt potatis",
+            "Gulaschsoppa + pannkaka, sylt och grädde"
+          ]
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "Kabyssens panerade schnitzel med ugnsbakad potatis, pommes, grönsaker och bearnaisesås",
+            "Kabyssens panerade kyckling med ugnsbakad potatis, pommes, grönsaker och bearnaisesås"
+          ]
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Ugnsbakad fisk med citron/röslöksås samt kokt potatis",
+            "Veckans pasta: Räkor i krämig dillsås",
+            "Veckans sallad: Sallad med BBQ kycklingvingar"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Limmareds Wärdshus",
+      "town": "Limmared",
+      "price": "120 kr",
+      "lunch_time": "11.30–14.30",
+      "source_url": "https://limmaredsvardshus.se/lunchmeny/",
+      "menu": {
+        "monday": {
+          "verified": true,
+          "dishes": [
+            "Stekt strömming med potatismos & lingon",
+            "Boeuf Bourguignon med ris",
+            "Veckans vego: Morotsbiff med potatisgratäng",
+            "Veckans pasta: Bolognese med parmesan",
+            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
+          ]
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Rotmos med rimmad bog",
+            "Havets Wallenbergare med potatismos, brynt smör & ärtor",
+            "Veckans vego: Morotsbiff med potatisgratäng",
+            "Veckans pasta: Bolognese med parmesan",
+            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
+          ]
+        },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Baconlindad köttfärslimpa med potatis, brunsås, inlagd gurka & lingon",
+            "Veckans vego: Morotsbiff med potatisgratäng",
+            "Veckans pasta: Bolognese med parmesan",
+            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
+          ]
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "Ärtsoppa med rabarberpaj & vaniljsås",
+            "Nötköttgryta med potatis",
+            "Veckans vego: Morotsbiff med potatisgratäng",
+            "Veckans pasta: Bolognese med parmesan",
+            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
+          ]
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Flygande Jacob (banan, jordnötter, bacon & kyckling) med ris",
+            "Veckans vego: Morotsbiff med potatisgratäng",
+            "Veckans pasta: Bolognese med parmesan",
+            "Veckans sallad: Ost, skinka, ägg & rhode islanddressing"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Centralen / Sångbergs",
+      "town": "Tranemo",
+      "price": "140 kr",
+      "lunch_time": "11.30–14.00",
+      "includes": "Salladsbuffé, måltidsdryck, kaffe och kaka ingår.",
+      "source_url": "https://www.sangbergs.se/lunchmeny",
+      "menu": {
+        "monday": {
+          "verified": true,
+          "dishes": [
+            "Isterband serveras med dillstuvad potatis",
+            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
+            "Veckans alternativ: Krämig pastasallad med kyckling"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Grekiska biffar serveras med klyftpotatis och tzatziki",
+            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
+            "Veckans alternativ: Krämig pastasallad med kyckling"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
+        },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Stekt panerad sejfilé serveras med remouladsås och kokt potatis",
+            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
+            "Veckans alternativ: Krämig pastasallad med kyckling"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "Ugnsbakad kotlettrad serveras med rostade rotfrukter och chilibea",
+            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
+            "Veckans alternativ: Krämig pastasallad med kyckling"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Flygande Jacob med ris toppas med jordnötter och bacon",
+            "Veckans vegetariska: Friterad blomkål med blomkålspuré och grillad zucchini",
+            "Veckans alternativ: Krämig pastasallad med kyckling"
+          ],
+          "source_url": "https://www.sangbergs.se/lunchmeny"
+        }
+      }
+    },
+    {
+      "name": "Glasets Hus",
+      "town": "Limmared",
+      "price": "120 kr",
+      "lunch_time": "11.30–14.30",
+      "includes": "Salladsbord, kaffe och kaka ingår.",
+      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "menu": {
+        "monday": {
+          "verified": false,
+          "status": "Ingen lunchservering",
+          "message": "Dagens maträtt serveras tisdag–fredag."
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Ugnsbakad lax i citronsås serveras med kokt potatis",
+            "Veckans gröna: Vegetarisk lasagne"
+          ]
+        },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Krämig kycklinggryta serveras med ris",
+            "Veckans gröna: Vegetarisk lasagne"
+          ]
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk serveras med hemmagjord raggmunk och lingonsylt",
+            "Veckans gröna: Vegetarisk lasagne"
+          ]
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Panerad fisk serveras med kokt potatis & dansk remouladsås",
+            "Veckans gröna: Vegetarisk lasagne"
+          ]
+        }
+      }
+    }
+  ],
+  "update_log": [
+    "Kabyssen: vecka 35 verifierad från menybild",
+    "Limmareds Wärdshus: vecka 35 verifierad från webbsida/bild",
+    "Sångbergs: vecka 35 verifierad från webbsida/bild",
+    "Glasets Hus: vecka 35 verifierad från webbsida/bild"
+  ]
+}
