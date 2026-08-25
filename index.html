@@ -389,7 +389,9 @@ footer{
   animation:commodity-scroll 75s linear infinite;
   will-change:transform;
 }
-.commodity-bar:hover .commodity-track{animation-play-state:paused}
+@media (hover:hover){
+  .commodity-bar:hover .commodity-track{animation-play-state:paused}
+}
 .commodity-item{
   display:flex;
   align-items:baseline;
