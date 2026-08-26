@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T01:35:57.626121+02:00",
+  "updated_at": "2026-08-26T07:47:34.829945+02:00",
   "items": [
     {
       "title": "Vad vill du veta om transplantationer?",
@@ -74,14 +74,6 @@
       "url": "https://www.svt.se/nyheter/lokalt/smaland/efter-omstridda-forandringen-nu-oppnar-nya-akutvarden-i-ljungby"
     },
     {
-      "title": "Ironmanplatserna till nästa år sålde slut på rekordtid",
-      "summary": "Ville man ha en startplats i triathlonloppet Ironman i Kalmar nästa år gällde det att hänga på låset. Biljetterna sålde slut på en timme, vilket var rekordtid.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/smaland/ironmanplatserna-till-nasta-ar-salde-slut-pa-rekordtid"
-    },
-    {
       "title": "Buschs pik mot Kristersson: ”Vi är originalet”",
       "summary": "Ulf Kristerssons löfte om en avgiftsfri förskola är en av Moderaternas viktigaste satsningar inför valet. Men Ebba Busch tycker att Kristdemokraterna har en bättre lösning för Sveriges barnfamiljer. – Vi är originalet när det kommer till familjepartierna, säger KD-ledaren.",
       "category": "SVT Nyheter",
@@ -144,6 +136,14 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/vetenskap/robothundar-ska-skydda-bostadsomraden-i-atlanta"
+    },
+    {
+      "title": "Läs chatten om alkohol",
+      "summary": "Fråga Doktorn är tillbaka! Se oss på måndagar i Sverige Live. Alkohol är höstens första tema. Många dricker mer under sommaren – men när går alkoholvanorna över i ett riskbruk? Hur påverkas kroppen och när behöver jag söka hjälp? Husdoktorn Jens Persson och föreläsaren Anna Pierr",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-alkohol"
     }
   ]
 }
