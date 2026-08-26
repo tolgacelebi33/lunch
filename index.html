@@ -692,6 +692,11 @@ async function loadCommodities(){
     };
     const once=items.map(render).join("");
     track.innerHTML=once+once;
+    // iOS Safari kan låta en animation som läggs till dynamiskt (efter fetch)
+    // stå still tills en scroll tvingar fram omritning. Tvinga omstart direkt.
+    track.style.animation="none";
+    void track.offsetWidth;
+    track.style.animation="";
   }catch(e){
     track.innerHTML='<div class="commodity-item"><strong>Inköpsradar</strong><span>Marknadsdata tillfälligt otillgänglig</span></div>';
   }
