@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-28T08:04:35.572640+02:00",
+  "updated_at": "2026-08-28T08:55:18.304749+02:00",
   "items": [
     {
       "name": "Stål",
-      "price": 4423.0,
+      "price": 4413.0,
       "unit": "kr/t",
       "fx_rate": 1.4163,
       "fx_from": "CNY",
-      "day": 19.0,
+      "day": 12.0,
       "week": null,
-      "month": 3.24,
+      "month": 3.01,
       "ytd": null,
-      "yoy": 1.83,
+      "yoy": 1.6,
       "proxy": "Steel rebar",
       "source_url": "https://tradingeconomics.com/commodity/steel"
     },
