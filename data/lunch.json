@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28 19:24",
+  "updated_at": "2026-08-28 21:24",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -225,7 +225,7 @@
   "iso_week": 35,
   "update_log": [
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/08/M-v35.jpg)",
-    "kabyssen: current week 35 not found in menu PDF",
+    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
     "sangbergs: ok (5 days)",
     "limmared: vecka 35 not found",
     "Centralen / Sångbergs friday: 10 rader hittade, klippt till 5 (kontrollera källan manuellt)"
