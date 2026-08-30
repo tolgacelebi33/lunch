@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T21:25:45.903312+02:00",
+  "updated_at": "2026-08-30T15:46:17.368924+02:00",
   "items": [
     {
       "title": "Chatta om hjärntrötthet efter stroke",
@@ -66,14 +66,6 @@
       "url": "https://www.svt.se/nyheter/vetenskap/umeaforskarnas-upptackt-sa-kan-ai-hjalpa-efter-korsbandsskada"
     },
     {
-      "title": "Så här röstar du – en guide för dig som röstar för första gången",
-      "summary": "Den 13 september 2026 är det val till riksdag, region och kommun. Men du behöver inte vänta till valdagen – redan den 26 augusti öppnar förtidsröstningen.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/sa-har-rostar-du-en-guide-for-dig-som-rostar-for-forsta-gangen"
-    },
-    {
       "title": "Nooshi Dadgostar: Kan bära davidsstjärnan",
       "summary": "Nooshi Dadgostar tror att Vänsterpartiets engagemang i Palestinafrågan kan ha gjort att personer med antisemitiska åsikter sökt sig till partiet. I SVT:s Utfrågningen öppnar hon upp för att bära davidsstjärna. – Ja det skulle jag kunna göra, som stöd för den judiska minoriteten i",
       "category": "SVT Nyheter",
@@ -96,14 +88,6 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/inrikes/fouad-youcefi-sa-ska-v-stoppa-lackaget"
-    },
-    {
-      "title": "Nu inleds röstningen – ställ dina frågor om valet till experterna",
-      "summary": "Hur gör jag när jag röstar, måste man ha leg – och vad gör man om man ångrar sin röst? I dag inleds riksdagsvalet när förtidsröstningen öppnar i landet. Fouad Youcefi får svar från experter på era frågor om valet.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/inrikes/nu-inleds-rostningen-stall-dina-fragor-om-valet-till-experterna"
     },
     {
       "title": "Christina först i Norden med nya händer från avliden",
@@ -144,6 +128,22 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/vetenskap/for-dig-som-missade-solformorkelsen-har-ar-fler-rymdfenomen-att-spana-pa"
+    },
+    {
+      "title": "Följ solförmörkelsen med SVT",
+      "summary": "Under kvällen var solen till stora delar skymd av månen. Himlafenomenet kulminerade vid åttatiden.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/nu-blir-det-solformorkelse-folj-fenomenet-med-svt"
+    },
+    {
+      "title": "Så ska en av världens varmaste platser kylas ner",
+      "summary": "I sydöstra Irak ligger staden Basra. Här är det inte ovanligt att temperaturen uppnår 50 grader. Nu planteras träd och gräs i ett försök att kyla ned staden – och resten av landet.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/sa-ska-en-av-varldens-varmaste-platser-kylas-ner"
     }
   ]
 }

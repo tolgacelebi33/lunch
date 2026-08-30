@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T21:25:47.572159+02:00",
+  "updated_at": "2026-08-30T15:46:18.224322+02:00",
   "items": [
     {
       "name": "Stål",
@@ -17,29 +17,29 @@
     },
     {
       "name": "Plåt / HRC",
-      "price": 11362.0,
+      "price": 11343.0,
       "unit": "kr/t",
       "fx_rate": 9.5237,
       "fx_from": "USD",
-      "day": 13.0,
+      "day": 11.07,
       "week": 1.59,
-      "month": 0.0,
+      "month": -0.16,
       "ytd": 34.29,
-      "yoy": 50.44,
+      "yoy": 50.2,
       "proxy": "HRC Steel",
       "source_url": "https://tradingeconomics.com/commodity/hrc-steel"
     },
     {
       "name": "Trä",
-      "price": 5381.0,
+      "price": 5386.0,
       "unit": "kr/1000 bf",
       "fx_rate": 9.5237,
       "fx_from": "USD",
-      "day": 5.5,
+      "day": 6.04,
       "week": -4.87,
-      "month": -10.88,
+      "month": -10.8,
       "ytd": 15.83,
-      "yoy": 3.01,
+      "yoy": 3.11,
       "proxy": "Lumber",
       "source_url": "https://tradingeconomics.com/commodity/lumber"
     },
