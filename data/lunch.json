@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31 09:02",
+  "updated_at": "2026-08-31 13:33",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -186,7 +186,8 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Krämig kycklinggryta med ris oe"
+            "Stekt lunchkorv serveras med",
+            "potatismos och senapskräm"
           ],
           "source_url": "https://glasetshuslimmared.se/lunch/"
         },
@@ -198,24 +199,24 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Ugnsbakad lax i citronsås",
-            "serveras med kokt potatis"
+            "Pasta i pestosas med kycklinglårfiléag"
           ],
           "source_url": "https://glasetshuslimmared.se/lunch/"
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Stekt flask med hemmagjord Eon",
-            "raggmunk och lingonsylt"
+            "Kålpudding serveras med kokt",
+            "potatis, gräddsås och lingonsylt"
           ],
           "source_url": "https://glasetshuslimmared.se/lunch/"
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Panerad fisk med kokt potatis",
-            "och dansk remouladsås"
+            "Kycklingkebabgryta med ris",
+            "SN",
+            "lo"
           ],
           "source_url": "https://glasetshuslimmared.se/lunch/"
         }
@@ -265,14 +266,14 @@
   ],
   "iso_week": 36,
   "update_log": [
-    "glasets: current week 36 not found",
+    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/08/M-v36.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Centralen / Sångbergs friday: 10 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
+    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ]
 }

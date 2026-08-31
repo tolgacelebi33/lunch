@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T03:22:03.027799+02:00",
+  "updated_at": "2026-08-31T13:33:58.782294+02:00",
   "items": [
     {
       "title": "Chatta om hjärntrötthet efter stroke",
@@ -66,22 +66,6 @@
       "url": "https://www.svt.se/nyheter/vetenskap/umeaforskarnas-upptackt-sa-kan-ai-hjalpa-efter-korsbandsskada"
     },
     {
-      "title": "Nooshi Dadgostar: Kan bära davidsstjärnan",
-      "summary": "Nooshi Dadgostar tror att Vänsterpartiets engagemang i Palestinafrågan kan ha gjort att personer med antisemitiska åsikter sökt sig till partiet. I SVT:s Utfrågningen öppnar hon upp för att bära davidsstjärna. – Ja det skulle jag kunna göra, som stöd för den judiska minoriteten i",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/inrikes/nooshi-dadgostar-kan-bara-davidsstjarnan"
-    },
-    {
-      "title": "”Vänsterpartiet har ägnat fyra år åt att förbereda sig på ett chicken-race”",
-      "summary": "Vänsterpartiet har ägnat fyra år åt att förbereda sig på det chicken-race som kan vänta vid en rödgrön valseger. Och förutsatt att deras mandat behövs så kommer de driva sitt krav på ministerposter ända in i kaklet. Men om Socialdemokraterna hittar en annan lösning för majoritet ",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/inrikes/vansterpartiet-har-agnat-fyra-ar-at-att-forbereda-sig-pa-ett-chicken-race"
-    },
-    {
       "title": "Christina först i Norden med nya händer från avliden",
       "summary": "Christina tvingades amputera sina händer efter att ha drabbats av sepsis. I dag är hon dubbelt handtransplanterad, men ingreppet har samtidigt gjort att hon är beroende av livslång och riskfylld medicinering. – Jag kan känna mina barnbarn, det är jätteviktigt.",
       "category": "SVT Nyheter",
@@ -144,6 +128,22 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/vetenskap/ny-studie-fler-unga-soker-vard-efter-hormonbehandling"
+    },
+    {
+      "title": "Ny studie: Kvinnor som fött pojkar lever längre",
+      "summary": "En ny dansk studie visar att mammor till pojkar i snitt lever 1,6 år längre än andra kvinnor. Delar av barnets dna överförs till mamman under graviditeten – och det tycks finnas ett samband mellan manliga celler i kvinnokroppen och minskad risk för olika former av cancer. – En gr",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/ny-studie-kvinnor-som-fott-pojkar-lever-langre"
+    },
+    {
+      "title": "AI avgör äkthet i konstvärlden",
+      "summary": "Äkta eller falsk? Det kunde den svenske köparen inte veta när hen köpte tavlan ”Ung kvinna med pälskrage” för ungefär 15 år sedan. Men nu har ny AI-teknik lagt fram bevis för att målningen med största sannolikhet är gjord av den kände modernisten Amedeo Modigliani.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/ai-avgor-akthet-i-konstvarlden"
     }
   ]
 }
