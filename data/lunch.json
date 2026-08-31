@@ -220,6 +220,47 @@
           "source_url": "https://glasetshuslimmared.se/lunch/"
         }
       }
+    },
+    {
+      "name": "Orkidé Thai",
+      "town": "Tranemo",
+      "price": "Lunchbuffé",
+      "lunch_time": "11.30–14.00 (ons–fre)",
+      "includes": "Fast lunchbuffé ons–fre, ingen dagsspecifik rätt publicerad. Stängt måndagar, ingen lunch tisdagar (öppnar 16.00). Statiska uppgifter, bekräftade mot källan manuellt – inte del av den automatiska veckokontrollen.",
+      "source_url": "https://www.orkidethai.com/",
+      "menu": {
+        "monday": {
+          "verified": false,
+          "status": "Stängt",
+          "message": "Restaurangen har stängt på måndagar."
+        },
+        "tuesday": {
+          "verified": false,
+          "status": "Ingen lunch",
+          "message": "Öppnar först 16.00 på tisdagar – ingen lunchservering."
+        },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+          ],
+          "source_url": "https://www.orkidethai.com/"
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+          ],
+          "source_url": "https://www.orkidethai.com/"
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+          ],
+          "source_url": "https://www.orkidethai.com/"
+        }
+      }
     }
   ],
   "iso_week": 36,
