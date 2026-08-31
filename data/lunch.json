@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30 15:46",
+  "updated_at": "2026-08-31 02:26",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -13,17 +13,16 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "L1: Panerad fisk med remouladsås och",
-            "kokt potatis (mf)",
-            "L2: Gulaschsoppa + pannkaka, sylt och",
-            "grädde"
+            "L1: Lasagne",
+            "L2: Ärtsoppa + pannkaka, sylt och grädde"
           ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte"
         },
         "monday": {
           "verified": true,
           "dishes": [
-            "L1: Korv stroganoff med ris (gf)",
+            "L1: Pytt i panna med kyckling, stekt ägg",
+            "och rödbetor (gf, mf)",
             "Pizza och hamburgare meny gäller",
             "må – fr. kl. 12:00 – 14:30, tor. 16:30 – 19:00,",
             "fr. 16:30 – 20:00, lördag 16:00 – 20:00"
@@ -33,10 +32,10 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "L1: Pannbiff med gräddsås, ärtor och",
-            "potatismos (gf)",
-            "L2: Långbakad högrev med",
-            "tomat/vitlökssås samt ris (gf, mf)"
+            "L1: Stekt fläsk med raggmunk, löksås och",
+            "lingon",
+            "L2: Ugnsbakad fransyska med kokt",
+            "potatis och rödkål (gf, mf)"
           ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte"
         },
@@ -44,21 +43,21 @@
           "verified": true,
           "dishes": [
             "L1: Kabyssen´s panerade schnitzel med",
-            "ugnsbakad potatis, pommes, grönsaker",
-            "och bearnaisesås",
+            "potatisgratäng, klyftpotatis, grönsaker",
+            "och paprikasås",
             "L2: Kabyssen´s panerade kyckling med",
-            "ugnsbakad potatis, pommes, grönsaker"
+            "potatisgratäng, klyftpotatis, grönsaker"
           ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte"
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Ugnsbakad fisk med citron/gräslök sås",
-            "samt kokt potatis",
+            "Stekt strömming med potatismos och",
+            "lingon",
             "Veckans pasta: Veckans sallad",
-            "Räkor i krämig dillsås Sallad med BBQ",
-            "kycklingvingar"
+            "Strimlad fläskkarré Caesarsallad med",
+            "i krämig svampsås kyckling"
           ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte"
         }
@@ -74,54 +73,55 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Baconlindad köttfärslimpa med potatis, brunsås, inlagd gurka & lingon",
-            "Veckans Vego: Morotsbiff med potatisgratäng",
-            "Veckans Pasta: Bolognese med parmesan",
-            "Veckans Sallad: Ost, skinka, ägg & rhode islanddressing"
+            "Pytt i panna med stekt ägg & rödbetor",
+            "Kålpudding med potatis, gräddsås & lingon",
+            "Veckans Vego: Pasta med pesto, tomat & oliver",
+            "Veckans Pasta: Fläskkött i currysås",
+            "Veckans Sallad: Laxröra med rödlök & ägg"
           ],
           "source_url": "https://limmaredsvardshus.se/"
         },
         "monday": {
           "verified": true,
           "dishes": [
-            "Stekt strömming med potatismos & lingon",
-            "Boeuf Bourguignon med ris",
-            "Veckans Vego: Morotsbiff med potatisgratäng",
-            "Veckans Pasta: Bolognese med parmesan",
-            "Veckans Sallad: Ost, skinka, ägg & rhode islanddressing"
+            "Panerad spätta med kokt potatis & remouladsås",
+            "Prinskorv med stuvad spenat, potatis & ägghalva",
+            "Veckans Vego: Pasta med pesto, tomat & oliver",
+            "Veckans Pasta: Fläskkött i currysås",
+            "Veckans Sallad: Laxröra med rödlök & ägg"
           ],
           "source_url": "https://limmaredsvardshus.se/"
         },
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Rotmos med rimmad bog",
-            "Havets Wallenbergare med potatismos, brynt smör & ärtor",
-            "Veckans Vego: Morotsbiff med potatisgratäng",
-            "Veckans Pasta: Bolognese med parmesan",
-            "Veckans Sallad: Ost, skinka, ägg & rhode islanddressing"
+            "Stekt fläsk med raggmunk & lingon",
+            "Stekt fläsk med potatis & löksås",
+            "Spaghetti med köttfärssås",
+            "Veckans Vego: Pasta med pesto, tomat & oliver",
+            "Veckans Pasta: Fläskkött i currysås"
           ],
           "source_url": "https://limmaredsvardshus.se/"
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Ärtsoppa med rabarberpaj & vaniljsås",
-            "Nötköttgryta med potatis",
-            "Veckans Vego: Morotsbiff med potatisgratäng",
-            "Veckans Pasta: Bolognese med parmesan",
-            "Veckans Sallad: Ost, skinka, ägg & rhode islanddressing"
+            "Kyckling i currysås med ris",
+            "Mexikansk köttgryta med potatis",
+            "Veckans Vego: Pasta med pesto, tomat & oliver",
+            "Veckans Pasta: Fläskkött i currysås",
+            "Veckans Sallad: Laxröra med rödlök & ägg"
           ],
           "source_url": "https://limmaredsvardshus.se/"
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Flygande Jacob (banan, jordnötter, bacon & kyckling) med ris",
-            "Veckans Vego : Morotsbiff med potatisgratäng",
-            "Veckans Pasta : Bolognese med parmesan",
-            "Veckans Sallad : Ost, skinka, ägg & rhode islanddressing",
-            "Veckans Vego: Morotsbiff med potatisgratäng"
+            "Pankopanerad benfri kotlett med grönsaksgryta, råstekt potatis & bearnaisesås",
+            "Veckans Vego : Pasta med pesto, tomat & oliver",
+            "Veckans Pasta : Fläskkött i currysås",
+            "Veckans Sallad : Laxröra med rödlök & ägg",
+            "Veckans Vego: Pasta med pesto, tomat & oliver"
           ],
           "source_url": "https://limmaredsvardshus.se/"
         }
@@ -222,12 +222,15 @@
       }
     }
   ],
-  "iso_week": 35,
+  "iso_week": 36,
   "update_log": [
-    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/08/M-v35.jpg)",
-    "kabyssen: current week 35 not found in menu PDF",
-    "sangbergs: ok (5 days)",
-    "limmared: vecka 35 not found",
-    "Centralen / Sångbergs friday: 10 rader hittade, klippt till 5 (kontrollera källan manuellt)"
+    "glasets: current week 36 not found",
+    "kabyssen: ok (5 days, pdf-text)",
+    "sangbergs: no current-week menu parsed",
+    "limmared: ok (5 days)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Limmareds Wärdshus tuesday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ]
 }
