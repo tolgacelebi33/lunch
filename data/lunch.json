@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31 03:21",
+  "updated_at": "2026-08-31 09:02",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -138,37 +138,37 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Stekt panerad sejfilé serveras med remouladsås och kokt potatis"
+            "Ångad kolja serveras med brynt smör, pepparrot, hackat ägg, dill och kokt potatis"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "monday": {
           "verified": true,
           "dishes": [
-            "Isterband serveras med dillstuvad potatis"
+            "Ugnsgratinerad broccoli med tomat och örter serveras med potatis och säteriets prinskorv"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Grekiska biffar serveras med klyftpotatis och tzaziki"
+            "Stekt fläsk serveras med raggmunk och lingon alternativt kokt potatis och löksås"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Ugnsbakad kotlettrad serveras med rostade rotfrukter och chilibea"
+            "Kycklinggryta med röd curry och kokt ris"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny"
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Flygande Jacob med ris toppas med jordnötter och bacon",
-            "Friterad blomkål serveras med blomkålspuré och grillad zucchini",
-            "Krämig pastasallad med kyckling",
+            "Panerad spätta serveras med kokt potatis och kräftstjärtröra",
+            "Pasta ribollita",
+            "Pasta bolognese toppas med parmesan",
             "Närproducerad mat lagad från grunden",
             "Allergier"
           ],
@@ -226,11 +226,12 @@
   "update_log": [
     "glasets: current week 36 not found",
     "kabyssen: ok (5 days, pdf-text)",
-    "sangbergs: no current-week menu parsed",
+    "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
-    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Centralen / Sångbergs friday: 10 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
+    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ]
 }
