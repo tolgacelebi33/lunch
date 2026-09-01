@@ -1,6 +1,70 @@
 {
-  "updated_at": "2026-08-31T17:04:56.836193+02:00",
+  "updated_at": "2026-09-01T03:14:09.989020+02:00",
   "items": [
+    {
+      "title": "Läs chatten om hjärntrötthet efter stroke",
+      "summary": "Måndag den 31 augusti handlade Fråga Doktorn om hjärntrötthet efter stroke och överläkaren och forskaren Xiaolei Hu svarade på frågor här i chatten.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-hjarntrotthet-efter-stroke"
+    },
+    {
+      "title": "Vad vill du veta om transplantationer?",
+      "summary": "Här kan du chatta med: • Per Fredrikson, handkirurgen bakom en av Sveriges mest kontroversiella transplantationer • Pia Löwhagen, donationsansvarig läkare, Västra regionen • Niklas Zachrisson, producent på SVT Chatten öppnar för frågor och kommentarer 20.00. Experterna börjar att",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/vad-vill-du-veta-om-transplantationer"
+    },
+    {
+      "title": "Forskning om handtransplantationer uteblev – Medicinetiker: ”skandal”",
+      "summary": "Att operera fast en avliden persons händer på någon som saknar händer är en kontroversiell transplantation. Flera forskare är nu kritiska till hur ingreppen införts i Sverige. – Det är en skandal att man inte har fullföljt sina forskningsambitioner, säger medicinetiker Torbjörn T",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/forskning-om-handtransplantationer-uteblev-medicinetiker-skandal"
+    },
+    {
+      "title": "Se jättekameran som ska avslöja det okända om rymden",
+      "summary": "På en bergstopp i Chile ska en enorm kamera fotografera natthimlen under en tioårsperiod – något som kan ge oss svar på det okända om rymden. – Vi har byggt ett teleskop som är en upptäcktsmaskin, säger forskaren Leanne Guy.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/se-jattekameran-som-ska-avsloja-det-okanda-om-rymden"
+    },
+    {
+      "title": "Här ska forskarna bo – 17 meter under ytan",
+      "summary": "I havet utanför kusten till amerikanska Florida Keys gömmer sig en ny forskningsanläggning. Här ska forskare kunna bo i en hel veckas tid, och studera havet – dygnet runt.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/har-ska-forskarna-bo-17-meter-under-ytan"
+    },
+    {
+      "title": "”Rekordhettan hade varit omöjlig för bara 50 år sen”",
+      "summary": "Rekordvärmeböljan i Europa just nu hade varit omöjlig för bara 50 år sen – och det är människan som ligger bakom den. Det slås fast i en ny rapport från forskarnätverket World Weather Attribution. WWA varnar också för att fler rekord i värmestress kan slås de närmaste dagarna – ä",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/rekordhettan-hade-varit-omojlig-for-bara-50-ar-sen"
+    },
+    {
+      "title": "Månen behöver egen tidszon",
+      "summary": "Kratrarna vid månens sydpol är några av solsystemets allra mörkaste och kallaste platser. Där vill forskare nu placera en laser som ser till att klockan går rätt på månen. – Tid är oerhört viktigt för ett modernt samhälle. Både för att vi ska kunna hålla reda på våra möten, och f",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/manen-behover-egen-tidszon"
+    },
+    {
+      "title": "Umeåforskarnas upptäckt – så kan AI hjälpa efter korsbandsskada",
+      "summary": "AI-teknik kan bidra till att tidigare hitta de idrottare som riskerar att drabbas av rädsla och osäkerhet efter en skada, visar forskning vid Umeå universitet. – Om vi kan identifiera dessa individer tidigare kan rehabiliteringen anpassas för att öka tryggheten, säger Charlotte H",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/umeaforskarnas-upptackt-sa-kan-ai-hjalpa-efter-korsbandsskada"
+    },
     {
       "title": "Efter översvämningen: Slukhål upptäckt på parkering i Växjö",
       "summary": "En parkering på Österleden i Växjö översvämmades på lördagsmorgonen. När vattnet hade sjunkit undan upptäcktes ett större slukhål i marken. Det var andra gången det senaste året som platsen översvämmas och får grävas upp.",
@@ -18,132 +82,68 @@
       "url": "https://www.svt.se/nyheter/inrikes/regeringen-antar-ny-underrattelsestrategi-skal-till-okad-oppenhet"
     },
     {
-      "title": "Unga politiker allt ovanligare – här är två i Munkedal som trotsar trenden",
-      "summary": "Andelen unga politiker i Sverige blir allt färre. Men i Munkedal finns ett knippe under 30 år som går mot trenden och vill ta plats i kommunfullmäktige efter valet. SVT har träffat 24-åriga Saga Petri (C) och 22-årige Marcus Wennergren (SD) i Munkedal. – Det finns nog en skrämsel",
+      "title": "Christina först i Norden med nya händer från avliden",
+      "summary": "Christina tvingades amputera sina händer efter att ha drabbats av sepsis. I dag är hon dubbelt handtransplanterad, men ingreppet har samtidigt gjort att hon är beroende av livslång och riskfylld medicinering. – Jag kan känna mina barnbarn, det är jätteviktigt.",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/unga-politiker-allt-ovanligare-har-ar-tva-i-munkedal-som-trotsar-trenden"
+      "url": "https://www.svt.se/nyheter/vetenskap/christina-forst-i-norden-med-nya-hander-fran-avliden"
     },
     {
-      "title": "Sju anhållna för människorov i Göteborg",
-      "summary": "Sju personer har anhållits misstänkta för människorov i Göteborg under natten till måndag.",
+      "title": "Läs chatten om träning",
+      "summary": "Måndag den 24 augusti handlade Fråga Doktorn om hur man kommer igång med träningen igen efter sommaren. Och hur man ska ta hand om kroppen när man har ett stillasittande jobb. Gäst var fysioterapeuten Sara Königsson, som svarade på tittarfrågor i chatten.",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/sju-anhallna-for-manniskorov-i-goteborg"
+      "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-traning-vtydrl"
     },
     {
-      "title": "De sista Feministerna finns i Gullspång",
-      "summary": "Feministiskt initiativ, numera Feministerna, märks knappt av på riksplanet. Sedan förra valet har de varit representerade i tre kommuner i landet. Inför årets kommunval är Gullspång den enda kommunen där partiet har en egen lista.",
+      "title": "Robothundar ska skydda bostadsområden i Atlanta",
+      "summary": "Kan robothundar stoppa brottslighet? I den amerikanska storstaden Atlanta har den nya metoden testats.",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/de-sista-feministerna-finns-i-gullspang"
+      "url": "https://www.svt.se/nyheter/vetenskap/robothundar-ska-skydda-bostadsomraden-i-atlanta"
     },
     {
-      "title": "Nyheter från dagen: 30 augusti",
-      "summary": "Här är ett urval av händelserna i Västsverige under söndagen den 30 augusti.",
+      "title": "Läs chatten om alkohol",
+      "summary": "Fråga Doktorn är tillbaka! Se oss på måndagar i Sverige Live. Alkohol är höstens första tema. Många dricker mer under sommaren – men när går alkoholvanorna över i ett riskbruk? Hur påverkas kroppen och när behöver jag söka hjälp? Husdoktorn Jens Persson och föreläsaren Anna Pierr",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/nyheter-fran-dagen-30-augusti-p9zji9"
+      "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-alkohol"
     },
     {
-      "title": "Kvinna påkörd av bil i Marks kommun",
-      "summary": "En kvinna i 25-årsåldern blev under söndagskvällen påkörd av en personbil på en väg utanför Fritsla, i Marks kommun.",
+      "title": "För dig som missade solförmörkelsen – här är fler rymdfenomen att spana på",
+      "summary": "Onsdagens solförmörkelse fick tiotusentals svenskar att vända blickarna mot himlen. De som hade rätt typ av ögonskydd kunde se solen skymmas av månen, andra blev kanske mest bländade. För dig som inte såg så bra, eller kanske fick intresse för astronomi, kommer fler chanser att s",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/person-pakord-av-bil-i-marks-kommun"
+      "url": "https://www.svt.se/nyheter/vetenskap/for-dig-som-missade-solformorkelsen-har-ar-fler-rymdfenomen-att-spana-pa"
     },
     {
-      "title": "Man i Trollhättan allvarligt skadad – blev biten av hund",
-      "summary": "Två män i 25-årsåldern kom in till sjukhus i Trollhättan med allvarliga skador under natten till söndagen. Enligt polisen hade den ena mannen hundbett på flera ställen på kroppen.",
+      "title": "Följ solförmörkelsen med SVT",
+      "summary": "Under kvällen var solen till stora delar skymd av månen. Himlafenomenet kulminerade vid åttatiden.",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/man-i-trollhattan-allvarligt-skadad-har-blivit-hundbiten"
+      "url": "https://www.svt.se/nyheter/vetenskap/nu-blir-det-solformorkelse-folj-fenomenet-med-svt"
     },
     {
-      "title": "Cheyenne i Göteborg har över 50 djur hemma: ”Som en minidjurpark”",
-      "summary": "En papegoja, landsköldpaddor och ödlor – det är djur som bor hemma hos Cheyenne van Keeken i Kortedala i Göteborg. Nu har hon tappat räkningen på hur många de faktiskt är. – Det är som en minidjurpark, säger hon.",
+      "title": "Så ska en av världens varmaste platser kylas ner",
+      "summary": "I sydöstra Irak ligger staden Basra. Här är det inte ovanligt att temperaturen uppnår 50 grader. Nu planteras träd och gräs i ett försök att kyla ned staden – och resten av landet.",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/cheyenne-i-goteborg-har-over-50-djur-hemma-som-en-minidjurpark"
+      "url": "https://www.svt.se/nyheter/vetenskap/sa-ska-en-av-varldens-varmaste-platser-kylas-ner"
     },
     {
-      "title": "Swedish House Mafias dubbelkonsert – följ med på festtåget till Göteborg",
-      "summary": "Trots bakslaget med fredagskvällens inställda konsert i åskkaoset på Ullevi var fansen peppade inför Swedish House Mafias två lördagskonserter på Götaplatsen och på Ullevi.",
+      "title": "Ny studie: Fler unga söker vård – efter hormonbehandling",
+      "summary": "En studie har undersökt unga i Finland som sökte vård för könsdysfori mellan 1996 och 2019. Bland dem som fick könsbekräftande behandling ökade behovet av psykiatrisk vård markant, enligt studien. – Det finns ingenting som tyder på att det var positivt med hormonbehandling, säger",
       "category": "SVT Nyheter",
       "source": "SVT",
       "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/extra-polisresurs-infor-swedish-house-mafia-pa-gotaplatsen"
-    },
-    {
-      "title": "Väljarnas viktigaste frågor i valet: Så skiljer sig Västra Götaland från Sverige",
-      "summary": "Valet närmar sig med stormsteg och det är tydligt vilka frågor som är viktigast för väljarna i landet. Men hur ser det ut i Västra Götaland – och varför skiljer sig regionen från hur det ser ut på nationell nivå? – Det är inte särskilt förvånande, säger Per Söderpalm, opinionsans",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/valjarnas-viktigaste-fragor-i-valet-sa-skiljer-sig-vastra-gotaland-fran-sverige"
-    },
-    {
-      "title": "Swedish House Mafia spelar på Götaplatsen efter inställd konsert på Ullevi",
-      "summary": "Sent på fredagskvällen kom Swedish House Mafia med beskedet: En gratiskonsert kommer att hållas på Götaplatsen under lördagen. Gruppens konsert på Ullevi under fredagen ställdes in när ett kraftigt åskoväder drog in över Göteborgsområdet. SMHI hade utfärdat en gul varning – och U",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/smhi-utfardar-gul-varning-for-aska"
-    },
-    {
-      "title": "Nyheter från dagen: 28 augusti",
-      "summary": "Här är ett urval av händelserna i Västsverige under fredagen den 28 augusti.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/nyheter-fran-dagen-28-augusti-cdblyk"
-    },
-    {
-      "title": "Övertänd ladugård i Sätila: ”Osäkert om det är kor kvar”",
-      "summary": "En ladugårdsbyggnad brinner i Sätila i Marks kommun. Enligt räddningstjänsten kan det fortfarande vara djur kvar i byggnaden. – Det är fullt övertänt så det är inte mycket vi kan göra, säger Fredrik Skattberg på Södra Älvsborgs Räddningstjänstförbund.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/ladugard-brinner-i-satila-djur-kvar-darinne"
-    },
-    {
-      "title": "Första tåget har gått genom Västlänken – så blev premiäråket",
-      "summary": "Under fredagen avgick det första tåget från Grand central i Västlänken. På premiäråket fanns representater för både Trafikverket och Västtrafik. – En sorg att vi inte kan leverera hela Västlänken till 2026, säger Bo Larsson, projektledare på Trafikverket.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/forsta-taget-har-gatt-genom-vastlanken-sa-blev-premiaraket"
-    },
-    {
-      "title": "Sjunken segelbåt hittad – stor sökinsats pågår",
-      "summary": "En segelbåt som sjunkit hittades under fredagseftermiddagen utanför Hyppeln i Göteborgs skärgård. En stor sökinsats pågick men efter ett par timmar blåstes faran över.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/segelbat-som-sjunkit-hittad-stor-sokinsats"
-    },
-    {
-      "title": "En person till sjukhus – två frihetsberövade",
-      "summary": "Polis och blåljuspersonal skickades vid lunchtid till en bostad i Sjöbo efter ett sjukdomslarm. En person fördes till sjukhus i ambulanshelikopter och samtidigt frihetsberövades två personer.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/vast/en-person-till-sjukhus-tva-frihetsberovade"
-    },
-    {
-      "title": "Häng med in på den nya rättspsykiatriska avdelningen i Växjö",
-      "summary": "SVT fick följa med in i rättspsyks nya lokaler på Sigfridsområdet i Växjö. Den nya vårdbyggnaden ska främja den läkande processen för patienterna.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/lokalt/smaland/hang-med-in-pa-den-nya-rattspsykiatriska-avdelningen-i-vaxjo"
+      "url": "https://www.svt.se/nyheter/vetenskap/ny-studie-fler-unga-soker-vard-efter-hormonbehandling"
     }
   ]
 }
