@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T11:33:34.235642+02:00",
+  "updated_at": "2026-09-02T14:05:50.326585+02:00",
   "items": [
     {
       "name": "Stål",
@@ -17,15 +17,15 @@
     },
     {
       "name": "Plåt / HRC",
-      "price": 11547.0,
+      "price": 11594.0,
       "unit": "kr/t",
       "fx_rate": 9.5897,
       "fx_from": "USD",
-      "day": -3.9,
+      "day": 1.02,
       "week": 1.59,
-      "month": 1.18,
+      "month": 1.6,
       "ytd": 34.29,
-      "yoy": 50.7,
+      "yoy": 51.32,
       "proxy": "HRC Steel",
       "source_url": "https://tradingeconomics.com/commodity/hrc-steel"
     },
