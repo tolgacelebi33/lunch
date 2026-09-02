@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T14:32:50.602266+02:00",
+  "updated_at": "2026-09-02T02:01:25.374535+02:00",
   "items": [
     {
       "title": "Läs chatten om hjärntrötthet efter stroke",
@@ -74,6 +74,14 @@
       "url": "https://www.svt.se/nyheter/lokalt/smaland/efter-oversvamningen-slukhal-upptackt-pa-parkering"
     },
     {
+      "title": "Fouad Youcefi: De här väljarna vill S behålla – till varje pris",
+      "summary": "Socialdemokraterna ökade knappt i senaste valet, och valdagen ser ut att både bli en kamp om väljarna i norra Sverige med SD, storstadsväljarna med M och förortsväljarna med V. – Det här är verkligen ett flerfrontskrig för S, säger valreporter Fouad Youcefi.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/inrikes/fouad-youcefi-de-har-valjarna-vill-s-behalla-till-varje-pris"
+    },
+    {
       "title": "Regeringen antar ny underrättelsestrategi: ”Skäl till ökad öppenhet”",
       "summary": "För första gången får Sverige en nationell strategi för underrättelseverksamheten där bland andra Säpo och Must ingår. I strategin, erfar SVT, slår regeringen bland annat fast att underrättelsesamhället ska bli mer öppet – och mer inriktat på ny teknik och internationellt samarbe",
       "category": "SVT Nyheter",
@@ -136,14 +144,6 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/vetenskap/sa-ska-en-av-varldens-varmaste-platser-kylas-ner"
-    },
-    {
-      "title": "Ny studie: Fler unga söker vård – efter hormonbehandling",
-      "summary": "En studie har undersökt unga i Finland som sökte vård för könsdysfori mellan 1996 och 2019. Bland dem som fick könsbekräftande behandling ökade behovet av psykiatrisk vård markant, enligt studien. – Det finns ingenting som tyder på att det var positivt med hormonbehandling, säger",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/vetenskap/ny-studie-fler-unga-soker-vard-efter-hormonbehandling"
     }
   ]
 }
