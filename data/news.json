@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T03:00:47.967682+02:00",
+  "updated_at": "2026-09-02T11:33:33.393475+02:00",
   "items": [
     {
       "title": "Läs chatten om hjärntrötthet efter stroke",
@@ -74,6 +74,14 @@
       "url": "https://www.svt.se/nyheter/lokalt/smaland/efter-oversvamningen-slukhal-upptackt-pa-parkering"
     },
     {
+      "title": "Novus/TV4: Gapet mellan blocken 2,6 procentenheter",
+      "summary": "Liberalerna ökar till 3,3 procent, visar en ny mätning från Novus/TV4. Samtidigt minskar oppositionens försprång till 2,6 procentenheter. – Vi ser att gapet minskar. Liberalerna går framåt och det bådar gott för den dag som spelar roll, nämligen valdagen, säger L:s partiledare Si",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/inrikes/novustv4-gapet-mellan-blocken-26-procentenheter"
+    },
+    {
       "title": "Fouad Youcefi: De här väljarna vill S behålla – till varje pris",
       "summary": "Socialdemokraterna ökade knappt i senaste valet, och valdagen ser ut att både bli en kamp om väljarna i norra Sverige med SD, storstadsväljarna med M och förortsväljarna med V. – Det här är verkligen ett flerfrontskrig för S, säger valreporter Fouad Youcefi.",
       "category": "SVT Nyheter",
@@ -88,6 +96,14 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/inrikes/regeringen-antar-ny-underrattelsestrategi-skal-till-okad-oppenhet"
+    },
+    {
+      "title": "FN-rapport: 1,5 gradersmålet överskrids – men så kan utvecklingen bromsas",
+      "summary": "1,5-gradersmålet kommer sannolikt att misslyckas ”inom de närmaste åren”, enligt en ny FN-rapport. Men i rapporten pekas åtgärder ut som kan begränsa överskridandet. – Vi måste slå in på rätt väg och se till att överskridandet av 1,5-gradersgränsen blir så litet och kortvarigt so",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/fn-rapport-15-gradersmalet-overskrids-men-sa-kan-utvecklingen-bromsas"
     },
     {
       "title": "Christina först i Norden med nya händer från avliden",
@@ -128,22 +144,6 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/vetenskap/for-dig-som-missade-solformorkelsen-har-ar-fler-rymdfenomen-att-spana-pa"
-    },
-    {
-      "title": "Följ solförmörkelsen med SVT",
-      "summary": "Under kvällen var solen till stora delar skymd av månen. Himlafenomenet kulminerade vid åttatiden.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/vetenskap/nu-blir-det-solformorkelse-folj-fenomenet-med-svt"
-    },
-    {
-      "title": "Så ska en av världens varmaste platser kylas ner",
-      "summary": "I sydöstra Irak ligger staden Basra. Här är det inte ovanligt att temperaturen uppnår 50 grader. Nu planteras träd och gräs i ett försök att kyla ned staden – och resten av landet.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/vetenskap/sa-ska-en-av-varldens-varmaste-platser-kylas-ner"
     }
   ]
 }
