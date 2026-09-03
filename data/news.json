@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T11:42:40.515740+02:00",
+  "updated_at": "2026-09-03T14:05:15.560076+02:00",
   "items": [
     {
       "title": "Läs chatten om hjärntrötthet efter stroke",
@@ -98,14 +98,6 @@
       "url": "https://www.svt.se/nyheter/inrikes/fouad-youcefi-de-har-valjarna-vill-s-behalla-till-varje-pris"
     },
     {
-      "title": "Regeringen antar ny underrättelsestrategi: ”Skäl till ökad öppenhet”",
-      "summary": "För första gången får Sverige en nationell strategi för underrättelseverksamheten där bland andra Säpo och Must ingår. I strategin, erfar SVT, slår regeringen bland annat fast att underrättelsesamhället ska bli mer öppet – och mer inriktat på ny teknik och internationellt samarbe",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/inrikes/regeringen-antar-ny-underrattelsestrategi-skal-till-okad-oppenhet"
-    },
-    {
       "title": "Chatta om ensamhet",
       "summary": "Fråga Doktorns tema måndag den 7 september är ofrivillig ensamhet. Efter programmet på måndag, cirka 17.30, kommer Karl Olofsson och Nils Larsson in i chatten. De svarar på frågor om hur de upplevt sin ofrivilliga ensamhet men också om hur de har gjort för att hitta nya sociala s",
       "category": "SVT Nyheter",
@@ -144,6 +136,14 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/vetenskap/robothundar-ska-skydda-bostadsomraden-i-atlanta"
+    },
+    {
+      "title": "Läs chatten om alkohol",
+      "summary": "Fråga Doktorn är tillbaka! Se oss på måndagar i Sverige Live. Alkohol är höstens första tema. Många dricker mer under sommaren – men när går alkoholvanorna över i ett riskbruk? Hur påverkas kroppen och när behöver jag söka hjälp? Husdoktorn Jens Persson och föreläsaren Anna Pierr",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-alkohol"
     }
   ]
 }
