@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T14:05:49.070622+02:00",
+  "updated_at": "2026-09-03T02:05:56.325090+02:00",
   "items": [
     {
       "title": "Läs chatten om hjärntrötthet efter stroke",
@@ -56,6 +56,14 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/vetenskap/manen-behover-egen-tidszon"
+    },
+    {
+      "title": "Äldre luras vid dörren – ministern: ”Ska inte känna rädsla när telefonen ringer”",
+      "summary": "Under tre veckor i augusti utsattes 31 personer för så kallad fysisk vishing i Sydsverige – alltså att en bedragare ringer och uppger falsk identitet för att sedan dyka upp vid dörren. Idag besökte justitieminister Gunnar Strömmer (M) Växjö och berättade om sin lösning på problem",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/lokalt/smaland/aldre-luras-vid-dorren-ministern-ska-inte-kanna-radsla-nar-telefonen-ringer"
     },
     {
       "title": "Efter översvämningen: Slukhål upptäckt på parkering i Växjö",
@@ -136,14 +144,6 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-alkohol"
-    },
-    {
-      "title": "För dig som missade solförmörkelsen – här är fler rymdfenomen att spana på",
-      "summary": "Onsdagens solförmörkelse fick tiotusentals svenskar att vända blickarna mot himlen. De som hade rätt typ av ögonskydd kunde se solen skymmas av månen, andra blev kanske mest bländade. För dig som inte såg så bra, eller kanske fick intresse för astronomi, kommer fler chanser att s",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/vetenskap/for-dig-som-missade-solformorkelsen-har-ar-fler-rymdfenomen-att-spana-pa"
     }
   ]
 }
