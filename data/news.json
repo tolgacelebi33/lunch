@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T02:58:16.402398+02:00",
+  "updated_at": "2026-09-04T11:34:18.796405+02:00",
   "items": [
     {
       "title": "Läs chatten om hjärntrötthet efter stroke",
@@ -66,6 +66,14 @@
       "url": "https://www.svt.se/nyheter/lokalt/smaland/aldre-luras-vid-dorren-ministern-ska-inte-kanna-radsla-nar-telefonen-ringer"
     },
     {
+      "title": "Priset på kaffe och choklad sjunker",
+      "summary": "En kaka till kaffet? Varför inte. Priserna på både choklad och kaffe har gått ned, enligt Matpriskollen.",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/inrikes/priset-pa-kaffe-och-choklad-sjunker"
+    },
+    {
       "title": "SVT/Verian: L närmar sig spärren – ”Kan gå fort”",
       "summary": "Liberalerna ökar – och närmar sig riksdagsspärren, enligt SVT/Verians nya väljarbarometer. Samtidigt får M sitt lägsta stöd på sju år. – Det är faktiskt större chans att L kommer in i riksdagen än att Tidöpartierna vinner valet, säger Per Söderpalm, opinionsansvarig på Verian.",
       "category": "SVT Nyheter",
@@ -80,22 +88,6 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/inrikes/fortsatt-rekord-for-utrikesresandet-pa-arlanda"
-    },
-    {
-      "title": "Novus/TV4: Gapet mellan blocken 2,6 procentenheter",
-      "summary": "Liberalerna ökar till 3,3 procent, visar en ny mätning från Novus/TV4. Samtidigt minskar oppositionens försprång till 2,6 procentenheter. – Vi ser att gapet minskar. Liberalerna går framåt och det bådar gott för den dag som spelar roll, nämligen valdagen, säger L:s partiledare Si",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/inrikes/novustv4-gapet-mellan-blocken-26-procentenheter"
-    },
-    {
-      "title": "Fouad Youcefi: De här väljarna vill S behålla – till varje pris",
-      "summary": "Socialdemokraterna ökade knappt i senaste valet, och valdagen ser ut att både bli en kamp om väljarna i norra Sverige med SD, storstadsväljarna med M och förortsväljarna med V. – Det här är verkligen ett flerfrontskrig för S, säger valreporter Fouad Youcefi.",
-      "category": "SVT Nyheter",
-      "source": "SVT",
-      "date": "",
-      "url": "https://www.svt.se/nyheter/inrikes/fouad-youcefi-de-har-valjarna-vill-s-behalla-till-varje-pris"
     },
     {
       "title": "Nilla Fischer om diagnosen: ”Hela ditt liv sätts på paus”",
@@ -144,6 +136,14 @@
       "source": "SVT",
       "date": "",
       "url": "https://www.svt.se/nyheter/vetenskap/robothundar-ska-skydda-bostadsomraden-i-atlanta"
+    },
+    {
+      "title": "Läs chatten om alkohol",
+      "summary": "Fråga Doktorn är tillbaka! Se oss på måndagar i Sverige Live. Alkohol är höstens första tema. Många dricker mer under sommaren – men när går alkoholvanorna över i ett riskbruk? Hur påverkas kroppen och när behöver jag söka hjälp? Husdoktorn Jens Persson och föreläsaren Anna Pierr",
+      "category": "SVT Nyheter",
+      "source": "SVT",
+      "date": "",
+      "url": "https://www.svt.se/nyheter/vetenskap/chatta-om-alkohol"
     }
   ]
 }
