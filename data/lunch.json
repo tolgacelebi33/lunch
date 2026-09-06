@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 14:06",
+  "updated_at": "2026-09-06 14:06",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -267,10 +267,9 @@
   "iso_week": 36,
   "update_log": [
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/08/M-v36.jpg)",
-    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
-    "sangbergs: ok (5 days)",
+    "kabyssen: current week 36 not found in menu PDF",
+    "sangbergs: no current-week menu parsed",
     "limmared: ok (5 days)",
-    "Centralen / Sångbergs friday: 10 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ]
