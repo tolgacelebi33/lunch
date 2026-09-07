@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 12:12",
+  "updated_at": "2026-09-07 15:07",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -185,37 +185,35 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Stekt lunchkorv serveras med",
-            "potatismos och senapskräm"
+            "Kycklingcurry gryta med ris"
           ],
           "source_url": "https://glasetshuslimmared.se/lunch/"
         },
         "monday": {
           "verified": false,
-          "status": "Ingen sparad meny",
-          "message": "Ingen verifierad lunchdata sparad för denna dag ännu."
+          "status": "Stängt",
+          "message": "Glasets Hus har stängt på måndagar (ordinarie öppettider)."
         },
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Pasta i pestosas med kycklinglårfiléag"
+            "Fiskgryta med torsk med Ae ge"
           ],
           "source_url": "https://glasetshuslimmared.se/lunch/"
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Kålpudding serveras med kokt",
-            "potatis, gräddsås och lingonsylt"
+            "Stekt flask med potatismos,",
+            "stekt lök och lingonsylt"
           ],
           "source_url": "https://glasetshuslimmared.se/lunch/"
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Kycklingkebabgryta med ris",
-            "SN",
-            "lo"
+            "Husets pytt i panna serveras",
+            "med stekt ägg och rödbetor"
           ],
           "source_url": "https://glasetshuslimmared.se/lunch/"
         }
@@ -265,7 +263,7 @@
   ],
   "iso_week": 37,
   "update_log": [
-    "glasets: current week 37 not found",
+    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/09/M-v37.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",

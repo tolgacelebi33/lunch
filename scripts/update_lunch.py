@@ -179,6 +179,16 @@ def glasets(d, week):
     if not r: raise ValueError("restaurant missing")
     for key,ds in parsed.items():
         save_day(r, key, ds, url)
+    # Måndag: STÄNGT enligt ordinarie öppettider (v. 33–25), men öppet mån–tors
+    # under sommaren (v. 26–32) – se glasetshuslimmared.se/hitta-hit-oppettider/.
+    # Menybilden saknar alltid en måndagsrad utanför sommarveckorna, så skriv en
+    # explicit "stängt"-status istället för att lämna det som "ingen data hittad".
+    if "monday" not in parsed and not (26 <= week <= 32):
+        r.setdefault("menu",{})["monday"]={
+            "verified": False,
+            "status": "Stängt",
+            "message": "Glasets Hus har stängt på måndagar (ordinarie öppettider).",
+        }
     r["source_url"]=url
     return len(parsed),method
 
