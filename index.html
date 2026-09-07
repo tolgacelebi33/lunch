@@ -576,7 +576,7 @@ footer{
   <div class="shell">
     <div class="section-head">
       <h2>Vad blir det idag?</h2>
-      <p>Rösta på var du käkar idag och se vad byn väljer, i realtid. Nollställs varje dygn.</p>
+      <p>Rösta på var du käkar idag och se vad byn väljer, i realtid. Gäller alltid dagens datum, oavsett vilken flik du bläddrar till här nedanför – och nollställs i sin tur imorgon.</p>
     </div>
     <div id="voteWidget"><p class="vote-note">Hämtar röster…</p></div>
   </div>
@@ -767,10 +767,10 @@ function renderVotes(votes){
   const total=restaurants.reduce((s,r)=>s+(votes[slug(r.name)]||0),0);
   const myVote=localStorage.getItem(`voted_${todayKey()}`);
   const rows=restaurants.map(r=>{
-    const s=slug(r.name), n=votes[s]||0;
+    const s=slug(r.name), n=votes[s]||0, mine=myVote===s;
     const pct=total?Math.round(n/total*100):0;
-    return `<button class="vote-row ${myVote===s?"mine":""}" data-slug="${s}">
-      <div class="vote-row-top"><span>${esc(r.name)}</span><span>${pct}%${n?` (${n})`:""}</span></div>
+    return `<button class="vote-row ${mine?"mine":""}" data-slug="${s}" title="${mine?"Klicka igen för att ta bort din röst":""}">
+      <div class="vote-row-top"><span>${esc(r.name)}${mine?" · din röst (klicka för att ta bort)":""}</span><span>${pct}%${n?` (${n})`:""}</span></div>
       <div class="vote-bar"><div class="vote-fill" style="width:${pct}%"></div></div>
     </button>`;
   }).join("");
@@ -778,20 +778,30 @@ function renderVotes(votes){
   const headline=total>0 && leader.n>0
     ? `<strong>${esc(leader.r.name)}</strong> leder – ${Math.round(leader.n/total*100)}% röstar dit idag (${total} röst${total===1?"":"er"})`
     : "Bli först att rösta idag!";
-  widget.innerHTML=`<p class="vote-headline">${headline}</p><div class="vote-rows">${rows}</div>`;
+  const closed=lunchData.restaurants.filter(r=>!restaurants.includes(r));
+  const closedNote=closed.length
+    ? `<p class="vote-note">${closed.map(r=>esc(r.name)).join(" och ")} ${closed.length>1?"har":"har"} stängt idag och listas inte.</p>`
+    : "";
+  widget.innerHTML=`<p class="vote-headline">${headline}</p><div class="vote-rows">${rows}</div>${closedNote}`;
   widget.querySelectorAll(".vote-row").forEach(btn=>btn.addEventListener("click",()=>castVote(btn.dataset.slug)));
 }
 function castVote(newSlug){
   if(!voteDb) return;
   const storageKey=`voted_${todayKey()}`;
   const prevSlug=localStorage.getItem(storageKey);
-  if(prevSlug===newSlug) return;
   const updates={};
+  // Sätt/ta bort localStorage FÖRE update(): Firebase kan trigga vår "value"-
+  // lyssnare synkront/optimistiskt redan under själva update()-anropet, så om
+  // vi gör det efter hinner den ritningen ibland ske innan localStorage är satt.
+  if(prevSlug===newSlug){
+    // Klick på sin egen redan valda restaurang = ta bort rösten helt.
+    updates[`votes/${todayKey()}/${prevSlug}`]=firebase.database.ServerValue.increment(-1);
+    localStorage.removeItem(storageKey);
+    voteDb.ref().update(updates);
+    return;
+  }
   if(prevSlug) updates[`votes/${todayKey()}/${prevSlug}`]=firebase.database.ServerValue.increment(-1);
   updates[`votes/${todayKey()}/${newSlug}`]=firebase.database.ServerValue.increment(1);
-  // Sätt localStorage FÖRE update(): Firebase kan trigga vår "value"-lyssnare
-  // synkront/optimistiskt redan under själva update()-anropet, så om vi sätter
-  // den efter hinner den ritningen ibland ske innan localStorage är satt.
   localStorage.setItem(storageKey,newSlug);
   voteDb.ref().update(updates);
 }
