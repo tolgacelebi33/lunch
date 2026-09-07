@@ -625,9 +625,9 @@ footer{
    Database-reglerna i konsolen, inte av att dölja de här värdena.
    Röstningen stängs av tyst tills detta är ifyllt. */
 const FIREBASE_CONFIG={
-  apiKey:"DIN_API_KEY",
-  databaseURL:"https://DITT-PROJEKT-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId:"DITT_PROJEKT_ID",
+  apiKey:"AIzaSyAahmeFgHRcBP3h71cGmabqRaErSZZu3Vs",
+  databaseURL:"https://lunch-97400-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId:"lunch-97400",
 };
 
 const DAY_KEYS=["monday","tuesday","wednesday","thursday","friday"];
@@ -789,8 +789,11 @@ function castVote(newSlug){
   const updates={};
   if(prevSlug) updates[`votes/${todayKey()}/${prevSlug}`]=firebase.database.ServerValue.increment(-1);
   updates[`votes/${todayKey()}/${newSlug}`]=firebase.database.ServerValue.increment(1);
-  voteDb.ref().update(updates);
+  // Sätt localStorage FÖRE update(): Firebase kan trigga vår "value"-lyssnare
+  // synkront/optimistiskt redan under själva update()-anropet, så om vi sätter
+  // den efter hinner den ritningen ibland ske innan localStorage är satt.
   localStorage.setItem(storageKey,newSlug);
+  voteDb.ref().update(updates);
 }
 
 function pctClass(v){
