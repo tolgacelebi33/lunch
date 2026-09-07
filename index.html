@@ -455,6 +455,47 @@ a.commodity-item:hover{background:rgba(255,255,255,.08)}
   .commodity-track{animation-duration:55s}
 }
 
+.vote-headline{
+  font-size:15px;
+  margin:0 0 20px;
+  color:var(--muted);
+}
+.vote-headline strong{color:var(--black)}
+.vote-rows{display:flex;flex-direction:column;gap:10px}
+.vote-row{
+  display:block;
+  width:100%;
+  text-align:left;
+  border:1px solid var(--black);
+  background:var(--white);
+  padding:12px 16px;
+  cursor:pointer;
+  font:inherit;
+  border-radius:4px;
+}
+.vote-row:hover{background:var(--warm)}
+.vote-row.mine{background:var(--black);color:var(--white)}
+.vote-row.mine .vote-bar{background:rgba(255,255,255,.25)}
+.vote-row-top{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  font-size:14px;
+  margin-bottom:8px;
+}
+.vote-bar{
+  height:5px;
+  background:var(--line);
+  border-radius:999px;
+  overflow:hidden;
+}
+.vote-fill{
+  height:100%;
+  background:var(--hav);
+  transition:width .4s ease;
+}
+.vote-row.mine .vote-fill{background:var(--white)}
+.vote-note{color:var(--muted);font-size:14px;margin:0}
 </style>
 
 <style>
@@ -504,6 +545,7 @@ footer{
   <div class="shell topbar-inner">
     <div class="brand">Lunch<span>radarn</span></div>
     <nav class="nav">
+      <a href="#rosta">Rösta</a>
       <a href="#lunch">Lunch</a>
       <a href="#samtal">Samtalsämnen</a>
       <a href="#om">Om sidan</a>
@@ -527,6 +569,16 @@ footer{
         <div>Källor kontrollerade 19 augusti 2026</div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="rosta" class="section">
+  <div class="shell">
+    <div class="section-head">
+      <h2>Vad blir det idag?</h2>
+      <p>Rösta på var du käkar idag och se vad byn väljer, i realtid. Nollställs varje dygn.</p>
+    </div>
+    <div id="voteWidget"><p class="vote-note">Hämtar röster…</p></div>
   </div>
 </section>
 
@@ -564,7 +616,20 @@ footer{
   </div>
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
 <script>
+/* Fyll i med er egen Firebase-projektkonfiguration (Firebase Console →
+   Project settings → Your apps → SDK setup and configuration). Det är
+   publika klientvärden, inga hemligheter – åtkomst styrs av Realtime
+   Database-reglerna i konsolen, inte av att dölja de här värdena.
+   Röstningen stängs av tyst tills detta är ifyllt. */
+const FIREBASE_CONFIG={
+  apiKey:"DIN_API_KEY",
+  databaseURL:"https://DITT-PROJEKT-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId:"DITT_PROJEKT_ID",
+};
+
 const DAY_KEYS=["monday","tuesday","wednesday","thursday","friday"];
 const DAY_SV=["Måndag","Tisdag","Onsdag","Torsdag","Fredag"];
 let lunchData=null;
@@ -636,9 +701,96 @@ async function loadLunch(){
     if(!res.ok) throw new Error("HTTP "+res.status);
     lunchData=await res.json();
     renderDay(selectedIndex());
+    renderVotes(lastVotes);
   }catch(err){
     grid.innerHTML=`<article class="card"><h3 class="name">Kunde inte läsa lunchdata</h3><p>Kontrollera data/lunch.json.</p></article>`;
   }
+}
+
+/* --- Rösta: vad blir det idag? ---
+   Kräver delat tillstånd mellan besökare (till skillnad från resten av
+   sidan, som bara läser statisk JSON), så det går via Firebase Realtime
+   Database. Röster nycklas på dagens datum (votes/2026-09-07/<slug>) så
+   de aldrig speglar över på dagen efter – ingen nollställning behövs,
+   varje ny dag blir automatiskt en tom nod. */
+let voteDb=null;
+let lastVotes={};
+let votingConfigured=false;
+
+function todayKey(){
+  const d=new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+}
+function slug(name){
+  return String(name).toLowerCase()
+    .replace(/å/g,"a").replace(/ä/g,"a").replace(/ö/g,"o")
+    .replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
+}
+function todaysOpenRestaurants(){
+  if(!lunchData) return [];
+  const key=DAY_KEYS[currentIndex()];
+  return lunchData.restaurants.filter(r=>{
+    const status=r.menu?.[key]?.status;
+    return status!=="Stängt" && status!=="Ingen lunch";
+  });
+}
+function initVoting(){
+  const widget=document.getElementById("voteWidget");
+  if(!widget) return;
+  if(!FIREBASE_CONFIG.apiKey || FIREBASE_CONFIG.apiKey.startsWith("DIN_")){
+    widget.innerHTML=`<p class="vote-note">Röstningen är inte påkopplad ännu.</p>`;
+    return;
+  }
+  try{
+    firebase.initializeApp(FIREBASE_CONFIG);
+    voteDb=firebase.database();
+  }catch(e){
+    widget.innerHTML=`<p class="vote-note">Kunde inte ansluta till röstningen just nu.</p>`;
+    return;
+  }
+  votingConfigured=true;
+  voteDb.ref(`votes/${todayKey()}`).on("value",snap=>{
+    lastVotes=snap.val()||{};
+    renderVotes(lastVotes);
+  },()=>{
+    widget.innerHTML=`<p class="vote-note">Kunde inte läsa röster just nu.</p>`;
+  });
+}
+function renderVotes(votes){
+  const widget=document.getElementById("voteWidget");
+  if(!widget || !lunchData || !votingConfigured) return;
+  const restaurants=todaysOpenRestaurants();
+  if(!restaurants.length){
+    widget.innerHTML=`<p class="vote-note">Inget öppet att rösta på just idag.</p>`;
+    return;
+  }
+  const total=restaurants.reduce((s,r)=>s+(votes[slug(r.name)]||0),0);
+  const myVote=localStorage.getItem(`voted_${todayKey()}`);
+  const rows=restaurants.map(r=>{
+    const s=slug(r.name), n=votes[s]||0;
+    const pct=total?Math.round(n/total*100):0;
+    return `<button class="vote-row ${myVote===s?"mine":""}" data-slug="${s}">
+      <div class="vote-row-top"><span>${esc(r.name)}</span><span>${pct}%${n?` (${n})`:""}</span></div>
+      <div class="vote-bar"><div class="vote-fill" style="width:${pct}%"></div></div>
+    </button>`;
+  }).join("");
+  const leader=restaurants.map(r=>({r,n:votes[slug(r.name)]||0})).sort((a,b)=>b.n-a.n)[0];
+  const headline=total>0 && leader.n>0
+    ? `<strong>${esc(leader.r.name)}</strong> leder – ${Math.round(leader.n/total*100)}% röstar dit idag (${total} röst${total===1?"":"er"})`
+    : "Bli först att rösta idag!";
+  widget.innerHTML=`<p class="vote-headline">${headline}</p><div class="vote-rows">${rows}</div>`;
+  widget.querySelectorAll(".vote-row").forEach(btn=>btn.addEventListener("click",()=>castVote(btn.dataset.slug)));
+}
+function castVote(newSlug){
+  if(!voteDb) return;
+  const storageKey=`voted_${todayKey()}`;
+  const prevSlug=localStorage.getItem(storageKey);
+  if(prevSlug===newSlug) return;
+  const updates={};
+  if(prevSlug) updates[`votes/${todayKey()}/${prevSlug}`]=firebase.database.ServerValue.increment(-1);
+  updates[`votes/${todayKey()}/${newSlug}`]=firebase.database.ServerValue.increment(1);
+  voteDb.ref().update(updates);
+  localStorage.setItem(storageKey,newSlug);
 }
 
 function pctClass(v){
@@ -725,6 +877,7 @@ async function loadStories(){
 loadLunch();
 loadCommodities();
 loadStories();
+initVoting();
 
 /* Håller sidan på rätt dag om fliken lämnas öppen över midnatt.
    Kollar bara lokal kalenderdag var 60:e sekund; en explicit ?dag=
