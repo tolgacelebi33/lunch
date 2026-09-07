@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 02:59",
+  "updated_at": "2026-09-07 12:12",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -73,7 +73,7 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "1. Biff à la Lindström med gurka, timjansky och stekt potatis",
+            "Biff à la Lindström med gurka, timjansky och stekt potatis",
             "Veckans Vego: Vegetarisk Pytt i panna med stekt ägg & rödbetor",
             "Veckans Pasta: Lasagne",
             "Veckans Sallad: Tacosallad"
@@ -83,8 +83,8 @@
         "monday": {
           "verified": true,
           "dishes": [
-            "1. Smör kokt sejfilé med äggsås och potatismos",
-            "2. Isterband dillstuvad potatis",
+            "Smör kokt sejfilé med äggsås och potatismos",
+            "Isterband dillstuvad potatis",
             "Veckans Vego: Vegetarisk Pytt i panna med stekt ägg & rödbetor",
             "Veckans Pasta: Lasagne",
             "Veckans Sallad: Tacosallad"
@@ -94,8 +94,8 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "1. Kreolsk gryta med potatis",
-            "2. Korv stroganoff med ris",
+            "Kreolsk gryta med potatis",
+            "Korv stroganoff med ris",
             "Veckans Vego: Vegetarisk Pytt i panna med stekt ägg & rödbetor",
             "Veckans Pasta: Lasagne",
             "Veckans Sallad: Tacosallad"
@@ -105,8 +105,8 @@
         "thursday": {
           "verified": true,
           "dishes": [
-            "1. Ärtsoppa med pannkakor, sylt & grädde",
-            "2. Persiljejärpar med potatis, gräddsås & lingon",
+            "Ärtsoppa med pannkakor, sylt & grädde",
+            "Persiljejärpar med potatis, gräddsås & lingon",
             "Veckans Vego: Vegetarisk Pytt i panna med stekt ägg & rödbetor",
             "Veckans Pasta: Lasagne",
             "Veckans Sallad: Tacosallad"
@@ -116,7 +116,7 @@
         "friday": {
           "verified": true,
           "dishes": [
-            "1. Kalv i dillsås och potatis",
+            "Kalv i dillsås och potatis",
             "Veckans Vego : Vegetarisk Pytt i panna med stekt ägg & rödbetor",
             "Veckans Pasta : Lasagne",
             "Veckans Sallad : Tacosallad",
