@@ -109,9 +109,13 @@ def ocr_image(url):
     import pytesseract
     raw, ctype, final=fetch_bytes(url)
     im=Image.open(io.BytesIO(raw))
-    if im.width < 1400:
-        scale=min(2.5,1400/max(1,im.width))
-        im=im.resize((int(im.width*scale),int(im.height*scale)))
+    # 1400px-mål (cap 2.5x) läste tidigare "potatismos" som "med Ae ge" på en
+    # riktig menybild (Glasets Hus v.37) — högre målbredd (cap 4x) löste det
+    # utan att försämra resten av sidan. Se konversation 2026-09-07.
+    target=2000
+    if im.width < target:
+        scale=min(4.0,target/max(1,im.width))
+        im=im.resize((int(im.width*scale),int(im.height*scale)), Image.LANCZOS)
     return pytesseract.image_to_string(im,lang="swe+eng")
 
 def pdf_to_text(raw_bytes):
@@ -166,11 +170,11 @@ def text_or_ocr_menu(url, week):
 MAX_DISHES = 5
 _WARNINGS = []
 
-def save_day(r, key, dishes, source_url):
+def save_day(r, key, dishes, source_url, week):
     if len(dishes) > MAX_DISHES:
         _WARNINGS.append(f"{r['name']} {key}: {len(dishes)} rader hittade, klippt till {MAX_DISHES} (kontrollera källan manuellt)")
         dishes = dishes[:MAX_DISHES]
-    r.setdefault("menu", {})[key] = {"verified": True, "dishes": dishes, "source_url": source_url}
+    r.setdefault("menu", {})[key] = {"verified": True, "dishes": dishes, "source_url": source_url, "week": week}
 
 def glasets(d, week):
     url="https://glasetshuslimmared.se/lunch/"
@@ -178,7 +182,7 @@ def glasets(d, week):
     r=find_restaurant(d,"Glasets Hus")
     if not r: raise ValueError("restaurant missing")
     for key,ds in parsed.items():
-        save_day(r, key, ds, url)
+        save_day(r, key, ds, url, week)
     # Måndag: STÄNGT enligt ordinarie öppettider (v. 33–25), men öppet mån–tors
     # under sommaren (v. 26–32) – se glasetshuslimmared.se/hitta-hit-oppettider/.
     # Menybilden saknar alltid en måndagsrad utanför sommarveckorna, så skriv en
@@ -228,7 +232,7 @@ def kabyssen(d, week):
     r=find_restaurant(d,"Kabyssen")
     if not r: raise ValueError("restaurant missing")
     for key,ds in parsed.items():
-        save_day(r, key, ds, page_url)
+        save_day(r, key, ds, page_url, week)
     r["source_url"]=page_url
     return len(parsed), method
 
@@ -250,7 +254,7 @@ def sangbergs(d,week):
         ds=clean_lines(tail)
         ds=[x for x in ds if not re.search(r"(?i)^veckans |lunchmeny|boka bord|lunch kostar",x)]
         if ds:
-            save_day(r, key, ds, url)
+            save_day(r, key, ds, url, week)
             parsed+=1
     if not parsed: raise ValueError("no current-week menu parsed")
     r["source_url"]=url
@@ -279,7 +283,7 @@ def limmared(d,week):
         dishes=list(ds[:4])
         for s in standing:
             if s not in dishes: dishes.append(s)
-        save_day(r, key, dishes, url)
+        save_day(r, key, dishes, url, week)
     r["source_url"]=url
     return len(parsed)
 
@@ -306,6 +310,25 @@ def main():
         log.append(f"limmared: ok ({n} days)")
     except Exception as e:
         log.append(f"limmared: {e}")
+    # Data som skrapades fram för en tidigare vecka men som inte gick att uppdatera
+    # i den här körningen (t.ex. sidan hade inte lagt upp aktuell vecka än) ska
+    # aldrig fortsätta visas som "dagens" — annars kan sajten tyst visa förra
+    # veckans rätt som om den vore aktuell. Bara dagar skrivna av save_day (de
+    # har ett "week"-fält) berörs; manuellt underhållna poster som Orkidé Thai
+    # saknar fältet och lämnas orörda.
+    stale=0
+    for r in d.get("restaurants",[]):
+        for day in (r.get("menu") or {}).values():
+            if isinstance(day,dict) and "week" in day and day.get("week")!=week:
+                old_week=day.get("week")
+                day["verified"]=False
+                day["dishes"]=[]
+                day["status"]="Ej uppdaterad denna vecka"
+                day["message"]=f"Senast bekräftade uppgift gällde vecka {old_week} och visas inte längre eftersom den inte gick att uppdatera."
+                stale+=1
+    if stale:
+        log.append(f"sanering: {stale} gammal dag/dagar dolda (kunde inte uppdateras till vecka {week})")
+
     d["updated_at"]=now.strftime("%Y-%m-%d %H:%M")
     d["iso_week"]=week
     log.extend(_WARNINGS)

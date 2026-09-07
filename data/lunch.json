@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 15:07",
+  "updated_at": "2026-09-07 15:14",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -16,7 +16,8 @@
             "L1: Flygande Jacob med ris (gf)",
             "L2: Soljanka + pannkaka, sylt och grädde"
           ],
-          "source_url": "https://kabyssen-dalstorp.se/rezepte"
+          "source_url": "https://kabyssen-dalstorp.se/rezepte",
+          "week": 37
         },
         "monday": {
           "verified": true,
@@ -27,7 +28,8 @@
             "må – fr. kl. 12:00 – 14:30, tor. 16:30 – 19:00,",
             "fr. 16:30 – 20:00, lördag 16:00 – 20:00"
           ],
-          "source_url": "https://kabyssen-dalstorp.se/rezepte"
+          "source_url": "https://kabyssen-dalstorp.se/rezepte",
+          "week": 37
         },
         "tuesday": {
           "verified": true,
@@ -37,7 +39,8 @@
             "L2: Nöttcurry med kokosmjölk och ris (gf,",
             "mf)"
           ],
-          "source_url": "https://kabyssen-dalstorp.se/rezepte"
+          "source_url": "https://kabyssen-dalstorp.se/rezepte",
+          "week": 37
         },
         "thursday": {
           "verified": true,
@@ -48,7 +51,8 @@
             "L2: Kabyssen´s panerade kyckling med",
             "stekt potatis, pommes, grönsaker och"
           ],
-          "source_url": "https://kabyssen-dalstorp.se/rezepte"
+          "source_url": "https://kabyssen-dalstorp.se/rezepte",
+          "week": 37
         },
         "friday": {
           "verified": true,
@@ -59,7 +63,8 @@
             "Debreziner korv",
             "mf: mjölkfri; gf: glutenfri"
           ],
-          "source_url": "https://kabyssen-dalstorp.se/rezepte"
+          "source_url": "https://kabyssen-dalstorp.se/rezepte",
+          "week": 37
         }
       }
     },
@@ -78,7 +83,8 @@
             "Veckans Pasta: Lasagne",
             "Veckans Sallad: Tacosallad"
           ],
-          "source_url": "https://limmaredsvardshus.se/"
+          "source_url": "https://limmaredsvardshus.se/",
+          "week": 37
         },
         "monday": {
           "verified": true,
@@ -89,7 +95,8 @@
             "Veckans Pasta: Lasagne",
             "Veckans Sallad: Tacosallad"
           ],
-          "source_url": "https://limmaredsvardshus.se/"
+          "source_url": "https://limmaredsvardshus.se/",
+          "week": 37
         },
         "tuesday": {
           "verified": true,
@@ -100,7 +107,8 @@
             "Veckans Pasta: Lasagne",
             "Veckans Sallad: Tacosallad"
           ],
-          "source_url": "https://limmaredsvardshus.se/"
+          "source_url": "https://limmaredsvardshus.se/",
+          "week": 37
         },
         "thursday": {
           "verified": true,
@@ -111,7 +119,8 @@
             "Veckans Pasta: Lasagne",
             "Veckans Sallad: Tacosallad"
           ],
-          "source_url": "https://limmaredsvardshus.se/"
+          "source_url": "https://limmaredsvardshus.se/",
+          "week": 37
         },
         "friday": {
           "verified": true,
@@ -122,7 +131,8 @@
             "Veckans Sallad : Tacosallad",
             "Veckans Vego: Vegetarisk Pytt i panna med stekt ägg & rödbetor"
           ],
-          "source_url": "https://limmaredsvardshus.se/"
+          "source_url": "https://limmaredsvardshus.se/",
+          "week": 37
         }
       }
     },
@@ -139,28 +149,32 @@
           "dishes": [
             "Äggpanerad sej serveras med kokt potatis, bakade tomater och pankoströssel"
           ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "source_url": "https://www.sangbergs.se/lunchmeny",
+          "week": 37
         },
         "monday": {
           "verified": true,
           "dishes": [
             "Jubileumskorv serveras med potatismos, gurkmajo och rostad lök"
           ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "source_url": "https://www.sangbergs.se/lunchmeny",
+          "week": 37
         },
         "tuesday": {
           "verified": true,
           "dishes": [
             "Kåldolmar serveras med kokt potatis, lingon och gräddsås"
           ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "source_url": "https://www.sangbergs.se/lunchmeny",
+          "week": 37
         },
         "thursday": {
           "verified": true,
           "dishes": [
             "Snitzel serveras med rostad potatis, bearnaise, gröna ärtor och citron"
           ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "source_url": "https://www.sangbergs.se/lunchmeny",
+          "week": 37
         },
         "friday": {
           "verified": true,
@@ -171,7 +185,8 @@
             "Närproducerad mat lagad från grunden",
             "Allergier"
           ],
-          "source_url": "https://www.sangbergs.se/lunchmeny"
+          "source_url": "https://www.sangbergs.se/lunchmeny",
+          "week": 37
         }
       }
     },
@@ -187,7 +202,8 @@
           "dishes": [
             "Kycklingcurry gryta med ris"
           ],
-          "source_url": "https://glasetshuslimmared.se/lunch/"
+          "source_url": "https://glasetshuslimmared.se/lunch/",
+          "week": 37
         },
         "monday": {
           "verified": false,
@@ -199,7 +215,8 @@
           "dishes": [
             "Fiskgryta med torsk med potatismos"
           ],
-          "source_url": "https://glasetshuslimmared.se/lunch/"
+          "source_url": "https://glasetshuslimmared.se/lunch/",
+          "week": 37
         },
         "thursday": {
           "verified": true,
@@ -207,7 +224,8 @@
             "Stekt flask med potatismos,",
             "stekt lök och lingonsylt"
           ],
-          "source_url": "https://glasetshuslimmared.se/lunch/"
+          "source_url": "https://glasetshuslimmared.se/lunch/",
+          "week": 37
         },
         "friday": {
           "verified": true,
@@ -215,7 +233,8 @@
             "Husets pytt i panna serveras",
             "med stekt ägg och rödbetor"
           ],
-          "source_url": "https://glasetshuslimmared.se/lunch/"
+          "source_url": "https://glasetshuslimmared.se/lunch/",
+          "week": 37
         }
       }
     },
