@@ -502,6 +502,18 @@ footer{
 .band .source{
   color:var(--black)!important;
 }
+/* .band h3/p bär kvar sina mörka-bakgrund-tal (44px rubrik, ljusgrå text) från
+   när sektionen visade nyhetskort. Statistikens egna klasser (h3.vote-history-title,
+   p.vote-note) matchade ingen av override-selektorerna ovan och blev därför
+   jättestora respektive nästan osynliga mot den ljusa bakgrunden. */
+.band .vote-history-title{
+  font-size:13px!important;
+  font-weight:700!important;
+  letter-spacing:.08em!important;
+  line-height:1.4!important;
+  color:var(--muted)!important;
+}
+.band .vote-note{color:var(--muted)!important}
 .band .card{
   background:transparent!important;
   border-color:rgba(23,25,24,.22)!important;
