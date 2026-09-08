@@ -9,6 +9,7 @@ import json, re, io
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "lunch.json"
+HISTORY = ROOT / "data" / "dish_history.json"
 TZ = ZoneInfo("Europe/Stockholm")
 DAY = {"måndag":"monday","tisdag":"tuesday","onsdag":"wednesday","torsdag":"thursday","fredag":"friday"}
 DAY_RE = r"(måndag|tisdag|onsdag|torsdag|fredag)"
@@ -287,6 +288,36 @@ def limmared(d,week):
     r["source_url"]=url
     return len(parsed)
 
+def log_dish_history(d, week):
+    """Sparar varje verifierad dags rätter permanent (till skillnad från
+    lunch.json som bara håller aktuell vecka). En post per (datum, restaurang),
+    "dishes" som array i samma radordning som i lunch.json så reaktionernas
+    radindex (reactions/<datum>/<restaurang>/<rad>) går att slå upp mot rätt
+    text i efterhand. Upsertas – körs skriptet flera gånger samma dag skrivs
+    posten bara över, den dupliceras inte."""
+    hist={"entries":[]}
+    if HISTORY.exists():
+        try:hist=json.loads(HISTORY.read_text(encoding="utf-8"))
+        except Exception:pass
+    entries=hist.setdefault("entries",[])
+    index={(e["date"],e["restaurant"]):i for i,e in enumerate(entries)}
+    now=datetime.now(TZ)
+    monday=now.date()-timedelta(days=now.weekday())
+    for r in d.get("restaurants",[]):
+        menu=r.get("menu") or {}
+        for i,key in enumerate(DAY.values()):
+            day=menu.get(key)
+            if not isinstance(day,dict) or not day.get("verified"):continue
+            dishes=day.get("dishes") or []
+            if not dishes:continue
+            date_str=(monday+timedelta(days=i)).isoformat()
+            entry={"date":date_str,"restaurant":r["name"],"dishes":dishes}
+            k=(date_str,r["name"])
+            if k in index:entries[index[k]]=entry
+            else:index[k]=len(entries);entries.append(entry)
+    entries.sort(key=lambda e:(e["date"],e["restaurant"]))
+    HISTORY.write_text(json.dumps(hist,ensure_ascii=False,indent=2),encoding="utf-8")
+
 def main():
     d=json.loads(DATA.read_text(encoding="utf-8"))
     now=datetime.now(TZ); week=now.isocalendar().week; log=[]
@@ -328,6 +359,8 @@ def main():
                 stale+=1
     if stale:
         log.append(f"sanering: {stale} gammal dag/dagar dolda (kunde inte uppdateras till vecka {week})")
+
+    log_dish_history(d, week)
 
     d["updated_at"]=now.strftime("%Y-%m-%d %H:%M")
     d["iso_week"]=week

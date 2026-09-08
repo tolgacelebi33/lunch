@@ -377,92 +377,6 @@ footer{
   .day-tab small{font-size:9px}
 }
 
-/* Inköpsradar */
-.commodity-bar{
-  background:var(--black);
-  color:var(--white);
-  overflow:hidden;
-  border-bottom:1px solid rgba(255,255,255,.18);
-  min-height:44px;
-  display:flex;
-  align-items:center;
-  position:relative;
-  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 40px,#000 calc(100% - 40px),transparent 100%);
-  mask-image:linear-gradient(90deg,transparent 0,#000 40px,#000 calc(100% - 40px),transparent 100%);
-}
-.commodity-track{
-  display:flex;
-  width:max-content;
-  align-items:center;
-  animation:commodity-scroll 75s linear infinite;
-  will-change:transform;
-}
-@media (hover:hover){
-  .commodity-bar:hover .commodity-track{animation-play-state:paused}
-}
-.commodity-item{
-  display:flex;
-  align-items:baseline;
-  gap:10px;
-  white-space:nowrap;
-  padding:11px 26px;
-  border-right:1px solid rgba(255,255,255,.16);
-  font-size:12px;
-  font-weight:700;
-  color:inherit;
-  text-decoration:none;
-}
-a.commodity-item:hover{background:rgba(255,255,255,.08)}
-.commodity-item strong{
-  font-size:12.5px;
-  letter-spacing:.05em;
-  font-weight:700;
-}
-.commodity-item .c-price{opacity:.92;font-variant-numeric:tabular-nums;font-weight:700}
-.commodity-item .metric{
-  opacity:.95;
-  padding:2px 8px;
-  border-radius:20px;
-  background:rgba(255,255,255,.1);
-  font-variant-numeric:tabular-nums;
-  font-size:11px;
-}
-.commodity-item .buy-good{background:rgba(220,232,223,.22);color:#dce8df}
-.commodity-item .buy-bad{background:rgba(243,213,204,.2);color:#f3d5cc}
-.commodity-source{opacity:.5;font-size:10px}
-@keyframes commodity-scroll{
-  from{transform:translateX(0)}
-  to{transform:translateX(-50%)}
-}
-.story-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  border-top:1px solid rgba(23,25,24,.28);
-}
-.story-card{
-  padding:30px 30px 30px 0;
-  border-bottom:1px solid rgba(23,25,24,.18);
-  min-height:310px;
-  display:flex;
-  flex-direction:column;
-}
-.story-card:nth-child(even){
-  padding-left:30px;
-  padding-right:0;
-  border-left:1px solid rgba(23,25,24,.18);
-}
-.story-card .name{font-size:25px}
-.story-card p{color:#4f5451!important}
-.story-card .extra{
-  background:rgba(255,255,255,.38)!important;
-  color:var(--black)!important;
-}
-@media(max-width:800px){
-  .story-grid{grid-template-columns:1fr}
-  .story-card,.story-card:nth-child(even){padding:26px 0;border-left:0}
-  .commodity-track{animation-duration:55s}
-}
-
 .vote-headline{
   font-size:15px;
   margin:0 0 20px;
@@ -554,6 +468,19 @@ a.commodity-item:hover{background:rgba(255,255,255,.08)}
   border-top:1px solid var(--line);
   font-size:14px;
 }
+.stats-dishes{margin-top:28px}
+.dish-search{
+  width:100%;
+  max-width:420px;
+  border:1px solid var(--black);
+  background:var(--white);
+  border-radius:4px;
+  padding:10px 14px;
+  font:inherit;
+  font-size:14px;
+  margin-top:10px;
+}
+#dishSearchResults{margin-top:14px}
 .vote-history-list li:first-child{border-top:0}
 .vhd{color:var(--muted);width:78px;flex:none}
 .vhn{font-weight:700;flex:1}
@@ -597,19 +524,13 @@ footer{
 </head>
 <body>
 
-<div class="commodity-bar" aria-label="Inköpsradar">
-  <div id="commodityTrack" class="commodity-track">
-    <div class="commodity-item"><strong>Inköpsradar</strong><span>Hämtar marknadsdata…</span></div>
-  </div>
-</div>
-
 <header class="topbar">
   <div class="shell topbar-inner">
     <a class="brand" href="/" aria-label="Till startsidan, dagens datum">Lunch<span>radarn</span></a>
     <nav class="nav">
       <a href="#rosta">Rösta</a>
       <a href="#lunch">Lunch</a>
-      <a href="#samtal">Samtalsämnen</a>
+      <a href="#statistik">Statistik</a>
       <a href="#om">Om sidan</a>
     </nav>
   </div>
@@ -655,20 +576,21 @@ footer{
   </div>
 </main>
 
-<section id="samtal" class="band">
+<section id="statistik" class="band">
   <div class="shell">
     <div class="section-head" style="margin-bottom:34px">
-      <h2>Något att prata om över lunchen.</h2>
-      <p>Fyra aktuella, positiva eller konstruktiva nyheter från SVT.</p>
+      <h2>Statistik</h2>
+      <p>Röster, reaktioner och rätter över tid – byggs upp live allt eftersom dagarna går.</p>
     </div>
-    <div id="storyGrid" class="story-grid"></div>
+    <div id="statsLeaderboard"><p class="vote-note">Hämtar statistik…</p></div>
+    <div id="statsDishes" class="stats-dishes"></div>
   </div>
 </section>
 
 <section id="om" class="info">
   <div class="shell info-grid">
-    <h3>Lunch + något att prata om</h3>
-    <p>Dagens lunch samlar lunchmenyer runt Dalstorp och avslutar med några konstruktiva nyheter som passar runt lunchbordet. Nyheterna byts ut löpande och länkar alltid vidare till originalkällan.</p>
+    <h3>Lunch nära Svedbergs</h3>
+    <p>Dagens lunch samlar lunchmenyer runt Dalstorp. Rösta på var du käkar, reagera på dagens rätt och följ statistiken över tid – allt byggs upp av besökarna, live.</p>
   </div>
 </section>
 
@@ -783,6 +705,8 @@ async function loadLunch(){
     lunchData=await res.json();
     renderDay(selectedIndex());
     renderVotes(lastVotes);
+    renderStatsLeaderboard();
+    computeAndRenderTopDishes();
   }catch(err){
     grid.innerHTML=`<article class="card"><h3 class="name">Kunde inte läsa lunchdata</h3><p>Kontrollera data/lunch.json.</p></article>`;
   }
@@ -844,6 +768,9 @@ function initVoting(){
   // aktuell dag så knapparna dyker upp (annars görs det redan av loadLunch()).
   if(lunchData) renderDay(selectedIndex());
   loadVoteHistory();
+  initStatsLeaderboard();
+  initTopDishes();
+  loadDishHistory();
 }
 function renderVotes(votes){
   const widget=document.getElementById("voteWidget");
@@ -973,90 +900,135 @@ async function loadVoteHistory(){
   }
 }
 
-function pctClass(v){
-  if(v==null) return "";
-  const n=Number(v);
-  if(!Number.isFinite(n)||n===0) return "";
-  /* inköpsperspektiv: fallande råvarupriser = positivt */
-  return n<0 ? "buy-good" : "buy-bad";
-}
-function pct(v){
-  if(v==null) return "—";
-  const n=Number(v);
-  if(!Number.isFinite(n)) return "—";
-  return `${n>0?"+":""}${n.toFixed(1).replace(".",",")}%`;
-}
-function sek(v){
-  const n=Number(v);
-  if(!Number.isFinite(n)) return "—";
-  return n.toLocaleString("sv-SE",{maximumFractionDigits:0})+" kr";
-}
-function idx(v){
-  const n=Number(v);
-  if(!Number.isFinite(n)) return "—";
-  return n.toLocaleString("sv-SE",{minimumFractionDigits:1,maximumFractionDigits:1});
-}
-async function loadCommodities(){
-  const track=document.getElementById("commodityTrack");
-  if(!track) return;
-  try{
-    const res=await fetch(`data/commodities.json?v=${Date.now()}`,{cache:"no-store"});
-    if(!res.ok) throw new Error("HTTP "+res.status);
-    const data=await res.json();
-    const items=(data.items||[]).filter(x=>x && x.name);
-    if(!items.length) throw new Error("empty");
-    const render=x=>{
-      const tag=x.source_url?"a":"div";
-      const link=x.source_url?` href="${esc(x.source_url)}" target="_blank" rel="noopener"`:"";
-      const isIndex=x.kind==="index";
-      const priceHtml=x.price!=null
-        ?`<span class="c-price">${isIndex?`${idx(x.price)} ${esc(x.unit||"poäng")}`:`${sek(x.price)}${x.unit?`/${esc(x.unit.replace(/^kr\//,""))}`:""}`}</span>`
-        :"";
-      const metrics=isIndex
-        ?`<span class="metric ${pctClass(x.month)}">mån ${pct(x.month)}</span><span class="metric ${pctClass(x.yoy)}">år ${pct(x.yoy)}</span>`
-        :`<span class="metric ${pctClass(x.week)}">v ${pct(x.week)}</span><span class="metric ${pctClass(x.month)}">mån ${pct(x.month)}</span>`;
-      return `<${tag} class="commodity-item"${link}>
-      <strong>${esc(x.name)}</strong>
-      ${priceHtml}
-      ${metrics}
-      ${x.proxy?`<span class="commodity-source">${esc(x.proxy)}</span>`:""}
-    </${tag}>`;
-    };
-    const once=items.map(render).join("");
-    track.innerHTML=once+once;
-    // iOS Safari kan låta en animation som läggs till dynamiskt (efter fetch)
-    // stå still tills en scroll tvingar fram omritning. Tvinga omstart direkt.
-    track.style.animation="none";
-    void track.offsetWidth;
-    track.style.animation="";
-  }catch(e){
-    track.innerHTML='<div class="commodity-item"><strong>Inköpsradar</strong><span>Marknadsdata tillfälligt otillgänglig</span></div>';
+/* --- Statistik: röst-topplista (alla dagar) ---
+   Summerar votes/ över alla datum, live. */
+let lastStatsTotals=null;
+function initStatsLeaderboard(){
+  const el=document.getElementById("statsLeaderboard");
+  if(!el) return;
+  if(!votingConfigured){
+    el.innerHTML=`<p class="vote-note">Statistiken är inte påkopplad ännu.</p>`;
+    return;
   }
+  voteDb.ref("votes").on("value",snap=>{
+    const totals={};
+    let totalDays=0,grandTotal=0;
+    snap.forEach(dayChild=>{
+      totalDays++;
+      dayChild.forEach(rChild=>{
+        const n=rChild.val()||0;
+        totals[rChild.key]=(totals[rChild.key]||0)+n;
+        grandTotal+=n;
+      });
+    });
+    lastStatsTotals={totals,totalDays,grandTotal};
+    renderStatsLeaderboard();
+  });
 }
-async function loadStories(){
-  const grid=document.getElementById("storyGrid");
-  if(!grid) return;
-  try{
-    const nr=await fetch(`data/news.json?v=${Date.now()}`,{cache:"no-store"});
-    const news=nr.ok ? await nr.json() : {items:[]};
-    const pool=[...(news.items||[])];
-    for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
-    const picks=pool.slice(0,4);
-    const newsCards=picks.map(n=>`<article class="story-card">
-      <div class="eyebrow">${esc(n.category||"SVT Nyheter")}</div>
-      <h3 class="name">${esc(n.title||"Aktuell nyhet")}</h3>
-      ${n.summary?`<p>${esc(n.summary)}</p>`:""}
-      <div class="card-footer"><span>${esc(n.source||"SVT")}${n.date?` · ${esc(n.date)}`:""}</span>${n.url?`<a class="source" href="${esc(n.url)}" target="_blank" rel="noopener">Läs nyheten</a>`:""}</div>
-    </article>`).join("");
-    grid.innerHTML=newsCards;
-  }catch(e){
-    grid.innerHTML='<p>Kunde inte läsa samtalsämnen just nu.</p>';
+function renderStatsLeaderboard(){
+  const el=document.getElementById("statsLeaderboard");
+  if(!el||!lunchData||!lastStatsTotals) return;
+  const {totals,totalDays,grandTotal}=lastStatsTotals;
+  const rows=lunchData.restaurants.map(r=>({name:r.name,n:totals[slug(r.name)]||0}))
+    .filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
+  if(!rows.length){
+    el.innerHTML=`<p class="vote-note">Ingen röststatistik än.</p>`;
+    return;
   }
+  el.innerHTML=`<h3 class="vote-history-title">Röst-topplista (alla dagar)</h3><ul class="vote-history-list">${rows.map(r=>{
+    const pct=grandTotal?Math.round(r.n/grandTotal*100):0;
+    return `<li><span class="vhn">${esc(r.name)}</span><span class="vhc">${r.n} röst${r.n===1?"":"er"} (${pct}%)</span></li>`;
+  }).join("")}</ul><p class="vote-note" style="margin-top:10px">Baserat på ${grandTotal} röst${grandTotal===1?"":"er"} över ${totalDays} dag${totalDays===1?"":"ar"}.</p>`;
+}
+
+/* --- Statistik: mest omtyckta rätterna ---
+   Korsreferens mellan reactions/ (live, Firebase) och dish_history.json
+   (statisk, uppdateras när skriptet kör). Reaktionerna är nycklade på
+   radindex, historiken sparar rätterna i samma radordning, så de går att
+   slå ihop via datum+restaurang+radindex. */
+let dishHistory=[];
+let lastReactionsSnapshot=null;
+function initTopDishes(){
+  if(!votingConfigured) return;
+  voteDb.ref("reactions").on("value",snap=>{
+    lastReactionsSnapshot=snap.val()||{};
+    computeAndRenderTopDishes();
+  });
+}
+function computeAndRenderTopDishes(){
+  const el=document.getElementById("topDishes");
+  if(!el||!lastReactionsSnapshot) return;
+  const scored=[];
+  for(const [date,byRestaurant] of Object.entries(lastReactionsSnapshot)){
+    for(const [rslug,byLine] of Object.entries(byRestaurant||{})){
+      for(const [lineIdxStr,counts] of Object.entries(byLine||{})){
+        const fire=counts.fire||0,dislike=counts.dislike||0;
+        if(!fire&&!dislike) continue;
+        const histEntry=dishHistory.find(e=>e.date===date&&slug(e.restaurant)===rslug);
+        const line=histEntry?.dishes?.[Number(lineIdxStr)];
+        if(!line) continue;
+        scored.push({date,restaurant:histEntry.restaurant,line,fire,dislike});
+      }
+    }
+  }
+  scored.sort((a,b)=>(b.fire-b.dislike)-(a.fire-a.dislike));
+  const list=scored.slice(0,8);
+  if(!list.length){
+    el.innerHTML=`<li>Inga reaktioner än – bli först att 🔥 eller 👎 en rätt uppe bland dagens luncher.</li>`;
+    return;
+  }
+  el.innerHTML=list.map(x=>`<li><span class="vhd">🔥${x.fire} 👎${x.dislike}</span><span class="vhn">${esc(x.line)}</span><span class="vhc">${esc(x.restaurant)}</span></li>`).join("");
+}
+
+/* --- Statistik: sök i rätt-historiken ---
+   Enkel skiftlägesokänslig delsträngssökning över dish_history.json.
+   Ingen "vad är egentligen samma rätt"-igenkänning – restaurangernas
+   text varierar för mycket dag till dag för att det ska gå att lita på. */
+async function loadDishHistory(){
+  const el=document.getElementById("statsDishes");
+  if(!el) return;
+  el.innerHTML=`
+    <h3 class="vote-history-title">Mest omtyckta rätterna</h3>
+    <ul id="topDishes" class="vote-history-list"><li>Samlar data…</li></ul>
+    <h3 class="vote-history-title" style="margin-top:28px">Sök i rätt-historiken</h3>
+    <p class="vote-note">Byggs upp av skriptet några gånger om dagen – inte lika direkt-live som röster och reaktioner.</p>
+    <input type="search" id="dishSearch" class="dish-search" placeholder="t.ex. raggmunk, fisk, korv…">
+    <div id="dishSearchResults"></div>
+  `;
+  document.getElementById("dishSearch").addEventListener("input",e=>renderDishSearchResults(e.target.value));
+  try{
+    const res=await fetch(`data/dish_history.json?v=${Date.now()}`,{cache:"no-store"});
+    const data=res.ok?await res.json():{entries:[]};
+    dishHistory=data.entries||[];
+  }catch(e){
+    dishHistory=[];
+  }
+  computeAndRenderTopDishes();
+}
+function renderDishSearchResults(qRaw){
+  const el=document.getElementById("dishSearchResults");
+  if(!el) return;
+  const q=qRaw.trim().toLowerCase();
+  if(!q){ el.innerHTML=""; return; }
+  const matches=[];
+  dishHistory.forEach(entry=>{
+    (entry.dishes||[]).forEach(line=>{
+      if(line.toLowerCase().includes(q)) matches.push({date:entry.date,restaurant:entry.restaurant,line});
+    });
+  });
+  if(!matches.length){
+    el.innerHTML=`<p class="vote-note">Inga träffar på "${esc(qRaw)}" än.</p>`;
+    return;
+  }
+  matches.sort((a,b)=>b.date.localeCompare(a.date));
+  el.innerHTML=`<p class="vote-note">${matches.length} träff${matches.length===1?"":"ar"}:</p><ul class="vote-history-list">${matches.slice(0,20).map(m=>{
+    const dt=new Date(m.date+"T12:00:00");
+    const label=new Intl.DateTimeFormat("sv-SE",{day:"numeric",month:"short",year:"numeric"}).format(dt);
+    return `<li><span class="vhd">${esc(label)}</span><span class="vhn">${esc(m.restaurant)}</span><span class="vhc">${esc(m.line)}</span></li>`;
+  }).join("")}</ul>`;
 }
 
 loadLunch();
-loadCommodities();
-loadStories();
 initVoting();
 
 /* Håller sidan på rätt dag om fliken lämnas öppen över midnatt.

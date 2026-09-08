@@ -44,20 +44,28 @@ jobs:
         timeout-minutes: 2
         run: python scripts/update_lunch.py
 
-      - name: Update SVT news
-        timeout-minutes: 1
-        run: python scripts/update_news.py
+      # Pensionerad 2026-09-08: nyhets-/samtalsämnen-sektionen togs bort från
+      # sidan till förmån för statistiksektionen. Skriptet lämnas orört i
+      # scripts/update_news.py om den ska väckas till liv igen - avkommentera
+      # bara steget nedan.
+      # - name: Update SVT news
+      #   timeout-minutes: 1
+      #   run: python scripts/update_news.py
 
-      - name: Update commodities
-        timeout-minutes: 1
-        continue-on-error: true
-        run: python scripts/update_commodities.py
+      # Pensionerad 2026-09-08: inköpsradar-bannern togs bort från sidan
+      # eftersom den inte verkade användas. Skriptet lämnas orört i
+      # scripts/update_commodities.py om den ska väckas till liv igen -
+      # avkommentera bara steget nedan.
+      # - name: Update commodities
+      #   timeout-minutes: 1
+      #   continue-on-error: true
+      #   run: python scripts/update_commodities.py
 
       - name: Commit data
         run: |
           git config user.name "Dagens lunch bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/lunch.json data/news.json data/commodities.json data/commodities_history.json
+          git add data/lunch.json data/dish_history.json data/news.json data/commodities.json data/commodities_history.json
           git diff --cached --quiet || git commit -m "Update lunch, news and market data"
           git push
 
