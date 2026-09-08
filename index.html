@@ -476,15 +476,32 @@ a.commodity-item:hover{background:rgba(255,255,255,.08)}
   border-radius:4px;
 }
 .vote-row:hover{background:var(--warm)}
-.vote-row.mine{background:var(--black);color:var(--white)}
-.vote-row.mine .vote-bar{background:rgba(255,255,255,.25)}
+.vote-row.mine{border-width:2px;background:var(--warm)}
+.vote-row-name{display:flex;align-items:center;gap:8px}
+.vote-check{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  background:var(--black);
+  color:var(--white);
+  font-size:12px;
+  flex:none;
+}
+.vote-row.mine .vote-check{display:inline-flex}
 .vote-row-top{
   display:flex;
   justify-content:space-between;
+  align-items:baseline;
   gap:12px;
   font-size:14px;
   margin-bottom:8px;
 }
+.vote-numbers{display:flex;align-items:baseline;gap:6px;white-space:nowrap}
+.vote-count{font-weight:700}
+.vote-pct{font-size:12px;color:var(--muted)}
 .vote-bar{
   height:5px;
   background:var(--line);
@@ -496,7 +513,6 @@ a.commodity-item:hover{background:rgba(255,255,255,.08)}
   background:var(--hav);
   transition:width .4s ease;
 }
-.vote-row.mine .vote-fill{background:var(--white)}
 .vote-note{color:var(--muted);font-size:14px;margin:0}
 </style>
 
@@ -771,8 +787,11 @@ function renderVotes(votes){
   const rows=restaurants.map(r=>{
     const s=slug(r.name), n=votes[s]||0, mine=myVote===s;
     const pct=total?Math.round(n/total*100):0;
-    return `<button class="vote-row ${mine?"mine":""}" data-slug="${s}" title="${mine?"Klicka igen för att ta bort din röst":""}">
-      <div class="vote-row-top"><span>${esc(r.name)}${mine?" · din röst (klicka för att ta bort)":""}</span><span>${pct}%${n?` (${n})`:""}</span></div>
+    return `<button class="vote-row ${mine?"mine":""}" data-slug="${s}" title="${mine?"Klicka igen för att ta bort din röst":"Rösta på "+esc(r.name)}">
+      <div class="vote-row-top">
+        <span class="vote-row-name"><span class="vote-check">✓</span>${esc(r.name)}</span>
+        <span class="vote-numbers"><span class="vote-count">${n} röst${n===1?"":"er"}</span><span class="vote-pct">${pct}%</span></span>
+      </div>
       <div class="vote-bar"><div class="vote-fill" style="width:${pct}%"></div></div>
     </button>`;
   }).join("");
