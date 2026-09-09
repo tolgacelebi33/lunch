@@ -422,6 +422,40 @@ footer{
 .vote-numbers{display:flex;align-items:baseline;gap:6px;white-space:nowrap}
 .vote-count{font-weight:700}
 .vote-pct{font-size:12px;color:var(--muted)}
+
+/* Tillfälligt engångsalternativ (SPECIAL_EVENT) – ska sticka ut helt från
+   sajtens annars dämpade palett så det inte går att missa. */
+.vote-row.special{
+  border:2px solid #c9401f;
+  background:linear-gradient(135deg,#ff7a3c,#e8442a);
+  color:#fff;
+  animation:special-pulse 2.2s ease-in-out infinite;
+}
+.vote-row.special:hover{background:linear-gradient(135deg,#ff8a52,#f0532f)}
+.vote-row.special.mine{border-color:#fff;background:linear-gradient(135deg,#e8442a,#b82f16)}
+.vote-row.special .vote-row-name{font-size:16px;font-weight:700}
+.vote-row.special .vote-bar{background:rgba(255,255,255,.3)}
+.vote-row.special .vote-fill{background:#fff}
+.vote-row.special .vote-count,.vote-row.special .vote-pct{color:#fff}
+.vote-row.special .vote-check{background:#fff;color:#c9401f}
+.special-tag{
+  display:inline-block;
+  background:rgba(255,255,255,.28);
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  font-weight:700;
+  padding:3px 9px;
+  border-radius:999px;
+  margin-bottom:9px;
+}
+@keyframes special-pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(232,68,42,.45)}
+  50%{box-shadow:0 0 0 9px rgba(232,68,42,0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .vote-row.special{animation:none}
+}
 .vote-bar{
   height:5px;
   background:var(--line);
@@ -746,13 +780,20 @@ function slug(name){
     .replace(/å/g,"a").replace(/ä/g,"a").replace(/ö/g,"o")
     .replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
 }
+/* Tillfälligt engångsalternativ på röstlistan – självdör automatiskt när
+   datumet passerat, ingen manuell borttagning behövs imorgon. */
+const SPECIAL_EVENT={date:"2026-09-09",name:"🌯 Gemensam kebab från Gällstad!"};
 function todaysOpenRestaurants(){
   if(!lunchData) return [];
   const key=DAY_KEYS[currentIndex()];
-  return lunchData.restaurants.filter(r=>{
+  const list=lunchData.restaurants.filter(r=>{
     const status=r.menu?.[key]?.status;
     return status!=="Stängt" && status!=="Ingen lunch";
   });
+  if(SPECIAL_EVENT&&todayKey()===SPECIAL_EVENT.date){
+    list.unshift({name:SPECIAL_EVENT.name,special:true});
+  }
+  return list;
 }
 function initVoting(){
   const widget=document.getElementById("voteWidget");
@@ -797,7 +838,8 @@ function renderVotes(votes){
   const rows=restaurants.map(r=>{
     const s=slug(r.name), n=votes[s]||0, mine=myVote===s;
     const pct=total?Math.round(n/total*100):0;
-    return `<button class="vote-row ${mine?"mine":""}" data-slug="${s}" title="${mine?"Klicka igen för att ta bort din röst":"Rösta på "+esc(r.name)}">
+    return `<button class="vote-row ${mine?"mine":""} ${r.special?"special":""}" data-slug="${s}" title="${mine?"Klicka igen för att ta bort din röst":"Rösta på "+esc(r.name)}">
+      ${r.special?`<div class="special-tag">Idag bara – häng med!</div>`:""}
       <div class="vote-row-top">
         <span class="vote-row-name"><span class="vote-check">✓</span>${esc(r.name)}</span>
         <span class="vote-numbers"><span class="vote-count">${n} röst${n===1?"":"er"}</span><span class="vote-pct">${pct}%</span></span>
