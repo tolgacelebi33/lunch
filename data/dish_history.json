@@ -204,6 +204,17 @@
       ]
     },
     {
+      "date": "2026-09-14",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Fylld lunchkorv med potatismos",
+        "Lasagne",
+        "Veckans Vego: Grönsaksgryta med ris",
+        "Veckans Pasta: Alfredo (kyckling & vitlök)",
+        "Veckans Sallad: Tonfiskröra med ägg"
+      ]
+    },
+    {
       "date": "2026-09-15",
       "restaurant": "Kabyssen",
       "dishes": [
@@ -214,6 +225,17 @@
       ]
     },
     {
+      "date": "2026-09-15",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Stekt fläsk med raggmunk & lingon",
+        "Stekt fläsk med potatis & löksås",
+        "Stekt fläsk med potatis & bruna bönor",
+        "Kebabgryta med ris",
+        "Veckans Vego: Grönsaksgryta med ris"
+      ]
+    },
+    {
       "date": "2026-09-16",
       "restaurant": "Kabyssen",
       "dishes": [
@@ -221,6 +243,16 @@
         "dillmajo",
         "L2: Köttfärssoppa med purjolök och",
         "färskost + pannkaka, sylt och grädde"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Pannbiff med brunsås, potatis & lingon",
+        "Veckans Vego: Grönsaksgryta med ris",
+        "Veckans Pasta: Alfredo (kyckling & vitlök)",
+        "Veckans Sallad: Tonfiskröra med ägg"
       ]
     },
     {
@@ -243,6 +275,17 @@
     },
     {
       "date": "2026-09-17",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Fisksoppa med vitchoklad pannacotta",
+        "Kycklinggryta med vitvin & salvia",
+        "Veckans Vego: Grönsaksgryta med ris",
+        "Veckans Pasta: Alfredo (kyckling & vitlök)",
+        "Veckans Sallad: Tonfiskröra med ägg"
+      ]
+    },
+    {
+      "date": "2026-09-17",
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
@@ -257,6 +300,17 @@
         "Falukorv i paprika/ Sallad med stekt",
         "tomatsås",
         "rostbiff och"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Porterstek med gräddsås, rostad potatis & gelé",
+        "Veckans Vego : Grönsaksgryta med ris",
+        "Veckans Pasta : Alfredo (kyckling & vitlök)",
+        "Veckans Sallad : Tonfiskröra med ägg",
+        "Veckans Vego: Grönsaksgryta med ris"
       ]
     },
     {

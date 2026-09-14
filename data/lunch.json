@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14 02:05",
+  "updated_at": "2026-09-14 03:01",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -75,44 +75,63 @@
       "source_url": "https://limmaredsvardshus.se/",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Pannbiff med brunsås, potatis & lingon",
+            "Veckans Vego: Grönsaksgryta med ris",
+            "Veckans Pasta: Alfredo (kyckling & vitlök)",
+            "Veckans Sallad: Tonfiskröra med ägg"
+          ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Fylld lunchkorv med potatismos",
+            "Lasagne",
+            "Veckans Vego: Grönsaksgryta med ris",
+            "Veckans Pasta: Alfredo (kyckling & vitlök)",
+            "Veckans Sallad: Tonfiskröra med ägg"
+          ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk med raggmunk & lingon",
+            "Stekt fläsk med potatis & löksås",
+            "Stekt fläsk med potatis & bruna bönor",
+            "Kebabgryta med ris",
+            "Veckans Vego: Grönsaksgryta med ris"
+          ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Fisksoppa med vitchoklad pannacotta",
+            "Kycklinggryta med vitvin & salvia",
+            "Veckans Vego: Grönsaksgryta med ris",
+            "Veckans Pasta: Alfredo (kyckling & vitlök)",
+            "Veckans Sallad: Tonfiskröra med ägg"
+          ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Porterstek med gräddsås, rostad potatis & gelé",
+            "Veckans Vego : Grönsaksgryta med ris",
+            "Veckans Pasta : Alfredo (kyckling & vitlök)",
+            "Veckans Sallad : Tonfiskröra med ägg",
+            "Veckans Vego: Grönsaksgryta med ris"
+          ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         }
       }
     },
@@ -256,12 +275,14 @@
   ],
   "iso_week": 38,
   "update_log": [
-    "glasets: <urlopen error timed out>",
+    "glasets: current week 38 not found",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: no current-week menu parsed",
-    "limmared: <urlopen error [Errno 101] Network is unreachable>",
-    "sanering: 14 gammal dag/dagar dolda (kunde inte uppdateras till vecka 38)",
+    "limmared: ok (5 days)",
+    "sanering: 9 gammal dag/dagar dolda (kunde inte uppdateras till vecka 38)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ]
 }
