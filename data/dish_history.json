@@ -216,6 +216,14 @@
     },
     {
       "date": "2026-09-15",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Flygande Jakob med ris toppas",
+        "med bacon och jordnötter"
+      ]
+    },
+    {
+      "date": "2026-09-15",
       "restaurant": "Kabyssen",
       "dishes": [
         "L1: Stekt fläsk (potatis/öl) med raggmunk,",
@@ -233,6 +241,13 @@
         "Stekt fläsk med potatis & bruna bönor",
         "Kebabgryta med ris",
         "Veckans Vego: Grönsaksgryta med ris"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Husets tacopaj med nachochips"
       ]
     },
     {
@@ -264,6 +279,14 @@
     },
     {
       "date": "2026-09-17",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Persiljejarpar med kokt potatis,",
+        "gräddsås och lingonsylt"
+      ]
+    },
+    {
+      "date": "2026-09-17",
       "restaurant": "Kabyssen",
       "dishes": [
         "L1: Kabyssen´s panerade schnitzel med",
@@ -289,6 +312,15 @@
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Fajitaskryddad kyckling med",
+        "hembakt pitabröd och ris",
+        "es ra ea | evdag SESLEDAS bi NIER [kr"
       ]
     },
     {
