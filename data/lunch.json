@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15 12:01",
+  "updated_at": "2026-09-15 14:38",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -144,44 +144,48 @@
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Plommonspäckad fläskkarré serveras med gräddsås, kokt potatis och rödkål"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt kassler serveras med stuvad blomkål"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk serveras med raggmunk och lingon alternativt löksås och kokt potatis"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Kycklingwook med aioli"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Havets wallenbergare serveras med potatismos, brynt smör och gröna ärtor",
+            "Pasta carbonara",
+            "Änga mat (grönsakssoppa)",
+            "Närproducerad mat lagad från grunden",
+            "Allergier"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 37,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 37 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 38
         }
       }
     },
@@ -281,11 +285,11 @@
   "update_log": [
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/09/M-v38.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
-    "sangbergs: no current-week menu parsed",
+    "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
-    "sanering: 5 gammal dag/dagar dolda (kunde inte uppdateras till vecka 38)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Centralen / Sångbergs friday: 10 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ]

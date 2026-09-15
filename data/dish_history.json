@@ -197,6 +197,13 @@
     },
     {
       "date": "2026-09-14",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Stekt kassler serveras med stuvad blomkål"
+      ]
+    },
+    {
+      "date": "2026-09-14",
       "restaurant": "Kabyssen",
       "dishes": [
         "L1: Biff a la Lindström med stekt potatis",
@@ -212,6 +219,13 @@
         "Veckans Vego: Grönsaksgryta med ris",
         "Veckans Pasta: Alfredo (kyckling & vitlök)",
         "Veckans Sallad: Tonfiskröra med ägg"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Stekt fläsk serveras med raggmunk och lingon alternativt löksås och kokt potatis"
       ]
     },
     {
@@ -241,6 +255,13 @@
         "Stekt fläsk med potatis & bruna bönor",
         "Kebabgryta med ris",
         "Veckans Vego: Grönsaksgryta med ris"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Plommonspäckad fläskkarré serveras med gräddsås, kokt potatis och rödkål"
       ]
     },
     {
@@ -279,6 +300,13 @@
     },
     {
       "date": "2026-09-17",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Kycklingwook med aioli"
+      ]
+    },
+    {
+      "date": "2026-09-17",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Persiljejarpar med kokt potatis,",
@@ -312,6 +340,17 @@
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Havets wallenbergare serveras med potatismos, brynt smör och gröna ärtor",
+        "Pasta carbonara",
+        "Änga mat (grönsakssoppa)",
+        "Närproducerad mat lagad från grunden",
+        "Allergier"
       ]
     },
     {
