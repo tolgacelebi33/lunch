@@ -223,15 +223,9 @@ h1{
   margin:0;
   padding:8px 0;
   border-top:1px solid var(--line);
-  display:flex;
-  justify-content:space-between;
-  align-items:baseline;
-  gap:10px;
-  flex-wrap:wrap;
 }
 .menu li:first-child{border-top:0}
 .menu strong{font-weight:700}
-.dish-text{flex:1;min-width:0}
 .extra{
   margin-top:19px;
   padding:14px 16px;
@@ -469,7 +463,7 @@ footer{
 }
 .vote-note{color:var(--muted);font-size:14px;margin:0}
 
-.line-reactions{display:flex;gap:4px;flex:none}
+.card-reactions{display:flex;gap:8px;margin-top:16px}
 .reaction{
   border:1px solid var(--line);
   background:var(--white);
@@ -482,7 +476,6 @@ footer{
 }
 .reaction:hover{background:var(--warm)}
 .reaction.mine{border-color:var(--black);background:var(--warm);font-weight:700}
-.reaction.sm{padding:3px 9px;font-size:12px}
 
 .vote-history{margin-top:28px}
 .vote-history-title{
@@ -700,13 +693,14 @@ function renderTabs(active){
   }));
 }
 const LINE_REACTIONS=[["fire","🔥"],["dislike","👎"]];
-function lineReactionsHtml(rslug,dateKey,idx){
-  const counts=(((currentReactions[dateKey]||{})[rslug]||{})[idx])||{};
-  const mine=localStorage.getItem(`reacted_${dateKey}_${rslug}_${idx}`);
-  return `<span class="line-reactions">${LINE_REACTIONS.map(([k,emo])=>{
+const CARD_REACTION_KEY="all"; // en reaktion per restaurang+dag, inte per menyrad
+function cardReactionsHtml(rslug,dateKey){
+  const counts=(((currentReactions[dateKey]||{})[rslug]||{})[CARD_REACTION_KEY])||{};
+  const mine=localStorage.getItem(`reacted_${dateKey}_${rslug}_${CARD_REACTION_KEY}`);
+  return `<div class="card-reactions">${LINE_REACTIONS.map(([k,emo])=>{
     const n=counts[k]||0;
-    return `<button class="reaction sm ${mine===k?"mine":""}" data-slug="${rslug}" data-date="${dateKey}" data-line="${idx}" data-emoji="${k}">${emo}${n?` ${n}`:""}</button>`;
-  }).join("")}</span>`;
+    return `<button class="reaction ${mine===k?"mine":""}" data-slug="${rslug}" data-date="${dateKey}" data-line="${CARD_REACTION_KEY}" data-emoji="${k}">${emo}${n?` ${n}`:""}</button>`;
+  }).join("")}</div>`;
 }
 function renderRestaurant(r,key,dateKey){
   const day=(r.menu||{})[key];
@@ -716,13 +710,14 @@ function renderRestaurant(r,key,dateKey){
   const source=day?.source_url||r.source_url||"";
   const rslug=slug(r.name);
   const dishHtml=dishes.length
-    ? dishes.map((x,idx)=>`<li><span class="dish-text">${esc(x)}</span>${votingConfigured?lineReactionsHtml(rslug,dateKey,idx):""}</li>`).join("")
+    ? dishes.map(x=>`<li>${esc(x)}</li>`).join("")
     : `<li>${esc(day?.message||"Ingen verifierad lunchdata sparad för denna dag.")}</li>`;
   return `<article class="card" data-town="${esc(r.town)}">
     <div class="card-head"><div><h3 class="name">${esc(r.name)}</h3><div class="place">${esc(r.town)}</div></div><div class="price">${esc(r.price||"—")}</div></div>
     <div class="time">${esc(r.lunch_time||"")}</div>
     <ul class="menu">${dishHtml}</ul>
     ${r.includes?`<div class="extra">${esc(r.includes)}</div>`:""}
+    ${votingConfigured&&dishes.length?cardReactionsHtml(rslug,dateKey):""}
     <div class="card-footer"><span class="status ${status}">${esc(statusText)}</span>${source?`<a class="source" href="${esc(source)}" target="_blank" rel="noopener">Källa</a>`:""}</div>
   </article>`;
 }
@@ -1019,7 +1014,11 @@ function computeAndRenderTopDishes(){
         const fire=counts.fire||0,dislike=counts.dislike||0;
         if(!fire&&!dislike) continue;
         const histEntry=dishHistory.find(e=>e.date===date&&slug(e.restaurant)===rslug);
-        const line=histEntry?.dishes?.[Number(lineIdxStr)];
+        if(!histEntry?.dishes?.length) continue;
+        // "all" = en reaktion för hela dagens meny (nuvarande läge). Äldre
+        // radvisa reaktioner (numeriskt index) kan fortfarande finnas kvar
+        // från innan det byttes tillbaka, slås ihop på samma sätt.
+        const line=lineIdxStr==="all"?histEntry.dishes.join(" / "):histEntry.dishes[Number(lineIdxStr)];
         if(!line) continue;
         scored.push({date,restaurant:histEntry.restaurant,line,fire,dislike});
       }

@@ -53,6 +53,12 @@ def clean_lines(chunk):
         x=re.sub(r"\s+"," ",x).strip(" -•|:")
         if not x or len(x)>260: continue
         if re.search(r"(?i)cookie|instagram|facebook|kontakt|öppettid|boka bord|integritet|wordpress",x): continue
+        # OCR läser ofta den kursiva "Dagens rätt ... Xkr"-prisrubriken mellan
+        # vardags- och helgmenyn som rent skräp (t.ex. "KAN ray ae | evdag
+        # SEOVEDAS Oi NIER Der"). Den börjar aldrig med en veckodag så den
+        # känns inte igen som en dag-gräns och sväljs annars in i föregående
+        # dags rätt. "|"/"["/"]" förekommer i princip aldrig i riktig rätt-text.
+        if re.search(r"[\[\]|]",x): continue
         out.append(x)
     return out
 
