@@ -389,6 +389,167 @@
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
       ]
+    },
+    {
+      "date": "2026-09-21",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Korvstroganoff med ris"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Fylld korv (oliver, tomat och pesto)",
+        "med potatismos (gf)"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Panerad fisk med potatismos & kall citronsås Kåldolmar med kokt potatis, gräddsås & lingon",
+        "Veckans Vego: Crepes med svampstuvning",
+        "Veckans Pasta: Kebabgryta",
+        "Veckans Sallad: Kycklingsallad med mango/currydressing"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Pannbiff serveras med stekt lök, gräddsky, kokt potatis och lingon"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Chili con carne med ris (gf, mf)",
+        "L2: Pepparrotskött med kokt potatis"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Högrev i pepparrotssås med potatis",
+        "Kasslergratäng med ananas & ris",
+        "Veckans Vego: Crepes med svampstuvning",
+        "Veckans Pasta: Kebabgryta",
+        "Veckans Sallad: Kycklingsallad med mango/currydressing"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Rotmos serveras med rimmat fläskkött och fläskkorv"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Fläskfilégryta med svamp och pasta",
+        "L2: Gulaschsoppa + pannkaka, sylt och",
+        "grädde"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Cottage pie (köttfärs & potatismos)",
+        "Fiskgratäng med räkor & kokt potatis",
+        "Veckans Vego: Crepes med svampstuvning",
+        "Veckans Pasta: Kebabgryta",
+        "Veckans Sallad: Kycklingsallad med mango/currydressing"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "restaurant": "Orkidé Thai",
+      "dishes": [
+        "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Grilltallrik med klyftpotatis och yoghurtdressing med äpple och sambal"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Kabyssen´s panerade schnitzel med",
+        "potatisgratäng, klyftpotatis, grönsaker",
+        "och rödvinssås",
+        "L2: Kabyssen´s panerade kyckling med",
+        "potatisgratäng, klyftpotatis, grönsaker"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Köttfärssoppa med potatis & äppelpaj med vaniljsås",
+        "Korvstroganoff med ris",
+        "Veckans Vego: Crepes med svampstuvning",
+        "Veckans Pasta: Kebabgryta",
+        "Veckans Sallad: Kycklingsallad med mango/currydressing"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "restaurant": "Orkidé Thai",
+      "dishes": [
+        "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Italiensk kycklinggryta med rostad potatis",
+        "Salsicciapasta",
+        "Lasagne",
+        "Närproducerad mat lagad från grunden",
+        "Allergier"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "Fisk i chilisås med kokt potatis (gf)",
+        "OBS!!!!! Vi stänger kl. 13:30 idag och",
+        "restaurangen håller stängt imorgon (lördag)",
+        "Veckans pasta: Veckans sallad",
+        "Chorizo"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Kamben med BBQ-sås & ugnsrostad potatis",
+        "Veckans Vego : Crepes med svampstuvning",
+        "Veckans Pasta : Kebabgryta",
+        "Veckans Sallad : Kycklingsallad med mango/currydressing",
+        "Veckans Vego: Crepes med svampstuvning"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "restaurant": "Orkidé Thai",
+      "dishes": [
+        "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
     }
   ]
 }
