@@ -664,9 +664,17 @@ function mondayOf(date){
   const day=(d.getDay()+6)%7; d.setDate(d.getDate()-day); return d;
 }
 function isoDate(d){return d.toISOString().slice(0,10)}
+/* Veckans måndag följer datan (lunch.json:week_monday) så sajten aldrig visar
+   fel veckas datum – på helger pekar skriptet på kommande vecka. */
+function weekMonday(){
+  if(lunchData?.week_monday) return new Date(lunchData.week_monday+"T12:00:00");
+  return mondayOf(new Date());
+}
 function currentIndex(){
   const d=new Date().getDay();
-  return d>=1&&d<=5 ? d-1 : 4; // weekend opens Friday
+  if(d>=1&&d<=5) return d-1;
+  // Helg: visar datan redan kommande vecka öppnas måndag, annars fredag.
+  return weekMonday()>new Date() ? 0 : 4;
 }
 function selectedIndex(){
   const q=new URL(location.href).searchParams.get("dag");
@@ -675,7 +683,7 @@ function selectedIndex(){
 }
 function renderTabs(active){
   const wrap=document.getElementById("weekdayTabs");
-  const mon=mondayOf(new Date());
+  const mon=weekMonday();
   const today=new Date(); today.setHours(23,59,59,999);
   wrap.innerHTML=DAY_KEYS.map((key,i)=>{
     const d=new Date(mon); d.setDate(mon.getDate()+i);
@@ -722,7 +730,7 @@ function renderRestaurant(r,key,dateKey){
   </article>`;
 }
 function dateKeyForIndex(i){
-  const mon=mondayOf(new Date()), d=new Date(mon); d.setDate(mon.getDate()+i);
+  const mon=weekMonday(), d=new Date(mon); d.setDate(mon.getDate()+i);
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
 }
 function renderDay(i){
@@ -731,7 +739,7 @@ function renderDay(i){
   const dateKey=dateKeyForIndex(i);
   grid.innerHTML=lunchData.restaurants.map(r=>renderRestaurant(r,key,dateKey)).join("");
   ensureReactionsSubscription(i);
-  const mon=mondayOf(new Date()), d=new Date(mon); d.setDate(mon.getDate()+i);
+  const mon=weekMonday(), d=new Date(mon); d.setDate(mon.getDate()+i);
   const isToday=d.toDateString()===new Date().toDateString();
   const h1=document.querySelector("h1");
   if(h1) h1.textContent="Lunch nära Svedbergs";

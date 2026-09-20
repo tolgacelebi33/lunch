@@ -17,6 +17,13 @@ DAY_RE = r"(måndag|tisdag|onsdag|torsdag|fredag)"
 # "ö" läses ibland som "é" av tesseract i vissa typsnitt, båda varianterna accepteras.
 ALL_DAY_RE = r"(måndag|tisdag|onsdag|torsdag|fredag|l[öeé]rdag|s[öeé]ndag)"
 
+def week_monday(now):
+    """Måndagen för den vecka menyn gäller. På lördag/söndag är det kommande
+    vecka (restaurangerna lägger ofta upp den över helgen), annars innevarande."""
+    monday=now.date()-timedelta(days=now.weekday())
+    if now.weekday()>=5: monday+=timedelta(days=7)
+    return monday
+
 def _norm_day(name):
     n=name.lower()
     if n.startswith("l"): return "lördag"
@@ -184,8 +191,14 @@ def save_day(r, key, dishes, source_url, week):
     r.setdefault("menu", {})[key] = {"verified": True, "dishes": dishes, "source_url": source_url, "week": week}
 
 def glasets(d, week):
+    # Kommande veckas meny ligger ofta på /nasta-vecka/ tills veckan byter,
+    # så försök den också om veckan inte finns på ordinarie lunchsida.
     url="https://glasetshuslimmared.se/lunch/"
-    parsed, method = text_or_ocr_menu(url, week)
+    try:
+        parsed, method = text_or_ocr_menu(url, week)
+    except ValueError:
+        url="https://glasetshuslimmared.se/nasta-vecka/"
+        parsed, method = text_or_ocr_menu(url, week)
     r=find_restaurant(d,"Glasets Hus")
     if not r: raise ValueError("restaurant missing")
     for key,ds in parsed.items():
@@ -246,7 +259,7 @@ def kabyssen(d, week):
 def sangbergs(d,week):
     url="https://www.sangbergs.se/lunchmeny"
     html,_=fetch_text(url); t=visible(html)
-    now=datetime.now(TZ); monday=now.date()-timedelta(days=now.weekday())
+    now=datetime.now(TZ); monday=week_monday(now)
     r=find_restaurant(d,"Centralen / Sångbergs")
     if not r: raise ValueError("restaurant missing")
     parsed=0
@@ -308,7 +321,7 @@ def log_dish_history(d, week):
     entries=hist.setdefault("entries",[])
     index={(e["date"],e["restaurant"]):i for i,e in enumerate(entries)}
     now=datetime.now(TZ)
-    monday=now.date()-timedelta(days=now.weekday())
+    monday=week_monday(now)
     for r in d.get("restaurants",[]):
         menu=r.get("menu") or {}
         for i,key in enumerate(DAY.values()):
@@ -326,7 +339,7 @@ def log_dish_history(d, week):
 
 def main():
     d=json.loads(DATA.read_text(encoding="utf-8"))
-    now=datetime.now(TZ); week=now.isocalendar().week; log=[]
+    now=datetime.now(TZ); week=week_monday(now).isocalendar().week; log=[]
     try:
         n,method=glasets(d,week)
         log.append(f"glasets: ok ({n} days, {method})")
@@ -370,6 +383,7 @@ def main():
 
     d["updated_at"]=now.strftime("%Y-%m-%d %H:%M")
     d["iso_week"]=week
+    d["week_monday"]=week_monday(now).isoformat()
     log.extend(_WARNINGS)
     d["update_log"]=log
     DATA.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding="utf-8")

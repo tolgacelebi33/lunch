@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21 00:48",
+  "updated_at": "2026-09-21 00:50",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -191,15 +191,15 @@
       "town": "Limmared",
       "price": "Lunch + café",
       "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/lunch/",
+      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
-          "source_url": "https://glasetshuslimmared.se/lunch/",
-          "week": 38,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 38 och visas inte längre eftersom den inte gick att uppdatera."
+          "verified": true,
+          "dishes": [
+            "Korvstroganoff serveras med ris LG + GF"
+          ],
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 39
         },
         "monday": {
           "verified": false,
@@ -207,28 +207,28 @@
           "message": "Glasets Hus har stängt på måndagar (ordinarie öppettider)."
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
-          "source_url": "https://glasetshuslimmared.se/lunch/",
-          "week": 38,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 38 och visas inte längre eftersom den inte gick att uppdatera."
+          "verified": true,
+          "dishes": [
+            "Köttbullar med kokt potatis, gräddsås och lingonsylt LF"
+          ],
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 39
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
-          "source_url": "https://glasetshuslimmared.se/lunch/",
-          "week": 38,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 38 och visas inte längre eftersom den inte gick att uppdatera."
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk serveras med kokt potatis, löksås och lingonsylt LF + GF"
+          ],
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 39
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
-          "source_url": "https://glasetshuslimmared.se/lunch/",
-          "week": 38,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 38 och visas inte längre eftersom den inte gick att uppdatera."
+          "verified": true,
+          "dishes": [
+            "Panerad fisk med rostad potatis och kall dillsås LF + GF"
+          ],
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 39
         }
       }
     },
@@ -276,14 +276,14 @@
   ],
   "iso_week": 39,
   "update_log": [
-    "glasets: current week 39 not found",
+    "glasets: ok (4 days, html)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
-    "sanering: 4 gammal dag/dagar dolda (kunde inte uppdateras till vecka 39)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Centralen / Sångbergs friday: 10 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
-  ]
+  ],
+  "week_monday": "2026-09-21"
 }
