@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18 14:12",
+  "updated_at": "2026-09-20 15:01",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -285,10 +285,8 @@
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/09/M-v38.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: no current-week menu parsed",
-    "limmared: ok (5 days)",
+    "limmared: vecka 38 not found",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ]
 }
