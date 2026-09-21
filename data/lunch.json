@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21 03:03",
+  "updated_at": "2026-09-21 12:38",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -191,14 +191,14 @@
       "town": "Limmared",
       "price": "Lunch + café",
       "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "source_url": "https://glasetshuslimmared.se/lunch/",
       "menu": {
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Korvstroganoff serveras med ris LG + GF"
+            "Korvstroganoff serveras med ris"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 39
         },
         "monday": {
@@ -209,25 +209,28 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Köttbullar med kokt potatis, gräddsås och lingonsylt LF"
+            "Köttbullar med kokt SCE,",
+            "graddsas och lingonsylt"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 39
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Stekt fläsk serveras med kokt potatis, löksås och lingonsylt LF + GF"
+            "Stekt flask serveras med kokt",
+            "potatis, l6ksas och lingonsylt"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 39
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Panerad fisk med rostad potatis och kall dillsås LF + GF"
+            "Panerad fisk med rostad potatis",
+            "och kall dillsås"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 39
         }
       }
@@ -276,7 +279,7 @@
   ],
   "iso_week": 39,
   "update_log": [
-    "glasets: ok (4 days, html)",
+    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/09/M-v39.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",

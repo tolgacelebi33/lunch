@@ -426,7 +426,8 @@
       "date": "2026-09-22",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Köttbullar med kokt potatis, gräddsås och lingonsylt LF"
+        "Köttbullar med kokt SCE,",
+        "graddsas och lingonsylt"
       ]
     },
     {
@@ -459,7 +460,7 @@
       "date": "2026-09-23",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Korvstroganoff serveras med ris LG + GF"
+        "Korvstroganoff serveras med ris"
       ]
     },
     {
@@ -500,7 +501,8 @@
       "date": "2026-09-24",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Stekt fläsk serveras med kokt potatis, löksås och lingonsylt LF + GF"
+        "Stekt flask serveras med kokt",
+        "potatis, l6ksas och lingonsylt"
       ]
     },
     {
@@ -547,7 +549,8 @@
       "date": "2026-09-25",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Panerad fisk med rostad potatis och kall dillsås LF + GF"
+        "Panerad fisk med rostad potatis",
+        "och kall dillsås"
       ]
     },
     {
