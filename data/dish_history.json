@@ -581,6 +581,109 @@
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
       ]
+    },
+    {
+      "date": "2026-09-28",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Kålpudding med kokt potatis, gräddsås & lingon",
+        "Stekt strömming med potatismos & lingon",
+        "Veckans Vego: Äggnudlar med sweetchilisås",
+        "Veckans Pasta: Pasta med heta räkor",
+        "Veckans Sallad: Räksallad"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Husets lasagne"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Stekt fläsk med raggmunk & lingon",
+        "Stekt fläsk med potatis & löksås",
+        "Stekt fläsk med potatis & bruna bönor",
+        "Spaghetti med köttfärssås",
+        "Veckans Vego: Äggnudlar med sweetchilisås"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Isterband serveras med dillstuvad potatis och rödbetor LG"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Köttfärslimpa med bacon, potatismos, brunsås & inlagd gurka",
+        "Veckans Vego: Äggnudlar med sweetchilisås",
+        "Veckans Pasta: Pasta med heta räkor",
+        "Veckans Sallad: Räksallad"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "restaurant": "Orkidé Thai",
+      "dishes": [
+        "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Shistawok – libanesisk kyckling med kryddigt ris LF + GF"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Ärtsoppa med pannkakor, sylt & grädde",
+        "Gulaschgryta med ris",
+        "Veckans Vego: Äggnudlar med sweetchilisås",
+        "Veckans Pasta: Pasta med heta räkor",
+        "Veckans Sallad: Räksallad"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "restaurant": "Orkidé Thai",
+      "dishes": [
+        "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Salsiccia pasta"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Schnitzel med champinjonsås & stekt potatis",
+        "Veckans Vego : Äggnudlar med sweetchilisås",
+        "Veckans Pasta : Pasta med heta räkor",
+        "Veckans Sallad : Räksallad",
+        "Veckans Vego: Äggnudlar med sweetchilisås"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "restaurant": "Orkidé Thai",
+      "dishes": [
+        "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
     }
   ]
 }
