@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27 17:08",
+  "updated_at": "2026-09-27 21:45",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -11,44 +11,55 @@
       "source_url": "https://kabyssen-dalstorp.se/rezepte",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: BBQ Spareribs med pommes (gf)",
+            "L2: Ärtsoppa + pannkaka, sylt och grädde"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Korvpanna med curry och ris (gf, mf)"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Stekt fläsk med raggmunk, löksås och",
+            "lingon",
+            "L2: Kycklinggryta a la Kabyssen med ris"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Kabyssen´s panerade schnitzel med",
+            "stekt potatis, pommes, grönsaker och",
+            "bearnaisesås",
+            "L2: Kabyssen´s panerade kyckling med",
+            "stekt potatis, pommes, grönsaker och"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Havets wallenbergare med gröna ärtor",
+            "och potatismos",
+            "Veckans pasta: Veckans sallad",
+            "Köttfärssås",
+            "Taco"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         }
       }
     },
@@ -261,10 +272,12 @@
   "iso_week": 40,
   "update_log": [
     "glasets: ok (4 days, html)",
-    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
+    "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: no current-week menu parsed",
     "limmared: ok (5 days)",
-    "sanering: 10 gammal dag/dagar dolda (kunde inte uppdateras till vecka 40)",
+    "sanering: 5 gammal dag/dagar dolda (kunde inte uppdateras till vecka 40)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
