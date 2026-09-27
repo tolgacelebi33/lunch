@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26 21:13",
+  "updated_at": "2026-09-27 17:08",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -261,7 +261,7 @@
   "iso_week": 40,
   "update_log": [
     "glasets: ok (4 days, html)",
-    "kabyssen: current week 40 not found in menu PDF",
+    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
     "sangbergs: no current-week menu parsed",
     "limmared: ok (5 days)",
     "sanering: 10 gammal dag/dagar dolda (kunde inte uppdateras till vecka 40)",
