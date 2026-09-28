@@ -256,6 +256,8 @@ h1{
 .status.ok{color:var(--salvia)}
 .status.warn{color:var(--warn)}
 .source{text-decoration:underline;text-underline-offset:4px}
+.map-link{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.map-link:hover{color:var(--black)}
 
 .band{
   background:var(--hav);
@@ -709,7 +711,7 @@ function renderRestaurant(r,key,dateKey){
     ? dishes.map(x=>`<li>${esc(x)}</li>`).join("")
     : `<li>${esc(day?.message||"Ingen verifierad lunchdata sparad för denna dag.")}</li>`;
   return `<article class="card" data-town="${esc(r.town)}">
-    <div class="card-head"><div><h3 class="name">${esc(r.name)}</h3><div class="place">${esc(r.address||r.town)}${driveText(r)}</div></div><div class="price">${esc(r.price||"—")}</div></div>
+    <div class="card-head"><div><h3 class="name">${esc(r.name)}</h3><div class="place">${r.maps_url?`<a class="map-link" href="${esc(r.maps_url)}" target="_blank" rel="noopener" title="Öppna i Google Maps">${esc(r.address||r.town)}</a>`:esc(r.address||r.town)}${driveText(r)}</div></div><div class="price">${esc(r.price||"—")}</div></div>
     <div class="time">${esc(r.lunch_time||"")}</div>
     <ul class="menu">${dishHtml}</ul>
     ${r.includes?`<div class="extra">${esc(r.includes)}</div>`:""}

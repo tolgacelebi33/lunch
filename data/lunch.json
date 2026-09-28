@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28 09:52",
+  "updated_at": "2026-09-28 10:01",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -64,7 +64,8 @@
       },
       "drive_min": 2,
       "distance_km": 1.4,
-      "address": "Torget 1, Dalstorp"
+      "address": "Torget 1, Dalstorp",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Torget+1%2C+Dalstorp+Sverige"
     },
     {
       "name": "Grillköket & Pizzeria",
@@ -112,7 +113,8 @@
       },
       "drive_min": 13,
       "distance_km": 10.9,
-      "address": "Ulricehamnsvägen 5, Gällstad"
+      "address": "Ulricehamnsvägen 5, Gällstad",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Ulricehamnsv%C3%A4gen+5%2C+G%C3%A4llstad+Sverige"
     },
     {
       "name": "Limmareds Wärdshus",
@@ -181,9 +183,10 @@
           "week": 40
         }
       },
-      "drive_min": 15,
-      "distance_km": 14.2,
-      "address": "Storgatan 36, Limmared"
+      "drive_min": 18,
+      "distance_km": 16.0,
+      "address": "Storgatan 36, Limmared",
+      "maps_url": "https://www.google.com/maps/place/A+%26+A+Limmareds+W%C3%A4rdshus+HB/@57.5355864,13.3461179,15.8z/data=!4m6!3m5!1s0x46507bae6dbc4385:0x9835bf0743d55e7f!8m2!3d57.5375002!4d13.354431!16s%2Fg%2F1hc1gf709"
     },
     {
       "name": "Glasets Hus",
@@ -232,7 +235,8 @@
       },
       "drive_min": 18,
       "distance_km": 16.0,
-      "address": "Östra Järnvägsgatan 2, Limmared"
+      "address": "Östra Järnvägsgatan 2, Limmared",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=%C3%96stra+J%C3%A4rnv%C3%A4gsgatan+2%2C+Limmared+Sverige"
     },
     {
       "name": "Centralen / Sångbergs",
@@ -287,7 +291,8 @@
       },
       "drive_min": 21,
       "distance_km": 18.2,
-      "address": "Willéns väg 5, Tranemo"
+      "address": "Willéns väg 5, Tranemo",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Will%C3%A9ns+v%C3%A4g+5%2C+Tranemo+Sverige"
     },
     {
       "name": "Orkidé Thai",
@@ -331,7 +336,8 @@
       },
       "drive_min": 21,
       "distance_km": 18.0,
-      "address": "Storgatan 19, Tranemo"
+      "address": "Storgatan 19, Tranemo",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Storgatan+19%2C+Tranemo+Sverige"
     },
     {
       "name": "La Tessitura",
@@ -343,7 +349,8 @@
       "menu": {},
       "drive_min": 28,
       "distance_km": 25.0,
-      "address": "Fabriksgatan 2C, Ulricehamn"
+      "address": "Fabriksgatan 2C, Ulricehamn",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Fabriksgatan+2C%2C+Ulricehamn+Sverige"
     },
     {
       "name": "Tullens Restaurang & Sportbar",
@@ -406,7 +413,8 @@
       },
       "drive_min": 29,
       "distance_km": 26.2,
-      "address": "Boråsvägen 2, Ulricehamn"
+      "address": "Boråsvägen 2, Ulricehamn",
+      "maps_url": "https://www.google.com/maps/place/Tullens+Restaurang+%26+Sportbar/@57.7984182,13.3972136,14.13z/data=!4m6!3m5!1s0x465a859a9ea0e425:0xf222098ee0941220!8m2!3d57.7954331!4d13.4149058!16s%2Fg%2F11q1m98stq"
     },
     {
       "name": "Lunchhörnan",
@@ -471,7 +479,8 @@
       },
       "drive_min": 33,
       "distance_km": 27.5,
-      "address": "Karlsnäsvägen 7, Ulricehamn"
+      "address": "Karlsnäsvägen 7, Ulricehamn",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Karlsn%C3%A4sv%C3%A4gen+7%2C+Ulricehamn+Sverige"
     }
   ],
   "iso_week": 40,
