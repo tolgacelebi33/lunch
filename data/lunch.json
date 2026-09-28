@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28 10:01",
+  "updated_at": "2026-09-28 13:38",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -193,14 +193,15 @@
       "town": "Limmared",
       "price": "Lunch + café",
       "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "source_url": "https://glasetshuslimmared.se/lunch/",
       "menu": {
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Isterband serveras med dillstuvad potatis och rödbetor LG"
+            "Isterband serveras med dillstuvad",
+            "potatis och rödbetor"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 40
         },
         "monday": {
@@ -213,23 +214,24 @@
           "dishes": [
             "Husets lasagne"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 40
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Shistawok – libanesisk kyckling med kryddigt ris LF + GF"
+            "Shistawok - libanesisk kyckling",
+            "med kryddigt ris"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 40
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Salsiccia pasta"
+            "Salsiccia pasta KH"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 40
         }
       },
@@ -485,7 +487,7 @@
   ],
   "iso_week": 40,
   "update_log": [
-    "glasets: ok (4 days, html)",
+    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/09/M-v40.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
