@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28 09:44",
+  "updated_at": "2026-09-28 09:52",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -63,7 +63,8 @@
         }
       },
       "drive_min": 2,
-      "distance_km": 1.4
+      "distance_km": 1.4,
+      "address": "Torget 1, Dalstorp"
     },
     {
       "name": "Grillköket & Pizzeria",
@@ -110,7 +111,8 @@
         }
       },
       "drive_min": 13,
-      "distance_km": 10.9
+      "distance_km": 10.9,
+      "address": "Ulricehamnsvägen 5, Gällstad"
     },
     {
       "name": "Limmareds Wärdshus",
@@ -180,7 +182,8 @@
         }
       },
       "drive_min": 15,
-      "distance_km": 14.2
+      "distance_km": 14.2,
+      "address": "Storgatan 36, Limmared"
     },
     {
       "name": "Glasets Hus",
@@ -228,7 +231,8 @@
         }
       },
       "drive_min": 18,
-      "distance_km": 16.0
+      "distance_km": 16.0,
+      "address": "Östra Järnvägsgatan 2, Limmared"
     },
     {
       "name": "Centralen / Sångbergs",
@@ -282,7 +286,8 @@
         }
       },
       "drive_min": 21,
-      "distance_km": 18.2
+      "distance_km": 18.2,
+      "address": "Willéns väg 5, Tranemo"
     },
     {
       "name": "Orkidé Thai",
@@ -325,7 +330,8 @@
         }
       },
       "drive_min": 21,
-      "distance_km": 18.0
+      "distance_km": 18.0,
+      "address": "Storgatan 19, Tranemo"
     },
     {
       "name": "La Tessitura",
@@ -336,7 +342,8 @@
       "source_url": "https://www.latessitura.se/",
       "menu": {},
       "drive_min": 28,
-      "distance_km": 25.0
+      "distance_km": 25.0,
+      "address": "Fabriksgatan 2C, Ulricehamn"
     },
     {
       "name": "Tullens Restaurang & Sportbar",
@@ -398,7 +405,8 @@
         }
       },
       "drive_min": 29,
-      "distance_km": 26.2
+      "distance_km": 26.2,
+      "address": "Boråsvägen 2, Ulricehamn"
     },
     {
       "name": "Lunchhörnan",
@@ -462,7 +470,8 @@
         }
       },
       "drive_min": 33,
-      "distance_km": 27.5
+      "distance_km": 27.5,
+      "address": "Karlsnäsvägen 7, Ulricehamn"
     }
   ],
   "iso_week": 40,
