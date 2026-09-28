@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28 09:27",
+  "updated_at": "2026-09-28 09:44",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -61,7 +61,56 @@
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
           "week": 40
         }
-      }
+      },
+      "drive_min": 2,
+      "distance_km": 1.4
+    },
+    {
+      "name": "Grillköket & Pizzeria",
+      "town": "Gällstad",
+      "price": "120 kr",
+      "lunch_time": "10.00–14.00",
+      "includes": "Sallad, dricka och kaffe ingår. Ingen dagsmeny publicerad – statiska uppgifter, bekräftade mot källan manuellt, inte del av den automatiska veckokontrollen.",
+      "source_url": "https://grillkoketpizzeria.se/",
+      "menu": {
+        "monday": {
+          "verified": true,
+          "dishes": [
+            "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+          ],
+          "source_url": "https://grillkoketpizzeria.se/"
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+          ],
+          "source_url": "https://grillkoketpizzeria.se/"
+        },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+          ],
+          "source_url": "https://grillkoketpizzeria.se/"
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+          ],
+          "source_url": "https://grillkoketpizzeria.se/"
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+          ],
+          "source_url": "https://grillkoketpizzeria.se/"
+        }
+      },
+      "drive_min": 13,
+      "distance_km": 10.9
     },
     {
       "name": "Limmareds Wärdshus",
@@ -129,7 +178,57 @@
           "source_url": "https://limmaredsvardshus.se/",
           "week": 40
         }
-      }
+      },
+      "drive_min": 15,
+      "distance_km": 14.2
+    },
+    {
+      "name": "Glasets Hus",
+      "town": "Limmared",
+      "price": "Lunch + café",
+      "lunch_time": "09.00–16.00",
+      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "menu": {
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Isterband serveras med dillstuvad potatis och rödbetor LG"
+          ],
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 40
+        },
+        "monday": {
+          "verified": false,
+          "status": "Stängt",
+          "message": "Glasets Hus har stängt på måndagar (ordinarie öppettider)."
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Husets lasagne"
+          ],
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 40
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "Shistawok – libanesisk kyckling med kryddigt ris LF + GF"
+          ],
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 40
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Salsiccia pasta"
+          ],
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 40
+        }
+      },
+      "drive_min": 18,
+      "distance_km": 16.0
     },
     {
       "name": "Centralen / Sångbergs",
@@ -181,53 +280,9 @@
           "source_url": "https://www.sangbergs.se/lunchmeny",
           "week": 40
         }
-      }
-    },
-    {
-      "name": "Glasets Hus",
-      "town": "Limmared",
-      "price": "Lunch + café",
-      "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
-      "menu": {
-        "wednesday": {
-          "verified": true,
-          "dishes": [
-            "Isterband serveras med dillstuvad potatis och rödbetor LG"
-          ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
-          "week": 40
-        },
-        "monday": {
-          "verified": false,
-          "status": "Stängt",
-          "message": "Glasets Hus har stängt på måndagar (ordinarie öppettider)."
-        },
-        "tuesday": {
-          "verified": true,
-          "dishes": [
-            "Husets lasagne"
-          ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
-          "week": 40
-        },
-        "thursday": {
-          "verified": true,
-          "dishes": [
-            "Shistawok – libanesisk kyckling med kryddigt ris LF + GF"
-          ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
-          "week": 40
-        },
-        "friday": {
-          "verified": true,
-          "dishes": [
-            "Salsiccia pasta"
-          ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
-          "week": 40
-        }
-      }
+      },
+      "drive_min": 21,
+      "distance_km": 18.2
     },
     {
       "name": "Orkidé Thai",
@@ -268,7 +323,146 @@
           ],
           "source_url": "https://www.orkidethai.com/"
         }
-      }
+      },
+      "drive_min": 21,
+      "distance_km": 18.0
+    },
+    {
+      "name": "La Tessitura",
+      "town": "Ulricehamn",
+      "price": "149 kr",
+      "lunch_time": "11.30–14.00",
+      "includes": "Sallad, hembakt focaccia och kaffe ingår.",
+      "source_url": "https://www.latessitura.se/",
+      "menu": {},
+      "drive_min": 28,
+      "distance_km": 25.0
+    },
+    {
+      "name": "Tullens Restaurang & Sportbar",
+      "town": "Ulricehamn",
+      "price": "134 kr",
+      "lunch_time": "11.30–14.30",
+      "includes": "Salladsbuffé, smör, bröd, måltidsdryck, kaffe och kaka ingår.",
+      "source_url": "https://tullensrestaurangsportbar.se/",
+      "menu": {
+        "monday": {
+          "verified": true,
+          "dishes": [
+            "Benfri kotlett med pepparsås och potatisgratäng",
+            "Fish & chips på torsk med remouladsås",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
+          "source_url": "https://tullensrestaurangsportbar.se/",
+          "week": 40
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Pankopanerad kycklingfilé med timjansås och stekt potatis",
+            "Stekt strömming med skirat smör, lingonsylt och potatismos",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
+          "source_url": "https://tullensrestaurangsportbar.se/",
+          "week": 40
+        },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Kålpudding serveras med lingonsylt, gräddsås och kokt potatis",
+            "Broccoli och paprika gratinerad fiskgratäng med kokt potatis",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
+          "source_url": "https://tullensrestaurangsportbar.se/",
+          "week": 40
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "Ungsstekt isterband med lingonsylt, rödbetor och dillstuvad potatis",
+            "Panerad spättafilé med kall örtsås och kokt potatis",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
+          "source_url": "https://tullensrestaurangsportbar.se/",
+          "week": 40
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Schnitzel med klassiska tillbehör och stekt potatis",
+            "Ungsstek laxfilé med kall limesås, serveras med kokt potatis",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
+          "source_url": "https://tullensrestaurangsportbar.se/",
+          "week": 40
+        }
+      },
+      "drive_min": 29,
+      "distance_km": 26.2
+    },
+    {
+      "name": "Lunchhörnan",
+      "town": "Ulricehamn",
+      "price": "115 kr",
+      "lunch_time": "11.30–14.00",
+      "includes": "Stort salladsbord, dricka, bröd samt kaffe och kaka ingår.",
+      "source_url": "https://lunchhornan.se/veckans-lunch/",
+      "menu": {
+        "monday": {
+          "verified": true,
+          "dishes": [
+            "Wallenbergare med potatismos, lingon",
+            "Gratinerad falukorv med potatismos",
+            "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+          ],
+          "source_url": "https://lunchhornan.se/veckans-lunch/",
+          "week": 40
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk med raggmunk",
+            "Isterband dillstuvad potatis",
+            "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+          ],
+          "source_url": "https://lunchhornan.se/veckans-lunch/",
+          "week": 40
+        },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "Fläskfilégryta med ris",
+            "Panerad fisk med dillamjo",
+            "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+          ],
+          "source_url": "https://lunchhornan.se/veckans-lunch/",
+          "week": 40
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "Kålpudding med gräddsås",
+            "Husets fisksoppa",
+            "Ärtsoppa med fläsk",
+            "(Pannkakor till soppan)",
+            "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+          ],
+          "source_url": "https://lunchhornan.se/veckans-lunch/",
+          "week": 40
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Grillskiva med balsamicosås och aioli",
+            "Lättpanerad kummel med varm dillsås",
+            "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+          ],
+          "source_url": "https://lunchhornan.se/veckans-lunch/",
+          "week": 40
+        }
+      },
+      "drive_min": 33,
+      "distance_km": 27.5
     }
   ],
   "iso_week": 40,
@@ -277,10 +471,14 @@
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
+    "tullens: ok (5 days)",
+    "lunchhornan: ok (5 days)",
+    "tessitura: current week 40 not found in menu PDF",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
-  "week_monday": "2026-09-28"
+  "week_monday": "2026-09-28",
+  "distance_note": "Körtider och sträckor är uppskattningar från Verkstadsvägen 1, Dalstorp (OpenStreetMap, bil, utan trafik)."
 }

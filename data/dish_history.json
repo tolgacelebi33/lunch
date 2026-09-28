@@ -591,6 +591,13 @@
     },
     {
       "date": "2026-09-28",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-09-28",
       "restaurant": "Kabyssen",
       "dishes": [
         "L1: Korvpanna med curry och ris (gf, mf)"
@@ -608,6 +615,24 @@
       ]
     },
     {
+      "date": "2026-09-28",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Wallenbergare med potatismos, lingon",
+        "Gratinerad falukorv med potatismos",
+        "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Benfri kotlett med pepparsås och potatisgratäng",
+        "Fish & chips på torsk med remouladsås",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
       "date": "2026-09-29",
       "restaurant": "Centralen / Sångbergs",
       "dishes": [
@@ -619,6 +644,13 @@
       "restaurant": "Glasets Hus",
       "dishes": [
         "Husets lasagne"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
       ]
     },
     {
@@ -642,6 +674,24 @@
       ]
     },
     {
+      "date": "2026-09-29",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Stekt fläsk med raggmunk",
+        "Isterband dillstuvad potatis",
+        "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Pankopanerad kycklingfilé med timjansås och stekt potatis",
+        "Stekt strömming med skirat smör, lingonsylt och potatismos",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
       "date": "2026-09-30",
       "restaurant": "Centralen / Sångbergs",
       "dishes": [
@@ -653,6 +703,13 @@
       "restaurant": "Glasets Hus",
       "dishes": [
         "Isterband serveras med dillstuvad potatis och rödbetor LG"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
       ]
     },
     {
@@ -675,9 +732,27 @@
     },
     {
       "date": "2026-09-30",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Fläskfilégryta med ris",
+        "Panerad fisk med dillamjo",
+        "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+      ]
+    },
+    {
+      "date": "2026-09-30",
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Kålpudding serveras med lingonsylt, gräddsås och kokt potatis",
+        "Broccoli och paprika gratinerad fiskgratäng med kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
       ]
     },
     {
@@ -692,6 +767,13 @@
       "restaurant": "Glasets Hus",
       "dishes": [
         "Shistawok – libanesisk kyckling med kryddigt ris LF + GF"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
       ]
     },
     {
@@ -718,9 +800,29 @@
     },
     {
       "date": "2026-10-01",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Kålpudding med gräddsås",
+        "Husets fisksoppa",
+        "Ärtsoppa med fläsk",
+        "(Pannkakor till soppan)",
+        "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+      ]
+    },
+    {
+      "date": "2026-10-01",
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Ungsstekt isterband med lingonsylt, rödbetor och dillstuvad potatis",
+        "Panerad spättafilé med kall örtsås och kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
       ]
     },
     {
@@ -737,6 +839,13 @@
       "restaurant": "Glasets Hus",
       "dishes": [
         "Salsiccia pasta"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
       ]
     },
     {
@@ -763,9 +872,27 @@
     },
     {
       "date": "2026-10-02",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Grillskiva med balsamicosås och aioli",
+        "Lättpanerad kummel med varm dillsås",
+        "Övrigt: Pasta: Pastagratäng med kyckling · Vegetariskt: Nudlar med wokade grönsaker · Sallad: Ceasarsallad med kyckling / Chevresallad med rökt skinka, cashewnötter"
+      ]
+    },
+    {
+      "date": "2026-10-02",
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Schnitzel med klassiska tillbehör och stekt potatis",
+        "Ungsstek laxfilé med kall limesås, serveras med kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
       ]
     }
   ]

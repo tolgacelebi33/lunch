@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f6f5f2">
 <title>Dagens lunch – Dalstorp med omnejd</title>
-<meta name="description" content="Lunch inom cirka 20 km från 514 60 Dalstorp.">
+<meta name="description" content="Lunch inom cirka 35 minuters bilväg från 514 60 Dalstorp.">
 <link rel="icon" href="favicon.png" type="image/png">
 <style>
 /*
@@ -573,7 +573,7 @@ footer{
     <div class="hero-copy">
       <div class="hero-meta">
         <div><strong>Onsdag 19 augusti 2026</strong></div>
-        <div>≈ 20 km radie</div>
+        <div>Upp till ca 35 min bil från Dalstorp</div>
         <div>Källor kontrollerade 19 augusti 2026</div>
       </div>
     </div>
@@ -615,7 +615,7 @@ footer{
 <section id="om" class="info">
   <div class="shell info-grid">
     <h3>Lunch nära Svedbergs</h3>
-    <p>Dagens lunch samlar lunchmenyer runt Dalstorp. Rösta på var du käkar och följ statistiken över tid – röstningen sker live.</p>
+    <p>Dagens lunch samlar lunchmenyer runt Dalstorp. Rösta på var du käkar och följ statistiken över tid – röstningen sker live. Körtider är uppskattningar från Verkstadsvägen 1 i Dalstorp (bil, utan trafik).</p>
   </div>
 </section>
 
@@ -686,6 +686,18 @@ function renderTabs(active){
     renderDay(i);
   }));
 }
+/* Körtid/sträcka är uppskattningar från Verkstadsvägen 1, Dalstorp (bil, utan
+   trafik) och ligger som drive_min/distance_km per restaurang i lunch.json. */
+function driveText(r){
+  if(r.drive_min==null) return "";
+  const km=r.distance_km!=null?` (${String(r.distance_km).replace(".",",")} km)`:"";
+  return ` · ca ${r.drive_min} min bil${km}`;
+}
+function radiusText(){
+  const mins=(lunchData?.restaurants||[]).map(r=>r.drive_min).filter(x=>x!=null);
+  const max=mins.length?Math.ceil(Math.max(...mins)/5)*5:35;
+  return `Upp till ca ${max} min bil från Dalstorp`;
+}
 function renderRestaurant(r,key,dateKey){
   const day=(r.menu||{})[key];
   const dishes=day?.dishes||[];
@@ -697,7 +709,7 @@ function renderRestaurant(r,key,dateKey){
     ? dishes.map(x=>`<li>${esc(x)}</li>`).join("")
     : `<li>${esc(day?.message||"Ingen verifierad lunchdata sparad för denna dag.")}</li>`;
   return `<article class="card" data-town="${esc(r.town)}">
-    <div class="card-head"><div><h3 class="name">${esc(r.name)}</h3><div class="place">${esc(r.town)}</div></div><div class="price">${esc(r.price||"—")}</div></div>
+    <div class="card-head"><div><h3 class="name">${esc(r.name)}</h3><div class="place">${esc(r.town)}${driveText(r)}</div></div><div class="price">${esc(r.price||"—")}</div></div>
     <div class="time">${esc(r.lunch_time||"")}</div>
     <ul class="menu">${dishHtml}</ul>
     ${r.includes?`<div class="extra">${esc(r.includes)}</div>`:""}
@@ -718,7 +730,7 @@ function renderDay(i){
   const h1=document.querySelector("h1");
   if(h1) h1.textContent="Lunch nära Svedbergs";
   const meta=document.querySelector(".hero-meta");
-  if(meta) meta.innerHTML=`<div><strong>${DAY_SV[i]} ${new Intl.DateTimeFormat("sv-SE",{day:"numeric",month:"long",year:"numeric"}).format(d)}</strong></div><div>≈ 20 km radie</div><div>Data uppdaterad ${esc(lunchData.updated_at||"—")}</div>`;
+  if(meta) meta.innerHTML=`<div><strong>${DAY_SV[i]} ${new Intl.DateTimeFormat("sv-SE",{day:"numeric",month:"long",year:"numeric"}).format(d)}</strong></div><div>${radiusText()}</div><div>Data uppdaterad ${esc(lunchData.updated_at||"—")}</div>`;
 }
 async function loadLunch(){
   const grid=document.getElementById("restaurantGrid");

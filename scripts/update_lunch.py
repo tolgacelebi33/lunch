@@ -311,6 +311,99 @@ def limmared(d,week):
     r["source_url"]=url
     return len(parsed)
 
+def _standing_line(pairs):
+    """En rad "Övrigt: Pasta: X · Vegetarisk: Y" av veckans stående alternativ.
+    Läggs som EN rad per dag (inte en per alternativ) så dagens rätter inte
+    trängs ut av MAX_DISHES."""
+    pairs=[(k,v) for k,v in pairs if v]
+    return "Övrigt: "+" · ".join(f"{k}: {v}" for k,v in pairs) if pairs else None
+
+def tullens(d, week):
+    url="https://tullensrestaurangsportbar.se/"
+    t=visible(fetch_text(url)[0])
+    m=re.search(rf"(?i)\bvecka\s*{week}\b",t)
+    if not m: raise ValueError(f"vecka {week} not found")
+    rest=t[m.end():]
+    other=re.search(r"(?im)^\s*Övrigt\s*$",rest)
+    days_text=rest[:other.start()] if other else rest[:2500]
+    parsed=extract_days_from_text(days_text)
+    if not parsed: raise ValueError("no weekdays parsed for current week")
+    pairs=[]
+    if other:
+        block=rest[other.end():]
+        end=re.search(r"(?im)^\s*(Pris:|À la carte)",block)
+        for ln in clean_lines(block[:end.start()] if end else block[:400]):
+            k,_,v=ln.partition(":")
+            if v: pairs.append((k.strip(),v.strip()))
+    standing=_standing_line(pairs)
+    r=find_restaurant(d,"Tullens Restaurang & Sportbar")
+    if not r: raise ValueError("restaurant missing")
+    pm=re.search(r"(?i)Pris:\s*(\d{2,3})",rest)
+    if pm: r["price"]=f"{pm.group(1)} kr"
+    for key,ds in parsed.items():
+        save_day(r,key,list(ds)+([standing] if standing else []),url,week)
+    r["source_url"]=url
+    return len(parsed)
+
+def lunchhornan(d, week):
+    url="https://lunchhornan.se/veckans-lunch/"
+    t=visible(fetch_text(url)[0])
+    m=re.search(rf"(?i)\bvecka\s*{week}\b",t)
+    if not m: raise ValueError(f"vecka {week} not found")
+    rest=t[m.end():]
+    end=re.search(r"(?i)välkommen in till oss|^PRIS\s*$",rest,re.M)
+    body=rest[:end.start()] if end else rest[:3000]
+    cut=re.search(r"(?m)^\s*PASTA\s*$",body)
+    parsed=extract_days_from_text(body[:cut.start()] if cut else body)
+    if not parsed: raise ValueError("no weekdays parsed for current week")
+    pairs=[]
+    if cut:
+        sect=None; buf={}
+        for ln in body[cut.start():].splitlines():
+            ln=ln.strip()
+            if ln.upper() in ("PASTA","VEGETARISKT","SALLAD"): sect=ln.capitalize(); buf[sect]=[]
+            elif sect and ln: buf[sect].append(ln)
+        pairs=[(k," / ".join(v)) for k,v in buf.items()]
+    standing=_standing_line(pairs)
+    r=find_restaurant(d,"Lunchhörnan")
+    if not r: raise ValueError("restaurant missing")
+    pm=re.search(r"(?im)^PRIS\s*\n\s*(\d{2,3})\s*kr",rest)
+    if pm: r["price"]=f"{pm.group(1)} kr"
+    for key,ds in parsed.items():
+        save_day(r,key,list(ds)+([standing] if standing else []),url,week)
+    r["source_url"]=url
+    return len(parsed)
+
+def tessitura(d, week):
+    # Veckomenyn är en PDF vars filnamn byter varje vecka (/s/V39-xxxx.pdf), så
+    # länken hittas på startsidan. Veckomarkören står som "v . 39" (med mellanslag).
+    base="https://www.latessitura.se"
+    html,_=fetch_text(base+"/")
+    links=re.findall(r'href="(/s/[^"]+\.pdf)"',html)
+    if not links: raise ValueError("no menu PDF link found")
+    raw,_,_=fetch_bytes(base+links[0])
+    text=pdf_to_text(raw)
+    if not re.search(rf"(?i)\bv\s*\.?\s*{week}\b",text):
+        raise ValueError(f"current week {week} not found in menu PDF")
+    sp=re.search(r"(?im)^\s*Veckans speciale\s*$",text)
+    days_text=text[:sp.start()] if sp else text
+    parsed=extract_days_from_text(days_text)
+    if not parsed: raise ValueError("menu PDF found for current week but no weekdays could be parsed")
+    standing=None
+    if sp:
+        tail=text[sp.end():]
+        stop=re.search(r"(?im)^\s*L[öeé]rdag",tail)
+        lines=clean_lines(tail[:stop.start()] if stop else tail[:300])
+        if lines: standing="Veckans speciale: "+" / ".join(lines[:3])
+    r=find_restaurant(d,"La Tessitura")
+    if not r: raise ValueError("restaurant missing")
+    pm=re.search(r"(\d{2,3})\s*kr",text)
+    if pm: r["price"]=f"{pm.group(1)} kr"
+    for key,ds in parsed.items():
+        save_day(r,key,list(ds)+([standing] if standing else []),base+"/",week)
+    r["source_url"]=base+"/"
+    return len(parsed)
+
 def log_dish_history(d, week):
     """Sparar varje verifierad dags rätter permanent (till skillnad från
     lunch.json som bara håller aktuell vecka). En post per (datum, restaurang),
@@ -364,6 +457,12 @@ def main():
         log.append(f"limmared: ok ({n} days)")
     except Exception as e:
         log.append(f"limmared: {e}")
+    for name,fn in (("tullens",tullens),("lunchhornan",lunchhornan),("tessitura",tessitura)):
+        try:
+            n=fn(d,week)
+            log.append(f"{name}: ok ({n} days)")
+        except Exception as e:
+            log.append(f"{name}: {e}")
     # Data som skrapades fram för en tidigare vecka men som inte gick att uppdatera
     # i den här körningen (t.ex. sidan hade inte lagt upp aktuell vecka än) ska
     # aldrig fortsätta visas som "dagens" — annars kan sajten tyst visa förra
@@ -393,7 +492,7 @@ def main():
     DATA.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding="utf-8")
     print("\n".join(log))
 
-    restaurant_lines = [l for l in log if l.split(":",1)[0] in ("glasets","kabyssen","sangbergs","limmared")]
+    restaurant_lines = [l for l in log if l.split(":",1)[0] in ("glasets","kabyssen","sangbergs","limmared","tullens","lunchhornan","tessitura")]
     failed = [l for l in restaurant_lines if ": ok" not in l]
     import os
     gh_out = os.environ.get("GITHUB_OUTPUT")
