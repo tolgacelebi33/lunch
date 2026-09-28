@@ -463,20 +463,6 @@ footer{
 }
 .vote-note{color:var(--muted);font-size:14px;margin:0}
 
-.card-reactions{display:flex;gap:8px;margin-top:16px}
-.reaction{
-  border:1px solid var(--line);
-  background:var(--white);
-  border-radius:999px;
-  padding:6px 12px;
-  font-size:13px;
-  font:inherit;
-  cursor:pointer;
-  color:var(--black);
-}
-.reaction:hover{background:var(--warm)}
-.reaction.mine{border-color:var(--black);background:var(--warm);font-weight:700}
-
 .vote-history{margin-top:28px}
 .vote-history-title{
   font-size:13px;
@@ -619,7 +605,7 @@ footer{
   <div class="shell">
     <div class="section-head" style="margin-bottom:34px">
       <h2>Statistik</h2>
-      <p>Röster, reaktioner och rätter över tid – byggs upp live allt eftersom dagarna går.</p>
+      <p>Röster och rätter över tid – byggs upp allt eftersom dagarna går.</p>
     </div>
     <div id="statsLeaderboard"><p class="vote-note">Hämtar statistik…</p></div>
     <div id="statsDishes" class="stats-dishes"></div>
@@ -629,7 +615,7 @@ footer{
 <section id="om" class="info">
   <div class="shell info-grid">
     <h3>Lunch nära Svedbergs</h3>
-    <p>Dagens lunch samlar lunchmenyer runt Dalstorp. Rösta på var du käkar, reagera på dagens rätt och följ statistiken över tid – allt byggs upp av besökarna, live.</p>
+    <p>Dagens lunch samlar lunchmenyer runt Dalstorp. Rösta på var du käkar och följ statistiken över tid – röstningen sker live.</p>
   </div>
 </section>
 
@@ -700,16 +686,6 @@ function renderTabs(active){
     renderDay(i);
   }));
 }
-const LINE_REACTIONS=[["fire","🔥"],["dislike","👎"]];
-const CARD_REACTION_KEY="all"; // en reaktion per restaurang+dag, inte per menyrad
-function cardReactionsHtml(rslug,dateKey){
-  const counts=(((currentReactions[dateKey]||{})[rslug]||{})[CARD_REACTION_KEY])||{};
-  const mine=localStorage.getItem(`reacted_${dateKey}_${rslug}_${CARD_REACTION_KEY}`);
-  return `<div class="card-reactions">${LINE_REACTIONS.map(([k,emo])=>{
-    const n=counts[k]||0;
-    return `<button class="reaction ${mine===k?"mine":""}" data-slug="${rslug}" data-date="${dateKey}" data-line="${CARD_REACTION_KEY}" data-emoji="${k}">${emo}${n?` ${n}`:""}</button>`;
-  }).join("")}</div>`;
-}
 function renderRestaurant(r,key,dateKey){
   const day=(r.menu||{})[key];
   const dishes=day?.dishes||[];
@@ -725,7 +701,6 @@ function renderRestaurant(r,key,dateKey){
     <div class="time">${esc(r.lunch_time||"")}</div>
     <ul class="menu">${dishHtml}</ul>
     ${r.includes?`<div class="extra">${esc(r.includes)}</div>`:""}
-    ${votingConfigured&&dishes.length?cardReactionsHtml(rslug,dateKey):""}
     <div class="card-footer"><span class="status ${status}">${esc(statusText)}</span>${source?`<a class="source" href="${esc(source)}" target="_blank" rel="noopener">Källa</a>`:""}</div>
   </article>`;
 }
@@ -738,7 +713,6 @@ function renderDay(i){
   const key=DAY_KEYS[i], grid=document.getElementById("restaurantGrid");
   const dateKey=dateKeyForIndex(i);
   grid.innerHTML=lunchData.restaurants.map(r=>renderRestaurant(r,key,dateKey)).join("");
-  ensureReactionsSubscription(i);
   const mon=weekMonday(), d=new Date(mon); d.setDate(mon.getDate()+i);
   const isToday=d.toDateString()===new Date().toDateString();
   const h1=document.querySelector("h1");
@@ -755,7 +729,6 @@ async function loadLunch(){
     renderDay(selectedIndex());
     renderVotes(lastVotes);
     renderStatsLeaderboard();
-    computeAndRenderTopDishes();
   }catch(err){
     grid.innerHTML=`<article class="card"><h3 class="name">Kunde inte läsa lunchdata</h3><p>Kontrollera data/lunch.json.</p></article>`;
   }
@@ -770,9 +743,6 @@ async function loadLunch(){
 let voteDb=null;
 let lastVotes={};
 let votingConfigured=false;
-let currentReactions={};
-let reactionsRef=null;
-let reactionsDayIndex=null;
 
 function todayKey(){
   const d=new Date();
@@ -819,13 +789,8 @@ function initVoting(){
   },()=>{
     widget.innerHTML=`<p class="vote-note">Kunde inte läsa röster just nu.</p>`;
   });
-  // Reaktionsknapparna i restaurangkorten renderas bara när votingConfigured är
-  // sant. Om lunchData redan hann laddas innan Firebase blev klar, rita om
-  // aktuell dag så knapparna dyker upp (annars görs det redan av loadLunch()).
-  if(lunchData) renderDay(selectedIndex());
   loadVoteHistory();
   initStatsLeaderboard();
-  initTopDishes();
   loadDishHistory();
 }
 function renderVotes(votes){
@@ -881,45 +846,6 @@ function castVote(newSlug){
   localStorage.setItem(storageKey,newSlug);
   voteDb.ref().update(updates);
 }
-
-/* --- Emoji-reaktioner på dagens rätt ---
-   Samma delade-tillstånd-mönster som rösterna, men nycklat på vilken dag som
-   faktiskt bläddras till (inte bara "idag") eftersom en reaktion gäller en
-   specifik rätt en specifik dag, oavsett om den dagen råkar vara idag. */
-function ensureReactionsSubscription(i){
-  if(reactionsDayIndex===i && votingConfigured) return;
-  if(!votingConfigured) return; // försöks igen nästa renderDay() när anslutningen är klar
-  reactionsDayIndex=i;
-  if(reactionsRef) reactionsRef.off();
-  const dateKey=dateKeyForIndex(i);
-  reactionsRef=voteDb.ref(`reactions/${dateKey}`);
-  reactionsRef.on("value",snap=>{
-    currentReactions[dateKey]=snap.val()||{};
-    if(selectedIndex()===i) renderDay(i);
-  });
-}
-function castReaction(rslug,dateKey,lineIdx,emojiKey){
-  if(!voteDb) return;
-  const storageKey=`reacted_${dateKey}_${rslug}_${lineIdx}`;
-  const prev=localStorage.getItem(storageKey);
-  const path=`reactions/${dateKey}/${rslug}/${lineIdx}`;
-  const updates={};
-  if(prev===emojiKey){
-    updates[`${path}/${emojiKey}`]=firebase.database.ServerValue.increment(-1);
-    localStorage.removeItem(storageKey);
-    voteDb.ref().update(updates);
-    return;
-  }
-  if(prev) updates[`${path}/${prev}`]=firebase.database.ServerValue.increment(-1);
-  updates[`${path}/${emojiKey}`]=firebase.database.ServerValue.increment(1);
-  localStorage.setItem(storageKey,emojiKey);
-  voteDb.ref().update(updates);
-}
-document.getElementById("restaurantGrid").addEventListener("click",e=>{
-  const btn=e.target.closest(".reaction");
-  if(!btn) return;
-  castReaction(btn.dataset.slug,btn.dataset.date,btn.dataset.line,btn.dataset.emoji);
-});
 
 /* --- Röst-historik: senaste dagarnas vinnare ---
    Datumnycklarna (YYYY-MM-DD) sorterar likadant lexikografiskt som
@@ -998,61 +924,17 @@ function renderStatsLeaderboard(){
   }).join("")}</ul><p class="vote-note" style="margin-top:10px">Baserat på ${grandTotal} röst${grandTotal===1?"":"er"} över ${totalDays} dag${totalDays===1?"":"ar"}.</p>`;
 }
 
-/* --- Statistik: mest omtyckta rätterna ---
-   Korsreferens mellan reactions/ (live, Firebase) och dish_history.json
-   (statisk, uppdateras när skriptet kör). Reaktionerna är nycklade på
-   radindex, historiken sparar rätterna i samma radordning, så de går att
-   slå ihop via datum+restaurang+radindex. */
-let dishHistory=[];
-let lastReactionsSnapshot=null;
-function initTopDishes(){
-  if(!votingConfigured) return;
-  voteDb.ref("reactions").on("value",snap=>{
-    lastReactionsSnapshot=snap.val()||{};
-    computeAndRenderTopDishes();
-  });
-}
-function computeAndRenderTopDishes(){
-  const el=document.getElementById("topDishes");
-  if(!el||!lastReactionsSnapshot) return;
-  const scored=[];
-  for(const [date,byRestaurant] of Object.entries(lastReactionsSnapshot)){
-    for(const [rslug,byLine] of Object.entries(byRestaurant||{})){
-      for(const [lineIdxStr,counts] of Object.entries(byLine||{})){
-        const fire=counts.fire||0,dislike=counts.dislike||0;
-        if(!fire&&!dislike) continue;
-        const histEntry=dishHistory.find(e=>e.date===date&&slug(e.restaurant)===rslug);
-        if(!histEntry?.dishes?.length) continue;
-        // "all" = en reaktion för hela dagens meny (nuvarande läge). Äldre
-        // radvisa reaktioner (numeriskt index) kan fortfarande finnas kvar
-        // från innan det byttes tillbaka, slås ihop på samma sätt.
-        const line=lineIdxStr==="all"?histEntry.dishes.join(" / "):histEntry.dishes[Number(lineIdxStr)];
-        if(!line) continue;
-        scored.push({date,restaurant:histEntry.restaurant,line,fire,dislike});
-      }
-    }
-  }
-  scored.sort((a,b)=>(b.fire-b.dislike)-(a.fire-a.dislike));
-  const list=scored.slice(0,8);
-  if(!list.length){
-    el.innerHTML=`<li>Inga reaktioner än – bli först att 🔥 eller 👎 en rätt uppe bland dagens luncher.</li>`;
-    return;
-  }
-  el.innerHTML=list.map(x=>`<li><span class="vhd">🔥${x.fire} 👎${x.dislike}</span><span class="vhn">${esc(x.line)}</span><span class="vhc">${esc(x.restaurant)}</span></li>`).join("");
-}
-
 /* --- Statistik: sök i rätt-historiken ---
    Enkel skiftlägesokänslig delsträngssökning över dish_history.json.
    Ingen "vad är egentligen samma rätt"-igenkänning – restaurangernas
    text varierar för mycket dag till dag för att det ska gå att lita på. */
+let dishHistory=[];
 async function loadDishHistory(){
   const el=document.getElementById("statsDishes");
   if(!el) return;
   el.innerHTML=`
-    <h3 class="vote-history-title">Mest omtyckta rätterna</h3>
-    <ul id="topDishes" class="vote-history-list"><li>Samlar data…</li></ul>
-    <h3 class="vote-history-title" style="margin-top:28px">Sök i rätt-historiken</h3>
-    <p class="vote-note">Byggs upp av skriptet några gånger om dagen – inte lika direkt-live som röster och reaktioner.</p>
+    <h3 class="vote-history-title">Sök i rätt-historiken</h3>
+    <p class="vote-note">Byggs upp av skriptet några gånger om dagen – inte lika direkt-live som rösterna.</p>
     <input type="search" id="dishSearch" class="dish-search" placeholder="t.ex. raggmunk, fisk, korv…">
     <div id="dishSearchResults"></div>
   `;
@@ -1064,7 +946,6 @@ async function loadDishHistory(){
   }catch(e){
     dishHistory=[];
   }
-  computeAndRenderTopDishes();
 }
 function renderDishSearchResults(qRaw){
   const el=document.getElementById("dishSearchResults");
