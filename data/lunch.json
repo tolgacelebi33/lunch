@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28 03:37",
+  "updated_at": "2026-09-28 09:27",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -140,44 +140,46 @@
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt strömming serveras med potatismos, lingon och brynt smör"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Kinesisk biffgryta med ris"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk serveras med raggmunk och lingon alternativt kokt potatis och löksås"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Simons kyckling i vitvin , oliver, paprika och rostad potatis"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Schnitzel serveras med rostad potatis, bearnaisesås, gröna ärtor och citron",
+            "Nudelsallad med friterade räkor och chilimayo",
+            "Chèvresallad med bulgur och rödbetor från Björnhyltan och Nordebros trädgårdar"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 39,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 39 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 40
         }
       }
     },
@@ -273,9 +275,8 @@
   "update_log": [
     "glasets: ok (4 days, html)",
     "kabyssen: ok (5 days, pdf-text)",
-    "sangbergs: no current-week menu parsed",
+    "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
-    "sanering: 5 gammal dag/dagar dolda (kunde inte uppdateras till vecka 40)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",

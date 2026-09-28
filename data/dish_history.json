@@ -584,6 +584,13 @@
     },
     {
       "date": "2026-09-28",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Kinesisk biffgryta med ris"
+      ]
+    },
+    {
+      "date": "2026-09-28",
       "restaurant": "Kabyssen",
       "dishes": [
         "L1: Korvpanna med curry och ris (gf, mf)"
@@ -598,6 +605,13 @@
         "Veckans Vego: Äggnudlar med sweetchilisås",
         "Veckans Pasta: Pasta med heta räkor",
         "Veckans Sallad: Räksallad"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Stekt fläsk serveras med raggmunk och lingon alternativt kokt potatis och löksås"
       ]
     },
     {
@@ -625,6 +639,13 @@
         "Stekt fläsk med potatis & bruna bönor",
         "Spaghetti med köttfärssås",
         "Veckans Vego: Äggnudlar med sweetchilisås"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Stekt strömming serveras med potatismos, lingon och brynt smör"
       ]
     },
     {
@@ -661,6 +682,13 @@
     },
     {
       "date": "2026-10-01",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Simons kyckling i vitvin , oliver, paprika och rostad potatis"
+      ]
+    },
+    {
+      "date": "2026-10-01",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Shistawok – libanesisk kyckling med kryddigt ris LF + GF"
@@ -693,6 +721,15 @@
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Schnitzel serveras med rostad potatis, bearnaisesås, gröna ärtor och citron",
+        "Nudelsallad med friterade räkor och chilimayo",
+        "Chèvresallad med bulgur och rödbetor från Björnhyltan och Nordebros trädgårdar"
       ]
     },
     {

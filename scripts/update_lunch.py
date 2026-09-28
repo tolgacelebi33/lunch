@@ -271,8 +271,12 @@ def sangbergs(d,week):
         tail=t[m.end():m.end()+1100]
         nxt=re.search(r"(?i)\b"+DAY_RE+r"\b\s*\d{1,2}\s*[/\.\-]\s*\d{1,2}",tail)
         if nxt: tail=tail[:nxt.start()]
+        # Sista dagen fortsätter texten annars in i sidans boilerplate
+        # ("Närproducerad mat...", allergitext, adress) – klipp där den börjar.
+        cut=re.search(r"(?i)närproducerad mat|vi har alternativ för",tail)
+        if cut: tail=tail[:cut.start()]
         ds=clean_lines(tail)
-        ds=[x for x in ds if not re.search(r"(?i)^veckans |lunchmeny|boka bord|lunch kostar",x)]
+        ds=[x for x in ds if not re.search(r"(?i)^veckans |lunchmeny|boka bord|lunch kostar|^närproducerad mat|^allergier$",x)]
         if ds:
             save_day(r, key, ds, url, week)
             parsed+=1
