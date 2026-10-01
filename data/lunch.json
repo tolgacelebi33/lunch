@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01 13:35",
+  "updated_at": "2026-10-01 16:26",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -348,7 +348,48 @@
       "lunch_time": "11.30–14.00",
       "includes": "Sallad, hembakt focaccia och kaffe ingår.",
       "source_url": "https://www.latessitura.se/",
-      "menu": {},
+      "menu": {
+        "monday": {
+          "verified": true,
+          "dishes": [
+            "STÄNGT"
+          ],
+          "source_url": "https://www.latessitura.se/",
+          "week": 40
+        },
+        "tuesday": {
+          "verified": true,
+          "dishes": [
+            "STÄNGT"
+          ],
+          "source_url": "https://www.latessitura.se/",
+          "week": 40
+        },
+        "wednesday": {
+          "verified": true,
+          "dishes": [
+            "STÄNGT"
+          ],
+          "source_url": "https://www.latessitura.se/",
+          "week": 40
+        },
+        "thursday": {
+          "verified": true,
+          "dishes": [
+            "STÄNGT"
+          ],
+          "source_url": "https://www.latessitura.se/",
+          "week": 40
+        },
+        "friday": {
+          "verified": true,
+          "dishes": [
+            "Wallenbergare – skirat smör – ärtor – lingon – potatispuré"
+          ],
+          "source_url": "https://www.latessitura.se/",
+          "week": 40
+        }
+      },
       "drive_min": 28,
       "distance_km": 25.0,
       "address": "Fabriksgatan 2C, Ulricehamn",
@@ -493,7 +534,7 @@
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
-    "tessitura: current week 40 not found in menu PDF",
+    "tessitura: ok (5 days)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",

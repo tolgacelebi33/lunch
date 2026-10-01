@@ -605,6 +605,13 @@
     },
     {
       "date": "2026-09-28",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "STÄNGT"
+      ]
+    },
+    {
+      "date": "2026-09-28",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Kålpudding med kokt potatis, gräddsås & lingon",
@@ -664,6 +671,13 @@
     },
     {
       "date": "2026-09-29",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "STÄNGT"
+      ]
+    },
+    {
+      "date": "2026-09-29",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Stekt fläsk med raggmunk & lingon",
@@ -719,6 +733,13 @@
       "dishes": [
         "L1: BBQ Spareribs med pommes (gf)",
         "L2: Ärtsoppa + pannkaka, sylt och grädde"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "STÄNGT"
       ]
     },
     {
@@ -791,6 +812,13 @@
     },
     {
       "date": "2026-10-01",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "STÄNGT"
+      ]
+    },
+    {
+      "date": "2026-10-01",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Ärtsoppa med pannkakor, sylt & grädde",
@@ -859,6 +887,13 @@
         "Veckans pasta: Veckans sallad",
         "Köttfärssås",
         "Taco"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Wallenbergare – skirat smör – ärtor – lingon – potatispuré"
       ]
     },
     {
