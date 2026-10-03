@@ -931,6 +931,190 @@
         "Ungsstek laxfilé med kall limesås, serveras med kokt potatis",
         "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Lunchkorv med potatismos & gurkmajonnäs",
+        "Skagenöverbakad lax med potatis & dillsås",
+        "Veckans Vego: Trädgårdsmästargryta med ris",
+        "Veckans Pasta: Tacokryddad köttfärssås",
+        "Veckans Sallad: Kebabsallad med kebabsås"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Pannbiff med lök",
+        "Sprödbakad fisk med smörsås",
+        "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Grekisk bondsallad / Krämig pastasallad med kyckling, kronärtskockakräm"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Nudel- och grönsakswok serveras med kyckling"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Plommonglaserad fläskkarré med potatis & skysås",
+        "Chili con carne med ris",
+        "Veckans Vego: Trädgårdsmästargryta med ris",
+        "Veckans Pasta: Tacokryddad köttfärssås",
+        "Veckans Sallad: Kebabsallad med kebabsås"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Stekt fläsk med löksås",
+        "Ostchorizo med stekt potatis, gurkmajo",
+        "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Grekisk bondsallad / Krämig pastasallad med kyckling, kronärtskockakräm"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Ost & skink paj"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Grekisk färsbiff med stekt potatis & tzatziki",
+        "Veckans Vego: Trädgårdsmästargryta med ris",
+        "Veckans Pasta: Tacokryddad köttfärssås",
+        "Veckans Sallad: Kebabsallad med kebabsås"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Kyckling piccata med salsa, ris",
+        "Panerad fisk med räkröra",
+        "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Grekisk bondsallad / Krämig pastasallad med kyckling, kronärtskockakräm"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "restaurant": "Orkidé Thai",
+      "dishes": [
+        "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Stekt fläsk med potatismos, stekt lök och lingonsylt LF + GF"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Järgarsoppa med ananaspaj och vaniljcremé Pasta med fläskkött i ädelostsås",
+        "Veckans Vego: Trädgårdsmästargryta med ris",
+        "Veckans Pasta: Tacokryddad köttfärssås",
+        "Veckans Sallad: Kebabsallad med kebabsås"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Plommonspäckad karré med gräddsås",
+        "Tacosoppa med nachos, aioli",
+        "Ärtsoppa med fläsk",
+        "(Pannkakor till soppan)",
+        "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Grekisk bondsallad / Krämig pastasallad med kyckling, kronärtskockakräm"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "restaurant": "Orkidé Thai",
+      "dishes": [
+        "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "restaurant": "Glasets Hus",
+      "dishes": [
+        "Biffar med fetaost serveras med bulgur och tzatziki"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "restaurant": "Grillköket & Pizzeria",
+      "dishes": [
+        "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "restaurant": "Limmareds Wärdshus",
+      "dishes": [
+        "Högrev med pepparrotssås och potatis",
+        "Veckans Vego : Trädgårdsmästargryta med ris",
+        "Veckans Pasta : Tacokryddad köttfärssås",
+        "Veckans Sallad : Kebabsallad med kebabsås",
+        "Veckans Vego: Trädgårdsmästargryta med ris"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "restaurant": "Lunchhörnan",
+      "dishes": [
+        "Grillad fläskfilé med pepparsås, stekt potatis",
+        "Fiskgratäng med gräslök",
+        "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Grekisk bondsallad / Krämig pastasallad med kyckling, kronärtskockakräm"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "restaurant": "Orkidé Thai",
+      "dishes": [
+        "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
     }
   ]
 }
