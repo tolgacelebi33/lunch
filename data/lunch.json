@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03 21:12",
+  "updated_at": "2026-10-04 17:19",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -11,44 +11,59 @@
       "source_url": "https://kabyssen-dalstorp.se/rezepte",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Långkokt högrev med morötter och ris",
+            "(gf, mf)",
+            "L2: Köttfärssoppa + pannkaka, sylt och",
+            "grädde"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Fläskbog med purjolök, champinjoner",
+            "och gräddsås samt ris (gf)"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Pannbiff med potatismos och lingon",
+            "(gf)",
+            "L2: Kycklingklubba på rostade rotfrukter",
+            "och potatis (gf, mf)"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Kabyssen´s panerade schnitzel med",
+            "ugnsbakad potatis, pommes, grönsaker",
+            "och paprikasås",
+            "L2: Kabyssen´s panerade kyckling med",
+            "ugnsbakad potatis, pommes, grönsaker"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Panerad fisk med kokt potatis och",
+            "remuladsås (mf)",
+            "Veckans pasta: Veckans sallad",
+            "Krämig kyckling med Tonfisk",
+            "soltorkade tomater"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         }
       },
       "drive_min": 2,
@@ -388,44 +403,54 @@
       "source_url": "https://tullensrestaurangsportbar.se/",
       "menu": {
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Fläskfilé med bearnaisesås och stekt potatis",
+            "Panerad spättafilé med kallsås och kokt potatis",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk med löksås, lingonsylt och kokt potatis",
+            "Stekt strömming med skirat smör, lingonsylt och potatismos",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Gräddstuvad pyttipanna med stekt ägg och rödbetor",
+            "Ungsstekt laxfilé med limemajonnäs och kokt potatis",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Grekiska färsbiffar med gräddsås, lingonsylt, ärtor och potatismos",
+            "Fish & chips på torsk med remouladsås",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Schnitzel med klassiska tillbehör och stekt potatis",
+            "Mozarella gratinerad fiskgratäng med hummersås samt kokt potatis",
+            "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+          ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         }
       },
       "drive_min": 29,
@@ -503,13 +528,15 @@
   "iso_week": 41,
   "update_log": [
     "glasets: ok (4 days, html)",
-    "kabyssen: current week 41 not found in menu PDF",
+    "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: no current-week menu parsed",
     "limmared: ok (5 days)",
-    "tullens: vecka 41 not found",
+    "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: current week 41 not found in menu PDF",
-    "sanering: 20 gammal dag/dagar dolda (kunde inte uppdateras till vecka 41)",
+    "sanering: 10 gammal dag/dagar dolda (kunde inte uppdateras till vecka 41)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
   "week_monday": "2026-10-05",
