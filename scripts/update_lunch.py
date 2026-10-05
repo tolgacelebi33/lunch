@@ -383,7 +383,7 @@ def tessitura(d, week):
     if not links: raise ValueError("no menu PDF link found")
     raw,_,_=fetch_bytes(base+links[0])
     text=pdf_to_text(raw)
-    if not re.search(rf"(?i)\bv\s*\.?\s*{week}\b",text):
+    if not re.search(rf"(?i)\bv\s*\.?\s*{week}(?!\d)",text):
         raise ValueError(f"current week {week} not found in menu PDF")
     sp=re.search(r"(?im)^\s*Veckans speciale\s*$",text)
     days_text=text[:sp.start()] if sp else text
@@ -393,8 +393,12 @@ def tessitura(d, week):
     if sp:
         tail=text[sp.end():]
         stop=re.search(r"(?im)^\s*L[öeé]rdag",tail)
-        lines=clean_lines(tail[:stop.start()] if stop else tail[:300])
-        if lines: standing="Veckans speciale: "+" / ".join(lines[:3])
+        merged=[]
+        for ln in clean_lines(tail[:stop.start()] if stop else tail[:300]):
+            # rader som börjar med tankstreck är fortsättning på föregående rätt
+            if ln[:1] in "–-—" and merged: merged[-1]+=" "+ln
+            else: merged.append(ln)
+        if merged: standing="Veckans speciale: "+" / ".join(merged)
     r=find_restaurant(d,"La Tessitura")
     if not r: raise ValueError("restaurant missing")
     pm=re.search(r"(\d{2,3})\s*kr",text)

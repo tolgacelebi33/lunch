@@ -934,6 +934,13 @@
     },
     {
       "date": "2026-10-05",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Yngves korv serveras med rostad potatis och tomatkonkasé"
+      ]
+    },
+    {
+      "date": "2026-10-05",
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
@@ -945,6 +952,15 @@
       "dishes": [
         "L1: Fläskbog med purjolök, champinjoner",
         "och gräddsås samt ris (gf)"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Grillad fläskytterfilé",
+        "– rödvinssky – zucchini – paprika– potatispuré",
+        "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
       ]
     },
     {
@@ -978,6 +994,13 @@
     },
     {
       "date": "2026-10-06",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Wallenbergare serveras potatismos, lingon, brynt smör och gröna ärtor"
+      ]
+    },
+    {
+      "date": "2026-10-06",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Nudel- och grönsakswok serveras med kyckling"
@@ -998,6 +1021,15 @@
         "(gf)",
         "L2: Kycklingklubba på rostade rotfrukter",
         "och potatis (gf, mf)"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Porchetta – haricots verts– grönkål – rosmarinsrostad potatis",
+        "– skysås",
+        "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
       ]
     },
     {
@@ -1031,6 +1063,13 @@
     },
     {
       "date": "2026-10-07",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Sprödbakad gulskäddafilé med skaldjursmajo och citron"
+      ]
+    },
+    {
+      "date": "2026-10-07",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Ost & skink paj"
@@ -1051,6 +1090,14 @@
         "(gf, mf)",
         "L2: Köttfärssoppa + pannkaka, sylt och",
         "grädde"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Fish`nchips– kolja – tartarsås – ärtor – pommes",
+        "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
       ]
     },
     {
@@ -1090,6 +1137,13 @@
     },
     {
       "date": "2026-10-08",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Bakad kotlettrad serveras med potatisgratäng och champinjonsås"
+      ]
+    },
+    {
+      "date": "2026-10-08",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Stekt fläsk med potatismos, stekt lök och lingonsylt LF + GF"
@@ -1111,6 +1165,14 @@
         "och paprikasås",
         "L2: Kabyssen´s panerade kyckling med",
         "ugnsbakad potatis, pommes, grönsaker"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Långbakad karré – pepparsås – rotfrukter – örtsallad",
+        "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
       ]
     },
     {
@@ -1152,6 +1214,15 @@
     },
     {
       "date": "2026-10-09",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Gulaschsoppa med vispad crème fraiche och nybakat bröd",
+        "Grönsaksbiffar med klyftpotatis och sweet chilisås",
+        "Bakpotatis med kycklingcurryröra"
+      ]
+    },
+    {
+      "date": "2026-10-09",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Biffar med fetaost serveras med bulgur och tzatziki"
@@ -1173,6 +1244,14 @@
         "Veckans pasta: Veckans sallad",
         "Krämig kyckling med Tonfisk",
         "soltorkade tomater"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Örtgrillad kalkon – gräddsås– pressgurka– gelé – kokt potatis",
+        "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05 03:57",
+  "updated_at": "2026-10-05 13:53",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -250,44 +250,46 @@
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Sprödbakad gulskäddafilé med skaldjursmajo och citron"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Yngves korv serveras med rostad potatis och tomatkonkasé"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Wallenbergare serveras potatismos, lingon, brynt smör och gröna ärtor"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Bakad kotlettrad serveras med potatisgratäng och champinjonsås"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Gulaschsoppa med vispad crème fraiche och nybakat bröd",
+            "Grönsaksbiffar med klyftpotatis och sweet chilisås",
+            "Bakpotatis med kycklingcurryröra"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         }
       },
       "drive_min": 21,
@@ -349,44 +351,51 @@
       "source_url": "https://www.latessitura.se/",
       "menu": {
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Grillad fläskytterfilé",
+            "– rödvinssky – zucchini – paprika– potatispuré",
+            "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Porchetta – haricots verts– grönkål – rosmarinsrostad potatis",
+            "– skysås",
+            "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Fish`nchips– kolja – tartarsås – ärtor – pommes",
+            "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Långbakad karré – pepparsås – rotfrukter – örtsallad",
+            "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Örtgrillad kalkon – gräddsås– pressgurka– gelé – kokt potatis",
+            "Veckans speciale: Pasta di pollo – kyckling– vitlök – grädde– parmesan / Insalatadi gamberi– räkor – romansallad– parmesan & citrusaioli – grillad / sparris– spetskål – pickladrödlök"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 40,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 40 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 41
         }
       },
       "drive_min": 28,
@@ -529,12 +538,11 @@
   "update_log": [
     "glasets: ok (4 days, html)",
     "kabyssen: ok (5 days, pdf-text)",
-    "sangbergs: no current-week menu parsed",
+    "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
-    "tessitura: current week 41 not found in menu PDF",
-    "sanering: 10 gammal dag/dagar dolda (kunde inte uppdateras till vecka 41)",
+    "tessitura: ok (5 days)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
