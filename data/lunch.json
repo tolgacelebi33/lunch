@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05 14:13",
+  "updated_at": "2026-10-05 17:57",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -196,14 +196,14 @@
       "town": "Limmared",
       "price": "Lunch + café",
       "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "source_url": "https://glasetshuslimmared.se/lunch/",
       "menu": {
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Ost & skink paj"
+            "Ost- & skinkpaj"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 41
         },
         "monday": {
@@ -214,25 +214,27 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Nudel- och grönsakswok serveras med kyckling"
+            "Nudel- och gré6nsakswok med kyckling"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 41
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Stekt fläsk med potatismos, stekt lök och lingonsylt LF + GF"
+            "Stekt flask med potatismos,",
+            "stekt lök och lingonsylt"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 41
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Biffar med fetaost serveras med bulgur och tzatziki"
+            "Biffar med fetaost serveras",
+            "med bulgur och tzatziki"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 41
         }
       },
@@ -536,13 +538,15 @@
   ],
   "iso_week": 41,
   "update_log": [
-    "glasets: ok (4 days, html)",
-    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
+    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/10/M-v41.jpg)",
+    "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
-    "tullens: <urlopen error [Errno 101] Network is unreachable>",
+    "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: ok (5 days)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
   "week_monday": "2026-10-05",
