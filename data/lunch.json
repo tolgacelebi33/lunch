@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09 13:51",
+  "updated_at": "2026-10-09 16:20",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -543,7 +543,7 @@
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: <urlopen error [Errno 101] Network is unreachable>",
-    "lunchhornan: ok (5 days)",
+    "lunchhornan: vecka 41 not found",
     "tessitura: ok (5 days)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
