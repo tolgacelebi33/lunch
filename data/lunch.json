@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11 18:18",
+  "updated_at": "2026-10-11 22:14",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -11,44 +11,57 @@
       "source_url": "https://kabyssen-dalstorp.se/rezepte",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Långbakad fläskkarré med äpple/",
+            "kanel sås med stekt potatis (gf, mf)",
+            "L2: Ramensoppa + pannkaka, sylt och",
+            "grädde"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Korv stroganoff med pasta"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Stekt fläsk med raggmunk, löksås och",
+            "lingon",
+            "L2: Kycklingcurry med ris (gf, mf)"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Kabyssen´s panerade schnitzel med",
+            "potatisgratäng, klyftpotatis, grönsaker",
+            "och tomatsås",
+            "L2: Kabyssen´s panerade kyckling med",
+            "potatisgratäng, klyftpotatis, grönsaker"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Fisk piccata med pasta",
+            "Veckans pasta: Veckans sallad",
+            "Krämig vitlökssås Sallad med",
+            "med",
+            "pankopanerade"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         }
       },
       "drive_min": 2,
@@ -514,13 +527,15 @@
   "iso_week": 42,
   "update_log": [
     "glasets: ok (4 days, html)",
-    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
+    "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: no current-week menu parsed",
     "limmared: ok (5 days)",
-    "tullens: <urlopen error [Errno 101] Network is unreachable>",
+    "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: current week 42 not found in menu PDF",
-    "sanering: 15 gammal dag/dagar dolda (kunde inte uppdateras till vecka 42)",
+    "sanering: 10 gammal dag/dagar dolda (kunde inte uppdateras till vecka 42)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],

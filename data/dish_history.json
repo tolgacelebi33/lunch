@@ -1301,6 +1301,13 @@
     },
     {
       "date": "2026-10-12",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Korv stroganoff med pasta"
+      ]
+    },
+    {
+      "date": "2026-10-12",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Köttbullar, potatismos, gräddsås & lingon",
@@ -1344,6 +1351,15 @@
     },
     {
       "date": "2026-10-13",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Stekt fläsk med raggmunk, löksås och",
+        "lingon",
+        "L2: Kycklingcurry med ris (gf, mf)"
+      ]
+    },
+    {
+      "date": "2026-10-13",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Stekt fläsk med raggmunk & lingon",
@@ -1383,6 +1399,16 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Långbakad fläskkarré med äpple/",
+        "kanel sås med stekt potatis (gf, mf)",
+        "L2: Ramensoppa + pannkaka, sylt och",
+        "grädde"
       ]
     },
     {
@@ -1436,6 +1462,17 @@
     },
     {
       "date": "2026-10-15",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Kabyssen´s panerade schnitzel med",
+        "potatisgratäng, klyftpotatis, grönsaker",
+        "och tomatsås",
+        "L2: Kabyssen´s panerade kyckling med",
+        "potatisgratäng, klyftpotatis, grönsaker"
+      ]
+    },
+    {
+      "date": "2026-10-15",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Ärtsoppa med pannkakor, sylt & grädde",
@@ -1484,6 +1521,17 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "Fisk piccata med pasta",
+        "Veckans pasta: Veckans sallad",
+        "Krämig vitlökssås Sallad med",
+        "med",
+        "pankopanerade"
       ]
     },
     {
