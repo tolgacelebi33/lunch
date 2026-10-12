@@ -1294,6 +1294,13 @@
     },
     {
       "date": "2026-10-12",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Köttbullar serveras med potatismos, gräddsås och lingon"
+      ]
+    },
+    {
+      "date": "2026-10-12",
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
@@ -1304,6 +1311,14 @@
       "restaurant": "Kabyssen",
       "dishes": [
         "L1: Korv stroganoff med pasta"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Örtbakad kycklingfilé – fetaostcrème– zucchini – paprika – rostad potatis",
+        "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
       ]
     },
     {
@@ -1337,9 +1352,16 @@
     },
     {
       "date": "2026-10-13",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Stekt fläsk serveras med raggmunk och lingon alternativt löksås och kokt potatis"
+      ]
+    },
+    {
+      "date": "2026-10-13",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Pasta Alfredo serveras med kycklinglårfilé toppas med parmesan"
+        "Pasta Alfredo med kycklinglarfilé"
       ]
     },
     {
@@ -1356,6 +1378,15 @@
         "L1: Stekt fläsk med raggmunk, löksås och",
         "lingon",
         "L2: Kycklingcurry med ris (gf, mf)"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Piccatamilanese– gramolatasmör– rostade grönsaker– rosmarinspotati",
+        "s",
+        "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
       ]
     },
     {
@@ -1389,9 +1420,17 @@
     },
     {
       "date": "2026-10-14",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Flygande Jacob saerveras med ris och toppas med jordnötter och bacon"
+      ]
+    },
+    {
+      "date": "2026-10-14",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Panerade kycklingfärsbiffar serveras med rostad potatis och basilikadressing"
+        "Panerade kycklingfdarsbiffar med",
+        "rostad potatis och basilikadressing"
       ]
     },
     {
@@ -1409,6 +1448,14 @@
         "kanel sås med stekt potatis (gf, mf)",
         "L2: Ramensoppa + pannkaka, sylt och",
         "grädde"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Panerad stekt koljafilé – kall räksås – dillslungad potatis",
+        "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
       ]
     },
     {
@@ -1448,9 +1495,17 @@
     },
     {
       "date": "2026-10-15",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Fiskgratäng toppad med sparris och dill serveras med potatismos"
+      ]
+    },
+    {
+      "date": "2026-10-15",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Kålpudding serveras med kokt potatis, gräddsås och lingonsylt LF + GF"
+        "Kålpudding med kokt potatis,",
+        "gräddsås och lingonsylt"
       ]
     },
     {
@@ -1469,6 +1524,14 @@
         "och tomatsås",
         "L2: Kabyssen´s panerade kyckling med",
         "potatisgratäng, klyftpotatis, grönsaker"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Hjortfärsbiff – rotfrukter – Lingon – enbärssås",
+        "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
       ]
     },
     {
@@ -1511,9 +1574,21 @@
     },
     {
       "date": "2026-10-16",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Salviakryddad fläskgryta serveras med kokt ris",
+        "Pasta med tomatsås toppas med bacon och parmesan",
+        "Pumparisotto"
+      ]
+    },
+    {
+      "date": "2026-10-16",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Husets pytt i panna serveras med stekt ägg och inlagda rödbetor LF"
+        "Husets pytt i panna med stekt",
+        "ägg och inlagda rödbetor",
+        "Loney GORA 5",
+        "SERVERAS PA BUFFE"
       ]
     },
     {
@@ -1532,6 +1607,14 @@
         "Krämig vitlökssås Sallad med",
         "med",
         "pankopanerade"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Stekt koljafilé – bacon– vitlök – brynt smör– kokt potatis",
+        "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
       ]
     },
     {

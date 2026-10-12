@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12 04:20",
+  "updated_at": "2026-10-12 15:05",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -195,14 +195,15 @@
       "town": "Limmared",
       "price": "Lunch + café",
       "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "source_url": "https://glasetshuslimmared.se/lunch/",
       "menu": {
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Panerade kycklingfärsbiffar serveras med rostad potatis och basilikadressing"
+            "Panerade kycklingfdarsbiffar med",
+            "rostad potatis och basilikadressing"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 42
         },
         "monday": {
@@ -213,25 +214,29 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Pasta Alfredo serveras med kycklinglårfilé toppas med parmesan"
+            "Pasta Alfredo med kycklinglarfilé"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 42
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Kålpudding serveras med kokt potatis, gräddsås och lingonsylt LF + GF"
+            "Kålpudding med kokt potatis,",
+            "gräddsås och lingonsylt"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 42
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Husets pytt i panna serveras med stekt ägg och inlagda rödbetor LF"
+            "Husets pytt i panna med stekt",
+            "ägg och inlagda rödbetor",
+            "Loney GORA 5",
+            "SERVERAS PA BUFFE"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 42
         }
       },
@@ -249,44 +254,46 @@
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Flygande Jacob saerveras med ris och toppas med jordnötter och bacon"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Köttbullar serveras med potatismos, gräddsås och lingon"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk serveras med raggmunk och lingon alternativt löksås och kokt potatis"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Fiskgratäng toppad med sparris och dill serveras med potatismos"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Salviakryddad fläskgryta serveras med kokt ris",
+            "Pasta med tomatsås toppas med bacon och parmesan",
+            "Pumparisotto"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         }
       },
       "drive_min": 21,
@@ -348,44 +355,50 @@
       "source_url": "https://www.latessitura.se/",
       "menu": {
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Örtbakad kycklingfilé – fetaostcrème– zucchini – paprika – rostad potatis",
+            "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Piccatamilanese– gramolatasmör– rostade grönsaker– rosmarinspotati",
+            "s",
+            "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Panerad stekt koljafilé – kall räksås – dillslungad potatis",
+            "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Hjortfärsbiff – rotfrukter – Lingon – enbärssås",
+            "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt koljafilé – bacon– vitlök – brynt smör– kokt potatis",
+            "Veckans speciale: Pasta al salmone– kalrökt lax – grädde– vitvin– fänkål – citron / Ceasarsallad – romansallad – parmesan– bacon– kyckling - krutonger"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 41,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 41 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 42
         }
       },
       "drive_min": 28,
@@ -526,14 +539,13 @@
   ],
   "iso_week": 42,
   "update_log": [
-    "glasets: ok (4 days, html)",
+    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/10/M-v42.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
-    "sangbergs: no current-week menu parsed",
+    "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
-    "tessitura: current week 42 not found in menu PDF",
-    "sanering: 10 gammal dag/dagar dolda (kunde inte uppdateras till vecka 42)",
+    "tessitura: ok (5 days)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
