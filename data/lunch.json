@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16 11:43",
+  "updated_at": "2026-10-16 14:21",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -541,15 +541,13 @@
   "update_log": [
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/10/M-v42.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
-    "sangbergs: ok (5 days)",
-    "limmared: ok (5 days)",
+    "sangbergs: no current-week menu parsed",
+    "limmared: vecka 42 not found",
     "tullens: ok (5 days)",
-    "lunchhornan: ok (5 days)",
+    "lunchhornan: vecka 42 not found",
     "tessitura: ok (5 days)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
   "week_monday": "2026-10-12",
   "distance_note": "Körtider och sträckor är uppskattningar från Verkstadsvägen 1, Dalstorp (OpenStreetMap, bil, utan trafik)."
