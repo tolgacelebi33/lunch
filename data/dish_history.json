@@ -1688,6 +1688,15 @@
       ]
     },
     {
+      "date": "2026-10-19",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Högrevsostburgare med pommes",
+        "Panerad spättafilé med örtsås och kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
       "date": "2026-10-20",
       "restaurant": "Centralen / Sångbergs",
       "dishes": [
@@ -1726,6 +1735,15 @@
         "Stekt fläsk med bruna bönor",
         "Falukorvstubbe med salsa, ris",
         "Övrigt: Pasta: Pasta Alfredo med kyckling · Vegetariskt: Bakad potatis med fetaostkräm · Sallad: Kebabsallad / Tonfisksallad"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Pannbiff med stekt lök, gräddsås, lingonsylt och potatismos",
+        "Stekt strömming med skirat smör, lingonsylt och potatismos",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
       ]
     },
     {
@@ -1774,6 +1792,15 @@
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Baconlindad kycklingfilé med sås på soltorkade tomater och stekt potatis",
+        "Stekt laxfilé med limemajonnäs och kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
       ]
     },
     {
@@ -1827,6 +1854,15 @@
       ]
     },
     {
+      "date": "2026-10-22",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Kalops med rödbetor och kokt potatis",
+        "Panerad spättafilé med räksås och kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
       "date": "2026-10-23",
       "restaurant": "Centralen / Sångbergs",
       "dishes": [
@@ -1874,6 +1910,15 @@
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Schnitzel med klassiska tillbehör och stekt potatis",
+        "Mozarella gratinerad fiskgratäng med hummersås samt kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
       ]
     }
   ]
