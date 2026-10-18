@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18 15:58",
+  "updated_at": "2026-10-18 20:37",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -11,44 +11,59 @@
       "source_url": "https://kabyssen-dalstorp.se/rezepte",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Gratinerad kyckling med tomat och",
+            "pasta",
+            "L2: Gulaschsoppa + pannkaka, sylt och",
+            "grädde"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Pytt i panna med stekt ägg och",
+            "rödbetor (gf, mf)"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Köttbullar i gräddsås med potatismos",
+            "och lingon (gf)",
+            "L2: Strimlad biff med bambuskott och ris",
+            "(mf)"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Kabyssen´s panerade schnitzel med",
+            "stekt potatis, pommes, grönsaker och",
+            "pepparsås",
+            "L2: Kabyssen´s panerade kyckling med",
+            "stekt potatis, pommes, grönsaker och"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Fisk nuggets med potatismos och gröna",
+            "ärtor",
+            "Veckans pasta: Veckans sallad",
+            "Korv i paprika/chilisås Caesarsallad",
+            "med kyckling"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         }
       },
       "drive_min": 2,
@@ -338,44 +353,49 @@
       "source_url": "https://www.latessitura.se/",
       "menu": {
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Lasagne al Forno – tomat & löksallad",
+            "Veckans speciale: Pasta– kyckling – vitlök – soltorkade tomater– grädde– parmesanost / Chevrésallad – rostade betor, spetskål & frön– senapsvinegrette"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Biff bourgogne– bacon– rödvin – svamp– lök – kokt potatis",
+            "Veckans speciale: Pasta– kyckling – vitlök – soltorkade tomater– grädde– parmesanost / Chevrésallad – rostade betor, spetskål & frön– senapsvinegrette"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         },
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Köttbullar – gräddsås– lingon – pressgurka – potatismos",
+            "Veckans speciale: Pasta– kyckling – vitlök – soltorkade tomater– grädde– parmesanost / Chevrésallad – rostade betor, spetskål & frön– senapsvinegrette"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Bruschettabakad fiskfilé – vitvinssås– potatismos",
+            "Veckans speciale: Pasta– kyckling – vitlök – soltorkade tomater– grädde– parmesanost / Chevrésallad – rostade betor, spetskål & frön– senapsvinegrette"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Pankopaneradkycklingfilé – aioli – tomatsalsa– klyftpotatis",
+            "Veckans speciale: Pasta– kyckling – vitlök – soltorkade tomater– grädde– parmesanost / Chevrésallad – rostade betor, spetskål & frön– senapsvinegrette"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 42,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 42 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 43
         }
       },
       "drive_min": 28,
@@ -517,13 +537,14 @@
   "iso_week": 43,
   "update_log": [
     "glasets: ok (4 days, html)",
-    "kabyssen: current week 43 not found in menu PDF",
+    "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
-    "tessitura: current week 43 not found in menu PDF",
-    "sanering: 10 gammal dag/dagar dolda (kunde inte uppdateras till vecka 43)",
+    "tessitura: ok (5 days)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
   "week_monday": "2026-10-19",
