@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19 03:12",
+  "updated_at": "2026-10-19 12:42",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -198,14 +198,15 @@
       "town": "Limmared",
       "price": "Lunch + café",
       "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "source_url": "https://glasetshuslimmared.se/lunch/",
       "menu": {
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Kycklinggryta med soltorkad tomat serveras med kokt potatis GF"
+            "Kycklinggryta med soltorkad tomat,",
+            "serveras med kokt potatis"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 43
         },
         "monday": {
@@ -216,25 +217,30 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Spaghetti bolognese LF"
+            "Spaghetti Bolognese =e"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 43
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Stekt fläsk med hemmagjord raggmunk och lingonsylt LF"
+            "Stekt flask med hemmagjord raggmunk",
+            "OCK NORS YE"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 43
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Gulaschsoppa med god efterrätt* LF + GF*"
+            "Gulaschsoppa med god efterratt",
+            "SERVERAS PA BUFFE",
+            "Lordag Kyckling i god tomatsas serveras",
+            "med ugnsrostad potatis VW",
+            "Sondag A la Carte samt veckans gréna val"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 43
         }
       },
@@ -536,13 +542,14 @@
   ],
   "iso_week": 43,
   "update_log": [
-    "glasets: ok (4 days, html)",
+    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/10/M-v43-scaled.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: ok (5 days)",
+    "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"

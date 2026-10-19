@@ -1723,7 +1723,7 @@
       "date": "2026-10-20",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Spaghetti bolognese LF"
+        "Spaghetti Bolognese =e"
       ]
     },
     {
@@ -1791,7 +1791,8 @@
       "date": "2026-10-21",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Kycklinggryta med soltorkad tomat serveras med kokt potatis GF"
+        "Kycklinggryta med soltorkad tomat,",
+        "serveras med kokt potatis"
       ]
     },
     {
@@ -1866,7 +1867,8 @@
       "date": "2026-10-22",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Stekt fläsk med hemmagjord raggmunk och lingonsylt LF"
+        "Stekt flask med hemmagjord raggmunk",
+        "OCK NORS YE"
       ]
     },
     {
@@ -1946,7 +1948,11 @@
       "date": "2026-10-23",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Gulaschsoppa med god efterrätt* LF + GF*"
+        "Gulaschsoppa med god efterratt",
+        "SERVERAS PA BUFFE",
+        "Lordag Kyckling i god tomatsas serveras",
+        "med ugnsrostad potatis VW",
+        "Sondag A la Carte samt veckans gréna val"
       ]
     },
     {
