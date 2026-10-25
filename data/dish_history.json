@@ -2033,6 +2033,13 @@
     },
     {
       "date": "2026-10-26",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Falukorvpanna med ris (gf)"
+      ]
+    },
+    {
+      "date": "2026-10-26",
       "restaurant": "La Tessitura",
       "dishes": [
         "Pannbiff – potatismos",
@@ -2086,6 +2093,16 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Stekt fläsk med raggmunk",
+        "(potatis/örter), gräddsås och lingon",
+        "L2: Burgundisk köttgryta med",
+        "kokt potatis (gf, mf)"
       ]
     },
     {
@@ -2144,6 +2161,15 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Isterband med dillstuvade potatis",
+        "L2: Cowboysoppa + pannkaka, sylt och",
+        "grädde"
       ]
     },
     {
@@ -2211,6 +2237,17 @@
     },
     {
       "date": "2026-10-29",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Kabyssen´s panerade schnitzel med",
+        "ugnsbakad potatis, pommes, grönsaker",
+        "och svampsås",
+        "L2: Kabyssen´s panerade kyckling med",
+        "ugnsbakad potatis, pommes, grönsaker"
+      ]
+    },
+    {
+      "date": "2026-10-29",
       "restaurant": "La Tessitura",
       "dishes": [
         "Coq au vin – kyckling – rödvinssås – bacon – potatispuré",
@@ -2274,6 +2311,17 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "Fiskgratäng med rotfrukter och potatis (gf)",
+        "Veckans pasta: Veckans sallad",
+        "Laxpasta",
+        "Pastasallad med",
+        "majo och debreziner"
       ]
     },
     {
