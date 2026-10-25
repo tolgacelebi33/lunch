@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24 20:46",
+  "updated_at": "2026-10-25 15:20",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -229,44 +229,46 @@
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Grekisk färsbiff med tzaziki och klyftpotatis"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Isterband serveras med dillstuvad potatis och rödbetor"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt fläsk serveras med raggmunk och lingon alternativt löksås och kokt potatis"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt strömming serveras med potatismos, lingon och brynt smör"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Höstgryta på nötkött från Säteriet serveras med rostad potatis och syltlök",
+            "Pytt i panna serveras med rödbetor och stekt ägg",
+            "Halloumiburgare med klyftpotatis och chiliaioli"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         }
       },
       "drive_min": 21,
@@ -328,44 +330,51 @@
       "source_url": "https://www.latessitura.se/",
       "menu": {
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Pannbiff – potatismos",
+            "– stekt lök – örtig gräddsås",
+            "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Långbakad karré – grillad focaccia– rostad potatis – chilimajonnäs",
+            "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         },
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Pestobakad kolja – vitvinssås – kokt potatis",
+            "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Coq au vin – kyckling – rödvinssås – bacon – potatispuré",
+            "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Grillad laxfile – ljummen potatissallad",
+            "– dill & limecremé",
+            "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 43,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 43 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 44
         }
       },
       "drive_min": 28,
@@ -508,12 +517,12 @@
   "update_log": [
     "glasets: ok (4 days, html)",
     "kabyssen: current week 44 not found in menu PDF",
-    "sangbergs: no current-week menu parsed",
+    "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
-    "tessitura: current week 44 not found in menu PDF",
-    "sanering: 15 gammal dag/dagar dolda (kunde inte uppdateras till vecka 44)"
+    "tessitura: ok (5 days)",
+    "sanering: 5 gammal dag/dagar dolda (kunde inte uppdateras till vecka 44)"
   ],
   "week_monday": "2026-10-26",
   "distance_note": "Körtider och sträckor är uppskattningar från Verkstadsvägen 1, Dalstorp (OpenStreetMap, bil, utan trafik)."

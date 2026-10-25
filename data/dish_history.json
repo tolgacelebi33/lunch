@@ -2019,9 +2019,25 @@
     },
     {
       "date": "2026-10-26",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Isterband serveras med dillstuvad potatis och rödbetor"
+      ]
+    },
+    {
+      "date": "2026-10-26",
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Pannbiff – potatismos",
+        "– stekt lök – örtig gräddsås",
+        "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
       ]
     },
     {
@@ -2053,6 +2069,13 @@
     },
     {
       "date": "2026-10-27",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Stekt fläsk serveras med raggmunk och lingon alternativt löksås och kokt potatis"
+      ]
+    },
+    {
+      "date": "2026-10-27",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Kyckling stroganoff med ris"
@@ -2063,6 +2086,14 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Långbakad karré – grillad focaccia– rostad potatis – chilimajonnäs",
+        "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
       ]
     },
     {
@@ -2096,6 +2127,13 @@
     },
     {
       "date": "2026-10-28",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Grekisk färsbiff med tzaziki och klyftpotatis"
+      ]
+    },
+    {
+      "date": "2026-10-28",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Köttbullar med kokt potatis, gräddsås och lingonsylt"
@@ -2106,6 +2144,14 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Pestobakad kolja – vitvinssås – kokt potatis",
+        "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
       ]
     },
     {
@@ -2144,6 +2190,13 @@
     },
     {
       "date": "2026-10-29",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Stekt strömming serveras med potatismos, lingon och brynt smör"
+      ]
+    },
+    {
+      "date": "2026-10-29",
       "restaurant": "Glasets Hus",
       "dishes": [
         "TACOS-BUFFÈ"
@@ -2154,6 +2207,14 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Coq au vin – kyckling – rödvinssås – bacon – potatispuré",
+        "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
       ]
     },
     {
@@ -2194,6 +2255,15 @@
     },
     {
       "date": "2026-10-30",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Höstgryta på nötkött från Säteriet serveras med rostad potatis och syltlök",
+        "Pytt i panna serveras med rödbetor och stekt ägg",
+        "Halloumiburgare med klyftpotatis och chiliaioli"
+      ]
+    },
+    {
+      "date": "2026-10-30",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Ost och skinksås serveras med pasta"
@@ -2204,6 +2274,15 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Grillad laxfile – ljummen potatissallad",
+        "– dill & limecremé",
+        "Veckans speciale: Gräddig bolognese – pasta – ruccola – parmesanost / Räksoppa – grönsaker - grädde"
       ]
     },
     {
