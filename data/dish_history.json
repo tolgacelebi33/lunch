@@ -2053,7 +2053,9 @@
       "dishes": [
         "Kåldolmar, kokt potatis, gräddsås & lingon",
         "Strömming, potatismos, brynt smör & lingon",
-        "Veckans Vego: Falafel med klyftpotatis & tzatziki Veckans Pasta : Carbonara Veckans Sallad : Rostbiff med potatissallad"
+        "Veckans Vego: Falafel med klyftpotatis & tzatziki",
+        "Veckans Pasta: Carbonara",
+        "Veckans Sallad: Rostbiff med potatissallad"
       ]
     },
     {
@@ -2085,7 +2087,7 @@
       "date": "2026-10-27",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Kyckling stroganoff med ris"
+        "Kycklingstroganoff med ris"
       ]
     },
     {
@@ -2121,7 +2123,7 @@
         "Stekt fläsk med potatis & löksås",
         "Stekt fläsk med bruna bönor",
         "Kebabgryta med ris",
-        "Veckans Vego: Falafel med klyftpotatis & tzatziki Veckans Pasta : Carbonara Veckans Sallad : Rostbiff med potatissallad"
+        "Veckans Vego: Falafel med klyftpotatis & tzatziki"
       ]
     },
     {
@@ -2153,7 +2155,8 @@
       "date": "2026-10-28",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Köttbullar med kokt potatis, gräddsås och lingonsylt"
+        "Köttbullar med kokt potatis,",
+        "gräddsås och lingonsylt"
       ]
     },
     {
@@ -2186,7 +2189,9 @@
       "dishes": [
         "Hemlagad färsbiff, stekt potatis & brunsås",
         "Levergryta med potatis",
-        "Veckans Vego: Falafel med klyftpotatis & tzatziki Veckans Pasta : Carbonara Veckans Sallad : Rostbiff med potatissallad"
+        "Veckans Vego: Falafel med klyftpotatis & tzatziki",
+        "Veckans Pasta: Carbonara",
+        "Veckans Sallad: Rostbiff med potatissallad"
       ]
     },
     {
@@ -2225,7 +2230,7 @@
       "date": "2026-10-29",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "TACOS-BUFFÈ"
+        "HÖSTLOVSMYS med TACOSBUFFE od"
       ]
     },
     {
@@ -2260,7 +2265,9 @@
       "dishes": [
         "Ärtsoppa & pannkakor med sylt & grädde",
         "Korvstroganoff med ris",
-        "Veckans Vego: Falafel med klyftpotatis & tzatziki Veckans Pasta : Carbonara Veckans Sallad : Rostbiff med potatissallad"
+        "Veckans Vego: Falafel med klyftpotatis & tzatziki",
+        "Veckans Pasta: Carbonara",
+        "Veckans Sallad: Rostbiff med potatissallad"
       ]
     },
     {
@@ -2303,7 +2310,8 @@
       "date": "2026-10-30",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Ost och skinksås serveras med pasta"
+        "Ost- och skinksas serveras med pasta",
+        "SERVERAS PÅ BUFFÉ"
       ]
     },
     {
@@ -2338,8 +2346,10 @@
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Kalv i dillsås med potatis",
-        "Veckans Vego : Falafel med klyftpotatis & tzatziki Veckans Pasta : Carbonara Veckans Sallad : Rostbiff med potatissallad",
-        "Veckans Vego: Falafel med klyftpotatis & tzatziki Veckans Pasta : Carbonara Veckans Sallad : Rostbiff med potatissallad"
+        "Veckans Vego : Falafel med klyftpotatis & tzatziki",
+        "Veckans Pasta : Carbonara",
+        "Veckans Sallad : Rostbiff med potatissallad",
+        "Veckans Vego: Falafel med klyftpotatis & tzatziki"
       ]
     },
     {
