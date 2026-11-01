@@ -2379,6 +2379,13 @@
     },
     {
       "date": "2026-11-02",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Säteriets ramslökskorv serveras med äppelkål, senapssås och stekt potatis"
+      ]
+    },
+    {
+      "date": "2026-11-02",
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
@@ -2409,6 +2416,22 @@
         "Köttfärslimpa med gräddsås",
         "Sprödbakad fisk med smörsås",
         "Övrigt: Pasta: Spaghetti bolognese · Vegetariskt: Vegetarisk lasagne · Sallad: Ceasasallad med kyckling / Ost och skinksallad"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Fläskfilé med bearnaisesås och stekt potatis",
+        "Panerad spättafilé med remouladsås och kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Biff Lindström serveras med potatismos och skysås"
       ]
     },
     {
@@ -2452,6 +2475,22 @@
         "Stekt fläsk med raggmunk",
         "Chili con Carne med ris",
         "Övrigt: Pasta: Spaghetti bolognese · Vegetariskt: Vegetarisk lasagne · Sallad: Ceasasallad med kyckling / Ost och skinksallad"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Pankopanerad kycklingfilé med timjansås och stekt potatis",
+        "Stekt strömming med skirat smör, lingonsylt och potatismos",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Kåldolmar serveras med kokt potatis, lingon och gräddsås"
       ]
     },
     {
@@ -2501,6 +2540,22 @@
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Ungsstekt falukorv med potatismos och inlagd gurka",
+        "Ungsstekt laxfilé med citronmajonnäs och kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Schnitzel serveras med rostad potatis och pepparsås"
       ]
     },
     {
@@ -2558,6 +2613,24 @@
       ]
     },
     {
+      "date": "2026-11-05",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Pannbiff med stekt lök, gräddsås, lingonsylt, ärtor och stekt potatis",
+        "Panerad spättafilé med dillmajonnäs och kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Ugnsbakad lax serveras med kokt potatis, citron och romsås",
+        "Grönsaksgryta serveras med polentakaka",
+        "Pasta bolognese toppas med parmesan"
+      ]
+    },
+    {
       "date": "2026-11-06",
       "restaurant": "Glasets Hus",
       "dishes": [
@@ -2607,6 +2680,15 @@
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Schnitzel med klassiska tillbehör och stekt potatis",
+        "Mozarella gratinerad fiskgratäng med hummersås samt kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
       ]
     }
   ]
