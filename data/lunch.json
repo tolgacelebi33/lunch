@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01 17:47",
+  "updated_at": "2026-11-01 21:28",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -31,8 +31,8 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "L1: Lågtempad skinkstek med senap,",
-            "äpple, rotfrukter och potatis (gf, mf)",
+            "L1: Lång bakad karré med senap, äpple,",
+            "rotfrukter och potatis (gf, mf)",
             "L2: Gryta på fransyska med pasta (mf)"
           ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
