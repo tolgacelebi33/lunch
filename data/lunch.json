@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 14:26",
+  "updated_at": "2026-11-02 18:00",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -194,14 +194,15 @@
       "town": "Limmared",
       "price": "Lunch + café",
       "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "source_url": "https://glasetshuslimmared.se/lunch/",
       "menu": {
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Torsk med dill- och citronsås serveras med kokt potatis"
+            "TorskamedrdiillT och citronsdas",
+            "serveras med kokt potatis"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 45
         },
         "monday": {
@@ -214,23 +215,28 @@
           "dishes": [
             "Pasta pesto serveras med kycklingfilé"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 45
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Stekt fläsk serveras med kokt potatis och löksås"
+            "Stekt flask serveras med kokt",
+            "Peeat.is- och *loksas"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 45
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Köttfärs & potatisgratäng"
+            "KÖTT Tees och REA",
+            "_ (",
+            "y",
+            "y",
+            "agens, rf om: or Be GON puny"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 45
         }
       },
@@ -533,13 +539,14 @@
   ],
   "iso_week": 45,
   "update_log": [
-    "glasets: ok (4 days, html)",
+    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/11/M-v45-scaled.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: ok (5 days)",
+    "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
