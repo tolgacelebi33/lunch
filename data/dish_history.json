@@ -2401,6 +2401,14 @@
     },
     {
       "date": "2026-11-02",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Grillad karré – grönsaker – tomatsås – löksallad – klyftpotatis",
+        "Veckans speciale: Pastaconsalsiccia– tomatsås– chili – parmesanost / Ceasarsallad – räkor – krutonger – spetskål – pickladlök"
+      ]
+    },
+    {
+      "date": "2026-11-02",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Boeuf bourguignon med ris Smörkokt sejfilé med gräslökssås & potatis",
@@ -2459,6 +2467,15 @@
     },
     {
       "date": "2026-11-03",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Citronmarinerad kyckling – ugnsbakad potatis & grönsaker",
+        "– örtgräddsås",
+        "Veckans speciale: Pastaconsalsiccia– tomatsås– chili – parmesanost / Ceasarsallad – räkor – krutonger – spetskål – pickladlök"
+      ]
+    },
+    {
+      "date": "2026-11-03",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Pluma med ädelostsås & stekt potatis",
@@ -2513,6 +2530,14 @@
       "dishes": [
         "L1: Flygande Jacob med ris (gf)",
         "L2: Soljanka + pannkaka, sylt och grädde"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Parmesangratinerad koljafilé – vitvinssås – potatismos",
+        "Veckans speciale: Pastaconsalsiccia– tomatsås– chili – parmesanost / Ceasarsallad – räkor – krutonger – spetskål – pickladlök"
       ]
     },
     {
@@ -2585,6 +2610,14 @@
     },
     {
       "date": "2026-11-05",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Piccata– rödvinssås– rostade rotfrukter – kryddsmör",
+        "Veckans speciale: Pastaconsalsiccia– tomatsås– chili – parmesanost / Ceasarsallad – räkor – krutonger – spetskål – pickladlök"
+      ]
+    },
+    {
+      "date": "2026-11-05",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Champinjonsoppa med äppelpaj & vaniljsås",
@@ -2653,6 +2686,14 @@
         "Veckans pasta: Veckans sallad",
         "Svamp/bacon",
         "Sallad med skinka,"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Ugnsbakad högrev – pepparsås – potatisgratäng med timjan & rosmarin",
+        "Veckans speciale: Pastaconsalsiccia– tomatsås– chili – parmesanost / Ceasarsallad – räkor – krutonger – spetskål – pickladlök"
       ]
     },
     {
