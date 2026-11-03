@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 18:00",
+  "updated_at": "2026-11-03 04:26",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -540,15 +540,13 @@
   "iso_week": 45,
   "update_log": [
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/11/M-v45-scaled.jpg)",
-    "kabyssen: ok (5 days, pdf-text)",
+    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
-    "tullens: ok (5 days)",
+    "tullens: <urlopen error [Errno 101] Network is unreachable>",
     "lunchhornan: ok (5 days)",
     "tessitura: ok (5 days)",
     "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
   "week_monday": "2026-11-02",
