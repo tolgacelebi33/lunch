@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 13:44",
+  "updated_at": "2026-11-03 16:04",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -543,7 +543,7 @@
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
-    "tullens: HTTP Error 503: Service Unavailable",
+    "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: ok (5 days)",
     "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
