@@ -2740,6 +2740,13 @@
     },
     {
       "date": "2026-11-09",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Rotmos serveras med rimmat fläskkött från Säteriet, köttkorv och senap"
+      ]
+    },
+    {
+      "date": "2026-11-09",
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
@@ -2750,6 +2757,14 @@
       "restaurant": "Kabyssen",
       "dishes": [
         "L1: Köttfärslimpa med kokt potatis (gf)"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Högrevsgryta – grädde – örter – svamp – honungsrostade rotfrukter & betor",
+        "Veckans speciale: Pasta Alfredo – kyckling – vitlök – grädde – parmesanost / Chevrésallad – rostade frön – betor – senapsvinegrett– spetskål"
       ]
     },
     {
@@ -2783,10 +2798,18 @@
     },
     {
       "date": "2026-11-10",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Stekt fläsk serveras med raggmunk och lingon alternativt kokt potatis och löksås"
+      ]
+    },
+    {
+      "date": "2026-11-10",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Schnitzel med citron- och vitlökssmör samt rosmarinpotatis på husets vis",
-        "ej glutenfri (begränsat antal)"
+        "Bpoennatzel med citron— och",
+        "vitlökssmör samt rosmarinpotatis",
+        "pashusets Villa vis (ef gistentres &"
       ]
     },
     {
@@ -2803,6 +2826,14 @@
         "L1: Stekt fläsk med raggmunk, löksås och",
         "lingon",
         "L2: Nöttgulasch med ris (gf, mf)"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Parmesangratinerad koljafilé – vitvinssås – potatispuré",
+        "Veckans speciale: Pasta Alfredo – kyckling – vitlök – grädde – parmesanost / Chevrésallad – rostade frön – betor – senapsvinegrett– spetskål"
       ]
     },
     {
@@ -2836,9 +2867,16 @@
     },
     {
       "date": "2026-11-11",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Stekt panerad sej serveras med kokt potatis och dansk remouladsås"
+      ]
+    },
+    {
+      "date": "2026-11-11",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Kalops med mormorskokta morötter"
+        "Kalops med mormorskokta morötter ©"
       ]
     },
     {
@@ -2854,6 +2892,15 @@
       "dishes": [
         "L1: Spaghetti med köttfärssås (mf)",
         "L2: Ärtsoppa + pannkaka, sylt och grädde"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Kummin & honungsbakad fläsksida",
+        "– rotmos – picklatäpple & fänkål",
+        "Veckans speciale: Pasta Alfredo – kyckling – vitlök – grädde – parmesanost / Chevrésallad – rostade frön – betor – senapsvinegrett– spetskål"
       ]
     },
     {
@@ -2893,9 +2940,17 @@
     },
     {
       "date": "2026-11-12",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Bbq bakad karré serveras med rostade grönsaker, grillad majs och bbqsås"
+      ]
+    },
+    {
+      "date": "2026-11-12",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Italiensk fiskgryta med citron, oliver och örter"
+        "Italiensk fiskgryta med citron,",
+        "oliver och örter serveras med mos"
       ]
     },
     {
@@ -2914,6 +2969,14 @@
         "bearnaisesås",
         "L2: Kabyssen´s panerade kyckling med",
         "stekt potatis, pommes, grönsaker och"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Wallenbergare – lingon – ärtor – skirat smör – potatispuré",
+        "Veckans speciale: Pasta Alfredo – kyckling – vitlök – grädde – parmesanost / Chevrésallad – rostade frön – betor – senapsvinegrett– spetskål"
       ]
     },
     {
@@ -2955,9 +3018,19 @@
     },
     {
       "date": "2026-11-13",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Kycklingwook",
+        "Grönsakspaj",
+        "Nudlar med friterade räkor och chilimajo"
+      ]
+    },
+    {
+      "date": "2026-11-13",
       "restaurant": "Glasets Hus",
       "dishes": [
-        "Krämig sweet chilikyckling med ris"
+        "Kramig sweet chilikyckling med ris",
+        "ager oe pr sar Bk"
       ]
     },
     {
@@ -2976,6 +3049,14 @@
         "Chorizo",
         "Pasta, rucola,",
         "soltorkade tomater,"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Parmesan och spenatbakad laxfilé – citrussås – primörer – potatis",
+        "Veckans speciale: Pasta Alfredo – kyckling – vitlök – grädde – parmesanost / Chevrésallad – rostade frön – betor – senapsvinegrett– spetskål"
       ]
     },
     {
