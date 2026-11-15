@@ -3104,6 +3104,22 @@
     },
     {
       "date": "2026-11-16",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Korv stroganoff med ris (gf)"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Mozzarella &basilikafylld biff – soltorkad tomatsås– rostadpotatis– rucola",
+        "& löksallad",
+        "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
+      ]
+    },
+    {
+      "date": "2026-11-16",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Torsk på norskt vis med potatis",
@@ -3122,6 +3138,15 @@
       ]
     },
     {
+      "date": "2026-11-16",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Fläsknoisetter med pepparsås och potatisgratäng",
+        "Fiskgratäng med paprika och broccoli serveras med kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
       "date": "2026-11-17",
       "restaurant": "Glasets Hus",
       "dishes": [
@@ -3133,6 +3158,24 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Pannbiff med potatismos, ärtor och",
+        "lingon",
+        "L2: Krämig kalvgryta med paprika samt ris",
+        "(gf)"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Ugnsbakad laxfilé – dillstuvad potatis– haricotsverts & sockerärtor",
+        "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
       ]
     },
     {
@@ -3155,6 +3198,15 @@
       ]
     },
     {
+      "date": "2026-11-17",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Flygande jacob serveras med nötter och jasminris",
+        "Stekt strömming med skirat smör, lingonsylt och potatismos",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
       "date": "2026-11-18",
       "restaurant": "Glasets Hus",
       "dishes": [
@@ -3166,6 +3218,24 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Fläskfilégryta med pasta",
+        "L2: Köttfärssoppa med purjolök och",
+        "färskost + pannkaka, sylt och grädde"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Pancettadimaialeal foro ”pulled pork” – grillad focacia– tryffelmajo –",
+        "pickladlök – klyft potatis",
+        "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
       ]
     },
     {
@@ -3195,6 +3265,15 @@
       ]
     },
     {
+      "date": "2026-11-18",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Korvstroganoff serveras med jasminris",
+        "Ungsstek laxfilé med kall limesås, serveras med kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
       "date": "2026-11-19",
       "restaurant": "Glasets Hus",
       "dishes": [
@@ -3206,6 +3285,26 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "L1: Kabyssen´s panerade schnitzel med",
+        "ugnsbakad potatis, pommes, grönsaker",
+        "och gräddsås",
+        "L2: Kabyssen´s panerade kyckling med",
+        "ugnsbakad potatis, pommes, grönsaker"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Costoletta alla milanese”Schnitzel” – ljummen potatissallad– rucola –",
+        "rödlök – tomater– ört, parmesan & citron crème",
+        "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
       ]
     },
     {
@@ -3237,6 +3336,15 @@
       ]
     },
     {
+      "date": "2026-11-19",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Kalops med rödbetor och kokt potatis",
+        "Panerad spättafilé med dillmajonnäs och kokt potatis",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
       "date": "2026-11-20",
       "restaurant": "Glasets Hus",
       "dishes": [
@@ -3248,6 +3356,25 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "restaurant": "Kabyssen",
+      "dishes": [
+        "Fisk i chilisås med kokt potatis (gf)",
+        "Veckans pasta: Veckans sallad",
+        "Skinka/färskost",
+        "Taco",
+        "mf: mjölkfri; gf: glutenfri"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Havets Wallenbergare– vitvinssås– dill & gräslök – potatispuré",
+        "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
       ]
     },
     {
@@ -3275,6 +3402,15 @@
       "restaurant": "Orkidé Thai",
       "dishes": [
         "Lunchbuffé (thailändska & kinesiska rätter, varierat innehåll)"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "restaurant": "Tullens Restaurang & Sportbar",
+      "dishes": [
+        "Schnitzel med klassiska tillbehör och stekt potatis",
+        "Fish & chips på torsk med remouladsås",
+        "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
       ]
     }
   ]
