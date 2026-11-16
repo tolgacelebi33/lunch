@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16 14:34",
+  "updated_at": "2026-11-16 17:57",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -192,14 +192,15 @@
       "town": "Limmared",
       "price": "Lunch + café",
       "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+      "source_url": "https://glasetshuslimmared.se/lunch/",
       "menu": {
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Lunchkorv serveras med kokt potatis och klassisk vitsås"
+            "Lunchkorv med kokt potatis och",
+            "kramig vitsas A wer"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 47
         },
         "monday": {
@@ -210,25 +211,30 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Boeuf bourguignon serveras med kokt potatis"
+            "Fransk kéttgryta med kokt potatis"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 47
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Stekt fläsk serveras med hemgjord raggmunk och lingonsylt"
+            "Stekt flask serveras med hemgjord Sait",
+            "Tagguunk ©el Pdingonsylt TNA"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 47
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Husets pytt i panna serveras med stekt ägg och rödbetor"
+            "Husets pytt i panna serveras med",
+            "stekt ägg och rödbetor",
+            "SERVERAS PÅ BUFFÉ",
+            "LORDAG Italiensk (kycklinggryta serveras",
+            "med ugnsrostad potatis"
           ],
-          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "source_url": "https://glasetshuslimmared.se/lunch/",
           "week": 47
         }
       },
@@ -533,13 +539,14 @@
   ],
   "iso_week": 47,
   "update_log": [
-    "glasets: ok (4 days, html)",
+    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/11/M-v47-scaled.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: ok (5 days)",
+    "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
