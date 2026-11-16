@@ -3097,6 +3097,13 @@
     },
     {
       "date": "2026-11-16",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Kyckling currygryta med ris"
+      ]
+    },
+    {
+      "date": "2026-11-16",
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
@@ -3144,6 +3151,13 @@
         "Fläsknoisetter med pepparsås och potatisgratäng",
         "Fiskgratäng med paprika och broccoli serveras med kokt potatis",
         "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Pannbiff serveras med lök, gräddsky och stekt potatis"
       ]
     },
     {
@@ -3204,6 +3218,13 @@
         "Flygande jacob serveras med nötter och jasminris",
         "Stekt strömming med skirat smör, lingonsylt och potatismos",
         "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Fiskgratäng serveras med potatismos och hackat ägg"
       ]
     },
     {
@@ -3275,6 +3296,13 @@
     },
     {
       "date": "2026-11-19",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Ost & skinkfylld schnitzel serveras med ört och vitlökssmör, rostad potatis och"
+      ]
+    },
+    {
+      "date": "2026-11-19",
       "restaurant": "Glasets Hus",
       "dishes": [
         "Stekt fläsk serveras med hemgjord raggmunk och lingonsylt"
@@ -3342,6 +3370,15 @@
         "Kalops med rödbetor och kokt potatis",
         "Panerad spättafilé med dillmajonnäs och kokt potatis",
         "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "restaurant": "Centralen / Sångbergs",
+      "dishes": [
+        "Kycklinglasagne toppas med solroskärnor och parmesan",
+        "Svamprisotto toppas med parmesan och grönkålschips",
+        "Pulled pork i bröd serveras med kålsallad och bbqsås"
       ]
     },
     {

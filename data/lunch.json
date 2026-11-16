@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16 03:42",
+  "updated_at": "2026-11-16 14:34",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -246,44 +246,46 @@
       "source_url": "https://www.sangbergs.se/lunchmeny",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Fiskgratäng serveras med potatismos och hackat ägg"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 46,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 46 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 47
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Kyckling currygryta med ris"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 46,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 46 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 47
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Pannbiff serveras med lök, gräddsky och stekt potatis"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 46,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 46 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 47
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Ost & skinkfylld schnitzel serveras med ört och vitlökssmör, rostad potatis och"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 46,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 46 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 47
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Kycklinglasagne toppas med solroskärnor och parmesan",
+            "Svamprisotto toppas med parmesan och grönkålschips",
+            "Pulled pork i bröd serveras med kålsallad och bbqsås"
+          ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 46,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 46 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 47
         }
       },
       "drive_min": 21,
@@ -533,12 +535,11 @@
   "update_log": [
     "glasets: ok (4 days, html)",
     "kabyssen: ok (5 days, pdf-text)",
-    "sangbergs: no current-week menu parsed",
+    "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: ok (5 days)",
-    "sanering: 5 gammal dag/dagar dolda (kunde inte uppdateras till vecka 47)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
