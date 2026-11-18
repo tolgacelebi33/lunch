@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18 04:38",
+  "updated_at": "2026-11-18 05:14",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -540,13 +540,15 @@
   "iso_week": 47,
   "update_log": [
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/11/M-v47-scaled.jpg)",
-    "kabyssen: <urlopen error [Errno 101] Network is unreachable>",
+    "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
-    "tullens: <urlopen error [Errno 101] Network is unreachable>",
+    "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: ok (5 days)",
-    "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
+    "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
   "week_monday": "2026-11-16",
   "distance_note": "Körtider och sträckor är uppskattningar från Verkstadsvägen 1, Dalstorp (OpenStreetMap, bil, utan trafik)."
