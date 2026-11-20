@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20 04:57",
+  "updated_at": "2026-11-20 14:57",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -542,9 +542,9 @@
     "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/11/M-v47-scaled.jpg)",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
-    "limmared: ok (5 days)",
+    "limmared: vecka 47 not found",
     "tullens: ok (5 days)",
-    "lunchhornan: ok (5 days)",
+    "lunchhornan: vecka 47 not found",
     "tessitura: ok (5 days)",
     "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
