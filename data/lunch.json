@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20 17:05",
+  "updated_at": "2026-11-21 22:38",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -11,57 +11,44 @@
       "source_url": "https://kabyssen-dalstorp.se/rezepte",
       "menu": {
         "wednesday": {
-          "verified": true,
-          "dishes": [
-            "L1: Fläskfilégryta med pasta",
-            "L2: Köttfärssoppa med purjolök och",
-            "färskost + pannkaka, sylt och grädde"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         },
         "monday": {
-          "verified": true,
-          "dishes": [
-            "L1: Korv stroganoff med ris (gf)"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         },
         "tuesday": {
-          "verified": true,
-          "dishes": [
-            "L1: Pannbiff med potatismos, ärtor och",
-            "lingon",
-            "L2: Krämig kalvgryta med paprika samt ris",
-            "(gf)"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         },
         "thursday": {
-          "verified": true,
-          "dishes": [
-            "L1: Kabyssen´s panerade schnitzel med",
-            "ugnsbakad potatis, pommes, grönsaker",
-            "och gräddsås",
-            "L2: Kabyssen´s panerade kyckling med",
-            "ugnsbakad potatis, pommes, grönsaker"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         },
         "friday": {
-          "verified": true,
-          "dishes": [
-            "Fisk i chilisås med kokt potatis (gf)",
-            "Veckans pasta: Veckans sallad",
-            "Skinka/färskost",
-            "Taco",
-            "mf: mjölkfri; gf: glutenfri"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         }
       },
       "drive_min": 2,
@@ -128,58 +115,61 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Kålpudding med gräddsås & potatis",
-            "Kinesisk nudelwok med kyckling",
-            "Veckans Vego: Broccoligratäng",
-            "Veckans Pasta: Alfredo (Kyckling & vitlök) Veckans Sallad : Tacosallad"
+            "Biff ala Lindström med brunsås, potatis & inlagd gurka",
+            "Kycklig thai med ris",
+            "Veckans Vego: Trädgårdsmästargryta med ris",
+            "Veckans Pasta: Spaghetti med köttfärssås",
+            "Veckans Sallad: Caesarsallad med kyckling"
           ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 47
+          "week": 48
         },
         "monday": {
           "verified": true,
           "dishes": [
-            "Torsk på norskt vis med potatis",
-            "Fylld lunchkorv med potatismos",
-            "Veckans Vego: Broccoligratäng",
-            "Veckans Pasta: Alfredo (Kyckling & vitlök) Veckans Sallad : Tacosallad"
+            "Kåldolmar, gräddsås, potatis & lingon",
+            "Fisk Björkeby med skirat smör, kokta grönsaker & potatismos",
+            "Veckans Vego: Trädgårdsmästargryta med ris",
+            "Veckans Pasta: Spaghetti med köttfärssås",
+            "Veckans Sallad: Caesarsallad med kyckling"
           ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 47
+          "week": 48
         },
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Stekt falukorv med stuvad vitkål/morötter & potatis",
-            "Chili con carne med ris",
-            "Veckans Vego: Broccoligratäng",
-            "Veckans Pasta: Alfredo (Kyckling & vitlök) Veckans Sallad : Tacosallad"
+            "Stekt fläsk med raggmunk & lingon",
+            "Stekt fläsk med löksås & potatis",
+            "Stekt fläsk med bruna bönor",
+            "Smörkokt sejfilé med dillsås & potatis",
+            "Veckans Vego: Trädgårdsmästargryta med ris"
           ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 47
+          "week": 48
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Fisksoppa med rabarberpaj & vaniljsås",
-            "Levergryta med ris",
-            "Veckans Vego: Broccoligratäng",
-            "Veckans Pasta: Alfredo (Kyckling & vitlök) Veckans Sallad : Tacosallad"
+            "Ärtsoppa med pannkakor, sylt & grädde Skottegryta (köttfärs) med kokt potatis & inlagd gurka",
+            "Veckans Vego: Trädgårdsmästargryta med ris",
+            "Veckans Pasta: Spaghetti med köttfärssås",
+            "Veckans Sallad: Caesarsallad med kyckling"
           ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 47
+          "week": 48
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Benfri aprikosglaserad ytterfilé med potatisgratäng",
-            "Veckans Vego : Broccoligratäng",
-            "Veckans Pasta : Alfredo (Kyckling & vitlök) Veckans Sallad : Tacosallad",
-            "Veckans Vego: Broccoligratäng",
-            "Veckans Pasta: Alfredo (Kyckling & vitlök) Veckans Sallad : Tacosallad"
+            "Örtbakad fläskkarré med äppelchutney & potatis",
+            "Veckans Vego : Trädgårdsmästargryta med ris",
+            "Veckans Pasta : Spaghetti med köttfärssås",
+            "Veckans Sallad : Caesarsallad med kyckling",
+            "Veckans Vego: Trädgårdsmästargryta med ris"
           ],
           "source_url": "https://limmaredsvardshus.se/",
-          "week": 47
+          "week": 48
         }
       },
       "drive_min": 18,
@@ -192,16 +182,15 @@
       "town": "Limmared",
       "price": "Lunch + café",
       "lunch_time": "09.00–16.00",
-      "source_url": "https://glasetshuslimmared.se/lunch/",
+      "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
       "menu": {
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Lunchkorv med kokt potatis och",
-            "kramig vitsas A wer"
+            "Panerad fisk serveras med potatismos och dansk remouladsås GF + LF"
           ],
-          "source_url": "https://glasetshuslimmared.se/lunch/",
-          "week": 47
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 48
         },
         "monday": {
           "verified": false,
@@ -211,31 +200,26 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Fransk kéttgryta med kokt potatis"
+            "Salsicciapasta toppas med parmesan* LF*"
           ],
-          "source_url": "https://glasetshuslimmared.se/lunch/",
-          "week": 47
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 48
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Stekt flask serveras med hemgjord Sait",
-            "Tagguunk ©el Pdingonsylt TNA"
+            "Köttfärslimpa serveras med kokt potatis, gräddsås och lingonsylt GF + LF"
           ],
-          "source_url": "https://glasetshuslimmared.se/lunch/",
-          "week": 47
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 48
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Husets pytt i panna serveras med",
-            "stekt ägg och rödbetor",
-            "SERVERAS PÅ BUFFÉ",
-            "LORDAG Italiensk (kycklinggryta serveras",
-            "med ugnsrostad potatis"
+            "Mexikansk soppa serveras med en klick crème fraiche och smarrig efterrätt. LF"
           ],
-          "source_url": "https://glasetshuslimmared.se/lunch/",
-          "week": 47
+          "source_url": "https://glasetshuslimmared.se/nasta-vecka/",
+          "week": 48
         }
       },
       "drive_min": 18,
@@ -254,44 +238,44 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Fiskgratäng serveras med potatismos och hackat ägg"
+            "Köttfärslimpa serveras med champinjonsås och rostad potatis"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 47
+          "week": 48
         },
         "monday": {
           "verified": true,
           "dishes": [
-            "Kyckling currygryta med ris"
+            "Ångad sej med rödbetor, kapris, pepparrot, brynt smör och kokt potatis"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 47
+          "week": 48
         },
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Pannbiff serveras med lök, gräddsky och stekt potatis"
+            "Stekt fläsk serveras med raggmunk och lingon alternativt löksås och kokt potatis"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 47
+          "week": 48
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Ost & skinkfylld schnitzel serveras med ört och vitlökssmör, rostad potatis och"
+            "Ärtsoppa Pannkakor med sylt & grädde"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 47
+          "week": 48
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Kycklinglasagne toppas med solroskärnor och parmesan",
-            "Svamprisotto toppas med parmesan och grönkålschips",
-            "Pulled pork i bröd serveras med kålsallad och bbqsås"
+            "Bakad kotlettrad serveras med potatisgratäng och skysås",
+            "Pärlcouscoussallad med kyckling",
+            "Bakade rotfrukter, betor från Nordebro toppas med chevrékräm"
           ],
           "source_url": "https://www.sangbergs.se/lunchmeny",
-          "week": 47
+          "week": 48
         }
       },
       "drive_min": 21,
@@ -353,52 +337,44 @@
       "source_url": "https://www.latessitura.se/",
       "menu": {
         "monday": {
-          "verified": true,
-          "dishes": [
-            "Mozzarella &basilikafylld biff – soltorkad tomatsås– rostadpotatis– rucola",
-            "& löksallad",
-            "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://www.latessitura.se/",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         },
         "tuesday": {
-          "verified": true,
-          "dishes": [
-            "Ugnsbakad laxfilé – dillstuvad potatis– haricotsverts & sockerärtor",
-            "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://www.latessitura.se/",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         },
         "wednesday": {
-          "verified": true,
-          "dishes": [
-            "Pancettadimaialeal foro ”pulled pork” – grillad focacia– tryffelmajo –",
-            "pickladlök – klyft potatis",
-            "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://www.latessitura.se/",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         },
         "thursday": {
-          "verified": true,
-          "dishes": [
-            "Costoletta alla milanese”Schnitzel” – ljummen potatissallad– rucola –",
-            "rödlök – tomater– ört, parmesan & citron crème",
-            "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://www.latessitura.se/",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         },
         "friday": {
-          "verified": true,
-          "dishes": [
-            "Havets Wallenbergare– vitvinssås– dill & gräslök – potatispuré",
-            "Veckans speciale: SugodiCarne – pennepasta– nötkött – tomat– vitlök – grädde – / parmesanost / Insalatadi salmone– kallrökt lax – quinoa– citron & dillaioli"
-          ],
+          "verified": false,
+          "dishes": [],
           "source_url": "https://www.latessitura.se/",
-          "week": 47
+          "week": 47,
+          "status": "Ej uppdaterad denna vecka",
+          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
         }
       },
       "drive_min": 28,
@@ -417,52 +393,52 @@
         "monday": {
           "verified": true,
           "dishes": [
-            "Fläsknoisetter med pepparsås och potatisgratäng",
-            "Fiskgratäng med paprika och broccoli serveras med kokt potatis",
+            "Pyttipanna med stekt ägg och rödbetor",
+            "Panerad spättafilé med kall örtsås och kokt potatis",
             "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
           ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 47
+          "week": 48
         },
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Flygande jacob serveras med nötter och jasminris",
+            "Fläskfilé med bearnaisesås och stekt potatis",
             "Stekt strömming med skirat smör, lingonsylt och potatismos",
             "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
           ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 47
+          "week": 48
         },
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Korvstroganoff serveras med jasminris",
-            "Ungsstek laxfilé med kall limesås, serveras med kokt potatis",
+            "Baconlindad kycklingfilé med sås på soltorkade tomater och stekt potatis",
+            "Panerad torskfilé med skirat smör och räksås samt kokt potatis",
             "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
           ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 47
+          "week": 48
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Kalops med rödbetor och kokt potatis",
-            "Panerad spättafilé med dillmajonnäs och kokt potatis",
+            "Pannbiff med stekt lök, gräddsås, lingonsylt och potatismos",
+            "Mozarella gratinerad fiskgratäng med hummersås samt kokt potatis",
             "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
           ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 47
+          "week": 48
         },
         "friday": {
           "verified": true,
           "dishes": [
             "Schnitzel med klassiska tillbehör och stekt potatis",
-            "Fish & chips på torsk med remouladsås",
+            "Ungsstek laxfilé med kall limesås, serveras med kokt potatis",
             "Övrigt: Pasta: Pasta Bolognese · Sallad: Grekisk sallad · Vegetarisk: Grönsaksbiff med tzatziki"
           ],
           "source_url": "https://tullensrestaurangsportbar.se/",
-          "week": 47
+          "week": 48
         }
       },
       "drive_min": 29,
@@ -481,54 +457,54 @@
         "monday": {
           "verified": true,
           "dishes": [
-            "Köttfärslimpa med gräddsås",
-            "Fiskgratäng med dill och räkor",
-            "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Kebabsallad / Tonfisksallad"
+            "Pannbiff med lök",
+            "Korvgryta med ris",
+            "Övrigt: Pasta: Spaghetti Bolognese · Vegetariskt: Bakad potatis med fetaost röra · Sallad: Kycklingsallad med basilika aioli / Pastasallad med kallrökt lax"
           ],
           "source_url": "https://lunchhornan.se/veckans-lunch/",
-          "week": 47
+          "week": 48
         },
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Stekt fläsk med potatismos, lingon",
-            "Stekt strömming med potatismos, lingon",
-            "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Kebabsallad / Tonfisksallad"
+            "Stekt fläsk med löksås",
+            "Nudlar med kyckling",
+            "Övrigt: Pasta: Spaghetti Bolognese · Vegetariskt: Bakad potatis med fetaost röra · Sallad: Kycklingsallad med basilika aioli / Pastasallad med kallrökt lax"
           ],
           "source_url": "https://lunchhornan.se/veckans-lunch/",
-          "week": 47
+          "week": 48
         },
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Fläsknoisetter med bearnaisesås",
-            "Panerad fisk med remouladsås",
-            "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Kebabsallad / Tonfisksallad"
+            "Långbakad karré med gräddsås",
+            "Panerad fisk med citron/dill dressing",
+            "Övrigt: Pasta: Spaghetti Bolognese · Vegetariskt: Bakad potatis med fetaost röra · Sallad: Kycklingsallad med basilika aioli / Pastasallad med kallrökt lax"
           ],
           "source_url": "https://lunchhornan.se/veckans-lunch/",
-          "week": 47
+          "week": 48
         },
         "thursday": {
           "verified": true,
           "dishes": [
-            "Grillad kyckling med salsa och ris",
-            "Tacosoppa med nachos, aioli",
+            "Kalops med rödbetor",
+            "Chicken thai soppa",
             "Ärtsoppa med fläsk",
             "(Pannkakor till soppan)",
-            "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Kebabsallad / Tonfisksallad"
+            "Övrigt: Pasta: Spaghetti Bolognese · Vegetariskt: Bakad potatis med fetaost röra · Sallad: Kycklingsallad med basilika aioli / Pastasallad med kallrökt lax"
           ],
           "source_url": "https://lunchhornan.se/veckans-lunch/",
-          "week": 47
+          "week": 48
         },
         "friday": {
           "verified": true,
           "dishes": [
-            "Helstekt ytterfilé med svampsås",
-            "Smörstekt kummel med vitvinssås",
-            "Övrigt: Pasta: Pasta med strimlad biff i gräddig sås · Vegetariskt: Couscous pytt med stekt ägg · Sallad: Kebabsallad / Tonfisksallad"
+            "Helstekt fläskfilé med rödvinssås",
+            "Cremé fraich bakad kummel",
+            "Övrigt: Pasta: Spaghetti Bolognese · Vegetariskt: Bakad potatis med fetaost röra · Sallad: Kycklingsallad med basilika aioli / Pastasallad med kallrökt lax"
           ],
           "source_url": "https://lunchhornan.se/veckans-lunch/",
-          "week": 47
+          "week": 48
         }
       },
       "drive_min": 33,
@@ -537,19 +513,19 @@
       "maps_url": "https://www.google.com/maps/search/?api=1&query=Karlsn%C3%A4sv%C3%A4gen+7%2C+Ulricehamn+Sverige"
     }
   ],
-  "iso_week": 47,
+  "iso_week": 48,
   "update_log": [
-    "glasets: ok (4 days, ocr:http://glasetshuslimmared.se/wp-content/uploads/2026/11/M-v47-scaled.jpg)",
-    "kabyssen: ok (5 days, pdf-text)",
+    "glasets: ok (4 days, html)",
+    "kabyssen: current week 48 not found in menu PDF",
     "sangbergs: ok (5 days)",
-    "limmared: vecka 47 not found",
+    "limmared: ok (5 days)",
     "tullens: ok (5 days)",
-    "lunchhornan: vecka 47 not found",
-    "tessitura: ok (5 days)",
-    "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
-    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)"
+    "lunchhornan: ok (5 days)",
+    "tessitura: current week 48 not found in menu PDF",
+    "sanering: 10 gammal dag/dagar dolda (kunde inte uppdateras till vecka 48)",
+    "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
-  "week_monday": "2026-11-16",
+  "week_monday": "2026-11-23",
   "distance_note": "Körtider och sträckor är uppskattningar från Verkstadsvägen 1, Dalstorp (OpenStreetMap, bil, utan trafik)."
 }
