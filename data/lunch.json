@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22 18:47",
+  "updated_at": "2026-11-22 22:44",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -11,44 +11,57 @@
       "source_url": "https://kabyssen-dalstorp.se/rezepte",
       "menu": {
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Kycklingcurry med ris (gf, mf)",
+            "L2: Cowboysoppa + pannkaka, sylt och",
+            "grädde"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         },
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Spareribs med pommes (gf, mf)"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Stekt fläsk med raggmunk",
+            "(potatis/ost) och lingon",
+            "L2: Köttbullar på kalv i vit sås med kapris",
+            "samt kokt potatis (gf)"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "L1: Kabyssen´s panerade schnitzel med",
+            "potatisgratäng, klyftpotatis, grönsaker",
+            "och brunsås",
+            "L2: Kabyssen´s panerade kyckling med",
+            "potatisgratäng, klyftpotatis, grönsaker"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Stekt lax med spenat och kokt potatis (gf)",
+            "Veckans pasta: Veckans sallad",
+            "Pesto/kyckling",
+            "grekisk sallad",
+            "mf: mjölkfri; gf: glutenfri"
+          ],
           "source_url": "https://kabyssen-dalstorp.se/rezepte",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         }
       },
       "drive_min": 2,
@@ -521,13 +534,14 @@
   "iso_week": 48,
   "update_log": [
     "glasets: ok (4 days, html)",
-    "kabyssen: current week 48 not found in menu PDF",
+    "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
     "tessitura: ok (5 days)",
-    "sanering: 5 gammal dag/dagar dolda (kunde inte uppdateras till vecka 48)",
+    "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
+    "Kabyssen friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
