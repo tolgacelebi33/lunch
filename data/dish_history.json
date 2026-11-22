@@ -3472,6 +3472,14 @@
     },
     {
       "date": "2026-11-23",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Lasagne al forno – rucola , tomat& löksallad",
+        "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+      ]
+    },
+    {
+      "date": "2026-11-23",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Kåldolmar, gräddsås, potatis & lingon",
@@ -3522,6 +3530,14 @@
     },
     {
       "date": "2026-11-24",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Porchetta – rödvin & salviasås– rostad potatis",
+        "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+      ]
+    },
+    {
+      "date": "2026-11-24",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Stekt fläsk med raggmunk & lingon",
@@ -3568,6 +3584,14 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Fiskfilé pangratto– vitvinssås– smörslungad potatis",
+        "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
       ]
     },
     {
@@ -3629,6 +3653,14 @@
     },
     {
       "date": "2026-11-26",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Grillad kyckling – svamp– tryffel – spenat– rotfrukter",
+        "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+      ]
+    },
+    {
+      "date": "2026-11-26",
       "restaurant": "Limmareds Wärdshus",
       "dishes": [
         "Ärtsoppa med pannkakor, sylt & grädde Skottegryta (köttfärs) med kokt potatis & inlagd gurka",
@@ -3685,6 +3717,14 @@
       "restaurant": "Grillköket & Pizzeria",
       "dishes": [
         "Lunchmeny 120 kr (dagens rätt publiceras inte på deras sajt)"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "restaurant": "La Tessitura",
+      "dishes": [
+        "Köttbullar – gräddsås– pressgurka – lingon – potatispuré",
+        "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
       ]
     },
     {

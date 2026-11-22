@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21 22:38",
+  "updated_at": "2026-11-22 18:47",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -337,44 +337,49 @@
       "source_url": "https://www.latessitura.se/",
       "menu": {
         "monday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Lasagne al forno – rucola , tomat& löksallad",
+            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         },
         "tuesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Porchetta – rödvin & salviasås– rostad potatis",
+            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         },
         "wednesday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Fiskfilé pangratto– vitvinssås– smörslungad potatis",
+            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         },
         "thursday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Grillad kyckling – svamp– tryffel – spenat– rotfrukter",
+            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         },
         "friday": {
-          "verified": false,
-          "dishes": [],
+          "verified": true,
+          "dishes": [
+            "Köttbullar – gräddsås– pressgurka – lingon – potatispuré",
+            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+          ],
           "source_url": "https://www.latessitura.se/",
-          "week": 47,
-          "status": "Ej uppdaterad denna vecka",
-          "message": "Senast bekräftade uppgift gällde vecka 47 och visas inte längre eftersom den inte gick att uppdatera."
+          "week": 48
         }
       },
       "drive_min": 28,
@@ -521,8 +526,8 @@
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
     "lunchhornan: ok (5 days)",
-    "tessitura: current week 48 not found in menu PDF",
-    "sanering: 10 gammal dag/dagar dolda (kunde inte uppdateras till vecka 48)",
+    "tessitura: ok (5 days)",
+    "sanering: 5 gammal dag/dagar dolda (kunde inte uppdateras till vecka 48)",
     "Limmareds Wärdshus tuesday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Limmareds Wärdshus friday: 7 rader hittade, klippt till 5 (kontrollera källan manuellt)"
   ],
