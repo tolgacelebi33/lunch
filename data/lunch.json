@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22 22:44",
+  "updated_at": "2026-11-23 03:33",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -533,7 +533,7 @@
   ],
   "iso_week": 48,
   "update_log": [
-    "glasets: ok (4 days, html)",
+    "glasets: HTTP Error 429: Too Many Requests",
     "kabyssen: ok (5 days, pdf-text)",
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
