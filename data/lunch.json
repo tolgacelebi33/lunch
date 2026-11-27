@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27 05:59",
+  "updated_at": "2026-11-27 15:58",
   "timezone": "Europe/Stockholm",
   "restaurants": [
     {
@@ -358,8 +358,8 @@
         "monday": {
           "verified": true,
           "dishes": [
-            "Lasagne al forno – rucola , tomat& löksallad",
-            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+            "Lasagne al forno – rucola, tomat & löksallad",
+            "Veckans speciale: Pasta converdune– Tomat – oliver – kapris – vitlök – zucchini – aubergine"
           ],
           "source_url": "https://www.latessitura.se/",
           "week": 48
@@ -367,8 +367,8 @@
         "tuesday": {
           "verified": true,
           "dishes": [
-            "Porchetta – rödvin & salviasås– rostad potatis",
-            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+            "Porchetta – rödvin & salviasås – rostad potatis",
+            "Veckans speciale: Pasta converdune– Tomat – oliver – kapris – vitlök – zucchini – aubergine"
           ],
           "source_url": "https://www.latessitura.se/",
           "week": 48
@@ -376,8 +376,8 @@
         "wednesday": {
           "verified": true,
           "dishes": [
-            "Fiskfilé pangratto– vitvinssås– smörslungad potatis",
-            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+            "Fiskfilé pangratto– vitvinssås – smörslungad potatis",
+            "Veckans speciale: Pasta converdune– Tomat – oliver – kapris – vitlök – zucchini – aubergine"
           ],
           "source_url": "https://www.latessitura.se/",
           "week": 48
@@ -385,8 +385,8 @@
         "thursday": {
           "verified": true,
           "dishes": [
-            "Grillad kyckling – svamp– tryffel – spenat– rotfrukter",
-            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+            "Grillad kyckling – svamp – tryffel – spenat – rotfrukter",
+            "Veckans speciale: Pasta converdune– Tomat – oliver – kapris – vitlök – zucchini – aubergine"
           ],
           "source_url": "https://www.latessitura.se/",
           "week": 48
@@ -394,8 +394,8 @@
         "friday": {
           "verified": true,
           "dishes": [
-            "Köttbullar – gräddsås– pressgurka – lingon – potatispuré",
-            "Veckans speciale: Pasta converdune– Tomat– oliver – kapris– vitlök – zucchini– aubergine / Bouillabaise– lax – räkor – aioli"
+            "Köttbullar – gräddsås – pressgurka – lingon – potatispuré",
+            "Veckans speciale: Pasta converdune– Tomat – oliver – kapris – vitlök – zucchini – aubergine"
           ],
           "source_url": "https://www.latessitura.se/",
           "week": 48
@@ -544,7 +544,7 @@
     "sangbergs: ok (5 days)",
     "limmared: ok (5 days)",
     "tullens: ok (5 days)",
-    "lunchhornan: ok (5 days)",
+    "lunchhornan: vecka 48 not found",
     "tessitura: ok (5 days)",
     "Glasets Hus friday: 8 rader hittade, klippt till 5 (kontrollera källan manuellt)",
     "Kabyssen thursday: 6 rader hittade, klippt till 5 (kontrollera källan manuellt)",
